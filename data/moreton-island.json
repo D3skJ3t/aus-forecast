@@ -1,6 +1,6 @@
 {
  "id": "moreton-island",
- "generated": "2026-10-27T04:01:38Z",
+ "generated": "2026-10-27T16:01:09Z",
  "sources": [
   {
    "source": "bom",
@@ -8,29 +8,19 @@
    "url": "https://www.bom.gov.au/",
    "days": [
     {
-     "date": "2026-10-27",
-     "tmax": 25,
-     "tmin": 20,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "0-1 mm",
-     "chance": 40,
-     "text": null
-    },
-    {
      "date": "2026-10-28",
      "tmax": 26,
      "tmin": 20,
-     "rain_min": 2,
-     "rain_max": 9,
-     "rain_text": "2-9 mm",
-     "chance": 70,
+     "rain_min": 1,
+     "rain_max": 6,
+     "rain_text": "1-6 mm",
+     "chance": 60,
      "text": null
     },
     {
      "date": "2026-10-29",
      "tmax": 25,
-     "tmin": 20,
+     "tmin": 19,
      "rain_min": 0,
      "rain_max": null,
      "rain_text": "0 mm",
@@ -44,7 +34,7 @@
      "rain_min": 0,
      "rain_max": null,
      "rain_text": "0 mm",
-     "chance": 20,
+     "chance": 10,
      "text": null
     },
     {
@@ -52,8 +42,8 @@
      "tmax": 25,
      "tmin": 19,
      "rain_min": 0,
-     "rain_max": 3,
-     "rain_text": "0-3 mm",
+     "rain_max": 2,
+     "rain_text": "0-2 mm",
      "chance": 50,
      "text": null
     },
@@ -61,26 +51,36 @@
      "date": "2026-11-01",
      "tmax": 26,
      "tmin": 19,
-     "rain_min": 0,
-     "rain_max": 3,
-     "rain_text": "0-3 mm",
-     "chance": 50,
+     "rain_min": 1,
+     "rain_max": 6,
+     "rain_text": "1-6 mm",
+     "chance": 60,
      "text": null
     },
     {
      "date": "2026-11-02",
      "tmax": 26,
-     "tmin": 19,
+     "tmin": 20,
      "rain_min": 0,
-     "rain_max": 6,
-     "rain_text": "0-6 mm",
-     "chance": 50,
+     "rain_max": 1,
+     "rain_text": "0-1 mm",
+     "chance": 40,
      "text": null
     },
     {
      "date": "2026-11-03",
-     "tmax": null,
+     "tmax": 25,
      "tmin": 20,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "0-1 mm",
+     "chance": 30,
+     "text": null
+    },
+    {
+     "date": "2026-11-04",
+     "tmax": null,
+     "tmin": 21,
      "rain_min": null,
      "rain_max": null,
      "rain_text": null,
@@ -88,23 +88,13 @@
      "text": null
     }
    ],
-   "fetched": "2026-10-27T04:01:06Z"
+   "fetched": "2026-10-27T16:00:43Z"
   },
   {
    "source": "willyweather",
    "name": "WillyWeather",
    "url": "https://www.willyweather.com.au/qld/brisbane/moreton-island.html",
    "days": [
-    {
-     "date": "2026-10-27",
-     "tmax": 26,
-     "tmin": 20,
-     "rain_min": 0,
-     "rain_max": 2,
-     "rain_text": "< 2 mm",
-     "chance": 40,
-     "text": "Shower"
-    },
     {
      "date": "2026-10-28",
      "tmax": 26,
@@ -122,7 +112,7 @@
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
-     "chance": 25,
+     "chance": 20,
      "text": "Partly cloudy"
     },
     {
@@ -132,17 +122,17 @@
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
-     "chance": 15,
+     "chance": 10,
      "text": "Partly cloudy"
     },
     {
      "date": "2026-10-31",
      "tmax": 25,
      "tmin": 19,
-     "rain_min": 1,
-     "rain_max": 5,
-     "rain_text": "1–5 mm",
-     "chance": 50,
+     "rain_min": 0,
+     "rain_max": 2,
+     "rain_text": "< 2 mm",
+     "chance": 45,
      "text": "Shower"
     },
     {
@@ -152,21 +142,31 @@
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1–5 mm",
-     "chance": 50,
+     "chance": 60,
      "text": "Shower"
     },
     {
      "date": "2026-11-02",
      "tmax": 26,
      "tmin": 20,
-     "rain_min": 1,
-     "rain_max": 5,
-     "rain_text": "1–5 mm",
-     "chance": 55,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1 mm",
+     "chance": 35,
      "text": "Shower"
+    },
+    {
+     "date": "2026-11-03",
+     "tmax": 26,
+     "tmin": 20,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1 mm",
+     "chance": 30,
+     "text": "Partly cloudy"
     }
    ],
-   "fetched": "2026-10-27T04:01:08Z"
+   "fetched": "2026-10-27T16:00:46Z"
   },
   {
    "source": "elders",
@@ -174,23 +174,13 @@
    "url": "https://eldersweather.com.au/forecast/qld/moreton-island",
    "days": [
     {
-     "date": "2026-10-27",
-     "tmax": 25,
-     "tmin": 21,
-     "rain_min": 0,
-     "rain_max": 5,
-     "rain_text": "0 - 5 mm",
-     "chance": 19,
-     "text": "Fair"
-    },
-    {
      "date": "2026-10-28",
      "tmax": 24,
      "tmin": 21,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 31,
+     "chance": 27,
      "text": "Mostly cloudy"
     },
     {
@@ -200,8 +190,8 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 8,
-     "text": "Fair"
+     "chance": 6,
+     "text": "Mostly cloudy"
     },
     {
      "date": "2026-10-30",
@@ -220,7 +210,7 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 23,
+     "chance": 14,
      "text": "Cloudy"
     },
     {
@@ -230,8 +220,8 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 27,
-     "text": "Partly cloudy"
+     "chance": 26,
+     "text": "Mostly cloudy"
     },
     {
      "date": "2026-11-02",
@@ -240,11 +230,21 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 22,
+     "chance": 20,
      "text": "Thunderstorms"
+    },
+    {
+     "date": "2026-11-03",
+     "tmax": 24,
+     "tmin": 21,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 26,
+     "text": "Partly cloudy"
     }
    ],
-   "fetched": "2026-10-27T04:01:12Z"
+   "fetched": "2026-10-27T16:00:51Z"
   },
   {
    "source": "weatherzone",
@@ -252,94 +252,84 @@
    "url": "https://www.weatherzone.com/au/qld/southeast-coast/tangalooma",
    "days": [
     {
-     "date": "2026-10-27",
-     "tmax": 25,
-     "tmin": 20.3,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1mm",
-     "chance": 30,
-     "text": "Mostly sunny"
-    },
-    {
      "date": "2026-10-28",
-     "tmax": 25.2,
-     "tmin": 20.3,
+     "tmax": 25.5,
+     "tmin": 20.1,
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1-5mm",
-     "chance": 80,
+     "chance": 60,
      "text": "Late shower"
     },
     {
      "date": "2026-10-29",
-     "tmax": 24.4,
-     "tmin": 19.9,
+     "tmax": 24.5,
+     "tmin": 20.1,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
-     "chance": 30,
+     "chance": 10,
      "text": "Mostly sunny"
     },
     {
      "date": "2026-10-30",
      "tmax": 24,
-     "tmin": 19.2,
+     "tmin": 19.4,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
-     "chance": 40,
+     "chance": 20,
      "text": "Mostly sunny"
     },
     {
      "date": "2026-10-31",
-     "tmax": 23.9,
+     "tmax": 24.2,
      "tmin": 19.4,
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1-5mm",
-     "chance": 60,
+     "chance": 50,
      "text": "Possible shower"
     },
     {
      "date": "2026-11-01",
-     "tmax": 25.1,
-     "tmin": 19.6,
+     "tmax": 25.2,
+     "tmin": 20,
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1-5mm",
-     "chance": 90,
+     "chance": 60,
      "text": "Possible thunderstorm"
     },
     {
      "date": "2026-11-02",
-     "tmax": 25.5,
-     "tmin": 20.2,
+     "tmax": 25.2,
+     "tmin": 20.3,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
-     "chance": 40,
+     "chance": 50,
+     "text": "Clearing shower"
+    },
+    {
+     "date": "2026-11-03",
+     "tmax": 25,
+     "tmin": 20,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1mm",
+     "chance": 50,
      "text": "Late shower"
     }
    ],
    "point": "Cape Moreton",
-   "fetched": "2026-10-27T04:01:24Z"
+   "fetched": "2026-10-27T16:01:02Z"
   },
   {
    "source": "wunderground",
    "name": "Weather Underground",
    "url": "https://www.wunderground.com/forecast/au/moreton-island/-27.122,153.408",
    "days": [
-    {
-     "date": "2026-10-27",
-     "tmax": 25,
-     "tmin": 20.6,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": "Partly Cloudy"
-    },
     {
      "date": "2026-10-28",
      "tmax": 23.3,
@@ -352,17 +342,17 @@
     },
     {
      "date": "2026-10-29",
-     "tmax": 22.8,
-     "tmin": 19.4,
+     "tmax": 22.2,
+     "tmin": 18.9,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Mostly Sunny"
+     "text": "Partly Cloudy"
     },
     {
      "date": "2026-10-30",
-     "tmax": 22.2,
+     "tmax": 21.7,
      "tmin": 19.4,
      "rain_min": 0,
      "rain_max": 0,
@@ -378,21 +368,21 @@
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "AM Clouds/PM Sun"
+     "text": "Partly Cloudy"
     },
     {
      "date": "2026-11-01",
      "tmax": 23.3,
      "tmin": 20,
-     "rain_min": 0.8,
-     "rain_max": 0.8,
-     "rain_text": "0.8 mm",
+     "rain_min": 2,
+     "rain_max": 2,
+     "rain_text": "2 mm",
      "chance": null,
-     "text": "Partly Cloudy/Wind"
+     "text": "PM Showers"
     },
     {
      "date": "2026-11-02",
-     "tmax": 23.3,
+     "tmax": 22.8,
      "tmin": 20,
      "rain_min": 0,
      "rain_max": 0,
@@ -402,37 +392,47 @@
     },
     {
      "date": "2026-11-03",
-     "tmax": 23.3,
-     "tmin": 21.1,
-     "rain_min": 3.8,
-     "rain_max": 3.8,
-     "rain_text": "3.8 mm",
+     "tmax": 22.8,
+     "tmin": 20.6,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
      "chance": null,
-     "text": "PM Showers"
+     "text": "Partly Cloudy"
     },
     {
      "date": "2026-11-04",
      "tmax": 23.9,
      "tmin": 20.6,
-     "rain_min": 0.5,
-     "rain_max": 0.5,
-     "rain_text": "0.5 mm",
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
      "chance": null,
-     "text": "AM Showers"
+     "text": "Partly Cloudy"
     },
     {
      "date": "2026-11-05",
      "tmax": 23.9,
-     "tmin": 19.4,
+     "tmin": 20,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": "Mostly Sunny"
+    },
+    {
+     "date": "2026-11-06",
+     "tmax": 22.8,
+     "tmin": 19.4,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Partly Cloudy"
     }
    ],
    "point": "Woorim",
-   "fetched": "2026-10-27T04:01:31Z"
+   "fetched": "2026-10-27T16:01:03Z"
   },
   {
    "source": "windy",
@@ -440,103 +440,288 @@
    "url": "https://www.windy.com/-27.122/153.408",
    "days": [
     {
-     "date": "2026-10-27",
-     "tmax": 25.1,
-     "tmin": 21,
-     "rain_min": 1.4,
-     "rain_max": 1.4,
-     "rain_text": "1.4 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 25,
-     "gust_max": 31,
-     "wind_dir": "S"
-    },
-    {
      "date": "2026-10-28",
-     "tmax": 23.2,
-     "tmin": 21,
-     "rain_min": 10.1,
-     "rain_max": 10.1,
-     "rain_text": "10.1 mm",
+     "tmax": 24.4,
+     "tmin": 20.7,
+     "rain_min": 3.7,
+     "rain_max": 3.7,
+     "rain_text": "3.7 mm",
      "chance": null,
      "text": null,
-     "wind_max": 17,
+     "wind_max": 18,
      "gust_max": 26,
-     "wind_dir": "WSW"
+     "wind_dir": "SW"
     },
     {
      "date": "2026-10-29",
+     "tmax": 23.1,
+     "tmin": 20.1,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": null,
+     "wind_max": 26,
+     "gust_max": 29,
+     "wind_dir": "SE"
+    },
+    {
+     "date": "2026-10-30",
      "tmax": 22.7,
-     "tmin": 19.9,
+     "tmin": 19.8,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": null,
+     "wind_max": 24,
+     "gust_max": 27,
+     "wind_dir": "ENE"
+    },
+    {
+     "date": "2026-10-31",
+     "tmax": 22.3,
+     "tmin": 19.7,
+     "rain_min": 0.7,
+     "rain_max": 0.7,
+     "rain_text": "0.7 mm",
+     "chance": null,
+     "text": null,
+     "wind_max": 26,
+     "gust_max": 38,
+     "wind_dir": "N"
+    },
+    {
+     "date": "2026-11-01",
+     "tmax": 24.2,
+     "tmin": 19.8,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
      "wind_max": 27,
-     "gust_max": 30,
-     "wind_dir": "SSE"
-    },
-    {
-     "date": "2026-10-30",
-     "tmax": 22.2,
-     "tmin": 19.7,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 22,
-     "gust_max": 28,
-     "wind_dir": "E"
-    },
-    {
-     "date": "2026-10-31",
-     "tmax": 21.4,
-     "tmin": 20.1,
-     "rain_min": 0.2,
-     "rain_max": 0.2,
-     "rain_text": "0.2 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 26,
-     "gust_max": 35,
-     "wind_dir": "NNE"
-    },
-    {
-     "date": "2026-11-01",
-     "tmax": 23.5,
-     "tmin": 20.6,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 26,
-     "gust_max": 35,
+     "gust_max": 38,
      "wind_dir": "N"
     }
    ],
    "point": "mblue model",
-   "fetched": "2026-10-27T04:01:38Z"
+   "fetched": "2026-10-27T16:01:09Z"
   }
  ],
  "observations": {
   "source": "bom_obs",
   "station": "Cape Moreton",
   "distance_km": 11.6,
-  "time": "2026-10-27T13:50:00+10:00",
-  "temp": 24.4,
-  "feels_like": 23.5,
-  "humidity": 80,
-  "wind_dir": "ESE",
-  "wind_kmh": 26,
-  "gust_kmh": 32,
-  "rain_since_9am": 0,
-  "fetched": "2026-10-27T04:01:04Z"
+  "time": "2026-10-28T01:50:00+10:00",
+  "temp": 20.5,
+  "feels_like": 21.8,
+  "humidity": 93,
+  "wind_dir": "WSW",
+  "wind_kmh": 11,
+  "gust_kmh": 13,
+  "rain_since_9am": 0.2,
+  "fetched": "2026-10-27T16:00:39Z"
  },
- "errors": {
-  "marine": "ValueError: no tide or swell forecast on WillyWeather for this place"
- }
+ "marine": {
+  "source": "willyweather",
+  "url": "https://tides.willyweather.com.au/qld/brisbane/moreton-island.html",
+  "tides": {
+   "2026-10-28": [
+    {
+     "type": "low",
+     "time": "3:05 am",
+     "height_m": 0.25
+    },
+    {
+     "type": "high",
+     "time": "9:32 am",
+     "height_m": 2.53
+    },
+    {
+     "type": "low",
+     "time": "4:07 pm",
+     "height_m": 0.51
+    },
+    {
+     "type": "high",
+     "time": "9:34 pm",
+     "height_m": 1.87
+    }
+   ],
+   "2026-10-29": [
+    {
+     "type": "low",
+     "time": "3:42 am",
+     "height_m": 0.3
+    },
+    {
+     "type": "high",
+     "time": "10:19 am",
+     "height_m": 2.52
+    },
+    {
+     "type": "low",
+     "time": "5:01 pm",
+     "height_m": 0.57
+    },
+    {
+     "type": "high",
+     "time": "10:25 pm",
+     "height_m": 1.74
+    }
+   ],
+   "2026-10-30": [
+    {
+     "type": "low",
+     "time": "4:25 am",
+     "height_m": 0.39
+    },
+    {
+     "type": "high",
+     "time": "11:11 am",
+     "height_m": 2.46
+    },
+    {
+     "type": "low",
+     "time": "6:01 pm",
+     "height_m": 0.64
+    },
+    {
+     "type": "high",
+     "time": "11:23 pm",
+     "height_m": 1.62
+    }
+   ],
+   "2026-10-31": [
+    {
+     "type": "low",
+     "time": "5:14 am",
+     "height_m": 0.51
+    },
+    {
+     "type": "high",
+     "time": "12:08 pm",
+     "height_m": 2.38
+    },
+    {
+     "type": "low",
+     "time": "7:11 pm",
+     "height_m": 0.69
+    }
+   ],
+   "2026-11-01": [
+    {
+     "type": "high",
+     "time": "12:34 am",
+     "height_m": 1.55
+    },
+    {
+     "type": "low",
+     "time": "6:18 am",
+     "height_m": 0.62
+    },
+    {
+     "type": "high",
+     "time": "1:12 pm",
+     "height_m": 2.3
+    },
+    {
+     "type": "low",
+     "time": "8:21 pm",
+     "height_m": 0.68
+    }
+   ],
+   "2026-11-02": [
+    {
+     "type": "high",
+     "time": "1:58 am",
+     "height_m": 1.56
+    },
+    {
+     "type": "low",
+     "time": "7:38 am",
+     "height_m": 0.69
+    },
+    {
+     "type": "high",
+     "time": "2:20 pm",
+     "height_m": 2.25
+    },
+    {
+     "type": "low",
+     "time": "9:26 pm",
+     "height_m": 0.62
+    }
+   ],
+   "2026-11-03": [
+    {
+     "type": "high",
+     "time": "3:17 am",
+     "height_m": 1.68
+    },
+    {
+     "type": "low",
+     "time": "9:00 am",
+     "height_m": 0.69
+    },
+    {
+     "type": "high",
+     "time": "3:27 pm",
+     "height_m": 2.23
+    },
+    {
+     "type": "low",
+     "time": "10:24 pm",
+     "height_m": 0.54
+    }
+   ]
+  },
+  "swell": {
+   "2026-10-28": {
+    "max_m": 0.9,
+    "dir": "E",
+    "period_s": 7
+   },
+   "2026-10-29": {
+    "max_m": 1.1,
+    "dir": "ESE",
+    "period_s": 8
+   },
+   "2026-10-30": {
+    "max_m": 1.2,
+    "dir": "SE",
+    "period_s": 5
+   },
+   "2026-10-31": {
+    "max_m": 1,
+    "dir": "SSE",
+    "period_s": 10
+   },
+   "2026-11-01": {
+    "max_m": 1,
+    "dir": "NNE",
+    "period_s": 4
+   },
+   "2026-11-02": {
+    "max_m": 1.3,
+    "dir": "NNE",
+    "period_s": 5
+   },
+   "2026-11-03": {
+    "max_m": 1,
+    "dir": "ESE",
+    "period_s": 5
+   },
+   "2026-11-04": {
+    "max_m": 0.9,
+    "dir": "E",
+    "period_s": 7
+   }
+  },
+  "tides_place": "Warrajamba Beach",
+  "swell_place": "Warrajamba Beach",
+  "fetched": "2026-10-27T16:00:43Z"
+ },
+ "errors": {}
 }
