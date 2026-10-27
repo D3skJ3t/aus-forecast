@@ -1,6 +1,6 @@
 {
  "id": "hervey-bay",
- "generated": "2026-10-27T04:04:05Z",
+ "generated": "2026-10-27T20:39:32Z",
  "sources": [
   {
    "source": "bom",
@@ -8,24 +8,14 @@
    "url": "https://www.bom.gov.au/",
    "days": [
     {
-     "date": "2026-10-27",
-     "tmax": 29,
-     "tmin": 20,
-     "rain_min": 4,
-     "rain_max": 15,
-     "rain_text": "4-15 mm",
-     "chance": 80,
-     "text": "Showers. Possible storm."
-    },
-    {
      "date": "2026-10-28",
      "tmax": 28,
      "tmin": 20,
      "rain_min": 15,
-     "rain_max": 30,
-     "rain_text": "15-30 mm",
+     "rain_max": 35,
+     "rain_text": "15-35 mm",
      "chance": 95,
-     "text": "Showers. Storm developing."
+     "text": "Showers. Storm."
     },
     {
      "date": "2026-10-29",
@@ -44,17 +34,17 @@
      "rain_min": 0,
      "rain_max": null,
      "rain_text": "0 mm",
-     "chance": 20,
+     "chance": 10,
      "text": "Partly cloudy."
     },
     {
      "date": "2026-10-31",
-     "tmax": 25,
+     "tmax": 26,
      "tmin": 18,
-     "rain_min": 1,
-     "rain_max": 5,
-     "rain_text": "1-5 mm",
-     "chance": 60,
+     "rain_min": 0,
+     "rain_max": 3,
+     "rain_text": "0-3 mm",
+     "chance": 50,
      "text": "Shower or two."
     },
     {
@@ -62,14 +52,14 @@
      "tmax": 27,
      "tmin": 19,
      "rain_min": 0,
-     "rain_max": 2,
-     "rain_text": "0-2 mm",
+     "rain_max": 4,
+     "rain_text": "0-4 mm",
      "chance": 50,
      "text": "Shower or two."
     },
     {
      "date": "2026-11-02",
-     "tmax": 28,
+     "tmax": 29,
      "tmin": 20,
      "rain_min": 0,
      "rain_max": 5,
@@ -79,8 +69,18 @@
     },
     {
      "date": "2026-11-03",
-     "tmax": null,
+     "tmax": 28,
      "tmin": 20,
+     "rain_min": 0,
+     "rain_max": 2,
+     "rain_text": "0-2 mm",
+     "chance": 40,
+     "text": "Possible shower."
+    },
+    {
+     "date": "2026-11-04",
+     "tmax": null,
+     "tmin": 21,
      "rain_min": null,
      "rain_max": null,
      "rain_text": null,
@@ -88,7 +88,7 @@
      "text": null
     }
    ],
-   "fetched": "2026-10-27T04:03:42Z"
+   "fetched": "2026-10-27T20:39:07Z"
   },
   {
    "source": "willyweather",
@@ -96,24 +96,14 @@
    "url": "https://www.willyweather.com.au/qld/wide-bay/hervey-bay.html",
    "days": [
     {
-     "date": "2026-10-27",
-     "tmax": 29,
-     "tmin": 20,
-     "rain_min": 5,
-     "rain_max": 15,
-     "rain_text": "5–15 mm",
-     "chance": 75,
-     "text": "Showers. Possible storm"
-    },
-    {
      "date": "2026-10-28",
      "tmax": 28,
      "tmin": 20,
      "rain_min": 15,
-     "rain_max": 30,
-     "rain_text": "15–30 mm",
+     "rain_max": 35,
+     "rain_text": "15–35 mm",
      "chance": 95,
-     "text": "Showers. Storm developing"
+     "text": "Showers. Storm"
     },
     {
      "date": "2026-10-29",
@@ -132,41 +122,51 @@
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
-     "chance": 20,
+     "chance": 10,
      "text": "Partly cloudy"
     },
     {
      "date": "2026-10-31",
-     "tmax": 25,
+     "tmax": 26,
      "tmin": 18,
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1–5 mm",
-     "chance": 60,
+     "chance": 50,
      "text": "Shower or two"
     },
     {
      "date": "2026-11-01",
      "tmax": 27,
      "tmin": 19,
-     "rain_min": 0,
-     "rain_max": 2,
-     "rain_text": "< 2 mm",
-     "chance": 45,
-     "text": "Shower or two"
-    },
-    {
-     "date": "2026-11-02",
-     "tmax": 28,
-     "tmin": 20,
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1–5 mm",
      "chance": 50,
      "text": "Shower or two"
+    },
+    {
+     "date": "2026-11-02",
+     "tmax": 29,
+     "tmin": 20,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1–5 mm",
+     "chance": 55,
+     "text": "Shower or two"
+    },
+    {
+     "date": "2026-11-03",
+     "tmax": 28,
+     "tmin": 20,
+     "rain_min": 0,
+     "rain_max": 2,
+     "rain_text": "< 2 mm",
+     "chance": 40,
+     "text": "Possible shower"
     }
    ],
-   "fetched": "2026-10-27T04:03:44Z"
+   "fetched": "2026-10-27T20:39:09Z"
   },
   {
    "source": "elders",
@@ -174,34 +174,24 @@
    "url": "https://eldersweather.com.au/forecast/qld/pialba",
    "days": [
     {
-     "date": "2026-10-27",
-     "tmax": 27,
-     "tmin": 22,
-     "rain_min": 5,
-     "rain_max": 10,
-     "rain_text": "5 - 10 mm",
-     "chance": 50,
-     "text": "Mostly cloudy"
-    },
-    {
      "date": "2026-10-28",
      "tmax": 26,
-     "tmin": 22,
+     "tmin": 21,
      "rain_min": 20,
      "rain_max": 25,
      "rain_text": "20 - 25 mm",
-     "chance": 48,
-     "text": "Cloudy"
+     "chance": 53,
+     "text": "Thunderstorms"
     },
     {
      "date": "2026-10-29",
      "tmax": 26,
-     "tmin": 20,
+     "tmin": 19,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 18,
-     "text": "Mostly cloudy"
+     "chance": 6,
+     "text": "Rain showers"
     },
     {
      "date": "2026-10-30",
@@ -210,7 +200,7 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 3,
+     "chance": 0,
      "text": "Fair"
     },
     {
@@ -220,32 +210,42 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 36,
-     "text": "Cloudy"
+     "chance": 18,
+     "text": "Mostly cloudy"
     },
     {
      "date": "2026-11-01",
      "tmax": 26,
      "tmin": 20,
-     "rain_min": 5,
-     "rain_max": 10,
-     "rain_text": "5 - 10 mm",
-     "chance": 36,
-     "text": "Partly cloudy"
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 17,
+     "text": "Fair"
     },
     {
      "date": "2026-11-02",
      "tmax": 27,
      "tmin": 21,
-     "rain_min": 5,
-     "rain_max": 10,
-     "rain_text": "5 - 10 mm",
-     "chance": 45,
-     "text": "Thunderstorms"
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 29,
+     "text": "Partly cloudy"
+    },
+    {
+     "date": "2026-11-03",
+     "tmax": 26,
+     "tmin": 21,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 23,
+     "text": "Partly cloudy"
     }
    ],
    "point": "Pialba",
-   "fetched": "2026-10-27T04:03:46Z"
+   "fetched": "2026-10-27T20:39:14Z"
   },
   {
    "source": "weatherzone",
@@ -253,39 +253,19 @@
    "url": "https://www.weatherzone.com/au/qld/wide-bay-and-burnett/hervey-bay",
    "days": [
     {
-     "date": "2026-10-27",
-     "tmax": 28.4,
-     "tmin": 21.3,
-     "rain_min": 1,
-     "rain_max": 5,
-     "rain_text": "1-5mm",
-     "chance": 40,
-     "text": "Possible shower"
-    },
-    {
      "date": "2026-10-28",
      "tmax": 27.4,
-     "tmin": 21.5,
-     "rain_min": 10,
-     "rain_max": 20,
-     "rain_text": "10-20mm",
-     "chance": 80,
+     "tmin": 21.6,
+     "rain_min": 5,
+     "rain_max": 10,
+     "rain_text": "5-10mm",
+     "chance": 90,
      "text": "Possible thunderstorm"
     },
     {
      "date": "2026-10-29",
-     "tmax": 27,
-     "tmin": 19.5,
-     "rain_min": 1,
-     "rain_max": 5,
-     "rain_text": "1-5mm",
-     "chance": 40,
-     "text": "Possible shower"
-    },
-    {
-     "date": "2026-10-30",
-     "tmax": 26,
-     "tmin": 19.5,
+     "tmax": 27.3,
+     "tmin": 20.2,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
@@ -293,37 +273,57 @@
      "text": "Mostly sunny"
     },
     {
+     "date": "2026-10-30",
+     "tmax": 26.1,
+     "tmin": 19.6,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1mm",
+     "chance": 10,
+     "text": "Mostly sunny"
+    },
+    {
      "date": "2026-10-31",
-     "tmax": 24.9,
-     "tmin": 19.5,
+     "tmax": 25.5,
+     "tmin": 19.4,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1mm",
+     "chance": 40,
+     "text": "Late shower"
+    },
+    {
+     "date": "2026-11-01",
+     "tmax": 26.9,
+     "tmin": 20.6,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5mm",
+     "chance": 40,
+     "text": "Clearing shower"
+    },
+    {
+     "date": "2026-11-02",
+     "tmax": 28.4,
+     "tmin": 21.1,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5mm",
+     "chance": 80,
+     "text": "Showers"
+    },
+    {
+     "date": "2026-11-03",
+     "tmax": 27.8,
+     "tmin": 20.2,
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1-5mm",
      "chance": 50,
      "text": "Possible shower"
-    },
-    {
-     "date": "2026-11-01",
-     "tmax": 26.8,
-     "tmin": 20.2,
-     "rain_min": 20,
-     "rain_max": 40,
-     "rain_text": "20-40mm",
-     "chance": 90,
-     "text": "Possible thunderstorm"
-    },
-    {
-     "date": "2026-11-02",
-     "tmax": 28.3,
-     "tmin": 21.1,
-     "rain_min": 1,
-     "rain_max": 5,
-     "rain_text": "1-5mm",
-     "chance": 70,
-     "text": "Possible thunderstorm"
     }
    ],
-   "fetched": "2026-10-27T04:03:58Z"
+   "fetched": "2026-10-27T20:39:25Z"
   },
   {
    "source": "wunderground",
@@ -331,22 +331,12 @@
    "url": "https://www.wunderground.com/forecast/au/hervey-bay/-25.288,152.869",
    "days": [
     {
-     "date": "2026-10-27",
-     "tmax": 29.4,
-     "tmin": 21.7,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": "Partly Cloudy"
-    },
-    {
      "date": "2026-10-28",
-     "tmax": 26.1,
-     "tmin": 19.4,
-     "rain_min": 26.9,
-     "rain_max": 26.9,
-     "rain_text": "26.9 mm",
+     "tmax": 26.7,
+     "tmin": 18.9,
+     "rain_min": 23.4,
+     "rain_max": 23.4,
+     "rain_text": "23.4 mm",
      "chance": null,
      "text": "Thunderstorms"
     },
@@ -362,8 +352,8 @@
     },
     {
      "date": "2026-10-30",
-     "tmax": 24.4,
-     "tmin": 19.4,
+     "tmax": 25,
+     "tmin": 20,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -372,28 +362,28 @@
     },
     {
      "date": "2026-10-31",
-     "tmax": 23.3,
+     "tmax": 24.4,
      "tmin": 21.1,
-     "rain_min": 0.5,
-     "rain_max": 0.5,
-     "rain_text": "0.5 mm",
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
      "chance": null,
-     "text": "AM Showers"
+     "text": "Partly Cloudy"
     },
     {
      "date": "2026-11-01",
      "tmax": 25.6,
-     "tmin": 21.7,
-     "rain_min": 1.8,
-     "rain_max": 1.8,
-     "rain_text": "1.8 mm",
+     "tmin": 21.1,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
      "chance": null,
      "text": "Partly Cloudy"
     },
     {
      "date": "2026-11-02",
-     "tmax": 27.2,
-     "tmin": 21.7,
+     "tmax": 26.7,
+     "tmin": 21.1,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -404,19 +394,19 @@
      "date": "2026-11-03",
      "tmax": 26.1,
      "tmin": 22.2,
-     "rain_min": 0.5,
-     "rain_max": 0.5,
-     "rain_text": "0.5 mm",
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
      "chance": null,
      "text": "Partly Cloudy"
     },
     {
      "date": "2026-11-04",
      "tmax": 26.7,
-     "tmin": 22.2,
-     "rain_min": 2.5,
-     "rain_max": 2.5,
-     "rain_text": "2.5 mm",
+     "tmin": 22.8,
+     "rain_min": 3.6,
+     "rain_max": 3.6,
+     "rain_text": "3.6 mm",
      "chance": null,
      "text": "PM Showers"
     },
@@ -424,15 +414,25 @@
      "date": "2026-11-05",
      "tmax": 27.2,
      "tmin": 21.1,
-     "rain_min": 0.5,
-     "rain_max": 0.5,
-     "rain_text": "0.5 mm",
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
      "chance": null,
-     "text": "AM Showers"
+     "text": "Partly Cloudy"
+    },
+    {
+     "date": "2026-11-06",
+     "tmax": 26.7,
+     "tmin": 21.1,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Mostly Sunny"
     }
    ],
    "point": "Torquay",
-   "fetched": "2026-10-27T04:03:58Z"
+   "fetched": "2026-10-27T20:39:26Z"
   },
   {
    "source": "windy",
@@ -440,128 +440,93 @@
    "url": "https://www.windy.com/-25.288/152.869",
    "days": [
     {
-     "date": "2026-10-27",
-     "tmax": 29.5,
-     "tmin": 22.5,
-     "rain_min": 2.9,
-     "rain_max": 2.9,
-     "rain_text": "2.9 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 15,
-     "gust_max": 29,
-     "wind_dir": "W"
-    },
-    {
      "date": "2026-10-28",
-     "tmax": 25.4,
-     "tmin": 22.2,
+     "tmax": 27.5,
+     "tmin": 22.3,
      "rain_min": 14.1,
      "rain_max": 14.1,
      "rain_text": "14.1 mm",
      "chance": null,
      "text": null,
-     "wind_max": 12,
-     "gust_max": 22,
+     "wind_max": 11,
+     "gust_max": 18,
      "wind_dir": "NNW"
     },
     {
      "date": "2026-10-29",
-     "tmax": 25.4,
-     "tmin": 20.8,
-     "rain_min": 1.7,
-     "rain_max": 1.7,
-     "rain_text": "1.7 mm",
+     "tmax": 25.6,
+     "tmin": 20.3,
+     "rain_min": 0.4,
+     "rain_max": 0.4,
+     "rain_text": "0.4 mm",
      "chance": null,
      "text": null,
      "wind_max": 21,
-     "gust_max": 28,
-     "wind_dir": "SE"
+     "gust_max": 29,
+     "wind_dir": "ESE"
     },
     {
      "date": "2026-10-30",
-     "tmax": 24.5,
-     "tmin": 19.7,
+     "tmax": 25,
+     "tmin": 19.9,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
      "wind_max": 17,
-     "gust_max": 27,
+     "gust_max": 25,
      "wind_dir": "ESE"
     },
     {
      "date": "2026-10-31",
-     "tmax": 23.1,
-     "tmin": 19.7,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
+     "tmax": 24.3,
+     "tmin": 19.9,
+     "rain_min": 0.2,
+     "rain_max": 0.2,
+     "rain_text": "0.2 mm",
      "chance": null,
      "text": null,
-     "wind_max": 12,
-     "gust_max": 20,
+     "wind_max": 13,
+     "gust_max": 17,
      "wind_dir": "NE"
     },
     {
      "date": "2026-11-01",
-     "tmax": 25.3,
-     "tmin": 19.6,
+     "tmax": 25.8,
+     "tmin": 20.2,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
-     "wind_max": 14,
-     "gust_max": 20,
+     "wind_max": 16,
+     "gust_max": 22,
      "wind_dir": "NNW"
     }
    ],
    "point": "mblue model",
-   "fetched": "2026-10-27T04:04:05Z"
+   "fetched": "2026-10-27T20:39:32Z"
   }
  ],
  "observations": {
   "source": "bom_obs",
   "station": "Hervey Bay",
   "distance_km": 4,
-  "time": "2026-10-27T13:50:00+10:00",
-  "temp": 29.5,
-  "feels_like": 28.6,
-  "humidity": 51,
-  "wind_dir": "NNE",
-  "wind_kmh": 20,
-  "gust_kmh": 26,
-  "rain_since_9am": 0,
-  "fetched": "2026-10-27T04:03:40Z"
+  "time": "2026-10-28T06:30:00+10:00",
+  "temp": 24.1,
+  "feels_like": 26.2,
+  "humidity": 91,
+  "wind_dir": "NNW",
+  "wind_kmh": 15,
+  "gust_kmh": 24,
+  "rain_since_9am": 7.8,
+  "fetched": "2026-10-27T20:39:03Z"
  },
  "marine": {
   "source": "willyweather",
   "url": "https://tides.willyweather.com.au/qld/wide-bay/hervey-bay.html",
   "tides": {
-   "2026-10-27": [
-    {
-     "type": "low",
-     "time": "2:53 am",
-     "height_m": 0.45
-    },
-    {
-     "type": "high",
-     "time": "9:09 am",
-     "height_m": 3.92
-    },
-    {
-     "type": "low",
-     "time": "3:29 pm",
-     "height_m": 0.76
-    },
-    {
-     "type": "high",
-     "time": "9:11 pm",
-     "height_m": 3.34
-    }
-   ],
    "2026-10-28": [
     {
      "type": "low",
@@ -688,10 +653,74 @@
      "time": "9:49 pm",
      "height_m": 1.18
     }
+   ],
+   "2026-11-03": [
+    {
+     "type": "high",
+     "time": "3:57 am",
+     "height_m": 2.75
+    },
+    {
+     "type": "low",
+     "time": "9:58 am",
+     "height_m": 1.23
+    },
+    {
+     "type": "high",
+     "time": "4:11 pm",
+     "height_m": 3.44
+    },
+    {
+     "type": "low",
+     "time": "10:50 pm",
+     "height_m": 1.04
+    }
    ]
   },
-  "swell": {},
-  "fetched": "2026-10-27T04:03:42Z"
+  "swell": {
+   "2026-10-28": {
+    "max_m": 1,
+    "dir": "ESE",
+    "period_s": 7
+   },
+   "2026-10-29": {
+    "max_m": 1.2,
+    "dir": "SSE",
+    "period_s": 5
+   },
+   "2026-10-30": {
+    "max_m": 1.7,
+    "dir": "SE",
+    "period_s": 6
+   },
+   "2026-10-31": {
+    "max_m": 1.3,
+    "dir": "ESE",
+    "period_s": 6
+   },
+   "2026-11-01": {
+    "max_m": 1.1,
+    "dir": "SSE",
+    "period_s": 9
+   },
+   "2026-11-02": {
+    "max_m": 1.3,
+    "dir": "SSE",
+    "period_s": 5
+   },
+   "2026-11-03": {
+    "max_m": 1.4,
+    "dir": "SSE",
+    "period_s": 6
+   },
+   "2026-11-04": {
+    "max_m": 1,
+    "dir": "ESE",
+    "period_s": 6
+   }
+  },
+  "swell_place": "Happy Valley",
+  "fetched": "2026-10-27T20:39:06Z"
  },
  "errors": {}
 }
