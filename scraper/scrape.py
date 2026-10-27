@@ -9,6 +9,7 @@ or more), oldest first, at most PER_RUN of them. With a run every 30 minutes, ev
 about every 3 hours without all the sites being hit at once. --all updates every location.
 """
 import argparse, json, os, re, sys, time, traceback
+from html import unescape
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 import requests
@@ -354,13 +355,31 @@ def ww_graph(html, key):
     return [p for g in series.get("groups") or [] for p in g.get("points") or []]
 
 
+def ww_page(kind, path):
+    """A WillyWeather tides or swell page for path. Where the place has no such data, WillyWeather lists
+    nearby spots that do; follow the nearest one. Returns (html, place name or None if it's the place itself)."""
+    url = f"https://{kind}.willyweather.com.au/{path}.html"
+    html = get(url).text
+    if "does not have" not in html[:60000]:
+        return html, None
+    soup = BeautifulSoup(html, "html.parser")
+    near = soup.select_one("section.search-results a[href$='.html']")
+    if not near:
+        return html, None
+    html = get(f"https://{kind}.willyweather.com.au{near['href']}" if near["href"].startswith("/") else near["href"]).text
+    # The page title names the spot, e.g. "Coolangatta Beach Tide Times, QLD - WillyWeather"
+    m = re.search(r"<title>\s*(.+?)\s+(?:Tide Times|Swell Forecast)", html)
+    return html, clean(unescape(m.group(1))) if m else None
+
+
 def scrape_marine(loc):
     if loc.get("water") != "coast":
         return None  # lakes and inland places: wind comes from the Bureau and Windy, no tides or swell
     tz = ZoneInfo(loc["tz"])
     path = loc["willyweather"]
     tides = {}
-    soup = BeautifulSoup(get(f"https://tides.willyweather.com.au/{path}.html").text, "html.parser")
+    tide_html, tide_place = ww_page("tides", path)
+    soup = BeautifulSoup(tide_html, "html.parser")
     for li in soup.select("section.forecast li.day"):
         t = li.find("time")
         if not t:
@@ -369,7 +388,7 @@ def scrape_marine(loc):
                                  "time": clean(p.find("h3").get_text()), "height_m": num(clean(p.find("span").get_text()).replace(" m", ""))}
                                 for p in li.select("li.point-high, li.point-low") if p.find("h3") and p.find("span")]
     swell = {}
-    html = get(f"https://swell.willyweather.com.au/{path}.html").text
+    html, swell_place = ww_page("swell", path)
     heights, periods = ww_graph(html, "swell-height"), ww_graph(html, "swell-period")
     period_at = {p["x"]: p.get("y") for p in periods}
     for p in heights:
@@ -381,7 +400,12 @@ def scrape_marine(loc):
             swell[d] = {"max_m": p["y"], "dir": p.get("directionText"), "period_s": num(round(period_at.get(p["x"]) or 0)) or None}
     if not tides and not swell:
         raise ValueError("no tide or swell forecast on WillyWeather for this place")
-    return {"source": "willyweather", "url": f"https://tides.willyweather.com.au/{path}.html", "tides": tides, "swell": swell}
+    out = {"source": "willyweather", "url": f"https://tides.willyweather.com.au/{path}.html", "tides": tides, "swell": swell}
+    if tide_place and tides:
+        out["tides_place"] = tide_place  # e.g. Coolangatta Beach for Coolangatta
+    if swell_place and swell:
+        out["swell_place"] = swell_place
+    return out
 
 
 SCRAPERS = [scrape_bom, scrape_willyweather, scrape_elders, scrape_weatherzone, scrape_wunderground,

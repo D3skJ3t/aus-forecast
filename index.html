@@ -456,9 +456,9 @@ section{display:flex;flex-direction:column;gap:10px;min-width:0}
       :card("Windy","windy.com","--s6",`<span class="cx">No wind figures for this day.</span>`,"empty"));
     if(L.water==="coast"&&M){
       const sw=M.swell&&M.swell[k],td=M.tides&&M.tides[k];
-      out.push(sw?card("Swell","WillyWeather","--s2",`<span class="ct">${sw.max_m} <span>m ${esc(sw.dir||"")}</span></span><span class="cr">${sw.period_s?"Period "+sw.period_s+" s · ":""}highest of the day</span>`)
+      out.push(sw?card("Swell","WillyWeather"+(M.swell_place?" · "+M.swell_place:""),"--s2",`<span class="ct">${sw.max_m} <span>m ${esc(sw.dir||"")}</span></span><span class="cr">${sw.period_s?"Period "+sw.period_s+" s · ":""}highest of the day</span>`)
         :card("Swell","WillyWeather","--s2",`<span class="cx">${M.swell&&Object.keys(M.swell).length?"No swell forecast for this day.":"No swell forecast here (sheltered water)."}</span>`,"empty"));
-      out.push(td&&td.length?card("Tides","WillyWeather","--s2",`<ul class="tides">${td.map(t=>`<li><b>${t.type==="high"?"High":"Low"}</b><span>${esc(t.time)}</span><span>${isNum(t.height_m)?t.height_m+" m":""}</span></li>`).join("")}</ul>`)
+      out.push(td&&td.length?card("Tides","WillyWeather"+(M.tides_place?" · "+M.tides_place:""),"--s2",`<ul class="tides">${td.map(t=>`<li><b>${t.type==="high"?"High":"Low"}</b><span>${esc(t.time)}</span><span>${isNum(t.height_m)?t.height_m+" m":""}</span></li>`).join("")}</ul>`)
         :card("Tides","WillyWeather","--s2",`<span class="cx">No tide times for this day.</span>`,"empty"));
     }else if(L.water==="lake")out.push(card("Lake","no tides or swell","--s2",`<span class="cx">Wind is what matters here: see the wind and gusts.</span>`,"empty"));
     else if(L.kind!=="full")out.push(card("Tides and swell","featured locations","--s2",`<span class="cx">Tides and swell are shown for the featured coastal locations in the list.</span>`,"empty"));
