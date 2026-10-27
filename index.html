@@ -143,6 +143,19 @@ svg{display:block;width:100%;height:auto;max-width:100%}
 .results button:hover,.results button:focus-visible{background:var(--accent-soft);outline:none}
 .results button span{font:400 .8rem var(--mono);color:var(--muted);white-space:nowrap}
 .results .full{color:var(--accent)}
+/* Boating conditions */
+.card .rate{font:700 1.3rem var(--display)}
+.rate.calm{color:var(--good)} .rate.choppy{color:var(--warn)} .rate.rough{color:var(--bad)}
+.tides{list-style:none;margin:4px 0 0;padding:0;font:.8rem var(--mono)}
+.tides li{display:flex;justify-content:space-between;gap:8px}
+.tides b{font-weight:600}
+.warns{border:1px solid var(--warn);border-left-width:5px;border-radius:10px;padding:10px 12px;background:var(--surface);font-size:.9rem}
+.warns b{color:var(--warn)}
+.warns ul{margin:4px 0 0;padding-left:18px}
+.hours{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(58px,1fr);gap:6px;overflow-x:auto;padding-bottom:4px}
+.hours div{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:6px;text-align:center;font:.72rem/1.35 var(--mono)}
+.hours b{display:block;font:600 .9rem var(--mono)}
+.hours .t{color:var(--muted)}
 /* Your weather sites panel */
 .panel{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px}
 .card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--c,var(--line));border-radius:10px;padding:10px 12px;display:flex;flex-direction:column;gap:3px;min-width:0}
@@ -209,6 +222,14 @@ section{display:flex;flex-direction:column;gap:10px;min-width:0}
     <div class="days" id="days" role="group" aria-label="Choose a day"></div>
   </section>
 
+  <section aria-labelledby="boath">
+    <h2 id="boath">Boating conditions</h2>
+    <div class="warns" id="warns" hidden></div>
+    <div class="panel" id="boat"></div>
+    <div class="hours" id="hours"></div>
+    <p class="note">Rough guide for jet skis and small boats, from the strongest daytime wind (6am to 6pm): calm under 15 km/h, choppy 15 to 25, rough above 25. Gusts, swell and local conditions matter too; check the Bureau of Meteorology's marine warnings before heading out.</p>
+  </section>
+
   <section aria-labelledby="panelh">
     <h2 id="panelh">Your weather sites</h2>
     <div class="panel" id="panel"></div>
@@ -268,14 +289,17 @@ section{display:flex;flex-direction:column;gap:10px;min-width:0}
   function localDate(iso){const t=new Date(iso);if(isNaN(t))return null;
     return new Intl.DateTimeFormat("en-CA",{timeZone:state.loc.tz,year:"numeric",month:"2-digit",day:"2-digit"}).format(t);}
   async function loadBom(){
-    const out={daily:{},obs:null,ok:false},api="https://api.weather.bom.gov.au/v1/locations/"+state.loc.bom;
+    const out={daily:{},obs:null,ok:false,hourly:[],warnings:null},api="https://api.weather.bom.gov.au/v1/locations/"+state.loc.bom;
     const get=u=>fetch(u).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();});
-    const [f,o]=await Promise.allSettled([get(api+"/forecasts/daily"),get(api+"/observations")]);
+    const [f,o,h,w]=await Promise.allSettled([get(api+"/forecasts/daily"),get(api+"/observations"),get(api+"/forecasts/hourly"),get(api+"/warnings")]);
     if(f.status==="fulfilled"&&Array.isArray(f.value?.data)){
       f.value.data.forEach(d=>{const k=localDate(d.date);if(!k)return;const a=d.rain?.amount||{};
         out.daily[k]={tmax:d.temp_max,tmin:d.temp_min,rmin:a.min,rmax:a.max,chance:d.rain?.chance,text:(d.short_text||"").replace(/\.$/,"")};});
       out.ok=true;}
     if(o.status==="fulfilled"&&o.value?.data){out.obs=o.value.data;}
+    // Hourly wind and gusts for about the next 3 days, and any Bureau warnings for the area (boating section)
+    if(h.status==="fulfilled"&&Array.isArray(h.value?.data))out.hourly=h.value.data.map(x=>({time:x.time,wind:x.wind?.speed_kilometre,kn:x.wind?.speed_knot,gust:x.wind?.gust_speed_kilometre,dir:x.wind?.direction}));
+    if(w.status==="fulfilled"&&Array.isArray(w.value?.data))out.warnings=w.value.data.map(x=>({title:x.title||x.short_title||"Warning",type:x.type||"",issued:x.issue_time||null}));
     return out;
   }
   // Scraped forecast sites: published by this repo's own scraper, each location about every 3 hours
@@ -400,7 +424,48 @@ section{display:flex;flex-direction:column;gap:10px;min-width:0}
       <td>${r.rainText}</td><td>${isNum(r.chance)?f0(r.chance)+"%":dash}</td></tr>`;});
     $("tbody").innerHTML=rows.length?html+`<tr class="median"><td>Median</td><td>${f1(med.tmax)}</td><td>${f1(med.tmin)}</td><td>${f1(med.rain)}</td><td>${isNum(med.chance)?f0(med.chance)+"%":"–"}</td></tr>`
       :`<tr><td colspan="5">No forecasts for this day yet.</td></tr>`;
-    renderPanel(k,state.sel);
+    renderPanel(k,state.sel);renderBoat(k);
+  }
+
+  // Boating: Bureau hourly wind and gusts (any place), Windy's daily maximum and WillyWeather tides and
+  // swell (featured locations), and Bureau warnings for the area
+  function renderBoat(k){
+    const D=state.data,L=state.loc,M=D.scraped&&D.scraped.marine,tzHour=t=>+new Intl.DateTimeFormat("en-AU",{timeZone:L.tz,hour:"numeric",hourCycle:"h23"}).format(new Date(t));
+    const sel=state.sel,dt=new Date(k+"T12:00:00");
+    $("boath").textContent="Boating conditions · "+(sel===0?"Today":sel===1?"Tomorrow":dt.toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"short"}));
+    // Warnings
+    const W=D.bom&&D.bom.warnings;
+    if(W&&W.length){$("warns").innerHTML=`<b>Bureau of Meteorology warnings for this area</b><ul>${W.map(w=>`<li>${esc(w.title)}</li>`).join("")}</ul>`;$("warns").hidden=false;}
+    else $("warns").hidden=true;
+    const card=(name,dom,c,body,cls="")=>`<div class="card ${cls}" style="--c:var(${c})"><span class="cn">${esc(name)}</span><span class="cd">${esc(dom)}</span>${body}</div>`;
+    const kmkn=v=>isNum(v)?`${f0(v)} km/h <span>(${f0(v/1.852)} kn)</span>`:"–";
+    // Bureau hourly, daytime only
+    const hrs=((D.bom&&D.bom.hourly)||[]).filter(h=>localDate(h.time)===k&&isNum(h.wind));
+    const day=hrs.filter(h=>{const x=tzHour(h.time);return x>=6&&x<=18;});
+    const maxBy=(a,f)=>a.reduce((m,h)=>isNum(f(h))&&(!m||f(h)>f(m))?h:m,null);
+    const wMax=maxBy(day,h=>h.wind),gMax=maxBy(day,h=>h.gust);
+    const windy=siteDay("windy",k);
+    const strongest=isNum(wMax?.wind)?wMax.wind:(isNum(windy?.wind_max)?windy.wind_max:null);
+    const rate=!isNum(strongest)?null:strongest<15?["calm","Calm"]:strongest<=25?["choppy","Choppy"]:["rough","Rough"];
+    const out=[];
+    out.push(card("On the water","rough guide","--accent",rate?`<span class="rate ${rate[0]}">${rate[1]}</span><span class="cr">Strongest daytime wind ${kmkn(strongest)}</span>`:`<span class="cx">No wind forecast for this day yet.</span>`,rate?"":"empty"));
+    out.push(wMax?card("Wind and gusts","Bureau hourly forecast","--bom",`<span class="ct">${f0(wMax.wind)} <span>km/h ${esc(wMax.dir||"")}</span></span>
+      <span class="cr">Max ${kmkn(wMax.wind)}${gMax&&isNum(gMax.gust)?" · gusts "+f0(gMax.gust)+" km/h":""}</span><span class="cd">6am to 6pm</span>`)
+      :card("Wind and gusts","Bureau hourly forecast","--bom",`<span class="cx">The Bureau's hourly forecast covers about the next 3 days.</span>`,"empty"));
+    if(L.kind==="full")out.push(windy&&isNum(windy.wind_max)?card("Windy","windy.com","--s6",`<span class="ct">${f0(windy.wind_max)} <span>km/h ${esc(windy.wind_dir||"")}</span></span><span class="cr">Gusts to ${f0(windy.gust_max)} km/h</span><span class="cd">Strongest of the day</span>`)
+      :card("Windy","windy.com","--s6",`<span class="cx">No wind figures for this day.</span>`,"empty"));
+    if(L.water==="coast"&&M){
+      const sw=M.swell&&M.swell[k],td=M.tides&&M.tides[k];
+      out.push(sw?card("Swell","WillyWeather","--s2",`<span class="ct">${sw.max_m} <span>m ${esc(sw.dir||"")}</span></span><span class="cr">${sw.period_s?"Period "+sw.period_s+" s · ":""}highest of the day</span>`)
+        :card("Swell","WillyWeather","--s2",`<span class="cx">${M.swell&&Object.keys(M.swell).length?"No swell forecast for this day.":"No swell forecast here (sheltered water)."}</span>`,"empty"));
+      out.push(td&&td.length?card("Tides","WillyWeather","--s2",`<ul class="tides">${td.map(t=>`<li><b>${t.type==="high"?"High":"Low"}</b><span>${esc(t.time)}</span><span>${isNum(t.height_m)?t.height_m+" m":""}</span></li>`).join("")}</ul>`)
+        :card("Tides","WillyWeather","--s2",`<span class="cx">No tide times for this day.</span>`,"empty"));
+    }else if(L.water==="lake")out.push(card("Lake","no tides or swell","--s2",`<span class="cx">Wind is what matters here: see the wind and gusts.</span>`,"empty"));
+    else if(L.kind!=="full")out.push(card("Tides and swell","featured locations","--s2",`<span class="cx">Tides and swell are shown for the featured coastal locations in the list.</span>`,"empty"));
+    $("boat").innerHTML=out.join("");
+    // Hour-by-hour wind for the day (every 2 hours, 6am to 6pm)
+    $("hours").innerHTML=day.filter(h=>tzHour(h.time)%2===0).map(h=>{const x=tzHour(h.time);
+      return `<div><span class="t">${x===12?"12pm":x>12?(x-12)+"pm":x+"am"}</span><b>${f0(h.wind)}</b>${esc(h.dir||"")}<br><span class="t">gust ${f0(h.gust)}</span></div>`;}).join("");
   }
 
   function renderPanel(k,sel){
@@ -529,7 +594,7 @@ section{display:flex;flex-direction:column;gap:10px;min-width:0}
     if(state.data)render();
     else{$("now").innerHTML=`<div class="temp num">–</div><div><div class="cond">Loading…</div><div class="note">Feels like –</div></div>`;
       $("obs").textContent="A real reading from the nearest Bureau of Meteorology station.";
-      ["days","panel","summary","tbody","chart","legend"].forEach(x=>$(x).innerHTML="");renderSites();}
+      ["days","panel","summary","tbody","chart","legend","boat","hours"].forEach(x=>$(x).innerHTML="");$("warns").hidden=true;renderSites();}
     load();
   }
   const full=l=>({...l,kind:"full"});
@@ -543,7 +608,9 @@ section{display:flex;flex-direction:column;gap:10px;min-width:0}
   // The dropdown: featured locations, then the places saved on this device
   function renderPicker(){
     const saved=getSaved(),cur=state.loc;
-    let html=`<optgroup label="Full comparison">${LOCS.map(l=>`<option value="loc:${esc(l.id)}">${esc(l.name)}</option>`).join("")}</optgroup>`;
+    // Featured locations grouped by region, in the order locations.json lists them
+    const regions=[...new Set(LOCS.map(l=>l.region||"Featured"))];
+    let html=regions.map(r=>`<optgroup label="${esc(r)}">${LOCS.filter(l=>(l.region||"Featured")===r).map(l=>`<option value="loc:${esc(l.id)}">${esc(l.name)}${l.water==="lake"?" (lake)":""}</option>`).join("")}</optgroup>`).join("");
     const extra=cur&&cur.kind==="bom"&&!saved.some(p=>p.g7===cur.g7)?[cur]:[];  // a searched place not saved yet
     if(saved.length||extra.length)html+=`<optgroup label="My places (Bureau only)">${[...saved,...extra].map(p=>`<option value="place:${esc(p.g7)}">${esc(p.name)}${p.state?", "+esc(p.state):""}</option>`).join("")}</optgroup>`;
     $("loc").innerHTML=html;
@@ -568,7 +635,7 @@ section{display:flex;flex-direction:column;gap:10px;min-width:0}
       const res=(await fetch(BOM+"?search="+encodeURIComponent(q)).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();})).data||[];
       if(!res.length){note.textContent="No places found for “"+q+"”. Try a suburb, town or 4-digit postcode.";return;}
       note.textContent=res.length+" place"+(res.length>1?"s":"")+" found. Featured locations show the full comparison; others show the Bureau of Meteorology only.";
-      ul.innerHTML=res.slice(0,30).map((p,i)=>{const f=LOCS.find(l=>l.postcode===p.postcode&&p.name.toLowerCase().startsWith(l.name.toLowerCase().split(" (")[0]));
+      ul.innerHTML=res.slice(0,30).map((p,i)=>{const f=LOCS.find(l=>l.postcode===p.postcode&&p.name.toLowerCase().startsWith(l.name.toLowerCase().split(/ \(| \//)[0]));
         return `<li><button type="button" data-i="${i}"${f?` data-loc="${esc(f.id)}"`:""}>${esc(p.name)}, ${esc(p.state)}<span>${esc(p.postcode||"")}${f?' <b class="full">· full comparison</b>':""}</span></button></li>`;}).join("");
       ul.hidden=false;ul.onclick=async ev=>{const b=ev.target.closest("button");if(!b)return;
         ul.hidden=true;note.hidden=true;$("q").value="";
