@@ -1,0 +1,57 @@
+name: Scrape forecasts
+
+on:
+  push:
+    branches: [main]
+    paths: ["scraper/**", ".github/workflows/**", "locations.json"]
+  workflow_dispatch:
+    inputs:
+      all:
+        description: "Update every location now (otherwise only the ones due)"
+        type: boolean
+        default: false
+  schedule:
+    # Every 30 minutes; each run updates only the locations that are due (at most 6),
+    # so every location refreshes about every 3 hours without hitting the sites all at once
+    - cron: "7,37 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: |
+          pip install requests==2.32.3 playwright==1.47.0 beautifulsoup4==4.12.3 tzdata
+          python -m playwright install --with-deps chromium
+      - name: Scrape
+        # A push (e.g. a new location) only fills in what's due or missing; tick "all" on a manual run to refresh everything
+        run: |
+          if [ "${{ inputs.all }}" = "true" ]; then
+            python scraper/scrape.py --all
+          else
+            python scraper/scrape.py
+          fi
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add -A data
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "Update forecasts $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase origin main
+          git push

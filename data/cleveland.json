@@ -1,0 +1,696 @@
+{
+ "id": "cleveland",
+ "generated": "2026-10-27T03:58:16Z",
+ "sources": [
+  {
+   "source": "bom",
+   "name": "BOM official",
+   "url": "https://www.bom.gov.au/",
+   "days": [
+    {
+     "date": "2026-10-27",
+     "tmax": 26,
+     "tmin": 19,
+     "rain_min": 1,
+     "rain_max": 4,
+     "rain_text": "1-4 mm",
+     "chance": 60,
+     "text": "Shower or two."
+    },
+    {
+     "date": "2026-10-28",
+     "tmax": 27,
+     "tmin": 19,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5 mm",
+     "chance": 70,
+     "text": "Shower or two."
+    },
+    {
+     "date": "2026-10-29",
+     "tmax": 26,
+     "tmin": 17,
+     "rain_min": 0,
+     "rain_max": null,
+     "rain_text": "0 mm",
+     "chance": 20,
+     "text": "Mostly sunny."
+    },
+    {
+     "date": "2026-10-30",
+     "tmax": 25,
+     "tmin": 17,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "0-1 mm",
+     "chance": 30,
+     "text": "Partly cloudy."
+    },
+    {
+     "date": "2026-10-31",
+     "tmax": 24,
+     "tmin": 17,
+     "rain_min": 0,
+     "rain_max": 4,
+     "rain_text": "0-4 mm",
+     "chance": 50,
+     "text": "Shower or two."
+    },
+    {
+     "date": "2026-11-01",
+     "tmax": 27,
+     "tmin": 17,
+     "rain_min": 0,
+     "rain_max": 4,
+     "rain_text": "0-4 mm",
+     "chance": 60,
+     "text": "Shower or two."
+    },
+    {
+     "date": "2026-11-02",
+     "tmax": 28,
+     "tmin": 18,
+     "rain_min": 1,
+     "rain_max": 7,
+     "rain_text": "1-7 mm",
+     "chance": 60,
+     "text": "Shower or two."
+    },
+    {
+     "date": "2026-11-03",
+     "tmax": null,
+     "tmin": 18,
+     "rain_min": null,
+     "rain_max": null,
+     "rain_text": null,
+     "chance": null,
+     "text": null
+    }
+   ],
+   "fetched": "2026-10-27T03:57:55Z"
+  },
+  {
+   "source": "willyweather",
+   "name": "WillyWeather",
+   "url": "https://www.willyweather.com.au/qld/brisbane/cleveland.html",
+   "days": [
+    {
+     "date": "2026-10-27",
+     "tmax": 27,
+     "tmin": 19,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1–5 mm",
+     "chance": 60,
+     "text": "Shower or two"
+    },
+    {
+     "date": "2026-10-28",
+     "tmax": 27,
+     "tmin": 19,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1–5 mm",
+     "chance": 70,
+     "text": "Shower or two"
+    },
+    {
+     "date": "2026-10-29",
+     "tmax": 26,
+     "tmin": 17,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1 mm",
+     "chance": 20,
+     "text": "Mostly sunny"
+    },
+    {
+     "date": "2026-10-30",
+     "tmax": 25,
+     "tmin": 17,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1 mm",
+     "chance": 25,
+     "text": "Partly cloudy"
+    },
+    {
+     "date": "2026-10-31",
+     "tmax": 24,
+     "tmin": 18,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1–5 mm",
+     "chance": 55,
+     "text": "Shower or two"
+    },
+    {
+     "date": "2026-11-01",
+     "tmax": 27,
+     "tmin": 17,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1–5 mm",
+     "chance": 55,
+     "text": "Shower or two"
+    },
+    {
+     "date": "2026-11-02",
+     "tmax": 28,
+     "tmin": 19,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1–5 mm",
+     "chance": 60,
+     "text": "Shower or two"
+    }
+   ],
+   "fetched": "2026-10-27T03:57:57Z"
+  },
+  {
+   "source": "elders",
+   "name": "Elders Weather",
+   "url": "https://eldersweather.com.au/forecast/qld/cleveland",
+   "days": [
+    {
+     "date": "2026-10-27",
+     "tmax": 25,
+     "tmin": 20,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 20,
+     "text": "Clear skies"
+    },
+    {
+     "date": "2026-10-28",
+     "tmax": 25,
+     "tmin": 21,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 24,
+     "text": "Mostly cloudy"
+    },
+    {
+     "date": "2026-10-29",
+     "tmax": 24,
+     "tmin": 19,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 8,
+     "text": "Rain showers"
+    },
+    {
+     "date": "2026-10-30",
+     "tmax": 23,
+     "tmin": 19,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 3,
+     "text": "Fair"
+    },
+    {
+     "date": "2026-10-31",
+     "tmax": 23,
+     "tmin": 19,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 34,
+     "text": "Cloudy"
+    },
+    {
+     "date": "2026-11-01",
+     "tmax": 25,
+     "tmin": 19,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 28,
+     "text": "Partly cloudy"
+    },
+    {
+     "date": "2026-11-02",
+     "tmax": 25,
+     "tmin": 20,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 32,
+     "text": "Partly cloudy"
+    }
+   ],
+   "fetched": "2026-10-27T03:57:57Z"
+  },
+  {
+   "source": "weatherzone",
+   "name": "Weatherzone",
+   "url": "https://www.weatherzone.com/au/qld/brisbane/cleveland",
+   "days": [
+    {
+     "date": "2026-10-27",
+     "tmax": 29,
+     "tmin": 18,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5mm",
+     "chance": 60,
+     "text": "Possible thunderstorm"
+    },
+    {
+     "date": "2026-10-28",
+     "tmax": 28,
+     "tmin": 18,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5mm",
+     "chance": 50,
+     "text": "Possible shower"
+    },
+    {
+     "date": "2026-10-29",
+     "tmax": 28,
+     "tmin": 15,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1mm",
+     "chance": 30,
+     "text": "Mostly sunny"
+    },
+    {
+     "date": "2026-10-30",
+     "tmax": 26,
+     "tmin": 15,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1mm",
+     "chance": 50,
+     "text": "Mostly sunny"
+    },
+    {
+     "date": "2026-10-31",
+     "tmax": 25,
+     "tmin": 16,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5mm",
+     "chance": 60,
+     "text": "Possible shower"
+    },
+    {
+     "date": "2026-11-01",
+     "tmax": 29,
+     "tmin": 16,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5mm",
+     "chance": 90,
+     "text": "Possible thunderstorm"
+    },
+    {
+     "date": "2026-11-02",
+     "tmax": 29,
+     "tmin": 17,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5mm",
+     "chance": 90,
+     "text": "Rain"
+    }
+   ],
+   "point": "Logan City",
+   "fetched": "2026-10-27T03:58:08Z"
+  },
+  {
+   "source": "wunderground",
+   "name": "Weather Underground",
+   "url": "https://www.wunderground.com/forecast/au/cleveland/-27.529,153.265",
+   "days": [
+    {
+     "date": "2026-10-27",
+     "tmax": 28.3,
+     "tmin": 20.6,
+     "rain_min": 0.5,
+     "rain_max": 0.5,
+     "rain_text": "0.5 mm",
+     "chance": null,
+     "text": "Showers"
+    },
+    {
+     "date": "2026-10-28",
+     "tmax": 26.1,
+     "tmin": 17.8,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Cloudy"
+    },
+    {
+     "date": "2026-10-29",
+     "tmax": 25,
+     "tmin": 17.8,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Partly Cloudy"
+    },
+    {
+     "date": "2026-10-30",
+     "tmax": 23.3,
+     "tmin": 18.9,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Mostly Cloudy"
+    },
+    {
+     "date": "2026-10-31",
+     "tmax": 22.8,
+     "tmin": 18.9,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "AM Clouds/PM Sun"
+    },
+    {
+     "date": "2026-11-01",
+     "tmax": 25.6,
+     "tmin": 18.9,
+     "rain_min": 1.3,
+     "rain_max": 1.3,
+     "rain_text": "1.3 mm",
+     "chance": null,
+     "text": "PM Showers"
+    },
+    {
+     "date": "2026-11-02",
+     "tmax": 25.6,
+     "tmin": 20,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Partly Cloudy"
+    },
+    {
+     "date": "2026-11-03",
+     "tmax": 25,
+     "tmin": 20,
+     "rain_min": 5.1,
+     "rain_max": 5.1,
+     "rain_text": "5.1 mm",
+     "chance": null,
+     "text": "PM Showers"
+    },
+    {
+     "date": "2026-11-04",
+     "tmax": 25.6,
+     "tmin": 20,
+     "rain_min": 3,
+     "rain_max": 3,
+     "rain_text": "3 mm",
+     "chance": null,
+     "text": "Showers"
+    },
+    {
+     "date": "2026-11-05",
+     "tmax": 26.7,
+     "tmin": 18.9,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Mostly Sunny"
+    }
+   ],
+   "fetched": "2026-10-27T03:58:09Z"
+  },
+  {
+   "source": "windy",
+   "name": "Windy",
+   "url": "https://www.windy.com/-27.529/153.265",
+   "days": [
+    {
+     "date": "2026-10-27",
+     "tmax": 25.8,
+     "tmin": 20.5,
+     "rain_min": 1.3,
+     "rain_max": 1.3,
+     "rain_text": "1.3 mm",
+     "chance": null,
+     "text": null,
+     "wind_max": 19,
+     "gust_max": 32,
+     "wind_dir": "SSE"
+    },
+    {
+     "date": "2026-10-28",
+     "tmax": 24.9,
+     "tmin": 20.4,
+     "rain_min": 7.1,
+     "rain_max": 7.1,
+     "rain_text": "7.1 mm",
+     "chance": null,
+     "text": null,
+     "wind_max": 14,
+     "gust_max": 35,
+     "wind_dir": "W"
+    },
+    {
+     "date": "2026-10-29",
+     "tmax": 25.2,
+     "tmin": 18,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": null,
+     "wind_max": 23,
+     "gust_max": 31,
+     "wind_dir": "E"
+    },
+    {
+     "date": "2026-10-30",
+     "tmax": 23.9,
+     "tmin": 17,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": null,
+     "wind_max": 19,
+     "gust_max": 26,
+     "wind_dir": "ENE"
+    },
+    {
+     "date": "2026-10-31",
+     "tmax": 23,
+     "tmin": 18.2,
+     "rain_min": 0.8,
+     "rain_max": 0.8,
+     "rain_text": "0.8 mm",
+     "chance": null,
+     "text": null,
+     "wind_max": 20,
+     "gust_max": 30,
+     "wind_dir": "NNE"
+    },
+    {
+     "date": "2026-11-01",
+     "tmax": 25.1,
+     "tmin": 18.3,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": null,
+     "wind_max": 21,
+     "gust_max": 31,
+     "wind_dir": "NNW"
+    }
+   ],
+   "point": "mblue model",
+   "fetched": "2026-10-27T03:58:16Z"
+  }
+ ],
+ "observations": {
+  "source": "bom_obs",
+  "station": "Redland (Alexandra Hills)",
+  "distance_km": 3,
+  "time": "2026-10-27T13:50:00+10:00",
+  "temp": 25.5,
+  "feels_like": 27.7,
+  "humidity": 73,
+  "wind_dir": "ENE",
+  "wind_kmh": 9,
+  "gust_kmh": 20,
+  "rain_since_9am": 0,
+  "fetched": "2026-10-27T03:57:53Z"
+ },
+ "marine": {
+  "source": "willyweather",
+  "url": "https://tides.willyweather.com.au/qld/brisbane/cleveland.html",
+  "tides": {
+   "2026-10-27": [
+    {
+     "type": "low",
+     "time": "4:02 am",
+     "height_m": 0.23
+    },
+    {
+     "type": "high",
+     "time": "10:18 am",
+     "height_m": 2.55
+    },
+    {
+     "type": "low",
+     "time": "4:51 pm",
+     "height_m": 0.48
+    },
+    {
+     "type": "high",
+     "time": "10:20 pm",
+     "height_m": 2.03
+    }
+   ],
+   "2026-10-28": [
+    {
+     "type": "low",
+     "time": "4:39 am",
+     "height_m": 0.26
+    },
+    {
+     "type": "high",
+     "time": "11:03 am",
+     "height_m": 2.58
+    },
+    {
+     "type": "low",
+     "time": "5:41 pm",
+     "height_m": 0.52
+    },
+    {
+     "type": "high",
+     "time": "11:05 pm",
+     "height_m": 1.91
+    }
+   ],
+   "2026-10-29": [
+    {
+     "type": "low",
+     "time": "5:16 am",
+     "height_m": 0.31
+    },
+    {
+     "type": "high",
+     "time": "11:50 am",
+     "height_m": 2.57
+    },
+    {
+     "type": "low",
+     "time": "6:35 pm",
+     "height_m": 0.58
+    },
+    {
+     "type": "high",
+     "time": "11:56 pm",
+     "height_m": 1.77
+    }
+   ],
+   "2026-10-30": [
+    {
+     "type": "low",
+     "time": "5:59 am",
+     "height_m": 0.4
+    },
+    {
+     "type": "high",
+     "time": "12:42 pm",
+     "height_m": 2.51
+    },
+    {
+     "type": "low",
+     "time": "7:35 pm",
+     "height_m": 0.65
+    }
+   ],
+   "2026-10-31": [
+    {
+     "type": "high",
+     "time": "12:54 am",
+     "height_m": 1.65
+    },
+    {
+     "type": "low",
+     "time": "6:48 am",
+     "height_m": 0.52
+    },
+    {
+     "type": "high",
+     "time": "1:39 pm",
+     "height_m": 2.43
+    },
+    {
+     "type": "low",
+     "time": "8:45 pm",
+     "height_m": 0.7
+    }
+   ],
+   "2026-11-01": [
+    {
+     "type": "high",
+     "time": "2:05 am",
+     "height_m": 1.58
+    },
+    {
+     "type": "low",
+     "time": "7:52 am",
+     "height_m": 0.63
+    },
+    {
+     "type": "high",
+     "time": "2:43 pm",
+     "height_m": 2.35
+    },
+    {
+     "type": "low",
+     "time": "9:55 pm",
+     "height_m": 0.69
+    }
+   ],
+   "2026-11-02": [
+    {
+     "type": "high",
+     "time": "3:29 am",
+     "height_m": 1.59
+    },
+    {
+     "type": "low",
+     "time": "9:12 am",
+     "height_m": 0.7
+    },
+    {
+     "type": "high",
+     "time": "3:51 pm",
+     "height_m": 2.3
+    },
+    {
+     "type": "low",
+     "time": "11:00 pm",
+     "height_m": 0.63
+    }
+   ]
+  },
+  "swell": {},
+  "fetched": "2026-10-27T03:57:54Z"
+ },
+ "errors": {}
+}

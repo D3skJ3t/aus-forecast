@@ -275,9 +275,9 @@ section{display:flex;flex-direction:column;gap:10px;min-width:0}
 (function(){
   // Own storage keys: this page shares storage with the private app at d3skj3t.github.io
   const CACHE="aus-forecast-v1",LOC_KEY="aus-forecast-loc",SAVED_KEY="aus-forecast-saved";
-  // Featured locations (full comparison) and their scraped figures come from the oxley-forecast-public
-  // repo's scraper, so this app adds no traffic to the weather sites
-  const SRC="https://raw.githubusercontent.com/D3skJ3t/oxley-forecast-public/main/";
+  // Featured locations (full comparison) and their scraped figures: locations.json and data/<id>.json in
+  // this repo, kept up to date by scraper/scrape.py (GitHub Actions)
+  const SRC="https://raw.githubusercontent.com/D3skJ3t/aus-forecast/main/";
   const BOM="https://api.weather.bom.gov.au/v1/locations";
   let LOCS=[];
   // Places found by search are Bureau of Meteorology only; ones the viewer saves are kept on this device

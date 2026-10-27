@@ -1,0 +1,696 @@
+{
+ "id": "manly",
+ "generated": "2026-10-27T04:00:09Z",
+ "sources": [
+  {
+   "source": "bom",
+   "name": "BOM official",
+   "url": "https://www.bom.gov.au/",
+   "days": [
+    {
+     "date": "2026-10-27",
+     "tmax": 27,
+     "tmin": 19,
+     "rain_min": 1,
+     "rain_max": 4,
+     "rain_text": "1-4 mm",
+     "chance": 60,
+     "text": "Shower or two."
+    },
+    {
+     "date": "2026-10-28",
+     "tmax": 27,
+     "tmin": 19,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5 mm",
+     "chance": 70,
+     "text": "Shower or two."
+    },
+    {
+     "date": "2026-10-29",
+     "tmax": 26,
+     "tmin": 17,
+     "rain_min": 0,
+     "rain_max": null,
+     "rain_text": "0 mm",
+     "chance": 20,
+     "text": "Mostly sunny."
+    },
+    {
+     "date": "2026-10-30",
+     "tmax": 25,
+     "tmin": 17,
+     "rain_min": 0,
+     "rain_max": null,
+     "rain_text": "0 mm",
+     "chance": 20,
+     "text": "Partly cloudy."
+    },
+    {
+     "date": "2026-10-31",
+     "tmax": 24,
+     "tmin": 18,
+     "rain_min": 0,
+     "rain_max": 4,
+     "rain_text": "0-4 mm",
+     "chance": 50,
+     "text": "Shower or two."
+    },
+    {
+     "date": "2026-11-01",
+     "tmax": 27,
+     "tmin": 17,
+     "rain_min": 0,
+     "rain_max": 4,
+     "rain_text": "0-4 mm",
+     "chance": 60,
+     "text": "Shower or two."
+    },
+    {
+     "date": "2026-11-02",
+     "tmax": 28,
+     "tmin": 19,
+     "rain_min": 1,
+     "rain_max": 7,
+     "rain_text": "1-7 mm",
+     "chance": 60,
+     "text": "Shower or two."
+    },
+    {
+     "date": "2026-11-03",
+     "tmax": null,
+     "tmin": 19,
+     "rain_min": null,
+     "rain_max": null,
+     "rain_text": null,
+     "chance": null,
+     "text": null
+    }
+   ],
+   "fetched": "2026-10-27T03:59:49Z"
+  },
+  {
+   "source": "willyweather",
+   "name": "WillyWeather",
+   "url": "https://www.willyweather.com.au/qld/brisbane/manly.html",
+   "days": [
+    {
+     "date": "2026-10-27",
+     "tmax": 27,
+     "tmin": 19,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1–5 mm",
+     "chance": 60,
+     "text": "Shower or two"
+    },
+    {
+     "date": "2026-10-28",
+     "tmax": 27,
+     "tmin": 19,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1–5 mm",
+     "chance": 70,
+     "text": "Shower or two"
+    },
+    {
+     "date": "2026-10-29",
+     "tmax": 26,
+     "tmin": 17,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1 mm",
+     "chance": 20,
+     "text": "Mostly sunny"
+    },
+    {
+     "date": "2026-10-30",
+     "tmax": 25,
+     "tmin": 17,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1 mm",
+     "chance": 25,
+     "text": "Partly cloudy"
+    },
+    {
+     "date": "2026-10-31",
+     "tmax": 24,
+     "tmin": 18,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1–5 mm",
+     "chance": 55,
+     "text": "Shower or two"
+    },
+    {
+     "date": "2026-11-01",
+     "tmax": 27,
+     "tmin": 17,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1–5 mm",
+     "chance": 55,
+     "text": "Shower or two"
+    },
+    {
+     "date": "2026-11-02",
+     "tmax": 28,
+     "tmin": 19,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1–5 mm",
+     "chance": 60,
+     "text": "Shower or two"
+    }
+   ],
+   "fetched": "2026-10-27T03:59:51Z"
+  },
+  {
+   "source": "elders",
+   "name": "Elders Weather",
+   "url": "https://eldersweather.com.au/forecast/qld/manly",
+   "days": [
+    {
+     "date": "2026-10-27",
+     "tmax": 26,
+     "tmin": 21,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 19,
+     "text": "Clear skies"
+    },
+    {
+     "date": "2026-10-28",
+     "tmax": 26,
+     "tmin": 21,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 24,
+     "text": "Mostly cloudy"
+    },
+    {
+     "date": "2026-10-29",
+     "tmax": 25,
+     "tmin": 19,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 6,
+     "text": "Fair"
+    },
+    {
+     "date": "2026-10-30",
+     "tmax": 23,
+     "tmin": 19,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 6,
+     "text": "Partly cloudy"
+    },
+    {
+     "date": "2026-10-31",
+     "tmax": 23,
+     "tmin": 19,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 25,
+     "text": "Cloudy"
+    },
+    {
+     "date": "2026-11-01",
+     "tmax": 26,
+     "tmin": 19,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 34,
+     "text": "Partly cloudy"
+    },
+    {
+     "date": "2026-11-02",
+     "tmax": 26,
+     "tmin": 20,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 34,
+     "text": "Partly cloudy"
+    }
+   ],
+   "fetched": "2026-10-27T03:59:52Z"
+  },
+  {
+   "source": "weatherzone",
+   "name": "Weatherzone",
+   "url": "https://www.weatherzone.com/au/qld/brisbane/manly",
+   "days": [
+    {
+     "date": "2026-10-27",
+     "tmax": 27,
+     "tmin": 19,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5mm",
+     "chance": 40,
+     "text": "Possible shower"
+    },
+    {
+     "date": "2026-10-28",
+     "tmax": 28,
+     "tmin": 19,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1mm",
+     "chance": 40,
+     "text": "Possible shower"
+    },
+    {
+     "date": "2026-10-29",
+     "tmax": 26,
+     "tmin": 17,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1mm",
+     "chance": 30,
+     "text": "Mostly sunny"
+    },
+    {
+     "date": "2026-10-30",
+     "tmax": 25,
+     "tmin": 17,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1mm",
+     "chance": 60,
+     "text": "Mostly sunny"
+    },
+    {
+     "date": "2026-10-31",
+     "tmax": 25,
+     "tmin": 18,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5mm",
+     "chance": 80,
+     "text": "Possible shower"
+    },
+    {
+     "date": "2026-11-01",
+     "tmax": 28,
+     "tmin": 17,
+     "rain_min": 5,
+     "rain_max": 10,
+     "rain_text": "5-10mm",
+     "chance": 90,
+     "text": "Possible thunderstorm"
+    },
+    {
+     "date": "2026-11-02",
+     "tmax": 28,
+     "tmin": 18,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5mm",
+     "chance": 70,
+     "text": "Late shower"
+    }
+   ],
+   "point": "Brisbane Ap",
+   "fetched": "2026-10-27T04:00:02Z"
+  },
+  {
+   "source": "wunderground",
+   "name": "Weather Underground",
+   "url": "https://www.wunderground.com/forecast/au/manly/-27.455,153.188",
+   "days": [
+    {
+     "date": "2026-10-27",
+     "tmax": 27.2,
+     "tmin": 20,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Showers"
+    },
+    {
+     "date": "2026-10-28",
+     "tmax": 26.7,
+     "tmin": 17.2,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Cloudy"
+    },
+    {
+     "date": "2026-10-29",
+     "tmax": 25,
+     "tmin": 17.2,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Partly Cloudy"
+    },
+    {
+     "date": "2026-10-30",
+     "tmax": 23.3,
+     "tmin": 18.3,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Mostly Cloudy"
+    },
+    {
+     "date": "2026-10-31",
+     "tmax": 22.8,
+     "tmin": 18.3,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "AM Clouds/PM Sun"
+    },
+    {
+     "date": "2026-11-01",
+     "tmax": 26.1,
+     "tmin": 18.9,
+     "rain_min": 1.8,
+     "rain_max": 1.8,
+     "rain_text": "1.8 mm",
+     "chance": null,
+     "text": "PM Showers"
+    },
+    {
+     "date": "2026-11-02",
+     "tmax": 26.1,
+     "tmin": 19.4,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Partly Cloudy"
+    },
+    {
+     "date": "2026-11-03",
+     "tmax": 25.6,
+     "tmin": 20,
+     "rain_min": 5.3,
+     "rain_max": 5.3,
+     "rain_text": "5.3 mm",
+     "chance": null,
+     "text": "PM Showers"
+    },
+    {
+     "date": "2026-11-04",
+     "tmax": 26.7,
+     "tmin": 20,
+     "rain_min": 3,
+     "rain_max": 3,
+     "rain_text": "3 mm",
+     "chance": null,
+     "text": "Showers"
+    },
+    {
+     "date": "2026-11-05",
+     "tmax": 27.2,
+     "tmin": 18.3,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Mostly Sunny"
+    }
+   ],
+   "fetched": "2026-10-27T04:00:03Z"
+  },
+  {
+   "source": "windy",
+   "name": "Windy",
+   "url": "https://www.windy.com/-27.455/153.188",
+   "days": [
+    {
+     "date": "2026-10-27",
+     "tmax": 25.8,
+     "tmin": 20.5,
+     "rain_min": 1.3,
+     "rain_max": 1.3,
+     "rain_text": "1.3 mm",
+     "chance": null,
+     "text": null,
+     "wind_max": 8,
+     "gust_max": 25,
+     "wind_dir": "SSE"
+    },
+    {
+     "date": "2026-10-28",
+     "tmax": 24.9,
+     "tmin": 20.4,
+     "rain_min": 7.1,
+     "rain_max": 7.1,
+     "rain_text": "7.1 mm",
+     "chance": null,
+     "text": null,
+     "wind_max": 6,
+     "gust_max": 28,
+     "wind_dir": "W"
+    },
+    {
+     "date": "2026-10-29",
+     "tmax": 25.2,
+     "tmin": 18,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": null,
+     "wind_max": 13,
+     "gust_max": 21,
+     "wind_dir": "E"
+    },
+    {
+     "date": "2026-10-30",
+     "tmax": 23.9,
+     "tmin": 17,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": null,
+     "wind_max": 10,
+     "gust_max": 19,
+     "wind_dir": "ENE"
+    },
+    {
+     "date": "2026-10-31",
+     "tmax": 23,
+     "tmin": 18.2,
+     "rain_min": 0.8,
+     "rain_max": 0.8,
+     "rain_text": "0.8 mm",
+     "chance": null,
+     "text": null,
+     "wind_max": 11,
+     "gust_max": 23,
+     "wind_dir": "NNE"
+    },
+    {
+     "date": "2026-11-01",
+     "tmax": 25.1,
+     "tmin": 18.3,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": null,
+     "wind_max": 10,
+     "gust_max": 23,
+     "wind_dir": "NNW"
+    }
+   ],
+   "point": "mblue model",
+   "fetched": "2026-10-27T04:00:09Z"
+  }
+ ],
+ "observations": {
+  "source": "bom_obs",
+  "station": "Brisbane Airport",
+  "distance_km": 8.9,
+  "time": "2026-10-27T13:50:00+10:00",
+  "temp": 26,
+  "feels_like": 27.4,
+  "humidity": 81,
+  "wind_dir": "ENE",
+  "wind_kmh": 19,
+  "gust_kmh": 28,
+  "rain_since_9am": 0,
+  "fetched": "2026-10-27T03:59:48Z"
+ },
+ "marine": {
+  "source": "willyweather",
+  "url": "https://tides.willyweather.com.au/qld/brisbane/manly.html",
+  "tides": {
+   "2026-10-27": [
+    {
+     "type": "low",
+     "time": "3:53 am",
+     "height_m": 0.24
+    },
+    {
+     "type": "high",
+     "time": "10:07 am",
+     "height_m": 2.58
+    },
+    {
+     "type": "low",
+     "time": "4:42 pm",
+     "height_m": 0.48
+    },
+    {
+     "type": "high",
+     "time": "10:09 pm",
+     "height_m": 2.05
+    }
+   ],
+   "2026-10-28": [
+    {
+     "type": "low",
+     "time": "4:30 am",
+     "height_m": 0.26
+    },
+    {
+     "type": "high",
+     "time": "10:52 am",
+     "height_m": 2.61
+    },
+    {
+     "type": "low",
+     "time": "5:32 pm",
+     "height_m": 0.53
+    },
+    {
+     "type": "high",
+     "time": "10:54 pm",
+     "height_m": 1.93
+    }
+   ],
+   "2026-10-29": [
+    {
+     "type": "low",
+     "time": "5:07 am",
+     "height_m": 0.31
+    },
+    {
+     "type": "high",
+     "time": "11:39 am",
+     "height_m": 2.6
+    },
+    {
+     "type": "low",
+     "time": "6:26 pm",
+     "height_m": 0.59
+    },
+    {
+     "type": "high",
+     "time": "11:45 pm",
+     "height_m": 1.79
+    }
+   ],
+   "2026-10-30": [
+    {
+     "type": "low",
+     "time": "5:50 am",
+     "height_m": 0.4
+    },
+    {
+     "type": "high",
+     "time": "12:31 pm",
+     "height_m": 2.53
+    },
+    {
+     "type": "low",
+     "time": "7:26 pm",
+     "height_m": 0.66
+    }
+   ],
+   "2026-10-31": [
+    {
+     "type": "high",
+     "time": "12:43 am",
+     "height_m": 1.67
+    },
+    {
+     "type": "low",
+     "time": "6:39 am",
+     "height_m": 0.53
+    },
+    {
+     "type": "high",
+     "time": "1:28 pm",
+     "height_m": 2.45
+    },
+    {
+     "type": "low",
+     "time": "8:36 pm",
+     "height_m": 0.71
+    }
+   ],
+   "2026-11-01": [
+    {
+     "type": "high",
+     "time": "1:54 am",
+     "height_m": 1.6
+    },
+    {
+     "type": "low",
+     "time": "7:43 am",
+     "height_m": 0.64
+    },
+    {
+     "type": "high",
+     "time": "2:32 pm",
+     "height_m": 2.37
+    },
+    {
+     "type": "low",
+     "time": "9:46 pm",
+     "height_m": 0.7
+    }
+   ],
+   "2026-11-02": [
+    {
+     "type": "high",
+     "time": "3:18 am",
+     "height_m": 1.61
+    },
+    {
+     "type": "low",
+     "time": "9:03 am",
+     "height_m": 0.71
+    },
+    {
+     "type": "high",
+     "time": "3:40 pm",
+     "height_m": 2.32
+    },
+    {
+     "type": "low",
+     "time": "10:51 pm",
+     "height_m": 0.64
+    }
+   ]
+  },
+  "swell": {},
+  "fetched": "2026-10-27T03:59:49Z"
+ },
+ "errors": {}
+}
