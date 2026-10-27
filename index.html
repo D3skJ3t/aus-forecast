@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Australian Forecasts</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="theme-color" content="#eef3f4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one narrow instrument-panel column. Now card, 7-day strip, model table for the chosen day, comparison chart, sources. */
+:root{
+  --bg:#eef3f4; --surface:#ffffff; --fg:#12242c; --muted:#5a6d74; --line:#d3dee1;
+  --accent:#0b6a86; --accent-soft:#dcedf2;
+  --good:#2f7d4f; --warn:#b07a12; --bad:#b4442f;
+  --bom:#12242c; --bom-soft:#e4ebee;
+  --s1:#9c6b00; --s2:#0f8a7e; --s3:#a8327d; --s4:#7a5c3a; --s5:#8f3b52; --s6:#3b5b8f;
+  --display:"Barlow Semi Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0d171b; --surface:#152329; --fg:#e4eef1; --muted:#93a8af; --line:#26383f;
+  --accent:#5cc0de; --accent-soft:#173a45;
+  --good:#6cc690; --warn:#e2b04a; --bad:#ef8a72;
+  --bom:#f2f6f7; --bom-soft:#1d2e35;
+  --s1:#d9a441; --s2:#4fd1c0; --s3:#e57fbf; --s4:#c9a27a; --s5:#e58aa3; --s6:#8fb0e8;
+  color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --bg:#0d171b; --surface:#152329; --fg:#e4eef1; --muted:#93a8af; --line:#26383f;
+  --accent:#5cc0de; --accent-soft:#173a45;
+  --good:#6cc690; --warn:#e2b04a; --bad:#ef8a72;
+  --bom:#f2f6f7; --bom-soft:#1d2e35;
+  --s1:#d9a441; --s2:#4fd1c0; --s3:#e57fbf; --s4:#c9a27a; --s5:#e58aa3; --s6:#8fb0e8;
+  color-scheme:dark;}
+*{box-sizing:border-box}
+html,body{background:var(--bg)}
+body{margin:0;color:var(--fg);font:16px/1.5 var(--body);-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 40px;display:flex;flex-direction:column;gap:22px}
+h1,h2{font-family:var(--display);font-weight:700;margin:0;text-wrap:balance;letter-spacing:.01em}
+h1{font-size:1.9rem;line-height:1.05}
+h2{font-size:1.25rem}
+.eyebrow{font:500 .72rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.mono,.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+header .meta{display:flex;flex-direction:column;gap:6px}
+.status{font:.8rem/1.3 var(--mono);color:var(--muted)}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:8px 14px;font:600 .9rem var(--body)}
+.btn:hover{border-color:var(--accent)}
+.btn[disabled]{opacity:.55;cursor:progress}
+
+/* Now panel */
+.now{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;grid-template-columns:auto 1fr;gap:6px 20px;align-items:center}
+.now .temp{font:600 3.4rem/1 var(--display);font-variant-numeric:tabular-nums}
+.now .temp small{font-size:1.4rem;color:var(--muted);margin-left:2px}
+.now .cond{font:600 1.1rem var(--display)}
+.now dl{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:10px 0 0;padding-top:12px;border-top:1px solid var(--line)}
+.now dt{font:500 .66rem/1.2 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.now dd{margin:2px 0 0;font:500 1rem var(--mono);font-variant-numeric:tabular-nums}
+.note{font-size:.82rem;color:var(--muted);margin:0}
+
+/* Day strip */
+.days{display:grid;grid-template-columns:repeat(7,minmax(84px,1fr));gap:8px;overflow-x:auto;padding-bottom:4px;scroll-snap-type:x proximity}
+.day{scroll-snap-align:start;text-align:left;border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:10px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.day[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent);background:var(--accent-soft)}
+.day .dname{font:700 1rem/1 var(--display)}
+.day .ddate{font:.7rem var(--mono);color:var(--muted)}
+.day .dtemps{font:500 .95rem var(--mono);font-variant-numeric:tabular-nums}
+.day .dtemps span{color:var(--muted)}
+.day .drain{font:.75rem var(--mono);color:var(--muted)}
+.agree{display:inline-flex;align-items:center;gap:5px;font:500 .68rem/1 var(--mono);color:var(--muted)}
+.agree i{width:8px;height:8px;border-radius:50%;display:inline-block;background:var(--good)}
+.agree.mid i{background:var(--warn)} .agree.low i{background:var(--bad)}
+
+/* Day detail */
+.detail{display:flex;flex-direction:column;gap:12px}
+.summary{display:flex;flex-wrap:wrap;gap:8px}
+.pill{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 12px;font:500 .8rem var(--mono)}
+.pill b{font-weight:500;color:var(--accent)}
+.tablebox{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%}
+th,td{padding:9px 10px;text-align:right;white-space:nowrap}
+th{font:500 .66rem/1.2 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left;position:sticky;left:0;background:var(--surface);white-space:normal}
+@media (max-width:420px){th,td{padding:8px 6px}}
+td{font:400 .92rem var(--mono);font-variant-numeric:tabular-nums;border-bottom:1px solid var(--line)}
+tbody tr:last-child td{border-bottom:none}
+td .mname{font:600 .95rem var(--body);display:flex;align-items:center;gap:8px}
+td .mname i{width:10px;height:10px;border-radius:3px;flex:none}
+td .msrc{display:block;font:.7rem var(--body);color:var(--muted);margin-left:18px}
+td.out{color:var(--bad);font-weight:500}
+tr.official td{background:var(--bom-soft)}
+tr.official td:first-child{background:var(--bom-soft)}
+tr.official td .mname i{border-radius:50%}
+tr.sep td{padding:4px 10px;font:500 .62rem/1.2 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:left;background:var(--surface)}
+.day .dbom{font:500 .72rem var(--mono);color:var(--bom)}
+tr.median td{font-weight:500;background:var(--accent-soft)}
+tr.median td:first-child{background:var(--accent-soft);font:700 .95rem var(--display)}
+.dash{color:var(--muted)}
+
+/* Chart */
+.chartcard{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:12px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;align-self:flex-start}
+.seg button{border:0;background:transparent;padding:6px 12px;font:600 .85rem var(--body);color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--surface)}
+svg{display:block;width:100%;height:auto;max-width:100%}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font:.8rem var(--body)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:14px;height:3px;border-radius:2px;display:inline-block}
+
+/* Chart hover/tap info box */
+.chartwrap{position:relative}
+#chart{touch-action:manipulation;user-select:none;-webkit-user-select:none}
+.tip{position:absolute;z-index:2;pointer-events:none;background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:7px 10px;font:.78rem/1.4 var(--body);box-shadow:0 3px 10px rgb(0 0 0/.2);white-space:nowrap;transform:translate(-50%,calc(-100% - 12px))}
+.tip.below{transform:translate(-50%,12px)}
+.tip .tn{font-weight:700;display:flex;align-items:center;gap:6px}
+.tip .tn i{width:9px;height:9px;border-radius:2px;display:inline-block}
+.tip .td{font:.7rem var(--mono);color:var(--muted)}
+.tip .tc{font:600 .68rem var(--mono);color:var(--accent);margin-bottom:2px}
+.tip .tv{font:.78rem var(--mono);color:var(--muted)}
+.tip .tv b{color:var(--fg);font-weight:600}
+/* Location picker: the page title is the dropdown */
+.loctitle select{font:inherit;color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:4px 36px 4px 10px;max-width:100%;cursor:pointer;
+  appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);
+  background-position:right 16px center,right 10px center;background-size:6px 6px;background-repeat:no-repeat}
+.loctitle select:hover{border-color:var(--accent)}
+.loctitle select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* Place search */
+.hbtns{display:flex;gap:8px;flex-wrap:wrap}
+#saveBtn[aria-pressed="true"]{border-color:var(--warn);color:var(--warn)}
+.finder{gap:8px}
+.finder form{display:flex;gap:8px}
+.finder input{flex:1;min-width:0;font:400 1rem var(--body);color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:9px 12px}
+.finder input:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.results{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:10px;background:var(--surface);max-height:320px;overflow-y:auto}
+.results li+li{border-top:1px solid var(--line)}
+.results button{display:flex;justify-content:space-between;gap:10px;width:100%;text-align:left;border:0;background:none;padding:10px 12px;font:600 .95rem var(--body)}
+.results button:hover,.results button:focus-visible{background:var(--accent-soft);outline:none}
+.results button span{font:400 .8rem var(--mono);color:var(--muted);white-space:nowrap}
+.results .full{color:var(--accent)}
+/* Your weather sites panel */
+.panel{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px}
+.card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--c,var(--line));border-radius:10px;padding:10px 12px;display:flex;flex-direction:column;gap:3px;min-width:0}
+.card .cn{font:700 1rem/1.15 var(--display)}
+.card .cd{font:.68rem var(--mono);color:var(--muted);overflow-wrap:anywhere}
+.card .ct{font:500 1.15rem var(--mono);font-variant-numeric:tabular-nums;margin-top:4px}
+.card .ct span{color:var(--muted)}
+.card .cr{font:.78rem var(--mono);color:var(--muted)}
+.card .cx{font-size:.82rem}
+.card.empty .cx{color:var(--muted)}
+.card.alert{border-color:var(--warn)}
+/* Forecast sites */
+tr.site td .mname i{border-radius:1px;transform:rotate(45deg) scale(.85)}
+.day .dsite{font:500 .72rem var(--mono);color:var(--muted)}
+.sites{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+.sites div{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:10px 12px;font-weight:600;display:flex;flex-direction:column;gap:2px}
+.sites div span{font:400 .78rem var(--body);color:var(--muted)}
+.sites div.stale span{color:var(--warn)} .sites div.failed span{color:var(--bad)}
+.linkbtn{border:0;background:none;padding:0;color:var(--accent);font:600 .85rem var(--body);text-decoration:underline;align-self:flex-start}
+.error{border:1px solid var(--bad);color:var(--bad);border-radius:10px;padding:10px 12px;font-size:.9rem}
+footer{font-size:.8rem;color:var(--muted);display:flex;flex-direction:column;gap:6px}
+section{display:flex;flex-direction:column;gap:10px;min-width:0}
+@media (max-width:420px){.now dl{grid-template-columns:repeat(2,minmax(0,1fr))}h1{font-size:1.65rem}}
+@media (prefers-reduced-motion:no-preference){.day,.btn,.links a{transition:border-color .15s,background .15s}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="meta">
+      <span class="eyebrow" id="eyebrow">Forecast compare</span>
+      <h1 class="loctitle"><select id="loc" aria-label="Choose a location"><option>Loading locations…</option></select></h1>
+      <span class="status" id="status">Loading forecasts…</span>
+    </div>
+    <div class="hbtns">
+      <button class="btn" id="saveBtn" type="button" hidden aria-pressed="false">☆ Save place</button>
+      <button class="btn" id="refresh" type="button">Refresh</button>
+    </div>
+  </header>
+
+  <section class="finder" aria-label="Find a place">
+    <form id="searchForm" role="search">
+      <input id="q" type="search" placeholder="Search any place or postcode in Australia" autocomplete="off" enterkeyhint="search" aria-label="Place or postcode">
+      <button class="btn" type="submit">Search</button>
+    </form>
+    <p class="note" id="searchNote" hidden></p>
+    <ul class="results" id="results" hidden></ul>
+  </section>
+
+  <div id="err" class="error" hidden></div>
+
+  <section aria-labelledby="nowh">
+    <h2 id="nowh" class="eyebrow" style="font-family:var(--mono);font-size:.72rem">Right now</h2>
+    <div class="now" id="now">
+      <div class="temp num">–</div>
+      <div><div class="cond">Waiting for data</div><div class="note">Feels like –</div></div>
+    </div>
+    <p class="note" id="obs">A real reading from the nearest Bureau of Meteorology station.</p>
+  </section>
+
+  <section aria-labelledby="weekh">
+    <h2 id="weekh">Next 7 days</h2>
+    <p class="note">Each day shows the median of the Bureau of Meteorology and the forecast sites. The dot shows how closely they agree on the top temperature: green within 2°C, amber within 4°C, red beyond that.</p>
+    <div class="days" id="days" role="group" aria-label="Choose a day"></div>
+  </section>
+
+  <section aria-labelledby="panelh">
+    <h2 id="panelh">Your weather sites</h2>
+    <div class="panel" id="panel"></div>
+  </section>
+
+  <section class="detail" aria-labelledby="dayh">
+    <h2 id="dayh">Site by site</h2>
+    <div class="summary" id="summary"></div>
+    <div class="tablebox">
+      <table>
+        <thead><tr><th>Source</th><th>Max °C</th><th>Min °C</th><th>Rain mm</th><th>Chance</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <p class="note">The top row is the Bureau of Meteorology's official forecast for this location, written by its forecasters. The diamond rows are what the other forecast sites show for it. Where a site has no page for the exact place, it uses a nearby one, named under the site (for example, Weatherzone uses Archerfield for Oxley). Red figures sit 3°C or more away from the median of all rows. Weather Underground and Windy don't publish a chance of rain.</p>
+  </section>
+
+  <section class="chartcard" aria-labelledby="charth">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <h2 id="charth">How the sites line up</h2>
+      <div class="seg" role="group" aria-label="Chart measure">
+        <button type="button" data-m="tmax" aria-pressed="true">Max</button>
+        <button type="button" data-m="tmin" aria-pressed="false">Min</button>
+        <button type="button" data-m="rain" aria-pressed="false">Rain</button>
+      </div>
+    </div>
+    <div class="chartwrap"><div id="chart"></div><div class="tip" id="tip" role="status" hidden></div></div>
+    <div class="legend" id="legend"></div>
+  </section>
+
+  <section aria-labelledby="offh">
+    <h2 id="offh">Forecast sites</h2>
+    <p class="note" id="sitesNote">Figures from the forecast sites below are collected every 3 hours and shown in the table and chart above.</p>
+    <div class="sites" id="sites"></div>
+  </section>
+
+  <footer>
+    <span>Official forecast and station readings: Bureau of Meteorology, through the data feed its own app uses (unofficial and may change), with the scraper's copy as a fallback. Forecast site figures: collected automatically from each site. For warnings and safety decisions, follow the Bureau of Meteorology.</span>
+  </footer>
+</div>
+
+<script>
+(function(){
+  // Own storage keys: this page shares storage with the private app at d3skj3t.github.io
+  const CACHE="aus-forecast-v1",LOC_KEY="aus-forecast-loc",SAVED_KEY="aus-forecast-saved";
+  // Featured locations (full comparison) and their scraped figures come from the oxley-forecast-public
+  // repo's scraper, so this app adds no traffic to the weather sites
+  const SRC="https://raw.githubusercontent.com/D3skJ3t/oxley-forecast-public/main/";
+  const BOM="https://api.weather.bom.gov.au/v1/locations";
+  let LOCS=[];
+  // Places found by search are Bureau of Meteorology only; ones the viewer saves are kept on this device
+  function getSaved(){try{return JSON.parse(localStorage.getItem(SAVED_KEY)||"[]");}catch(e){return[];}}
+  function putSaved(list){try{localStorage.setItem(SAVED_KEY,JSON.stringify(list));}catch(e){}}
+  const isSaved=g=>getSaved().some(p=>p.g7===g);
+  const cacheKey=()=>CACHE+":"+state.loc.id;
+  // A date (YYYY-MM-DD) in the selected location's own time zone (Sydney and Byron Bay have daylight saving)
+  function localDate(iso){const t=new Date(iso);if(isNaN(t))return null;
+    return new Intl.DateTimeFormat("en-CA",{timeZone:state.loc.tz,year:"numeric",month:"2-digit",day:"2-digit"}).format(t);}
+  async function loadBom(){
+    const out={daily:{},obs:null,ok:false},api="https://api.weather.bom.gov.au/v1/locations/"+state.loc.bom;
+    const get=u=>fetch(u).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();});
+    const [f,o]=await Promise.allSettled([get(api+"/forecasts/daily"),get(api+"/observations")]);
+    if(f.status==="fulfilled"&&Array.isArray(f.value?.data)){
+      f.value.data.forEach(d=>{const k=localDate(d.date);if(!k)return;const a=d.rain?.amount||{};
+        out.daily[k]={tmax:d.temp_max,tmin:d.temp_min,rmin:a.min,rmax:a.max,chance:d.rain?.chance,text:(d.short_text||"").replace(/\.$/,"")};});
+      out.ok=true;}
+    if(o.status==="fulfilled"&&o.value?.data){out.obs=o.value.data;}
+    return out;
+  }
+  // Scraped forecast sites: published by this repo's own scraper, each location about every 3 hours
+  const dataUrl=()=>SRC+"data/"+state.loc.id+".json";
+  const SITES=[{id:"weatherzone",name:"Weatherzone",c:"--s1"},{id:"willyweather",name:"WillyWeather",c:"--s2"},{id:"elders",name:"Elders Weather",c:"--s3"},{id:"wunderground",name:"Weather Underground",c:"--s5"},{id:"windy",name:"Windy",c:"--s6"}];
+  // Harris's list, in his order, for the "Your weather sites" panel
+  const PANEL=[{kind:"site",id:"weatherzone",name:"Weatherzone",dom:"weatherzone.com.au",c:"--s1"},
+    {kind:"site",id:"willyweather",name:"WillyWeather",dom:"willyweather.com.au",c:"--s2"},
+    {kind:"site",id:"windy",name:"Windy",dom:"windy.com",c:"--s6"},
+    {kind:"site",id:"wunderground",name:"Weather Underground",dom:"wunderground.com",c:"--s5"},
+    {kind:"meteye",name:"BOM MetEye",dom:"bom.gov.au/australia/meteye",c:"--bom"},
+    {kind:"obs",name:"BOM Latest Observations",dom:"bom.gov.au/qld/observations",c:"--bom"},
+    {kind:"site",id:"elders",name:"Elders Weather",dom:"eldersweather.com.au",c:"--s3"}];
+  async function loadScraped(){
+    if(state.loc.kind!=="full")return{state:"none"};  // searched places: Bureau only, nothing scraped
+    const r=await fetch(dataUrl(),{cache:"no-store"});
+    if(!r.ok)throw new Error("scraped "+r.status);
+    return{state:"ok",data:await r.json()};
+  }
+  const $=id=>document.getElementById(id);
+  const cssv=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  const isNum=v=>typeof v==="number"&&isFinite(v);
+  const f0=v=>isNum(v)?Math.round(v).toString():"–";
+  const f1=v=>isNum(v)?(Math.round(v*10)/10).toFixed(1):"–";
+  const dash='<span class="dash">–</span>';
+  function median(a){a=a.filter(isNum).sort((x,y)=>x-y);if(!a.length)return null;const m=a.length>>1;return a.length%2?a[m]:(a[m-1]+a[m])/2;}
+  function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+  function ago(iso){const m=Math.round((Date.now()-Date.parse(iso))/60000);if(!isFinite(m))return"time unknown";if(m<60)return m+" min ago";const h=Math.round(m/60);return h<48?h+" h ago":Math.round(h/24)+" days ago";}
+  let state={data:null,sel:0,measure:"tmax",scrape:{state:"pending"},loc:null};
+
+  // The next 7 dates in the location's time zone
+  function dates(){const t=Date.parse(localDate(Date.now())+"T00:00:00Z");return Array.from({length:7},(_,i)=>new Date(t+i*864e5).toISOString().slice(0,10));}
+  function siteSrc(id){const s=state.data?.scraped?.sources;return Array.isArray(s)?s.find(x=>x.source===id)||null:null;}
+  function siteDay(id,k){const s=siteSrc(id);return (s&&(s.days||[]).find(d=>d.date===k))||null;}
+  function rangeText(lo,hi,txt){if(/</.test(txt||"")&&isNum(hi))return"<"+hi;if(isNum(lo)&&isNum(hi)&&hi>lo)return lo+" to "+hi;const v=isNum(hi)?hi:lo;return isNum(v)?String(v):"–";}
+  function bomDay(k){const D=state.data;if(D.bom&&D.bom.daily&&D.bom.daily[k])return D.bom.daily[k];
+    // Fall back to the scraper's copy when the Bureau's feed can't be reached from the browser
+    const s=siteDay("bom",k);return s?{tmax:s.tmax,tmin:s.tmin,rmin:s.rain_min,rmax:s.rain_max,chance:s.chance,text:(s.text||"").replace(/\.$/,"")}:null;}
+  // Every source with figures for date k: the Bureau first, then each scraped site
+  function rowsFor(k){const out=[];const b=bomDay(k);
+    if(b)out.push({name:"BOM official",c:"--bom",bom:true,tmax:b.tmax,tmin:b.tmin,rain:isNum(b.rmax)?b.rmax:b.rmin,rainText:rangeText(b.rmin,b.rmax),chance:b.chance,sub:b.text||"Bureau of Meteorology forecasters"});
+    SITES.forEach(s=>{const d=siteDay(s.id,k);if(!d)return;const src=siteSrc(s.id);
+      out.push({name:s.name,c:s.c,tmax:d.tmax,tmin:d.tmin,rain:isNum(d.rain_max)?d.rain_max:d.rain_min,rainText:rangeText(d.rain_min,d.rain_max,d.rain_text),chance:d.chance,sub:[d.text,src.point].filter(Boolean).join(" · ")});});
+    return out.filter(r=>isNum(r.tmax)||isNum(r.tmin)||isNum(r.rain));}
+  function agreement(rows){const v=rows.map(r=>r.tmax).filter(isNum);if(v.length<2)return{cls:"",label:"n/a",spread:null};const s=Math.max(...v)-Math.min(...v);return{spread:s,cls:s<=2?"":s<=4?"mid":"low",label:s<=2?"Agree":s<=4?"Some spread":"Disagree"};}
+  // Station reading: the Bureau's live feed if the browser got it, otherwise the scraper's copy
+  function obsNow(){const D=state.data,o=D.bom&&D.bom.obs,so=D.scraped&&D.scraped.observations;
+    if(o&&isNum(o.temp))return{temp:o.temp,feels:o.temp_feels_like,hum:o.humidity,wind:o.wind?.speed_kilometre,dir:o.wind?.direction,gust:o.gust?.speed_kilometre,rain:o.rain_since_9am,station:o.station?.name,km:isNum(o.station?.distance)?o.station.distance/1000:null};
+    if(so&&isNum(so.temp))return{temp:so.temp,feels:so.feels_like,hum:so.humidity,wind:so.wind_kmh,dir:so.wind_dir,gust:so.gust_kmh,rain:so.rain_since_9am,station:so.station,km:so.distance_km,at:so.time};
+    return null;}
+
+  async function load(){
+    const btn=$("refresh");btn.disabled=true;$("status").textContent="Fetching forecasts…";$("err").hidden=true;
+    const forLoc=state.loc.id;
+    try{
+      const [bom,scr]=await Promise.all([loadBom().catch(()=>null),loadScraped().catch(()=>({state:"error"}))]);
+      if(state.loc.id!==forLoc)return;  // location changed while this was loading
+      state.scrape=scr;
+      // Keep the last scraped data we had if this fetch failed
+      const scraped=scr.state==="ok"?scr.data:(scr.state==="error"?state.data?.scraped||null:null);
+      const bomOk=bom&&(bom.ok||bom.obs);
+      if(!bomOk&&!scraped)throw new Error("nothing reachable");
+      state.data={bom:bomOk?bom:null,scraped,fetched:Date.now()};
+      try{localStorage.setItem(cacheKey(),JSON.stringify(state.data));}catch(e){}
+      render();
+    }catch(e){
+      if(state.loc.id!==forLoc)return;
+      let cached=null;try{cached=JSON.parse(localStorage.getItem(cacheKey())||"null");}catch(_){}
+      const msg="Couldn't reach the Bureau of Meteorology or the forecast sites. Check your internet connection, then tap Refresh.";
+      if(cached){state.data=cached;render();$("err").textContent=msg+" Showing the last forecast saved on this device.";}
+      else{$("err").textContent=msg;$("status").textContent="No data yet";renderSites();}
+      $("err").hidden=false;
+    }finally{if(state.loc.id===forLoc)btn.disabled=false;}
+  }
+
+  function render(){
+    const D=state.data;if(!D)return;
+    $("status").textContent="Updated "+new Date(D.fetched).toLocaleString("en-AU",{weekday:"short",hour:"numeric",minute:"2-digit"});
+    // Now
+    const ob=obsNow(),today=bomDay(dates()[0]);
+    if(ob){
+      $("now").innerHTML=`<div class="temp num">${f0(ob.temp)}<small>°C</small></div>
+        <div><div class="cond">${esc(today&&today.text||"Latest reading")}</div><div class="note">Feels like ${f0(ob.feels)}°C</div></div>
+        <dl><div><dt>Humidity</dt><dd>${f0(ob.hum)}%</dd></div>
+        <div><dt>Wind</dt><dd>${f0(ob.wind)} ${esc(ob.dir||"")}</dd></div>
+        <div><dt>Gusts</dt><dd>${f0(ob.gust)} km/h</dd></div>
+        <div><dt>Rain since 9am</dt><dd>${f1(ob.rain)} mm</dd></div></dl>`;
+      $("obs").textContent="Bureau of Meteorology reading from "+(ob.station?ob.station+" station":"the nearest station")+(isNum(ob.km)?", "+f0(ob.km)+" km away":"")+(ob.at?", at "+new Date(ob.at).toLocaleTimeString("en-AU",{hour:"numeric",minute:"2-digit",timeZone:state.loc.tz}):"")+".";
+    }else{
+      $("now").innerHTML=`<div class="temp num">–</div><div><div class="cond">No station reading</div><div class="note">Tap Refresh to try again</div></div>`;
+    }
+    // Days
+    $("days").innerHTML=dates().map((k,i)=>{
+      const rows=rowsFor(k),ag=agreement(rows),dt=new Date(k+"T12:00:00");
+      const wet=rows.filter(r=>isNum(r.rain)&&r.rain>=1).length,b=bomDay(k);
+      const nm=i===0?"Today":i===1?"Tomorrow":dt.toLocaleDateString("en-AU",{weekday:"short"});
+      return `<button type="button" class="day" data-i="${i}" aria-pressed="${i===state.sel}">
+        <span class="dname">${nm}</span><span class="ddate">${dt.toLocaleDateString("en-AU",{day:"numeric",month:"short"})}</span>
+        <span class="dtemps">${f0(median(rows.map(r=>r.tmax)))}° <span>${f0(median(rows.map(r=>r.tmin)))}°</span></span>
+        ${b&&b.text?`<span class="drain">${esc(b.text)}</span>`:""}
+        <span class="drain">${rows.length?wet+"/"+rows.length+" say rain":"No data"}</span>
+        ${b&&isNum(b.tmax)?`<span class="dbom">BOM ${f0(b.tmax)}°${isNum(b.chance)?" · "+f0(b.chance)+"%":""}</span>`:""}
+        <span class="agree ${ag.cls}"><i></i>${ag.label}</span></button>`;}).join("");
+    renderDay();renderChart();renderSites();
+  }
+
+  function renderDay(){
+    const k=dates()[state.sel],rows=rowsFor(k),dt=new Date(k+"T12:00:00");
+    const med={tmax:median(rows.map(r=>r.tmax)),tmin:median(rows.map(r=>r.tmin)),rain:median(rows.map(r=>r.rain)),chance:median(rows.map(r=>r.chance))};
+    const ag=agreement(rows),wet=rows.filter(r=>isNum(r.rain)&&r.rain>=1).length,b=bomDay(k);
+    $("dayh").textContent="Site by site · "+dt.toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long"});
+    $("summary").innerHTML=(b&&b.text?`<span class="pill">BOM says <b>${esc(b.text)}</b></span>`:"")+`<span class="pill">Median <b>${f0(med.tmax)}° / ${f0(med.tmin)}°</b></span>
+      <span class="pill">Top temp spread <b>${ag.spread==null?"–":f1(ag.spread)+"°C"}</b></span>
+      <span class="pill">Rain ≥1 mm <b>${wet} of ${rows.length} sources</b></span>`;
+    const out=(v,m)=>isNum(v)&&isNum(m)&&Math.abs(v-m)>=3?' class="out"':"";
+    let html="";
+    rows.forEach((r,i)=>{
+      if(i===0&&!r.bom||i===1&&rows[0].bom)html+=`<tr class="sep"><td colspan="5">Forecast sites</td></tr>`;
+      html+=`<tr class="${r.bom?"official":"site"}">
+      <td><span class="mname"><i style="background:var(${r.c})"></i>${esc(r.name)}</span><span class="msrc">${esc(r.sub)}</span></td>
+      <td${out(r.tmax,med.tmax)}>${isNum(r.tmax)?f0(r.tmax):dash}</td><td${out(r.tmin,med.tmin)}>${isNum(r.tmin)?f0(r.tmin):dash}</td>
+      <td>${r.rainText}</td><td>${isNum(r.chance)?f0(r.chance)+"%":dash}</td></tr>`;});
+    $("tbody").innerHTML=rows.length?html+`<tr class="median"><td>Median</td><td>${f1(med.tmax)}</td><td>${f1(med.tmin)}</td><td>${f1(med.rain)}</td><td>${isNum(med.chance)?f0(med.chance)+"%":"–"}</td></tr>`
+      :`<tr><td colspan="5">No forecasts for this day yet.</td></tr>`;
+    renderPanel(k,state.sel);
+  }
+
+  function renderPanel(k,sel){
+    const S=state.data?.scraped,errs=(S&&S.errors)||{};
+    const dt=new Date(k+"T12:00:00");
+    $("panelh").textContent="Your weather sites · "+(sel===0?"Today":sel===1?"Tomorrow":dt.toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"short"}));
+    const card=(p,body,cls="")=>`<div class="card ${cls}" style="--c:var(${p.c})"><span class="cn">${esc(p.name)}</span><span class="cd">${esc(p.dom)}</span>${body}</div>`;
+    const empty=(p,msg)=>card(p,`<span class="cx">${esc(msg)}</span>`,"empty");
+    const fc=(p,d,note)=>card(p,`<span class="ct">${isNum(d.tmax)?f0(d.tmax)+"°":"–"} <span>${isNum(d.tmin)?f0(d.tmin)+"°":"–"}</span></span>
+      <span class="cr">${d.rainText==="–"?"":esc(d.rainText)+" mm"}${isNum(d.chance)?(d.rainText==="–"?"":" · ")+f0(d.chance)+"% chance":""}</span>
+      ${d.text?`<span class="cx">${esc(d.text)}</span>`:""}${note?`<span class="cd">${esc(note)}</span>`:""}`);
+    // Searched places only have the Bureau's figures, so show just those cards plus a pointer to the full list
+    const full=state.loc.kind==="full";
+    const cards=full?PANEL:PANEL.filter(p=>p.kind==="meteye"||p.kind==="obs");
+    $("panel").innerHTML=(full?"":`<div class="card empty" style="--c:var(--accent)"><span class="cn">Other sites</span><span class="cx">Weatherzone, WillyWeather, Elders Weather, Weather Underground and Windy are compared for the ${LOCS.length} featured locations in the list. Searched places show the Bureau of Meteorology only.</span></div>`)+cards.map(p=>{
+      if(p.kind==="site"){const src=siteSrc(p.id);
+        if(!src)return empty(p,errs[p.id]?"Couldn't fetch: "+errs[p.id]:"No data yet.");
+        const d=siteDay(p.id,k);if(!d)return empty(p,"No forecast for this day.");
+        return fc(p,{tmax:d.tmax,tmin:d.tmin,rainText:rangeText(d.rain_min,d.rain_max,d.rain_text),chance:d.chance,text:d.text},!src.point?"":p.id==="windy"?"Weather model: "+src.point.replace(/ model$/,""):"Forecast point: "+src.point);}
+      if(p.kind==="meteye"){const b=bomDay(k);if(!b)return empty(p,"No Bureau forecast for this day.");
+        return fc(p,{tmax:b.tmax,tmin:b.tmin,rainText:rangeText(b.rmin,b.rmax),chance:b.chance,text:b.text},"Bureau grid forecast for "+state.loc.name+" (same as the BOM row)");}
+      if(p.kind==="obs"){const o=obsNow();if(!o)return empty(p,"No station reading right now.");
+        return card(p,`<span class="ct">${f1(o.temp)}°C <span>now</span></span><span class="cr">Feels ${f0(o.feels)}° · ${f0(o.hum)}% · ${f0(o.wind)} km/h ${esc(o.dir||"")}</span>
+          <span class="cx">${esc(o.station||"Nearest station")}${isNum(o.km)?" ("+f0(o.km)+" km)":""}${o.at?", "+esc(new Date(o.at).toLocaleTimeString("en-AU",{hour:"numeric",minute:"2-digit",timeZone:state.loc.tz})):""}</span><span class="cd">Latest reading, not a forecast</span>`);}
+      return "";
+    }).join("");
+  }
+
+  function renderChart(){
+    const days=dates(),W=360,H=210,L=34,R=10,T=12,B=28,pw=W-L-R,ph=H-T-B;
+    const pick=d=>d?(state.measure==="rain"?d.rain:d[state.measure]):null;
+    const named=[{name:"BOM official",c:"--bom",bom:true},...SITES];
+    const lines=named.map(s=>({m:s,v:days.map(k=>pick(rowsFor(k).find(r=>r.name===s.name))),dash:!!s.bom,dot:!s.bom})).filter(l=>l.v.some(isNum));
+    const all=lines.flatMap(s=>s.v).filter(isNum);
+    if(!all.length){$("chart").innerHTML='<p class="note">No data for this measure.</p>';$("legend").innerHTML="";state.pts=[];hideTip();return;}
+    let lo=Math.min(...all),hi=Math.max(...all);
+    if(state.measure==="rain"){lo=0;hi=Math.max(5,Math.ceil(hi/5)*5);}else{lo=Math.floor((lo-1)/2)*2;hi=Math.ceil((hi+1)/2)*2;}
+    const step=state.measure==="rain"?(hi<=10?2:5):(hi-lo<=8?2:4);
+    const x=i=>L+i*pw/(days.length-1),y=v=>T+ph-(v-lo)/(hi-lo)*ph;
+    const fg=cssv("--muted"),grid=cssv("--line");
+    let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${state.measure==="rain"?"Daily rain":"Daily temperature"} by source">`;
+    for(let v=lo;v<=hi+1e-9;v+=step){s+=`<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="${grid}" stroke-width="1"/><text x="${L-6}" y="${y(v)+3.5}" text-anchor="end" font-size="10" fill="${fg}" font-family="IBM Plex Mono,monospace">${v}</text>`;}
+    days.forEach((d,i)=>{const dt=new Date(d+"T12:00:00");s+=`<text x="${x(i)}" y="${H-8}" text-anchor="middle" font-size="10" fill="${fg}" font-family="IBM Plex Mono,monospace" font-weight="${i===state.sel?600:400}">${i===0?"Today":dt.toLocaleDateString("en-AU",{weekday:"short"})}</text>`;});
+    s+=`<rect x="${x(state.sel)-8}" y="${T}" width="16" height="${ph}" fill="${cssv("--accent-soft")}" opacity=".7"/>`;
+    const pts=[];
+    lines.forEach(l=>{const col=cssv(l.m.c);let p="";l.v.forEach((v,i)=>{if(isNum(v))pts.push({x:x(i),y:y(v),i,name:l.m.name,c:l.m.c});});l.v.forEach((v,i)=>{if(isNum(v))p+=(p?"L":"M")+x(i).toFixed(1)+" "+y(v).toFixed(1);});
+      s+=`<path d="${p}" fill="none" stroke="${col}" stroke-width="${l.dash?2.5:2}"${l.dash?' stroke-dasharray="5 4"':' stroke-dasharray="1 4"'} stroke-linejoin="round" stroke-linecap="round" opacity=".9"/>`;
+      l.v.forEach((v,i)=>{if(!isNum(v))return;const r=i===state.sel?3.5:2.2;
+        s+=l.dot?`<rect x="${x(i)-r}" y="${y(v)-r}" width="${2*r}" height="${2*r}" fill="${col}" transform="rotate(45 ${x(i)} ${y(v)})"/>`:`<circle cx="${x(i)}" cy="${y(v)}" r="${r}" fill="${col}"/>`;});});
+    s+=`<text x="${L}" y="${T-2}" font-size="9" fill="${fg}" font-family="IBM Plex Mono,monospace">${state.measure==="rain"?"mm":"°C"}</text><circle id="hl" r="6.5" fill="none" stroke-width="2" visibility="hidden"/></svg>`;
+    $("chart").innerHTML=s;state.pts=pts;hideTip();
+    $("legend").innerHTML=lines.map(l=>`<span><i style="${l.dash?"height:2px;background:repeating-linear-gradient(90deg,var(--bom) 0 5px,transparent 5px 8px)":`background:repeating-linear-gradient(90deg,var(${l.m.c}) 0 2px,transparent 2px 5px)`}"></i>${esc(l.m.name)}</span>`).join("");
+  }
+
+  // Hover (or tap) a dot to see that source's full figures for that day.
+  // Where dots overlap, each double-click (or single tap on a phone) steps to the next source at that spot.
+  function hideTip(){$("tip").hidden=true;state.cyc=null;const h=document.getElementById("hl");if(h)h.setAttribute("visibility","hidden");}
+  function chartPoint(e){
+    const svg=$("chart").querySelector("svg");if(!svg||!state.pts||!state.pts.length)return;
+    const r=svg.getBoundingClientRect(),k=360/r.width,px=(e.clientX-r.left)*k,py=(e.clientY-r.top)*k;
+    let near=null,bd=Infinity;state.pts.forEach(p=>{const d=Math.hypot(p.x-px,p.y-py);if(d<bd){bd=d;near=p;}});
+    if(!near||bd>20){hideTip();return;}
+    // Dots on the same day whose centres sit within 5 units of each other count as one overlapping spot
+    const group=state.pts.filter(p=>p.i===near.i&&Math.abs(p.y-near.y)<=5);
+    const key=near.i+":"+group.map(p=>p.name).join("|");
+    // Double-tap is unreliable on phones, so there a single tap steps instead
+    const touch=e.pointerType==="touch"||e.pointerType==="pen";
+    const step=e.type==="dblclick"||(e.type==="pointerdown"&&touch);
+    if(!state.cyc||state.cyc.key!==key)state.cyc={key,idx:0};  // hovering keeps whichever dot was stepped to
+    else if(step)state.cyc={key,idx:(state.cyc.idx+1)%group.length};
+    const best=group[state.cyc.idx];
+    const day=dates()[best.i],row=rowsFor(day).find(x=>x.name===best.name);if(!row){hideTip();return;}
+    const dt=new Date(day+"T12:00:00"),m=state.measure;
+    const part=(key,label,val)=>m===key?`<b>${label} ${val}</b>`:`${label} ${val}`;
+    const tip=$("tip");
+    tip.innerHTML=`${group.length>1?`<div class="tc">${state.cyc.idx+1} of ${group.length} here · ${touch?"tap again":"double-click"} for the next</div>`:""}<div class="tn"><i style="background:var(${best.c})"></i>${esc(row.name)}</div>
+      <div class="td">${dt.toLocaleDateString("en-AU",{weekday:"short",day:"numeric",month:"short"})}${row.sub?" · "+esc(row.sub):""}</div>
+      <div class="tv">${part("tmax","Max",isNum(row.tmax)?f0(row.tmax)+"°":"–")} · ${part("tmin","Min",isNum(row.tmin)?f0(row.tmin)+"°":"–")}</div>
+      <div class="tv">${part("rain","Rain",row.rainText==="–"?"–":esc(row.rainText)+" mm")}${isNum(row.chance)?" · "+f0(row.chance)+"% chance":""}</div>`;
+    tip.hidden=false;
+    // Place above the dot (below it near the top), kept inside the chart's width
+    const wrap=tip.parentElement.getBoundingClientRect(),cx=best.x/k+(r.left-wrap.left),cy=best.y/k+(r.top-wrap.top);
+    const half=tip.offsetWidth/2,left=Math.min(Math.max(cx,half),wrap.width-half);
+    tip.classList.toggle("below",cy<tip.offsetHeight+16);
+    tip.style.left=left+"px";tip.style.top=cy+"px";
+    const h=document.getElementById("hl");h.setAttribute("cx",best.x);h.setAttribute("cy",best.y);h.setAttribute("stroke",cssv(best.c));h.setAttribute("visibility","visible");
+  }
+  $("chart").addEventListener("pointermove",chartPoint);
+  $("chart").addEventListener("pointerdown",chartPoint);
+  $("chart").addEventListener("dblclick",e=>{e.preventDefault();chartPoint(e);});
+  $("chart").addEventListener("pointerleave",e=>{if(e.pointerType==="mouse")hideTip();});
+  document.addEventListener("pointerdown",e=>{if(!e.target.closest("#chart"))hideTip();});
+
+  function renderSites(){
+    const st=state.scrape?.state,S=state.data?.scraped,errs=(S&&S.errors)||{};
+    if(state.loc&&state.loc.kind!=="full"){$("sitesNote").textContent="This place shows the Bureau of Meteorology's forecast and nearest station only, fetched live. Pick one of the featured locations in the list for the full comparison of forecast sites.";$("sites").innerHTML="";return;}
+    if(st==="error"&&S)$("sitesNote").textContent="Couldn't reach the data just now, so these are the last figures saved on this device.";
+    else if(st==="error")$("sitesNote").textContent="Couldn't reach the forecast data. Tap Refresh to try again.";
+    else $("sitesNote").textContent="Figures from the forecast sites below are collected every 3 hours and shown in the table and chart above. Windy covers about 6 days.";
+    if(!S){$("sites").innerHTML="";return;}
+    const tile=(name,src,e,okText)=>{if(!src)return `<div class="${e?"failed":""}">${esc(name)}<span>${e?"Failed: "+esc(e):"No data yet"}</span></div>`;
+      const old=Date.now()-Date.parse(src.fetched)>12*3600e3;
+      return `<div class="${e?"failed":old?"stale":""}">${esc(name)}<span>${e?"Last run failed; showing data from "+ago(src.fetched):okText||"Updated "+ago(src.fetched)}</span></div>`;};
+    $("sites").innerHTML=[{id:"bom",name:"BOM (scraped copy)"},...SITES].map(s=>tile(s.name,siteSrc(s.id),errs[s.id])).join("")+
+      tile("BOM observations",S.observations,errs.observations,S.observations&&S.observations.station?esc(S.observations.station)+", updated "+ago(S.observations.fetched):null);
+  }
+  $("days").addEventListener("click",e=>{const b=e.target.closest(".day");if(!b)return;state.sel=+b.dataset.i;document.querySelectorAll(".day").forEach(d=>d.setAttribute("aria-pressed",String(+d.dataset.i===state.sel)));renderDay();renderChart();});
+  document.querySelectorAll(".seg button").forEach(b=>b.addEventListener("click",()=>{state.measure=b.dataset.m;document.querySelectorAll(".seg button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));if(state.data)renderChart();}));
+  $("refresh").addEventListener("click",()=>{if(state.loc)load();});
+  if(window.matchMedia)matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change",()=>state.data&&renderChart());
+
+  // Switch place: show what this device last saved for it straight away, then fetch fresh figures.
+  // A place is either a featured location (kind "full") or a searched one (kind "bom", keyed by geohash).
+  function setLoc(L){
+    state.loc=L;
+    try{localStorage.setItem(LOC_KEY,JSON.stringify(L));}catch(e){}
+    // Keep the choice in the link too, so a shared link opens on the same place
+    try{const u=new URL(location.href);u.searchParams.delete(L.kind==="full"?"place":"loc");
+      u.searchParams.set(L.kind==="full"?"loc":"place",L.kind==="full"?L.id:L.g7);history.replaceState(null,"",u);}catch(e){}
+    const coords=isNum(L.lat)&&isNum(L.lon)?` · ${Math.abs(L.lat).toFixed(2)}°S ${L.lon.toFixed(2)}°E`:"";
+    $("eyebrow").textContent=`${L.kind==="full"?"Full comparison":"Bureau of Meteorology only"} · ${L.state||""} ${L.postcode||""}${coords}`;
+    document.title=L.name+" · Australian Forecasts";
+    renderPicker();renderSave();
+    state.sel=0;state.scrape={state:"pending"};state.data=null;hideTip();
+    try{state.data=JSON.parse(localStorage.getItem(cacheKey())||"null");}catch(e){}
+    if(state.data)render();
+    else{$("now").innerHTML=`<div class="temp num">–</div><div><div class="cond">Loading…</div><div class="note">Feels like –</div></div>`;
+      $("obs").textContent="A real reading from the nearest Bureau of Meteorology station.";
+      ["days","panel","summary","tbody","chart","legend"].forEach(x=>$(x).innerHTML="");renderSites();}
+    load();
+  }
+  const full=l=>({...l,kind:"full"});
+  // A searched place, from a Bureau search result plus its details (time zone, coordinates)
+  async function bomPlace(g7,hint){
+    const d=(await fetch(BOM+"/"+g7).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();})).data||{};
+    return{kind:"bom",id:"bom-"+g7,g7,bom:g7.slice(0,6),name:hint?.name||d.name||"Unknown place",state:hint?.state||d.state||"",
+      postcode:hint?.postcode||"",tz:d.timezone||"Australia/Brisbane",lat:d.latitude,lon:d.longitude};
+  }
+
+  // The dropdown: featured locations, then the places saved on this device
+  function renderPicker(){
+    const saved=getSaved(),cur=state.loc;
+    let html=`<optgroup label="Full comparison">${LOCS.map(l=>`<option value="loc:${esc(l.id)}">${esc(l.name)}</option>`).join("")}</optgroup>`;
+    const extra=cur&&cur.kind==="bom"&&!saved.some(p=>p.g7===cur.g7)?[cur]:[];  // a searched place not saved yet
+    if(saved.length||extra.length)html+=`<optgroup label="My places (Bureau only)">${[...saved,...extra].map(p=>`<option value="place:${esc(p.g7)}">${esc(p.name)}${p.state?", "+esc(p.state):""}</option>`).join("")}</optgroup>`;
+    $("loc").innerHTML=html;
+    if(cur)$("loc").value=cur.kind==="full"?"loc:"+cur.id:"place:"+cur.g7;
+  }
+  $("loc").addEventListener("change",e=>{const [k,v]=e.target.value.split(/:(.*)/);
+    if(k==="loc")setLoc(full(LOCS.find(l=>l.id===v)));
+    else{const p=getSaved().find(p=>p.g7===v)||(state.loc&&state.loc.g7===v?state.loc:null);if(p)setLoc(p);}});
+
+  // Save / unsave a searched place on this device
+  function renderSave(){const b=$("saveBtn"),L=state.loc;
+    if(!L||L.kind!=="bom"){b.hidden=true;return;}
+    const on=isSaved(L.g7);b.hidden=false;b.setAttribute("aria-pressed",String(on));b.textContent=on?"★ Saved":"☆ Save place";}
+  $("saveBtn").addEventListener("click",()=>{const L=state.loc;if(!L||L.kind!=="bom")return;
+    const list=getSaved();putSaved(isSaved(L.g7)?list.filter(p=>p.g7!==L.g7):[...list,L]);renderPicker();renderSave();});
+
+  // Search any place or postcode with the Bureau's own location search
+  $("searchForm").addEventListener("submit",async e=>{e.preventDefault();
+    const q=$("q").value.trim(),note=$("searchNote"),ul=$("results");if(q.length<2)return;
+    note.hidden=false;note.textContent="Searching…";ul.hidden=true;
+    try{
+      const res=(await fetch(BOM+"?search="+encodeURIComponent(q)).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();})).data||[];
+      if(!res.length){note.textContent="No places found for “"+q+"”. Try a suburb, town or 4-digit postcode.";return;}
+      note.textContent=res.length+" place"+(res.length>1?"s":"")+" found. Featured locations show the full comparison; others show the Bureau of Meteorology only.";
+      ul.innerHTML=res.slice(0,30).map((p,i)=>{const f=LOCS.find(l=>l.postcode===p.postcode&&p.name.toLowerCase().startsWith(l.name.toLowerCase().split(" (")[0]));
+        return `<li><button type="button" data-i="${i}"${f?` data-loc="${esc(f.id)}"`:""}>${esc(p.name)}, ${esc(p.state)}<span>${esc(p.postcode||"")}${f?' <b class="full">· full comparison</b>':""}</span></button></li>`;}).join("");
+      ul.hidden=false;ul.onclick=async ev=>{const b=ev.target.closest("button");if(!b)return;
+        ul.hidden=true;note.hidden=true;$("q").value="";
+        if(b.dataset.loc){setLoc(full(LOCS.find(l=>l.id===b.dataset.loc)));return;}
+        const p=res[+b.dataset.i];
+        try{setLoc(await bomPlace(p.geohash,p));}catch(_){note.hidden=false;note.textContent="Couldn't load that place. Try again.";}};
+    }catch(_){note.textContent="Search isn't available right now. Check your internet connection and try again.";}
+  });
+
+  // Start: from the link (?loc= or ?place=), else the last place used on this device, else Oxley
+  fetch(SRC+"locations.json",{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();}).then(async list=>{
+    LOCS=list.map(full);
+    const u=new URL(location.href),loc=u.searchParams.get("loc"),place=u.searchParams.get("place");
+    let last=null;try{last=JSON.parse(localStorage.getItem(LOC_KEY)||"null");}catch(e){}
+    let L=null;
+    if(loc)L=LOCS.find(l=>l.id===loc);
+    else if(place)L=getSaved().find(p=>p.g7===place)||(last&&last.g7===place?last:null)||await bomPlace(place).catch(()=>null);
+    else if(last)L=last.kind==="full"?LOCS.find(l=>l.id===last.id):last;
+    setLoc(L||LOCS.find(l=>l.id==="oxley")||LOCS[0]);
+  }).catch(()=>{$("err").textContent="Couldn't load the list of locations. Check your internet connection, then reload the page.";$("err").hidden=false;$("status").textContent="No data yet";});
+})();
+</script>
+</body>
+</html>
