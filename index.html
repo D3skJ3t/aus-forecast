@@ -713,7 +713,7 @@ footer{font-size:.8rem;color:var(--muted);display:flex;flex-direction:column;gap
   }
 
   // Hover (or tap) a dot to see that source's full figures for that day.
-  // Where dots overlap, each double-click (or single tap on a phone) steps to the next source at that spot.
+  // Where dots overlap, each click (or tap on a phone) steps to the next source at that spot.
   function hideTip(){$("tip").hidden=true;state.cyc=null;const h=document.getElementById("hl");if(h)h.setAttribute("visibility","hidden");}
   function chartPoint(e){
     const svg=$("chart").querySelector("svg");if(!svg||!state.pts||!state.pts.length)return;
@@ -723,9 +723,8 @@ footer{font-size:.8rem;color:var(--muted);display:flex;flex-direction:column;gap
     // Dots on the same day whose centres sit within 5 units of each other count as one overlapping spot
     const group=state.pts.filter(p=>p.i===near.i&&Math.abs(p.y-near.y)<=5);
     const key=near.i+":"+group.map(p=>p.name).join("|");
-    // Double-tap is unreliable on phones, so there a single tap steps instead
     const touch=e.pointerType==="touch"||e.pointerType==="pen";
-    const step=e.type==="dblclick"||(e.type==="pointerdown"&&touch);
+    const step=e.type==="pointerdown";
     if(!state.cyc||state.cyc.key!==key)state.cyc={key,idx:0};  // hovering keeps whichever dot was stepped to
     else if(step)state.cyc={key,idx:(state.cyc.idx+1)%group.length};
     const best=group[state.cyc.idx];
@@ -733,7 +732,7 @@ footer{font-size:.8rem;color:var(--muted);display:flex;flex-direction:column;gap
     const dt=new Date(day+"T12:00:00"),m=state.measure;
     const part=(key,label,val)=>m===key?`<b>${label} ${val}</b>`:`${label} ${val}`;
     const tip=$("tip");
-    tip.innerHTML=`${group.length>1?`<div class="tc">${state.cyc.idx+1} of ${group.length} here · ${touch?"tap again":"double-click"} for the next</div>`:""}<div class="tn"><i style="background:var(${best.c})"></i>${esc(row.name)}</div>
+    tip.innerHTML=`${group.length>1?`<div class="tc">${state.cyc.idx+1} of ${group.length} here · ${touch?"tap":"click"} for the next</div>`:""}<div class="tn"><i style="background:var(${best.c})"></i>${esc(row.name)}</div>
       <div class="td">${dt.toLocaleDateString("en-AU",{weekday:"short",day:"numeric",month:"short"})}${row.sub?" · "+esc(row.sub):""}</div>
       <div class="tv">${part("tmax","Max",isNum(row.tmax)?f0(row.tmax)+"°":"–")} · ${part("tmin","Min",isNum(row.tmin)?f0(row.tmin)+"°":"–")}</div>
       <div class="tv">${part("rain","Rain",row.rainText==="–"?"–":esc(row.rainText)+" mm")}${isNum(row.chance)?" · "+f0(row.chance)+"% chance":""}</div>`;
@@ -747,7 +746,6 @@ footer{font-size:.8rem;color:var(--muted);display:flex;flex-direction:column;gap
   }
   $("chart").addEventListener("pointermove",chartPoint);
   $("chart").addEventListener("pointerdown",chartPoint);
-  $("chart").addEventListener("dblclick",e=>{e.preventDefault();chartPoint(e);});
   $("chart").addEventListener("pointerleave",e=>{if(e.pointerType==="mouse")hideTip();});
   document.addEventListener("pointerdown",e=>{if(!e.target.closest("#chart"))hideTip();});
 
