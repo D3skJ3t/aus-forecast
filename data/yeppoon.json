@@ -1,22 +1,12 @@
 {
  "id": "yeppoon",
- "generated": "2026-10-28T11:48:17Z",
+ "generated": "2026-10-28T17:32:38Z",
  "sources": [
   {
    "source": "bom",
    "name": "BOM official",
    "url": "https://www.bom.gov.au/",
    "days": [
-    {
-     "date": "2026-10-28",
-     "tmax": 29,
-     "tmin": null,
-     "rain_min": 15,
-     "rain_max": 30,
-     "rain_text": "15-30 mm",
-     "chance": 90,
-     "text": "Shower or two."
-    },
     {
      "date": "2026-10-29",
      "tmax": 26,
@@ -98,7 +88,7 @@
      "text": null
     }
    ],
-   "fetched": "2026-10-28T11:47:49Z"
+   "fetched": "2026-10-28T17:32:13Z"
   },
   {
    "source": "willyweather",
@@ -106,23 +96,13 @@
    "url": "https://www.willyweather.com.au/qld/fitzroy/yeppoon.html",
    "days": [
     {
-     "date": "2026-10-28",
-     "tmax": 29,
-     "tmin": 22,
-     "rain_min": 15,
-     "rain_max": 30,
-     "rain_text": "15–30 mm",
-     "chance": 85,
-     "text": "Shower or two"
-    },
-    {
      "date": "2026-10-29",
      "tmax": 26,
-     "tmin": 22,
+     "tmin": 21,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
-     "chance": 40,
+     "chance": 25,
      "text": "Cloudy"
     },
     {
@@ -132,51 +112,61 @@
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
-     "chance": 30,
+     "chance": 15,
      "text": "Partly cloudy"
     },
     {
      "date": "2026-10-31",
-     "tmax": 25,
-     "tmin": 21,
-     "rain_min": 5,
-     "rain_max": 10,
-     "rain_text": "5–10 mm",
-     "chance": 70,
+     "tmax": 26,
+     "tmin": 22,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1 mm",
+     "chance": 15,
      "text": "Partly cloudy"
     },
     {
      "date": "2026-11-01",
      "tmax": 28,
-     "tmin": 22,
+     "tmin": 21,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
-     "chance": 35,
+     "chance": 15,
      "text": "Partly cloudy"
     },
     {
      "date": "2026-11-02",
-     "tmax": 29,
+     "tmax": 30,
      "tmin": 22,
-     "rain_min": 1,
-     "rain_max": 5,
-     "rain_text": "1–5 mm",
-     "chance": 45,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1 mm",
+     "chance": 30,
      "text": "Partly cloudy"
     },
     {
      "date": "2026-11-03",
-     "tmax": 28,
-     "tmin": 23,
+     "tmax": 29,
+     "tmin": 22,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1 mm",
+     "chance": 30,
+     "text": "Partly cloudy"
+    },
+    {
+     "date": "2026-11-04",
+     "tmax": 31,
+     "tmin": 22,
      "rain_min": 0,
      "rain_max": 2,
      "rain_text": "< 2 mm",
      "chance": 40,
-     "text": "Partly cloudy"
+     "text": "Possible shower"
     }
    ],
-   "fetched": "2026-10-28T11:47:51Z"
+   "fetched": "2026-10-28T17:32:15Z"
   },
   {
    "source": "elders",
@@ -184,24 +174,14 @@
    "url": "https://eldersweather.com.au/forecast/qld/yeppoon",
    "days": [
     {
-     "date": "2026-10-28",
-     "tmax": 26,
-     "tmin": 23,
-     "rain_min": 10,
-     "rain_max": 15,
-     "rain_text": "10 - 15 mm",
-     "chance": 29,
-     "text": "Mostly cloudy"
-    },
-    {
      "date": "2026-10-29",
      "tmax": 25,
-     "tmin": 23,
+     "tmin": 22,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 17,
-     "text": "Thunderstorms"
+     "chance": 11,
+     "text": "Rain showers"
     },
     {
      "date": "2026-10-30",
@@ -210,17 +190,17 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 5,
+     "chance": 8,
      "text": "Partly cloudy"
     },
     {
      "date": "2026-10-31",
-     "tmax": 25,
+     "tmax": 24,
      "tmin": 23,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 6,
+     "chance": 8,
      "text": "Mostly cloudy"
     },
     {
@@ -230,18 +210,18 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 7,
-     "text": "Clear skies"
+     "chance": 4,
+     "text": "Fair"
     },
     {
      "date": "2026-11-02",
-     "tmax": 27,
+     "tmax": 28,
      "tmin": 23,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 16,
-     "text": "Fair"
+     "chance": 12,
+     "text": "Clear skies"
     },
     {
      "date": "2026-11-03",
@@ -250,27 +230,27 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 11,
+     "chance": 12,
+     "text": "Clear skies"
+    },
+    {
+     "date": "2026-11-04",
+     "tmax": 28,
+     "tmin": 24,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 9,
      "text": "Fair"
     }
    ],
-   "fetched": "2026-10-28T11:47:52Z"
+   "fetched": "2026-10-28T17:32:19Z"
   },
   {
    "source": "weatherzone",
    "name": "Weatherzone",
    "url": "https://www.weatherzone.com/au/qld/capricornia/yeppoon",
    "days": [
-    {
-     "date": "2026-10-28",
-     "tmax": 29,
-     "tmin": 22,
-     "rain_min": 10,
-     "rain_max": 20,
-     "rain_text": "10-20mm",
-     "chance": 90,
-     "text": "Possible thunderstorm"
-    },
     {
      "date": "2026-10-29",
      "tmax": 26,
@@ -330,9 +310,19 @@
      "rain_text": "1-5mm",
      "chance": 70,
      "text": "Possible thunderstorm"
+    },
+    {
+     "date": "2026-11-04",
+     "tmax": 31,
+     "tmin": 22,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5mm",
+     "chance": 90,
+     "text": "Possible thunderstorm"
     }
    ],
-   "fetched": "2026-10-28T11:48:03Z"
+   "fetched": "2026-10-28T17:32:30Z"
   },
   {
    "source": "wunderground",
@@ -340,18 +330,8 @@
    "url": "https://www.wunderground.com/forecast/au/yeppoon/-23.128,150.744",
    "days": [
     {
-     "date": "2026-10-28",
-     "tmax": 27.8,
-     "tmin": 20,
-     "rain_min": 0.8,
-     "rain_max": 0.8,
-     "rain_text": "0.8 mm",
-     "chance": null,
-     "text": "Showers"
-    },
-    {
      "date": "2026-10-29",
-     "tmax": 26.7,
+     "tmax": 26.1,
      "tmin": 22.2,
      "rain_min": 0,
      "rain_max": 0,
@@ -381,8 +361,8 @@
     },
     {
      "date": "2026-11-01",
-     "tmax": 28.3,
-     "tmin": 21.7,
+     "tmax": 27.8,
+     "tmin": 21.1,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -401,13 +381,13 @@
     },
     {
      "date": "2026-11-03",
-     "tmax": 29.4,
+     "tmax": 30,
      "tmin": 22.2,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Partly Cloudy"
+     "text": "Mostly Sunny"
     },
     {
      "date": "2026-11-04",
@@ -432,15 +412,25 @@
     {
      "date": "2026-11-06",
      "tmax": 29.4,
+     "tmin": 23.3,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Partly Cloudy"
+    },
+    {
+     "date": "2026-11-07",
+     "tmax": 28.9,
      "tmin": 22.8,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Mostly Sunny"
+     "text": "Partly Cloudy"
     }
    ],
-   "fetched": "2026-10-28T11:48:10Z"
+   "fetched": "2026-10-28T17:32:31Z"
   },
   {
    "source": "windy",
@@ -448,101 +438,88 @@
    "url": "https://www.windy.com/-23.128/150.744",
    "days": [
     {
-     "date": "2026-10-28",
-     "tmax": 26.2,
-     "tmin": 20.6,
-     "rain_min": 9.9,
-     "rain_max": 9.9,
-     "rain_text": "9.9 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 18,
-     "gust_max": 27,
-     "wind_dir": "NNW"
-    },
-    {
      "date": "2026-10-29",
-     "tmax": 25.1,
-     "tmin": 20.6,
-     "rain_min": 3.5,
-     "rain_max": 3.5,
-     "rain_text": "3.5 mm",
+     "tmax": 24.3,
+     "tmin": 21.1,
+     "rain_min": 3.9,
+     "rain_max": 3.9,
+     "rain_text": "3.9 mm",
      "chance": null,
      "text": null,
-     "wind_max": 23,
-     "gust_max": 39,
+     "wind_max": 22,
+     "gust_max": 41,
      "wind_dir": "E"
     },
     {
      "date": "2026-10-30",
-     "tmax": 24.3,
-     "tmin": 23.2,
+     "tmax": 23.8,
+     "tmin": 23.1,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
      "wind_max": 26,
-     "gust_max": 41,
+     "gust_max": 42,
      "wind_dir": "E"
     },
     {
      "date": "2026-10-31",
-     "tmax": 24.2,
-     "tmin": 23,
-     "rain_min": 2.1,
-     "rain_max": 2.1,
-     "rain_text": "2.1 mm",
+     "tmax": 24.4,
+     "tmin": 22.7,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
      "chance": null,
      "text": null,
      "wind_max": 20,
      "gust_max": 30,
-     "wind_dir": "ENE"
+     "wind_dir": "E"
     },
     {
      "date": "2026-11-01",
-     "tmax": 26.7,
-     "tmin": 21.8,
-     "rain_min": 0.1,
-     "rain_max": 0.1,
-     "rain_text": "0.1 mm",
+     "tmax": 27,
+     "tmin": 21.7,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
      "chance": null,
      "text": null,
      "wind_max": 21,
-     "gust_max": 34,
+     "gust_max": 36,
      "wind_dir": "NE"
     },
     {
      "date": "2026-11-02",
-     "tmax": 28.2,
+     "tmax": 27.7,
      "tmin": 22.4,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
-     "wind_max": 13,
-     "gust_max": 23,
+     "wind_max": 14,
+     "gust_max": 24,
      "wind_dir": "NNW"
     }
    ],
    "point": "mblue model",
-   "fetched": "2026-10-28T11:48:17Z"
+   "fetched": "2026-10-28T17:32:38Z"
   }
  ],
  "observations": {
   "source": "bom_obs",
   "station": "Yeppoon",
   "distance_km": 0.3,
-  "time": "2026-10-28T21:40:00+10:00",
-  "temp": 19.7,
-  "feels_like": 19.7,
-  "humidity": 90,
-  "wind_dir": "S",
-  "wind_kmh": 15,
-  "gust_kmh": 22,
-  "rain_since_9am": 21.6,
-  "fetched": "2026-10-28T11:47:39Z"
+  "time": "2026-10-29T03:20:00+10:00",
+  "temp": 20.5,
+  "feels_like": 21.1,
+  "humidity": 84,
+  "wind_dir": "SW",
+  "wind_kmh": 11,
+  "gust_kmh": 15,
+  "rain_since_9am": 21.8,
+  "fetched": "2026-10-28T17:32:03Z"
  },
  "marine": {
   "source": "willyweather, windy",
@@ -552,28 +529,6 @@
     "kind": "ocean",
     "spot": "Rosslyn Bay Boat Harbour",
     "tides": {
-     "2026-10-28": [
-      {
-       "type": "low",
-       "time": "3:46 am",
-       "height_m": 0.49
-      },
-      {
-       "type": "high",
-       "time": "10:11 am",
-       "height_m": 4.58
-      },
-      {
-       "type": "low",
-       "time": "4:42 pm",
-       "height_m": 0.85
-      },
-      {
-       "type": "high",
-       "time": "10:22 pm",
-       "height_m": 3.55
-      }
-     ],
      "2026-10-29": [
       {
        "type": "low",
@@ -700,22 +655,34 @@
        "time": "11:35 pm",
        "height_m": 0.89
       }
+     ],
+     "2026-11-04": [
+      {
+       "type": "high",
+       "time": "5:46 am",
+       "height_m": 3.62
+      },
+      {
+       "type": "low",
+       "time": "11:45 am",
+       "height_m": 1.11
+      },
+      {
+       "type": "high",
+       "time": "5:45 pm",
+       "height_m": 4.16
+      }
      ]
     },
     "swell": {
-     "2026-10-28": {
-      "max_m": 0.8,
-      "dir": "NNE",
-      "period_s": 4
-     },
      "2026-10-29": {
-      "max_m": 0.9,
-      "dir": "NNE",
+      "max_m": 1,
+      "dir": "ESE",
       "period_s": 4
      },
      "2026-10-30": {
       "max_m": 1.4,
-      "dir": "ESE",
+      "dir": "E",
       "period_s": 6
      },
      "2026-10-31": {
@@ -729,57 +696,57 @@
       "period_s": 6
      },
      "2026-11-02": {
-      "max_m": 0.9,
+      "max_m": 0.8,
       "dir": "NNE",
       "period_s": 4
      },
      "2026-11-03": {
-      "max_m": 0.6,
-      "dir": "E",
-      "period_s": 6
+      "max_m": 1,
+      "dir": "NNE",
+      "period_s": 4
      },
      "2026-11-04": {
-      "max_m": 0.7,
+      "max_m": 1.1,
       "dir": "NNE",
-      "period_s": 3
+      "period_s": 4
+     },
+     "2026-11-05": {
+      "max_m": 1.1,
+      "dir": "N",
+      "period_s": 5
      }
     },
     "swell_place": "Fishermans Bay",
     "windy": {
-     "2026-10-28": {
-      "wind_max": 13,
-      "gust_max": 20,
-      "wind_dir": "N"
-     },
      "2026-10-29": {
-      "wind_max": 17,
-      "gust_max": 36,
-      "wind_dir": "E"
+      "wind_max": 16,
+      "gust_max": 35,
+      "wind_dir": "ESE"
      },
      "2026-10-30": {
       "wind_max": 20,
-      "gust_max": 35,
+      "gust_max": 37,
       "wind_dir": "E"
      },
      "2026-10-31": {
       "wind_max": 14,
       "gust_max": 25,
-      "wind_dir": "ENE"
+      "wind_dir": "E"
      },
      "2026-11-01": {
       "wind_max": 16,
-      "gust_max": 27,
+      "gust_max": 29,
       "wind_dir": "NE"
      },
      "2026-11-02": {
-      "wind_max": 6,
-      "gust_max": 17,
+      "wind_max": 7,
+      "gust_max": 18,
       "wind_dir": "NNW"
      }
     }
    }
   ],
-  "fetched": "2026-10-28T11:47:49Z"
+  "fetched": "2026-10-28T17:32:13Z"
  },
  "errors": {}
 }

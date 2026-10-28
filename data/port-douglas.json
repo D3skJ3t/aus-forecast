@@ -1,22 +1,12 @@
 {
  "id": "port-douglas",
- "generated": "2026-10-28T13:30:08Z",
+ "generated": "2026-10-28T17:36:31Z",
  "sources": [
   {
    "source": "bom",
    "name": "BOM official",
    "url": "https://www.bom.gov.au/",
    "days": [
-    {
-     "date": "2026-10-28",
-     "tmax": 31,
-     "tmin": null,
-     "rain_min": 0,
-     "rain_max": 4,
-     "rain_text": "0-4 mm",
-     "chance": 50,
-     "text": "Cloudy."
-    },
     {
      "date": "2026-10-29",
      "tmax": 31,
@@ -98,23 +88,13 @@
      "text": null
     }
    ],
-   "fetched": "2026-10-28T13:29:43Z"
+   "fetched": "2026-10-28T17:36:07Z"
   },
   {
    "source": "willyweather",
    "name": "WillyWeather",
    "url": "https://www.willyweather.com.au/qld/far-north/port-douglas.html",
    "days": [
-    {
-     "date": "2026-10-28",
-     "tmax": 31,
-     "tmin": 23,
-     "rain_min": 1,
-     "rain_max": 5,
-     "rain_text": "1–5 mm",
-     "chance": 55,
-     "text": "Cloudy"
-    },
     {
      "date": "2026-10-29",
      "tmax": 32,
@@ -174,9 +154,19 @@
      "rain_text": "< 1 mm",
      "chance": 25,
      "text": "Partly cloudy"
+    },
+    {
+     "date": "2026-11-04",
+     "tmax": 32,
+     "tmin": 23,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1 mm",
+     "chance": 20,
+     "text": "Partly cloudy"
     }
    ],
-   "fetched": "2026-10-28T13:29:45Z"
+   "fetched": "2026-10-28T17:36:09Z"
   },
   {
    "source": "elders",
@@ -184,24 +174,14 @@
    "url": "https://eldersweather.com.au/forecast/qld/port-douglas",
    "days": [
     {
-     "date": "2026-10-28",
-     "tmax": 29,
+     "date": "2026-10-29",
+     "tmax": 31,
      "tmin": 23,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 14,
-     "text": "Mostly cloudy"
-    },
-    {
-     "date": "2026-10-29",
-     "tmax": 30,
-     "tmin": 24,
-     "rain_min": 0,
-     "rain_max": 5,
-     "rain_text": "0 - 5 mm",
-     "chance": 26,
-     "text": "Mostly cloudy"
+     "chance": 25,
+     "text": "Drizzle"
     },
     {
      "date": "2026-10-30",
@@ -220,17 +200,17 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 36,
+     "chance": 35,
      "text": "Rain showers"
     },
     {
      "date": "2026-11-01",
-     "tmax": 31,
+     "tmax": 30,
      "tmin": 24,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 23,
+     "chance": 30,
      "text": "Mostly cloudy"
     },
     {
@@ -240,8 +220,8 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 26,
-     "text": "Mostly cloudy"
+     "chance": 22,
+     "text": "Cloudy"
     },
     {
      "date": "2026-11-03",
@@ -250,27 +230,27 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 9,
+     "chance": 6,
      "text": "Mostly cloudy"
+    },
+    {
+     "date": "2026-11-04",
+     "tmax": 31,
+     "tmin": 24,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 10,
+     "text": "Partly cloudy"
     }
    ],
-   "fetched": "2026-10-28T13:29:49Z"
+   "fetched": "2026-10-28T17:36:13Z"
   },
   {
    "source": "weatherzone",
    "name": "Weatherzone",
    "url": "https://www.weatherzone.com/au/qld/north-coast-and-tableland/port-douglas",
    "days": [
-    {
-     "date": "2026-10-28",
-     "tmax": 31.8,
-     "tmin": 24.5,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1mm",
-     "chance": 30,
-     "text": "Clearing shower"
-    },
     {
      "date": "2026-10-29",
      "tmax": 32,
@@ -330,10 +310,20 @@
      "rain_text": "< 1mm",
      "chance": 50,
      "text": "Clearing shower"
+    },
+    {
+     "date": "2026-11-04",
+     "tmax": 32.2,
+     "tmin": 25.2,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1mm",
+     "chance": 20,
+     "text": "Clearing shower"
     }
    ],
    "point": "Low Isles",
-   "fetched": "2026-10-28T13:30:01Z"
+   "fetched": "2026-10-28T17:36:24Z"
   },
   {
    "source": "wunderground",
@@ -341,18 +331,8 @@
    "url": "https://www.wunderground.com/forecast/au/port-douglas/-16.484,145.465",
    "days": [
     {
-     "date": "2026-10-28",
-     "tmax": 31.7,
-     "tmin": 23.3,
-     "rain_min": 0.3,
-     "rain_max": 0.3,
-     "rain_text": "0.3 mm",
-     "chance": null,
-     "text": "Showers Early"
-    },
-    {
      "date": "2026-10-29",
-     "tmax": 30,
+     "tmax": 29.4,
      "tmin": 23.9,
      "rain_min": 0,
      "rain_max": 0,
@@ -372,11 +352,11 @@
     },
     {
      "date": "2026-10-31",
-     "tmax": 29.4,
+     "tmax": 28.9,
      "tmin": 23.9,
-     "rain_min": 1,
-     "rain_max": 1,
-     "rain_text": "1 mm",
+     "rain_min": 1.5,
+     "rain_max": 1.5,
+     "rain_text": "1.5 mm",
      "chance": null,
      "text": "Partly Cloudy"
     },
@@ -392,7 +372,7 @@
     },
     {
      "date": "2026-11-02",
-     "tmax": 30,
+     "tmax": 29.4,
      "tmin": 23.3,
      "rain_min": 0,
      "rain_max": 0,
@@ -422,7 +402,7 @@
     },
     {
      "date": "2026-11-05",
-     "tmax": 30.6,
+     "tmax": 30,
      "tmin": 23.9,
      "rain_min": 0,
      "rain_max": 0,
@@ -432,16 +412,26 @@
     },
     {
      "date": "2026-11-06",
-     "tmax": 30.6,
-     "tmin": 23.9,
+     "tmax": 30,
+     "tmin": 24.4,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": "Mostly Sunny"
+    },
+    {
+     "date": "2026-11-07",
+     "tmax": 30,
+     "tmin": 24.4,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Partly Cloudy"
     }
    ],
-   "fetched": "2026-10-28T13:30:01Z"
+   "fetched": "2026-10-28T17:36:24Z"
   },
   {
    "source": "windy",
@@ -449,22 +439,9 @@
    "url": "https://www.windy.com/-16.484/145.465",
    "days": [
     {
-     "date": "2026-10-28",
-     "tmax": 28.8,
-     "tmin": 25.2,
-     "rain_min": 0.3,
-     "rain_max": 0.3,
-     "rain_text": "0.3 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 12,
-     "gust_max": 25,
-     "wind_dir": "E"
-    },
-    {
      "date": "2026-10-29",
-     "tmax": 30.7,
-     "tmin": 25.5,
+     "tmax": 30.4,
+     "tmin": 25.1,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -476,20 +453,7 @@
     },
     {
      "date": "2026-10-30",
-     "tmax": 30.3,
-     "tmin": 25.5,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 16,
-     "gust_max": 33,
-     "wind_dir": "ESE"
-    },
-    {
-     "date": "2026-10-31",
-     "tmax": 30.3,
+     "tmax": 30,
      "tmin": 25.5,
      "rain_min": 0,
      "rain_max": 0,
@@ -497,53 +461,66 @@
      "chance": null,
      "text": null,
      "wind_max": 15,
-     "gust_max": 31,
-     "wind_dir": "E"
+     "gust_max": 32,
+     "wind_dir": "ESE"
     },
     {
-     "date": "2026-11-01",
-     "tmax": 30.9,
+     "date": "2026-10-31",
+     "tmax": 30.1,
      "tmin": 25.5,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
-     "wind_max": 12,
-     "gust_max": 28,
+     "wind_max": 14,
+     "gust_max": 29,
      "wind_dir": "E"
     },
     {
-     "date": "2026-11-02",
-     "tmax": 29.4,
-     "tmin": 25,
+     "date": "2026-11-01",
+     "tmax": 30.8,
+     "tmin": 25.4,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
-     "wind_max": 6,
-     "gust_max": 19,
+     "wind_max": 11,
+     "gust_max": 25,
+     "wind_dir": "E"
+    },
+    {
+     "date": "2026-11-02",
+     "tmax": 29.3,
+     "tmin": 25.1,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": null,
+     "wind_max": 5,
+     "gust_max": 16,
      "wind_dir": "ENE"
     }
    ],
    "point": "mblue model",
-   "fetched": "2026-10-28T13:30:08Z"
+   "fetched": "2026-10-28T17:36:31Z"
   }
  ],
  "observations": {
   "source": "bom_obs",
   "station": "Low Isles",
   "distance_km": 15.3,
-  "time": "2026-10-28T23:20:00+10:00",
-  "temp": 25.8,
-  "feels_like": 28,
-  "humidity": 86,
-  "wind_dir": "NE",
-  "wind_kmh": 17,
-  "gust_kmh": 19,
+  "time": "2026-10-29T03:30:00+10:00",
+  "temp": 24.7,
+  "feels_like": 27.6,
+  "humidity": 87,
+  "wind_dir": "E",
+  "wind_kmh": 11,
+  "gust_kmh": 13,
   "rain_since_9am": 0,
-  "fetched": "2026-10-28T13:29:25Z"
+  "fetched": "2026-10-28T17:35:49Z"
  },
  "marine": {
   "source": "willyweather, windy",
@@ -553,28 +530,6 @@
     "kind": "inlet",
     "spot": "Dickson Inlet",
     "tides": {
-     "2026-10-28": [
-      {
-       "type": "low",
-       "time": "3:34 am",
-       "height_m": 0.38
-      },
-      {
-       "type": "high",
-       "time": "10:16 am",
-       "height_m": 2.69
-      },
-      {
-       "type": "low",
-       "time": "4:27 pm",
-       "height_m": 1.19
-      },
-      {
-       "type": "high",
-       "time": "9:42 pm",
-       "height_m": 1.97
-      }
-     ],
      "2026-10-29": [
       {
        "type": "low",
@@ -696,37 +651,54 @@
        "time": "5:30 pm",
        "height_m": 2.74
       }
+     ],
+     "2026-11-04": [
+      {
+       "type": "low",
+       "time": "12:04 am",
+       "height_m": 0.71
+      },
+      {
+       "type": "high",
+       "time": "6:01 am",
+       "height_m": 2.19
+      },
+      {
+       "type": "low",
+       "time": "11:50 am",
+       "height_m": 0.83
+      },
+      {
+       "type": "high",
+       "time": "6:09 pm",
+       "height_m": 2.73
+      }
      ]
     },
     "windy": {
-     "2026-10-28": {
-      "wind_max": 12,
-      "gust_max": 25,
-      "wind_dir": "E"
-     },
      "2026-10-29": {
       "wind_max": 14,
       "gust_max": 31,
       "wind_dir": "E"
      },
      "2026-10-30": {
-      "wind_max": 16,
-      "gust_max": 33,
+      "wind_max": 15,
+      "gust_max": 32,
       "wind_dir": "ESE"
      },
      "2026-10-31": {
-      "wind_max": 15,
-      "gust_max": 31,
+      "wind_max": 14,
+      "gust_max": 29,
       "wind_dir": "E"
      },
      "2026-11-01": {
-      "wind_max": 12,
-      "gust_max": 28,
+      "wind_max": 11,
+      "gust_max": 25,
       "wind_dir": "E"
      },
      "2026-11-02": {
-      "wind_max": 6,
-      "gust_max": 19,
+      "wind_max": 5,
+      "gust_max": 16,
       "wind_dir": "ENE"
      }
     }
@@ -736,28 +708,6 @@
     "kind": "ocean",
     "spot": "Four Mile Beach",
     "tides": {
-     "2026-10-28": [
-      {
-       "type": "low",
-       "time": "3:31 am",
-       "height_m": 0.38
-      },
-      {
-       "type": "high",
-       "time": "10:15 am",
-       "height_m": 2.69
-      },
-      {
-       "type": "low",
-       "time": "4:24 pm",
-       "height_m": 1.19
-      },
-      {
-       "type": "high",
-       "time": "9:41 pm",
-       "height_m": 1.97
-      }
-     ],
      "2026-10-29": [
       {
        "type": "low",
@@ -879,86 +829,103 @@
        "time": "5:29 pm",
        "height_m": 2.74
       }
+     ],
+     "2026-11-04": [
+      {
+       "type": "low",
+       "time": "12:01 am",
+       "height_m": 0.71
+      },
+      {
+       "type": "high",
+       "time": "6:00 am",
+       "height_m": 2.19
+      },
+      {
+       "type": "low",
+       "time": "11:47 am",
+       "height_m": 0.83
+      },
+      {
+       "type": "high",
+       "time": "6:08 pm",
+       "height_m": 2.73
+      }
      ]
     },
     "swell": {
-     "2026-10-28": {
-      "max_m": 0.8,
-      "dir": "ENE",
-      "period_s": 8
-     },
      "2026-10-29": {
       "max_m": 0.8,
       "dir": "ENE",
-      "period_s": 8
+      "period_s": 7
      },
      "2026-10-30": {
-      "max_m": 1.1,
-      "dir": "ENE",
-      "period_s": 6
-     },
-     "2026-10-31": {
       "max_m": 1.2,
       "dir": "ENE",
       "period_s": 6
      },
+     "2026-10-31": {
+      "max_m": 1.3,
+      "dir": "E",
+      "period_s": 6
+     },
      "2026-11-01": {
-      "max_m": 1.1,
+      "max_m": 1.2,
       "dir": "ENE",
       "period_s": 7
      },
      "2026-11-02": {
-      "max_m": 1,
-      "dir": "E",
+      "max_m": 1.1,
+      "dir": "ENE",
       "period_s": 7
      },
      "2026-11-03": {
-      "max_m": 0.9,
+      "max_m": 0.8,
       "dir": "ENE",
       "period_s": 7
      },
      "2026-11-04": {
-      "max_m": 0.7,
-      "dir": "ENE",
+      "max_m": 0.6,
+      "dir": "E",
       "period_s": 6
+     },
+     "2026-11-05": {
+      "max_m": 0.6,
+      "dir": "E",
+      "period_s": 7
      }
     },
     "swell_place": "Unity Reef",
     "windy": {
-     "2026-10-28": {
-      "wind_max": 12,
-      "gust_max": 25,
-      "wind_dir": "E"
-     },
      "2026-10-29": {
       "wind_max": 14,
       "gust_max": 31,
       "wind_dir": "E"
      },
      "2026-10-30": {
-      "wind_max": 16,
-      "gust_max": 33,
+      "wind_max": 15,
+      "gust_max": 32,
       "wind_dir": "ESE"
      },
      "2026-10-31": {
-      "wind_max": 15,
-      "gust_max": 31,
+      "wind_max": 14,
+      "gust_max": 29,
       "wind_dir": "E"
      },
      "2026-11-01": {
-      "wind_max": 12,
-      "gust_max": 28,
+      "wind_max": 11,
+      "gust_max": 25,
       "wind_dir": "E"
      },
      "2026-11-02": {
-      "wind_max": 6,
-      "gust_max": 19,
+      "wind_max": 5,
+      "gust_max": 16,
       "wind_dir": "ENE"
      }
     }
    }
   ],
-  "fetched": "2026-10-28T13:29:43Z"
+  "fetched": "2026-10-28T17:36:06Z"
  },
  "errors": {}
 }

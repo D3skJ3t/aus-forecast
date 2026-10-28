@@ -1,22 +1,12 @@
 {
  "id": "mackay",
- "generated": "2026-10-28T13:28:13Z",
+ "generated": "2026-10-28T17:34:36Z",
  "sources": [
   {
    "source": "bom",
    "name": "BOM official",
    "url": "https://www.bom.gov.au/",
    "days": [
-    {
-     "date": "2026-10-28",
-     "tmax": 30,
-     "tmin": null,
-     "rain_min": 0,
-     "rain_max": 5,
-     "rain_text": "0-5 mm",
-     "chance": 50,
-     "text": "Partly cloudy."
-    },
     {
      "date": "2026-10-29",
      "tmax": 29,
@@ -98,23 +88,13 @@
      "text": null
     }
    ],
-   "fetched": "2026-10-28T13:27:50Z"
+   "fetched": "2026-10-28T17:34:13Z"
   },
   {
    "source": "willyweather",
    "name": "WillyWeather",
    "url": "https://www.willyweather.com.au/qld/mackay/mackay.html",
    "days": [
-    {
-     "date": "2026-10-28",
-     "tmax": 30,
-     "tmin": 23,
-     "rain_min": 1,
-     "rain_max": 5,
-     "rain_text": "1–5 mm",
-     "chance": 50,
-     "text": "Partly cloudy"
-    },
     {
      "date": "2026-10-29",
      "tmax": 29,
@@ -174,9 +154,19 @@
      "rain_text": "< 1 mm",
      "chance": 20,
      "text": "Partly cloudy"
+    },
+    {
+     "date": "2026-11-04",
+     "tmax": 31,
+     "tmin": 23,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1 mm",
+     "chance": 15,
+     "text": "Cloud clearing"
     }
    ],
-   "fetched": "2026-10-28T13:27:53Z"
+   "fetched": "2026-10-28T17:34:15Z"
   },
   {
    "source": "elders",
@@ -184,23 +174,13 @@
    "url": "https://eldersweather.com.au/forecast/qld/mackay",
    "days": [
     {
-     "date": "2026-10-28",
-     "tmax": 30,
-     "tmin": 24,
-     "rain_min": 0,
-     "rain_max": 5,
-     "rain_text": "0 - 5 mm",
-     "chance": 5,
-     "text": "Fair"
-    },
-    {
      "date": "2026-10-29",
      "tmax": 28,
      "tmin": 23,
-     "rain_min": 5,
-     "rain_max": 10,
-     "rain_text": "5 - 10 mm",
-     "chance": 47,
+     "rain_min": 10,
+     "rain_max": 15,
+     "rain_text": "10 - 15 mm",
+     "chance": 59,
      "text": "Partly cloudy"
     },
     {
@@ -210,7 +190,7 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 44,
+     "chance": 48,
      "text": "Rain showers"
     },
     {
@@ -220,18 +200,18 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 33,
-     "text": "Rain showers"
+     "chance": 19,
+     "text": "Cloudy"
     },
     {
      "date": "2026-11-01",
-     "tmax": 29,
-     "tmin": 23,
+     "tmax": 28,
+     "tmin": 22,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 10,
-     "text": "Mostly cloudy"
+     "chance": 4,
+     "text": "Fair"
     },
     {
      "date": "2026-11-02",
@@ -240,7 +220,7 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 2,
+     "chance": 4,
      "text": "Fair"
     },
     {
@@ -250,27 +230,27 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 5,
+     "chance": 1,
      "text": "Clear skies"
+    },
+    {
+     "date": "2026-11-04",
+     "tmax": 30,
+     "tmin": 23,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 1,
+     "text": "Fair"
     }
    ],
-   "fetched": "2026-10-28T13:27:54Z"
+   "fetched": "2026-10-28T17:34:16Z"
   },
   {
    "source": "weatherzone",
    "name": "Weatherzone",
    "url": "https://www.weatherzone.com/au/qld/central-coast/mackay",
    "days": [
-    {
-     "date": "2026-10-28",
-     "tmax": 30,
-     "tmin": 23,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1mm",
-     "chance": 90,
-     "text": "Thunderstorms clearing"
-    },
     {
      "date": "2026-10-29",
      "tmax": 29,
@@ -330,9 +310,19 @@
      "rain_text": "< 1mm",
      "chance": 30,
      "text": "Possible shower"
+    },
+    {
+     "date": "2026-11-04",
+     "tmax": 31,
+     "tmin": 23,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1mm",
+     "chance": 40,
+     "text": "Mostly sunny"
     }
    ],
-   "fetched": "2026-10-28T13:28:06Z"
+   "fetched": "2026-10-28T17:34:29Z"
   },
   {
    "source": "wunderground",
@@ -340,22 +330,12 @@
    "url": "https://www.wunderground.com/forecast/au/mackay/-21.141,149.186",
    "days": [
     {
-     "date": "2026-10-28",
-     "tmax": 31.1,
-     "tmin": 22.2,
-     "rain_min": 0.8,
-     "rain_max": 0.8,
-     "rain_text": "0.8 mm",
-     "chance": null,
-     "text": "Showers Early"
-    },
-    {
      "date": "2026-10-29",
      "tmax": 27.8,
      "tmin": 23.3,
-     "rain_min": 4.6,
-     "rain_max": 4.6,
-     "rain_text": "4.6 mm",
+     "rain_min": 3.8,
+     "rain_max": 3.8,
+     "rain_text": "3.8 mm",
      "chance": null,
      "text": "Showers"
     },
@@ -377,7 +357,7 @@
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "AM Clouds/PM Sun"
+     "text": "Mostly Cloudy"
     },
     {
      "date": "2026-11-01",
@@ -391,7 +371,7 @@
     },
     {
      "date": "2026-11-02",
-     "tmax": 30,
+     "tmax": 29.4,
      "tmin": 22.8,
      "rain_min": 0,
      "rain_max": 0,
@@ -427,7 +407,7 @@
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Mostly Sunny"
+     "text": "Partly Cloudy"
     },
     {
      "date": "2026-11-06",
@@ -437,10 +417,20 @@
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Mostly Sunny"
+     "text": "Partly Cloudy"
+    },
+    {
+     "date": "2026-11-07",
+     "tmax": 30,
+     "tmin": 23.3,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Partly Cloudy"
     }
    ],
-   "fetched": "2026-10-28T13:28:06Z"
+   "fetched": "2026-10-28T17:34:29Z"
   },
   {
    "source": "windy",
@@ -448,25 +438,12 @@
    "url": "https://www.windy.com/-21.141/149.186",
    "days": [
     {
-     "date": "2026-10-28",
-     "tmax": 30.1,
-     "tmin": 24.6,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 16,
-     "gust_max": 26,
-     "wind_dir": "N"
-    },
-    {
      "date": "2026-10-29",
      "tmax": 29.1,
-     "tmin": 24.1,
-     "rain_min": 1.9,
-     "rain_max": 1.9,
-     "rain_text": "1.9 mm",
+     "tmin": 24.2,
+     "rain_min": 1.3,
+     "rain_max": 1.3,
+     "rain_text": "1.3 mm",
      "chance": null,
      "text": null,
      "wind_max": 14,
@@ -475,11 +452,11 @@
     },
     {
      "date": "2026-10-30",
-     "tmax": 27,
-     "tmin": 23.7,
-     "rain_min": 7.6,
-     "rain_max": 7.6,
-     "rain_text": "7.6 mm",
+     "tmax": 27.4,
+     "tmin": 23.6,
+     "rain_min": 3.6,
+     "rain_max": 3.6,
+     "rain_text": "3.6 mm",
      "chance": null,
      "text": null,
      "wind_max": 19,
@@ -488,34 +465,34 @@
     },
     {
      "date": "2026-10-31",
-     "tmax": 27.6,
-     "tmin": 23.9,
-     "rain_min": 5.7,
-     "rain_max": 5.7,
-     "rain_text": "5.7 mm",
+     "tmax": 27.5,
+     "tmin": 23.3,
+     "rain_min": 1.4,
+     "rain_max": 1.4,
+     "rain_text": "1.4 mm",
      "chance": null,
      "text": null,
      "wind_max": 14,
-     "gust_max": 23,
+     "gust_max": 24,
      "wind_dir": "E"
     },
     {
      "date": "2026-11-01",
-     "tmax": 28.8,
-     "tmin": 23.3,
+     "tmax": 29.2,
+     "tmin": 23.2,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
      "wind_max": 14,
-     "gust_max": 26,
+     "gust_max": 28,
      "wind_dir": "NNE"
     },
     {
      "date": "2026-11-02",
-     "tmax": 30.2,
-     "tmin": 23.3,
+     "tmax": 29.9,
+     "tmin": 23.2,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -523,26 +500,26 @@
      "text": null,
      "wind_max": 11,
      "gust_max": 21,
-     "wind_dir": "NNW"
+     "wind_dir": "N"
     }
    ],
    "point": "mblue model",
-   "fetched": "2026-10-28T13:28:13Z"
+   "fetched": "2026-10-28T17:34:36Z"
   }
  ],
  "observations": {
   "source": "bom_obs",
   "station": "Mackay Airport",
   "distance_km": 3.5,
-  "time": "2026-10-28T23:20:00+10:00",
-  "temp": 25.3,
-  "feels_like": 28.9,
-  "humidity": 87,
-  "wind_dir": "SSE",
-  "wind_kmh": 9,
-  "gust_kmh": 13,
-  "rain_since_9am": 0,
-  "fetched": "2026-10-28T13:27:31Z"
+  "time": "2026-10-29T03:20:00+10:00",
+  "temp": 23.9,
+  "feels_like": 26.9,
+  "humidity": 93,
+  "wind_dir": "WNW",
+  "wind_kmh": 11,
+  "gust_kmh": 15,
+  "rain_since_9am": 1,
+  "fetched": "2026-10-28T17:33:56Z"
  },
  "marine": {
   "source": "willyweather, windy",
@@ -552,23 +529,6 @@
     "kind": "river",
     "spot": "Pioneer River entrance",
     "tides": {
-     "2026-10-28": [
-      {
-       "type": "low",
-       "time": "5:39 am",
-       "height_m": 0.58
-      },
-      {
-       "type": "high",
-       "time": "11:56 am",
-       "height_m": 5.72
-      },
-      {
-       "type": "low",
-       "time": "6:30 pm",
-       "height_m": 1.1
-      }
-     ],
      "2026-10-29": [
       {
        "type": "high",
@@ -695,14 +655,31 @@
        "time": "6:44 pm",
        "height_m": 5.34
       }
+     ],
+     "2026-11-04": [
+      {
+       "type": "low",
+       "time": "1:22 am",
+       "height_m": 0.8
+      },
+      {
+       "type": "high",
+       "time": "7:29 am",
+       "height_m": 4.82
+      },
+      {
+       "type": "low",
+       "time": "1:35 pm",
+       "height_m": 1.12
+      },
+      {
+       "type": "high",
+       "time": "7:36 pm",
+       "height_m": 5.42
+      }
      ]
     },
     "windy": {
-     "2026-10-28": {
-      "wind_max": 16,
-      "gust_max": 26,
-      "wind_dir": "N"
-     },
      "2026-10-29": {
       "wind_max": 14,
       "gust_max": 24,
@@ -715,18 +692,18 @@
      },
      "2026-10-31": {
       "wind_max": 14,
-      "gust_max": 23,
+      "gust_max": 24,
       "wind_dir": "E"
      },
      "2026-11-01": {
       "wind_max": 14,
-      "gust_max": 26,
+      "gust_max": 28,
       "wind_dir": "NNE"
      },
      "2026-11-02": {
       "wind_max": 11,
       "gust_max": 21,
-      "wind_dir": "NNW"
+      "wind_dir": "N"
      }
     }
    },
@@ -735,23 +712,6 @@
     "kind": "ocean",
     "spot": "Mackay Harbour boat ramp",
     "tides": {
-     "2026-10-28": [
-      {
-       "type": "low",
-       "time": "5:40 am",
-       "height_m": 0.58
-      },
-      {
-       "type": "high",
-       "time": "11:58 am",
-       "height_m": 5.72
-      },
-      {
-       "type": "low",
-       "time": "6:31 pm",
-       "height_m": 1.1
-      }
-     ],
      "2026-10-29": [
       {
        "type": "high",
@@ -878,16 +838,33 @@
        "time": "6:46 pm",
        "height_m": 5.34
       }
+     ],
+     "2026-11-04": [
+      {
+       "type": "low",
+       "time": "1:23 am",
+       "height_m": 0.8
+      },
+      {
+       "type": "high",
+       "time": "7:31 am",
+       "height_m": 4.82
+      },
+      {
+       "type": "low",
+       "time": "1:36 pm",
+       "height_m": 1.12
+      },
+      {
+       "type": "high",
+       "time": "7:38 pm",
+       "height_m": 5.42
+      }
      ]
     },
     "swell": {
-     "2026-10-28": {
-      "max_m": 0.5,
-      "dir": "ENE",
-      "period_s": 7
-     },
      "2026-10-29": {
-      "max_m": 0.5,
+      "max_m": 0.4,
       "dir": "ENE",
       "period_s": 7
      },
@@ -897,7 +874,7 @@
       "period_s": 5
      },
      "2026-10-31": {
-      "max_m": 1.3,
+      "max_m": 1.2,
       "dir": "ESE",
       "period_s": 5
      },
@@ -908,27 +885,27 @@
      },
      "2026-11-02": {
       "max_m": 0.6,
-      "dir": "ENE",
-      "period_s": 7
+      "dir": "N",
+      "period_s": 3
      },
      "2026-11-03": {
-      "max_m": 0.7,
+      "max_m": 0.5,
+      "dir": "ENE",
+      "period_s": 6
+     },
+     "2026-11-04": {
+      "max_m": 0.8,
       "dir": "N",
       "period_s": 4
      },
-     "2026-11-04": {
-      "max_m": 0.5,
-      "dir": "NNE",
-      "period_s": 3
+     "2026-11-05": {
+      "max_m": 1,
+      "dir": "N",
+      "period_s": 4
      }
     },
     "swell_place": "Bagley Point",
     "windy": {
-     "2026-10-28": {
-      "wind_max": 16,
-      "gust_max": 26,
-      "wind_dir": "N"
-     },
      "2026-10-29": {
       "wind_max": 14,
       "gust_max": 24,
@@ -941,23 +918,23 @@
      },
      "2026-10-31": {
       "wind_max": 14,
-      "gust_max": 23,
+      "gust_max": 24,
       "wind_dir": "E"
      },
      "2026-11-01": {
       "wind_max": 14,
-      "gust_max": 26,
+      "gust_max": 28,
       "wind_dir": "NNE"
      },
      "2026-11-02": {
       "wind_max": 11,
       "gust_max": 21,
-      "wind_dir": "NNW"
+      "wind_dir": "N"
      }
     }
    }
   ],
-  "fetched": "2026-10-28T13:27:50Z"
+  "fetched": "2026-10-28T17:34:13Z"
  },
  "errors": {}
 }
