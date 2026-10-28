@@ -11,8 +11,9 @@ on:
         type: boolean
         default: false
   schedule:
-    # Every 30 minutes; each run updates only the locations that are due (at most 6),
-    # so every location refreshes about every 3 hours without hitting the sites all at once
+    # Every 30 minutes; each run updates only the locations that are due (about 6 when runs are on time),
+    # so every location refreshes about every 3 hours without hitting the sites all at once.
+    # GitHub often starts these hours late; a late run then catches up on everything due.
     - cron: "7,37 * * * *"
 
 permissions:

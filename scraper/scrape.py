@@ -5,8 +5,10 @@ rain_min, rain_max, rain_text, chance, text}]}], observations: {...}, errors: {s
 A source that fails keeps its last good entry (its "fetched" time shows how old it is).
 
 Runs are staggered: each run updates only the locations that are due (last updated DUE_MINUTES ago
-or more), oldest first, at most PER_RUN of them. With a run every 30 minutes, every location refreshes
-about every 3 hours without all the sites being hit at once. --all updates every location.
+or more), oldest first. With a run every 30 minutes only about 6 are due each time, so every location
+refreshes about every 3 hours without all the sites being hit at once. GitHub often starts scheduled
+runs hours late, so a late run catches up on everything that's due, within TIME_BUDGET_MINUTES.
+--all updates every location.
 """
 import argparse, json, os, re, sys, time, traceback
 from html import unescape
@@ -18,8 +20,8 @@ from bs4 import BeautifulSoup
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOCATIONS = os.path.join(ROOT, "locations.json")
 DATA = os.path.join(ROOT, "data")
-PER_RUN = 6  # 31 locations over six half-hourly runs: about every 3 hours each
 DUE_MINUTES = 165  # a little under 3 hours, so a late run doesn't push a location past its slot
+TIME_BUDGET_MINUTES = 30  # stop starting new locations after this, leaving time to commit (job timeout 45)
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36")
 HEADERS = {"User-Agent": UA, "Accept-Language": "en-AU,en;q=0.9",
@@ -486,13 +488,15 @@ def main():
         todo = locs
     else:
         cutoff = datetime.now(timezone.utc) - timedelta(minutes=DUE_MINUTES)
-        due = sorted((l for l in locs if last_updated(l) <= cutoff), key=last_updated)
-        todo = due[:PER_RUN]
+        todo = sorted((l for l in locs if last_updated(l) <= cutoff), key=last_updated)
     if not todo:
         print("Nothing due")
         return 0
-    ok = 0
-    for loc in todo:
+    ok, start = 0, time.monotonic()
+    for i, loc in enumerate(todo):
+        if time.monotonic() - start > TIME_BUDGET_MINUTES * 60:
+            print(f"Time budget used; {len(todo) - i} left for the next run")
+            break
         print(f"{loc['id']}:")
         ok += scrape_location(loc)
     # Fail the step only if every location came back empty, so partial results still get committed
