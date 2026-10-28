@@ -1,4 +1,6 @@
 name: Scrape forecasts
+# A "Refresh now" run (one location, started by the app's relay) is titled "Refresh <id>" so the relay can see it
+run-name: ${{ inputs.location && format('Refresh {0}', inputs.location) || github.workflow }}
 
 on:
   push:
@@ -10,6 +12,10 @@ on:
         description: "Update every location now (otherwise only the ones due)"
         type: boolean
         default: false
+      location:
+        description: "Update just this location id now (used by the app's Refresh now button)"
+        type: string
+        default: ""
   schedule:
     # Every 30 minutes; each run updates only the locations that are due (about 6 when runs are on time),
     # so every location refreshes about every 3 hours without hitting the sites all at once.
@@ -20,7 +26,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: scrape
+  # A one-location refresh runs alongside the regular runs instead of waiting behind them
+  group: ${{ inputs.location && format('refresh-{0}', inputs.location) || 'scrape' }}
   cancel-in-progress: false
 
 jobs:
@@ -38,13 +45,21 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Scrape
         # A push (e.g. a new location) only fills in what's due or missing; tick "all" on a manual run to refresh everything
+        env:
+          LOCATION: ${{ inputs.location }}
+          ALL: ${{ inputs.all }}
         run: |
-          if [ "${{ inputs.all }}" = "true" ]; then
+          if [ -n "$LOCATION" ]; then
+            if ! printf '%s' "$LOCATION" | grep -Eq '^[a-z0-9-]{1,40}$'; then echo "Bad location id"; exit 1; fi
+            python scraper/scrape.py --only "$LOCATION"
+          elif [ "$ALL" = "true" ]; then
             python scraper/scrape.py --all
           else
             python scraper/scrape.py
           fi
       - name: Commit results
+        env:
+          LOCATION: ${{ inputs.location }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
@@ -53,6 +68,11 @@ jobs:
             echo "No changes"
             exit 0
           fi
-          git commit -m "Update forecasts $(date -u +%Y-%m-%dT%H:%MZ)"
-          git pull --rebase origin main
-          git push
+          git commit -m "${LOCATION:+Refresh $LOCATION: }Update forecasts $(date -u +%Y-%m-%dT%H:%MZ)"
+          # Refresh runs and regular runs can finish together; keep this run's files if both touched one
+          for i in 1 2 3 4 5; do
+            if git pull --rebase -X theirs origin main && git push; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 5))
+          done
+          exit 1

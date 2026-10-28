@@ -247,6 +247,11 @@ svg{display:block;max-width:100%}
 .tip .tv b{color:var(--fg);font-weight:600}
 
 /* Forecast sites status */
+.sitebar{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.btn:disabled{opacity:.6;cursor:default}
+.btn.busy .ui{animation:spin 1.1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.btn.busy .ui{animation:none}}
 .sites{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px}
 .sites>div{border:1px solid var(--line);background:var(--surface);border-radius:12px;padding:10px 12px;font-weight:600;display:flex;flex-direction:column;gap:2px;box-shadow:var(--shadow)}
 .sites .sn{display:flex;align-items:center;gap:7px}
@@ -351,6 +356,7 @@ footer{font-size:.8rem;color:var(--muted);display:flex;flex-direction:column;gap
   <section aria-labelledby="offh">
     <h2 id="offh"><i data-ui="globe"></i>Forecast sites</h2>
     <p class="note" id="sitesNote">Figures from the forecast sites below are collected every 3 hours and shown in the table and chart above.</p>
+    <div class="sitebar" id="sitebar" hidden><button class="btn" id="scrapeBtn" type="button"><i data-ui="refresh"></i><span id="scrapeTxt">Refresh now</span></button><span class="note" id="scrapeMsg" role="status"></span></div>
     <div class="sites" id="sites"></div>
   </section>
 
@@ -530,6 +536,53 @@ footer{font-size:.8rem;color:var(--muted);display:flex;flex-direction:column;gap
     if(so&&isNum(so.temp))return{temp:so.temp,feels:so.feels_like,hum:so.humidity,wind:so.wind_kmh,dir:so.wind_dir,gust:so.gust_kmh,rain:so.rain_since_9am,station:so.station,km:so.distance_km,at:so.time};
     return null;}
 
+  // Refresh now: the relay (relay/worker.js, on Cloudflare Workers) asks GitHub to run the scraper for just this
+  // location, then the app checks every 15 seconds until the new figures are in (about 3 minutes).
+  // Choosing a location whose figures are over AUTO_MINUTES old starts one automatically.
+  const RELAY="";  // the relay's workers.dev address, without a trailing slash; empty hides the button
+  const AUTO_MINUTES=60;
+  const jobs={},notes={};  // by location id: a refresh being waited on, and the last message shown
+  const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+  function renderScrape(){
+    const L=state.loc,on=!!(RELAY&&L&&L.kind==="full");
+    $("sitebar").hidden=!on;if(!on)return;
+    const job=jobs[L.id],b=$("scrapeBtn");
+    b.disabled=!!job;b.classList.toggle("busy",!!job);
+    $("scrapeTxt").textContent=job?"Updating…":"Refresh now";
+    $("scrapeMsg").textContent=job?"Collecting fresh figures from the forecast sites. This takes about 3 minutes.":notes[L.id]||"";
+  }
+  async function refreshSites(auto){
+    const L=state.loc;if(!RELAY||!L||L.kind!=="full"||jobs[L.id])return;
+    const say=t=>{notes[L.id]=t;renderScrape();};
+    const job=jobs[L.id]={start:Date.now()};renderScrape();
+    let r=null;
+    try{r=await (await fetch(RELAY+"/refresh?loc="+encodeURIComponent(L.id),{method:"POST"})).json();}catch(e){}
+    if(!r||(r.status!=="started"&&r.status!=="running")){
+      delete jobs[L.id];
+      if(auto)return renderScrape();
+      return say(!r||r.error?"Couldn't start an update just now. Try again in a few minutes."
+        :r.status==="fresh"?"These figures are under 30 minutes old, so they're already up to date."
+        :"A few updates are already running. Try again in a few minutes.");
+    }
+    job.since=r.generated;
+    while(Date.now()-job.start<8*60e3){
+      await sleep(15000);
+      let d=null;try{d=await (await fetch(RELAY+"/data?loc="+encodeURIComponent(L.id),{cache:"no-store"})).json();}catch(e){continue;}
+      if(d&&d.data&&d.data.generated&&d.data.generated!==job.since){
+        delete jobs[L.id];notes[L.id]="Updated just now.";
+        if(state.loc.id===L.id&&state.data){state.data.scraped=d.data;state.scrape={state:"ok",data:d.data};
+          try{localStorage.setItem(cacheKey(),JSON.stringify(state.data));}catch(e){}
+          render();}
+        return renderScrape();
+      }
+      // Give GitHub a minute and a half to list the run before reading "not running" as finished
+      if(d&&!d.running&&Date.now()-job.start>90e3)break;
+    }
+    delete jobs[L.id];
+    say("The update didn't bring new figures. The sites may be down; the regular update will try again.");
+  }
+  $("scrapeBtn").addEventListener("click",()=>refreshSites(false));
+
   async function load(){
     const btn=$("refresh");btn.disabled=true;$("status").textContent="Fetching forecasts…";$("err").hidden=true;
     const forLoc=state.loc.id;
@@ -544,6 +597,7 @@ footer{font-size:.8rem;color:var(--muted);display:flex;flex-direction:column;gap
       state.data={bom:bomOk?bom:null,scraped,fetched:Date.now()};
       try{localStorage.setItem(cacheKey(),JSON.stringify(state.data));}catch(e){}
       render();
+      if(scraped&&!(Date.now()-Date.parse(scraped.generated)<AUTO_MINUTES*60e3))refreshSites(true);
     }catch(e){
       if(state.loc.id!==forLoc)return;
       let cached=null;try{cached=JSON.parse(localStorage.getItem(cacheKey())||"null");}catch(_){}
@@ -780,10 +834,11 @@ footer{font-size:.8rem;color:var(--muted);display:flex;flex-direction:column;gap
 
   function renderSites(){
     const st=state.scrape?.state,S=state.data?.scraped,errs=(S&&S.errors)||{};
+    renderScrape();
     if(state.loc&&state.loc.kind!=="full"){$("sitesNote").textContent="This place shows the Bureau of Meteorology's forecast and nearest station only, fetched live. Pick one of the featured locations in the list for the full comparison of forecast sites.";$("sites").innerHTML="";return;}
     if(st==="error"&&S)$("sitesNote").textContent="Couldn't reach the data just now, so these are the last figures saved on this device.";
     else if(st==="error")$("sitesNote").textContent="Couldn't reach the forecast data. Tap Refresh to try again.";
-    else $("sitesNote").textContent="Figures from the forecast sites below are collected every 3 hours and shown in the table and chart above. Windy covers about 6 days.";
+    else $("sitesNote").textContent="Figures from the forecast sites below are collected every 3 hours"+(RELAY?", or straight away with Refresh now,":"")+" and shown in the table and chart above. Windy covers about 6 days.";
     if(!S){$("sites").innerHTML="";return;}
     const tile=(name,src,e,okText)=>{if(!src)return `<div class="${e?"failed":"none"}"><span class="sn"><i></i>${esc(name)}</span><span>${e?"Failed: "+esc(e):"No data yet"}</span></div>`;
       const old=Date.now()-Date.parse(src.fetched)>12*3600e3;
