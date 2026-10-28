@@ -539,7 +539,7 @@ footer{font-size:.8rem;color:var(--muted);display:flex;flex-direction:column;gap
   // Refresh now: the relay (relay/worker.js, on Cloudflare Workers) asks GitHub to run the scraper for just this
   // location, then the app checks every 15 seconds until the new figures are in (about 3 minutes).
   // Choosing a location whose figures are over AUTO_MINUTES old starts one automatically.
-  const RELAY="";  // the relay's workers.dev address, without a trailing slash; empty hides the button
+  const RELAY="https://aus-forecast-refresh.harrisgrills.workers.dev";  // the relay (relay/worker.js); empty hides the button
   const AUTO_MINUTES=60;
   const jobs={},notes={};  // by location id: a refresh being waited on, and the last message shown
   const sleep=ms=>new Promise(r=>setTimeout(r,ms));

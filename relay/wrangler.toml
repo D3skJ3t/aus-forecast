@@ -1,0 +1,5 @@
+# Cloudflare Workers settings for the Refresh now relay (deploy with: npx wrangler deploy, from this folder)
+name = "aus-forecast-refresh"
+main = "worker.js"
+compatibility_date = "2025-06-01"
+workers_dev = true
