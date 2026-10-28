@@ -1,6 +1,6 @@
 {
  "id": "agnes-water",
- "generated": "2026-10-27T04:05:32Z",
+ "generated": "2026-10-28T00:00:13Z",
  "sources": [
   {
    "source": "bom",
@@ -8,68 +8,68 @@
    "url": "https://www.bom.gov.au/",
    "days": [
     {
-     "date": "2026-10-27",
+     "date": "2026-10-28",
      "tmax": 30,
      "tmin": 22,
-     "rain_min": 3,
-     "rain_max": 10,
-     "rain_text": "3-10 mm",
-     "chance": 70,
-     "text": null
-    },
-    {
-     "date": "2026-10-28",
-     "tmax": 29,
-     "tmin": 22,
-     "rain_min": 10,
-     "rain_max": 25,
-     "rain_text": "10-25 mm",
+     "rain_min": 20,
+     "rain_max": 35,
+     "rain_text": "20-35 mm",
      "chance": 90,
      "text": null
     },
     {
      "date": "2026-10-29",
-     "tmax": 28,
-     "tmin": 21,
+     "tmax": 29,
+     "tmin": 20,
      "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "0-1 mm",
-     "chance": 30,
+     "rain_max": null,
+     "rain_text": "0 mm",
+     "chance": 20,
      "text": null
     },
     {
      "date": "2026-10-30",
-     "tmax": 27,
+     "tmax": 28,
      "tmin": 21,
      "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "0-1 mm",
-     "chance": 30,
+     "rain_max": null,
+     "rain_text": "0 mm",
+     "chance": 20,
      "text": null
     },
     {
      "date": "2026-10-31",
-     "tmax": 27,
+     "tmax": 28,
      "tmin": 21,
-     "rain_min": 2,
-     "rain_max": 9,
-     "rain_text": "2-9 mm",
-     "chance": 70,
+     "rain_min": 0,
+     "rain_max": 4,
+     "rain_text": "0-4 mm",
+     "chance": 50,
      "text": null
     },
     {
      "date": "2026-11-01",
      "tmax": 28,
-     "tmin": 21,
+     "tmin": 20,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "0-1 mm",
-     "chance": 40,
+     "chance": 30,
      "text": null
     },
     {
      "date": "2026-11-02",
      "tmax": 30,
+     "tmin": 22,
+     "rain_min": 0,
+     "rain_max": 3,
+     "rain_text": "0-3 mm",
+     "chance": 50,
+     "text": null
+    },
+    {
+     "date": "2026-11-03",
+     "tmax": 29,
      "tmin": 22,
      "rain_min": 0,
      "rain_max": 2,
@@ -78,7 +78,7 @@
      "text": null
     },
     {
-     "date": "2026-11-03",
+     "date": "2026-11-04",
      "tmax": null,
      "tmin": 23,
      "rain_min": null,
@@ -88,7 +88,7 @@
      "text": null
     }
    ],
-   "fetched": "2026-10-27T04:05:04Z"
+   "fetched": "2026-10-27T23:59:41Z"
   },
   {
    "source": "willyweather",
@@ -96,68 +96,68 @@
    "url": "https://www.willyweather.com.au/qld/fitzroy/agnes-water.html",
    "days": [
     {
-     "date": "2026-10-27",
+     "date": "2026-10-28",
      "tmax": 30,
      "tmin": 22,
-     "rain_min": 5,
-     "rain_max": 10,
-     "rain_text": "5–10 mm",
-     "chance": 75,
-     "text": "Storm"
-    },
-    {
-     "date": "2026-10-28",
-     "tmax": 29,
-     "tmin": 22,
      "rain_min": 10,
-     "rain_max": 25,
-     "rain_text": "10–25 mm",
+     "rain_max": 30,
+     "rain_text": "10–30 mm",
      "chance": 90,
      "text": "Storm"
     },
     {
      "date": "2026-10-29",
      "tmax": 28,
-     "tmin": 21,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1 mm",
-     "chance": 30,
-     "text": "Partly cloudy"
+     "tmin": 20,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1–5 mm",
+     "chance": 50,
+     "text": "Cloudy"
     },
     {
      "date": "2026-10-30",
-     "tmax": 27,
-     "tmin": 21,
+     "tmax": 28,
+     "tmin": 22,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
-     "chance": 30,
+     "chance": 20,
      "text": "Partly cloudy"
     },
     {
      "date": "2026-10-31",
-     "tmax": 27,
+     "tmax": 28,
      "tmin": 21,
      "rain_min": 1,
      "rain_max": 10,
      "rain_text": "1–10 mm",
-     "chance": 65,
+     "chance": 70,
      "text": "Shower"
     },
     {
      "date": "2026-11-01",
-     "tmax": 28,
+     "tmax": 29,
      "tmin": 21,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
      "chance": 40,
-     "text": "Shower"
+     "text": "Partly cloudy"
     },
     {
      "date": "2026-11-02",
      "tmax": 30,
+     "tmin": 22,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1–5 mm",
+     "chance": 50,
+     "text": "Shower"
+    },
+    {
+     "date": "2026-11-03",
+     "tmax": 29,
      "tmin": 22,
      "rain_min": 0,
      "rain_max": 2,
@@ -166,7 +166,7 @@
      "text": "Shower"
     }
    ],
-   "fetched": "2026-10-27T04:05:06Z"
+   "fetched": "2026-10-27T23:59:43Z"
   },
   {
    "source": "elders",
@@ -174,34 +174,24 @@
    "url": "https://eldersweather.com.au/forecast/qld/agnes-water",
    "days": [
     {
-     "date": "2026-10-27",
-     "tmax": 29,
-     "tmin": 22,
-     "rain_min": 0,
-     "rain_max": 5,
-     "rain_text": "0 - 5 mm",
-     "chance": 30,
-     "text": "Mostly cloudy"
-    },
-    {
      "date": "2026-10-28",
      "tmax": 27,
      "tmin": 22,
-     "rain_min": 15,
-     "rain_max": 20,
-     "rain_text": "15 - 20 mm",
-     "chance": 42,
-     "text": "Thunderstorms"
+     "rain_min": 10,
+     "rain_max": 15,
+     "rain_text": "10 - 15 mm",
+     "chance": 44,
+     "text": "Mostly cloudy"
     },
     {
      "date": "2026-10-29",
      "tmax": 26,
-     "tmin": 21,
-     "rain_min": 10,
-     "rain_max": 15,
-     "rain_text": "10 - 15 mm",
-     "chance": 30,
-     "text": "Thunderstorms"
+     "tmin": 20,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 16,
+     "text": "Rain"
     },
     {
      "date": "2026-10-30",
@@ -210,17 +200,17 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 11,
-     "text": "Fair"
+     "chance": 5,
+     "text": "Mostly cloudy"
     },
     {
      "date": "2026-10-31",
-     "tmax": 24,
+     "tmax": 25,
      "tmin": 21,
-     "rain_min": 5,
-     "rain_max": 10,
-     "rain_text": "5 - 10 mm",
-     "chance": 51,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 26,
      "text": "Cloudy"
     },
     {
@@ -230,21 +220,31 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 25,
-     "text": "Rain showers"
+     "chance": 8,
+     "text": "Fair"
     },
     {
      "date": "2026-11-02",
-     "tmax": 28,
+     "tmax": 27,
      "tmin": 22,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 16,
+     "chance": 31,
+     "text": "Fair"
+    },
+    {
+     "date": "2026-11-03",
+     "tmax": 27,
+     "tmin": 22,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 32,
      "text": "Fair"
     }
    ],
-   "fetched": "2026-10-27T04:05:09Z"
+   "fetched": "2026-10-27T23:59:46Z"
   },
   {
    "source": "weatherzone",
@@ -252,78 +252,78 @@
    "url": "https://www.weatherzone.com/au/qld/wide-bay-and-burnett/agnes-water",
    "days": [
     {
-     "date": "2026-10-27",
-     "tmax": 25.8,
-     "tmin": 22.7,
-     "rain_min": 1,
-     "rain_max": 5,
-     "rain_text": "1-5mm",
-     "chance": 60,
-     "text": "Possible thunderstorm"
-    },
-    {
      "date": "2026-10-28",
-     "tmax": 25.1,
-     "tmin": 22.6,
-     "rain_min": 10,
-     "rain_max": 20,
-     "rain_text": "10-20mm",
-     "chance": 70,
+     "tmax": 25.4,
+     "tmin": 23,
+     "rain_min": 20,
+     "rain_max": 40,
+     "rain_text": "20-40mm",
+     "chance": 90,
      "text": "Possible thunderstorm"
     },
     {
      "date": "2026-10-29",
-     "tmax": 24.7,
-     "tmin": 21.5,
-     "rain_min": 5,
-     "rain_max": 10,
-     "rain_text": "5-10mm",
-     "chance": 70,
-     "text": "Showers"
-    },
-    {
-     "date": "2026-10-30",
-     "tmax": 23.4,
-     "tmin": 21.7,
-     "rain_min": 1,
-     "rain_max": 5,
-     "rain_text": "1-5mm",
-     "chance": 70,
-     "text": "Mostly cloudy"
-    },
-    {
-     "date": "2026-10-31",
-     "tmax": 22.7,
+     "tmax": 24.4,
      "tmin": 21.5,
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1-5mm",
      "chance": 90,
-     "text": "Showers"
+     "text": "Rain"
     },
     {
-     "date": "2026-11-01",
-     "tmax": 24,
-     "tmin": 21.7,
+     "date": "2026-10-30",
+     "tmax": 23.7,
+     "tmin": 22,
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1-5mm",
-     "chance": 80,
-     "text": "Showers easing"
+     "chance": 40,
+     "text": "Mostly cloudy"
     },
     {
-     "date": "2026-11-02",
-     "tmax": 25,
-     "tmin": 22.7,
+     "date": "2026-10-31",
+     "tmax": 23.2,
+     "tmin": 21.8,
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1-5mm",
      "chance": 70,
-     "text": "Possible shower"
+     "text": "Showers"
+    },
+    {
+     "date": "2026-11-01",
+     "tmax": 24.7,
+     "tmin": 21.8,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5mm",
+     "chance": 50,
+     "text": "Late shower"
+    },
+    {
+     "date": "2026-11-02",
+     "tmax": 25.3,
+     "tmin": 22.9,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5mm",
+     "chance": 80,
+     "text": "Possible thunderstorm"
+    },
+    {
+     "date": "2026-11-03",
+     "tmax": 24.4,
+     "tmin": 22.6,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5mm",
+     "chance": 60,
+     "text": "Thunderstorms"
     }
    ],
    "point": "Miriam Vale",
-   "fetched": "2026-10-27T04:05:21Z"
+   "fetched": "2026-10-28T00:00:01Z"
   },
   {
    "source": "wunderground",
@@ -331,22 +331,12 @@
    "url": "https://www.wunderground.com/forecast/au/agnes-water/-24.211,151.903",
    "days": [
     {
-     "date": "2026-10-27",
-     "tmax": 29.4,
-     "tmin": 22.2,
-     "rain_min": 2,
-     "rain_max": 2,
-     "rain_text": "2 mm",
-     "chance": null,
-     "text": "Partly Cloudy"
-    },
-    {
      "date": "2026-10-28",
      "tmax": 27.2,
-     "tmin": 20.6,
-     "rain_min": 9.4,
-     "rain_max": 9.4,
-     "rain_text": "9.4 mm",
+     "tmin": 20,
+     "rain_min": 15.7,
+     "rain_max": 15.7,
+     "rain_text": "15.7 mm",
      "chance": null,
      "text": "PM Thunderstorms"
     },
@@ -358,32 +348,32 @@
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Mostly Sunny"
+     "text": "Partly Cloudy"
     },
     {
      "date": "2026-10-30",
-     "tmax": 24.4,
-     "tmin": 21.1,
-     "rain_min": 0.8,
-     "rain_max": 0.8,
-     "rain_text": "0.8 mm",
+     "tmax": 25,
+     "tmin": 20.6,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
      "chance": null,
      "text": "Mostly Cloudy"
     },
     {
      "date": "2026-10-31",
-     "tmax": 23.9,
+     "tmax": 25,
      "tmin": 21.1,
-     "rain_min": 1.8,
-     "rain_max": 1.8,
-     "rain_text": "1.8 mm",
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
      "chance": null,
-     "text": "AM Showers"
+     "text": "AM Clouds/PM Sun"
     },
     {
      "date": "2026-11-01",
-     "tmax": 26.7,
-     "tmin": 22.2,
+     "tmax": 26.1,
+     "tmin": 21.7,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -393,16 +383,16 @@
     {
      "date": "2026-11-02",
      "tmax": 27.8,
-     "tmin": 22.8,
+     "tmin": 22.2,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Partly Cloudy"
+     "text": "Mostly Sunny"
     },
     {
      "date": "2026-11-03",
-     "tmax": 27.2,
+     "tmax": 26.7,
      "tmin": 22.8,
      "rain_min": 0,
      "rain_max": 0,
@@ -414,6 +404,16 @@
      "date": "2026-11-04",
      "tmax": 27.2,
      "tmin": 22.8,
+     "rain_min": 1.8,
+     "rain_max": 1.8,
+     "rain_text": "1.8 mm",
+     "chance": null,
+     "text": "PM Showers"
+    },
+    {
+     "date": "2026-11-05",
+     "tmax": 27.8,
+     "tmin": 22.2,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -421,8 +421,8 @@
      "text": "Partly Cloudy"
     },
     {
-     "date": "2026-11-05",
-     "tmax": 27.2,
+     "date": "2026-11-06",
+     "tmax": 26.7,
      "tmin": 22.2,
      "rain_min": 0,
      "rain_max": 0,
@@ -431,7 +431,7 @@
      "text": "Mostly Sunny"
     }
    ],
-   "fetched": "2026-10-27T04:05:25Z"
+   "fetched": "2026-10-28T00:00:06Z"
   },
   {
    "source": "windy",
@@ -439,128 +439,106 @@
    "url": "https://www.windy.com/-24.211/151.903",
    "days": [
     {
-     "date": "2026-10-27",
-     "tmax": 30.7,
-     "tmin": 22.6,
-     "rain_min": 5.1,
-     "rain_max": 5.1,
-     "rain_text": "5.1 mm",
+     "date": "2026-10-28",
+     "tmax": 28.1,
+     "tmin": 23.2,
+     "rain_min": 15.8,
+     "rain_max": 15.8,
+     "rain_text": "15.8 mm",
      "chance": null,
      "text": null,
      "wind_max": 15,
-     "gust_max": 22,
-     "wind_dir": "N"
-    },
-    {
-     "date": "2026-10-28",
-     "tmax": 26.6,
-     "tmin": 22.8,
-     "rain_min": 14,
-     "rain_max": 14,
-     "rain_text": "14 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 11,
      "gust_max": 25,
      "wind_dir": "NNW"
     },
     {
      "date": "2026-10-29",
-     "tmax": 25,
-     "tmin": 21.3,
-     "rain_min": 2.7,
-     "rain_max": 2.7,
-     "rain_text": "2.7 mm",
+     "tmax": 27.3,
+     "tmin": 21.2,
+     "rain_min": 3.7,
+     "rain_max": 3.7,
+     "rain_text": "3.7 mm",
      "chance": null,
      "text": null,
-     "wind_max": 18,
-     "gust_max": 30,
-     "wind_dir": "ESE"
+     "wind_max": 19,
+     "gust_max": 29,
+     "wind_dir": "E"
     },
     {
      "date": "2026-10-30",
-     "tmax": 24.1,
-     "tmin": 20.1,
+     "tmax": 24.4,
+     "tmin": 21.1,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
-     "wind_max": 20,
-     "gust_max": 31,
+     "wind_max": 19,
+     "gust_max": 29,
      "wind_dir": "ESE"
     },
     {
      "date": "2026-10-31",
-     "tmax": 24.2,
-     "tmin": 19.9,
-     "rain_min": 0.1,
-     "rain_max": 0.1,
-     "rain_text": "0.1 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 11,
-     "gust_max": 21,
-     "wind_dir": "ENE"
-    },
-    {
-     "date": "2026-11-01",
-     "tmax": 25.6,
-     "tmin": 20.5,
+     "tmax": 23.5,
+     "tmin": 21.1,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
-     "wind_max": 13,
-     "gust_max": 23,
+     "wind_max": 12,
+     "gust_max": 20,
+     "wind_dir": "ENE"
+    },
+    {
+     "date": "2026-11-01",
+     "tmax": 28.2,
+     "tmin": 19.7,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": null,
+     "wind_max": 19,
+     "gust_max": 34,
      "wind_dir": "N"
+    },
+    {
+     "date": "2026-11-02",
+     "tmax": 26.2,
+     "tmin": 21.9,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": null,
+     "wind_max": 15,
+     "gust_max": 25,
+     "wind_dir": "NW"
     }
    ],
    "point": "mblue model",
-   "fetched": "2026-10-27T04:05:32Z"
+   "fetched": "2026-10-28T00:00:13Z"
   }
  ],
  "observations": {
   "source": "bom_obs",
   "station": "Gladstone",
   "distance_km": 76.1,
-  "time": "2026-10-27T13:50:00+10:00",
-  "temp": 29.6,
-  "feels_like": 31.4,
-  "humidity": 69,
-  "wind_dir": "NE",
-  "wind_kmh": 19,
-  "gust_kmh": 28,
+  "time": "2026-10-28T09:50:00+10:00",
+  "temp": 28.5,
+  "feels_like": 30.1,
+  "humidity": 66,
+  "wind_dir": "NW",
+  "wind_kmh": 15,
+  "gust_kmh": 30,
   "rain_since_9am": 0,
-  "fetched": "2026-10-27T04:05:02Z"
+  "fetched": "2026-10-27T23:59:39Z"
  },
  "marine": {
   "source": "willyweather",
   "url": "https://tides.willyweather.com.au/qld/fitzroy/agnes-water.html",
   "tides": {
-   "2026-10-27": [
-    {
-     "type": "low",
-     "time": "2:30 am",
-     "height_m": 0.35
-    },
-    {
-     "type": "high",
-     "time": "8:52 am",
-     "height_m": 3.28
-    },
-    {
-     "type": "low",
-     "time": "3:07 pm",
-     "height_m": 0.62
-    },
-    {
-     "type": "high",
-     "time": "9:01 pm",
-     "height_m": 2.72
-    }
-   ],
    "2026-10-28": [
     {
      "type": "low",
@@ -687,14 +665,31 @@
      "time": "9:40 pm",
      "height_m": 0.97
     }
+   ],
+   "2026-11-03": [
+    {
+     "type": "high",
+     "time": "3:46 am",
+     "height_m": 2.24
+    },
+    {
+     "type": "low",
+     "time": "9:37 am",
+     "height_m": 1.02
+    },
+    {
+     "type": "high",
+     "time": "3:57 pm",
+     "height_m": 2.86
+    },
+    {
+     "type": "low",
+     "time": "10:40 pm",
+     "height_m": 0.86
+    }
    ]
   },
   "swell": {
-   "2026-10-27": {
-    "max_m": 1,
-    "dir": "ENE",
-    "period_s": 7
-   },
    "2026-10-28": {
     "max_m": 0.9,
     "dir": "ENE",
@@ -706,32 +701,37 @@
     "period_s": 7
    },
    "2026-10-30": {
-    "max_m": 1.1,
+    "max_m": 1.2,
     "dir": "ESE",
     "period_s": 5
    },
    "2026-10-31": {
-    "max_m": 1.3,
+    "max_m": 1.2,
     "dir": "E",
     "period_s": 6
    },
    "2026-11-01": {
-    "max_m": 0.9,
+    "max_m": 0.8,
     "dir": "E",
     "period_s": 6
    },
    "2026-11-02": {
-    "max_m": 1.1,
+    "max_m": 0.9,
     "dir": "N",
-    "period_s": 5
+    "period_s": 4
    },
    "2026-11-03": {
-    "max_m": 0.9,
-    "dir": "NNE",
-    "period_s": 5
+    "max_m": 1,
+    "dir": "ESE",
+    "period_s": 4
+   },
+   "2026-11-04": {
+    "max_m": 0.6,
+    "dir": "E",
+    "period_s": 7
    }
   },
-  "fetched": "2026-10-27T04:05:04Z"
+  "fetched": "2026-10-27T23:59:41Z"
  },
  "errors": {}
 }
