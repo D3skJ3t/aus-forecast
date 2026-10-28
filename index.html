@@ -191,6 +191,12 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-off
 .hours .arrow{width:12px;height:12px}
 .hours .t{color:var(--muted)}
 
+.waters{display:flex;flex-direction:column;gap:16px}
+.water{display:flex;flex-direction:column;gap:10px;border:1px solid var(--line);border-radius:16px;padding:12px;background:color-mix(in srgb,var(--surface) 55%,transparent)}
+.whd{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.whd h3{margin:0;display:flex;align-items:center;gap:7px;font:700 1.12rem/1.2 var(--display)}
+.whd h3 .ui{width:18px;height:18px;color:var(--accent)}
+.kind{font:500 .66rem/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);border-radius:999px;padding:4px 9px}
 /* Site by site table */
 .detail{display:flex;flex-direction:column;gap:12px}
 .summary{display:flex;flex-wrap:wrap;gap:8px}
@@ -308,8 +314,7 @@ footer{font-size:.8rem;color:var(--muted);display:flex;flex-direction:column;gap
   <section aria-labelledby="boath">
     <h2 id="boath"><i data-ui="boat"></i><span id="boatt">Boating conditions</span></h2>
     <div class="warns" id="warns" hidden></div>
-    <div class="panel" id="boat"></div>
-    <div class="hours" id="hours"></div>
+    <div class="waters" id="boat"></div>
     <p class="note">Rough guide for jet skis and small boats, from the strongest daytime wind (6am to 6pm): calm under 15 km/h, choppy 15 to 25, rough above 25. Gusts, swell and local conditions matter too; check the Bureau of Meteorology's marine warnings before heading out.</p>
   </section>
 
@@ -383,6 +388,10 @@ footer{font-size:.8rem;color:var(--muted);display:flex;flex-direction:column;gap
     if(o.status==="fulfilled"&&o.value?.data){out.obs=o.value.data;}
     // Hourly wind and gusts for about the next 3 days, and any Bureau warnings for the area (boating section)
     if(h.status==="fulfilled"&&Array.isArray(h.value?.data))out.hourly=h.value.data.map(x=>({time:x.time,wind:x.wind?.speed_kilometre,kn:x.wind?.speed_knot,gust:x.wind?.gust_speed_kilometre,dir:x.wind?.direction,icon:x.icon_descriptor||null,night:!!x.is_night}));
+    // Hourly wind for each body of water's own forecast cell (river, bay, open ocean, lake)
+    const hourlyOf=v=>v.data.map(x=>({time:x.time,wind:x.wind?.speed_kilometre,kn:x.wind?.speed_knot,gust:x.wind?.gust_speed_kilometre,dir:x.wind?.direction,icon:x.icon_descriptor||null,night:!!x.is_night}));
+    const ws=await Promise.allSettled((state.loc.waters||[]).map(x=>get("https://api.weather.bom.gov.au/v1/locations/"+x.bom+"/forecasts/hourly")));
+    out.waters=ws.map(r=>r.status==="fulfilled"&&Array.isArray(r.value?.data)?hourlyOf(r.value):[]);
     if(w.status==="fulfilled"&&Array.isArray(w.value?.data))out.warnings=w.value.data.map(x=>({title:x.title||x.short_title||"Warning",type:x.type||"",issued:x.issue_time||null}));
     return out;
   }
@@ -619,8 +628,11 @@ footer{font-size:.8rem;color:var(--muted);display:flex;flex-direction:column;gap
     renderPanel(k,state.sel);renderBoat(k);
   }
 
-  // Boating: Bureau hourly wind and gusts (any place), Windy's daily maximum and WillyWeather tides and
-  // swell (featured locations), and Bureau warnings for the area
+  // Boating: one report per body of water at the location (locations.json "waters", e.g. the Maroochy River
+  // and the open ocean at Maroochydore). Each uses the Bureau's hourly wind for a forecast cell on that water,
+  // Windy's wind at the same spot, and WillyWeather's tide times (and swell, open ocean only) for that water.
+  // Places with no waters (Oxley, Maleny, searched places) get one report for the town itself.
+  const KIND={river:"River",ocean:"Open ocean",bay:"Bay",passage:"Passage",inlet:"Inlet",harbour:"Harbour",lake:"Lake"};
   function renderBoat(k){
     const D=state.data,L=state.loc,M=D.scraped&&D.scraped.marine,tzHour=t=>+new Intl.DateTimeFormat("en-AU",{timeZone:L.tz,hour:"numeric",hourCycle:"h23"}).format(new Date(t));
     const sel=state.sel,dt=new Date(k+"T12:00:00");
@@ -632,33 +644,49 @@ footer{font-size:.8rem;color:var(--muted);display:flex;flex-direction:column;gap
     const ICON={"On the water":"boat","Wind and gusts":"wind","Windy":"gust","Swell":"wave","Tides":"tide","Lake":"wave","Tides and swell":"wave"};
     const card=(name,dom,c,body,cls="")=>`<div class="card ${cls}" style="--c:var(${c})"><div class="chd"><span class="cn">${esc(name)}</span>${ICON[name]?ui(ICON[name]):""}</div><span class="cd">${esc(dom)}</span>${body}</div>`;
     const kmkn=v=>isNum(v)?`${f0(v)} km/h <span>(${f0(v/1.852)} kn)</span>`:"–";
-    // Bureau hourly, daytime only
-    const hrs=((D.bom&&D.bom.hourly)||[]).filter(h=>localDate(h.time)===k&&isNum(h.wind));
-    const day=hrs.filter(h=>{const x=tzHour(h.time);return x>=6&&x<=18;});
     const maxBy=(a,f)=>a.reduce((m,h)=>isNum(f(h))&&(!m||f(h)>f(m))?h:m,null);
-    const wMax=maxBy(day,h=>h.wind),gMax=maxBy(day,h=>h.gust);
-    const windy=siteDay("windy",k);
-    const strongest=isNum(wMax?.wind)?wMax.wind:(isNum(windy?.wind_max)?windy.wind_max:null);
-    const rate=!isNum(strongest)?null:strongest<15?["calm","Calm"]:strongest<=25?["choppy","Choppy"]:["rough","Rough"];
-    const out=[];
-    out.push(card("On the water","rough guide","--accent",rate?`<span class="rate ${rate[0]}">${rate[1]}</span><span class="cr">Strongest daytime wind ${kmkn(strongest)}</span>`:`<span class="cx">No wind forecast for this day yet.</span>`,rate?"":"empty"));
-    out.push(wMax?card("Wind and gusts","Bureau hourly forecast","--bom",`<span class="ct">${f0(wMax.wind)} <span>km/h ${arrow(wMax.dir)} ${esc(wMax.dir||"")}</span></span>
-      <span class="cr">Max ${kmkn(wMax.wind)}${gMax&&isNum(gMax.gust)?" · gusts "+f0(gMax.gust)+" km/h":""}</span><span class="cd">6am to 6pm</span>`)
-      :card("Wind and gusts","Bureau hourly forecast","--bom",`<span class="cx">The Bureau's hourly forecast covers about the next 3 days.</span>`,"empty"));
-    if(L.kind==="full")out.push(windy&&isNum(windy.wind_max)?card("Windy","windy.com","--s6",`<span class="ct">${f0(windy.wind_max)} <span>km/h ${arrow(windy.wind_dir)} ${esc(windy.wind_dir||"")}</span></span><span class="cr">Gusts to ${f0(windy.gust_max)} km/h</span><span class="cd">Strongest of the day</span>`)
-      :card("Windy","windy.com","--s6",`<span class="cx">No wind figures for this day.</span>`,"empty"));
-    if(L.water==="coast"&&M){
-      const sw=M.swell&&M.swell[k],td=M.tides&&M.tides[k];
-      out.push(sw?card("Swell","WillyWeather"+(M.swell_place?" · "+M.swell_place:""),"--s2",`<span class="ct">${sw.max_m} <span>m ${esc(sw.dir||"")}</span></span><span class="cr">${sw.period_s?"Period "+sw.period_s+" s · ":""}highest of the day</span>`)
-        :card("Swell","WillyWeather","--s2",`<span class="cx">${M.swell&&Object.keys(M.swell).length?"No swell forecast for this day.":"No swell forecast here (sheltered water)."}</span>`,"empty"));
-      out.push(td&&td.length?card("Tides","WillyWeather"+(M.tides_place?" · "+M.tides_place:""),"--s2",`<ul class="tides">${td.map(t=>`<li class="${t.type==="high"?"high":"low"}">${ui(t.type==="high"?"up":"down")}<span><b>${t.type==="high"?"High":"Low"}</b> ${esc(String(t.time||"").replace(/\s+/g,""))}</span><span>${isNum(t.height_m)?t.height_m+" m":""}</span></li>`).join("")}</ul>`)
-        :card("Tides","WillyWeather","--s2",`<span class="cx">No tide times for this day.</span>`,"empty"));
-    }else if(L.water==="lake")out.push(card("Lake","no tides or swell","--s2",`<span class="cx">Wind is what matters here: see the wind and gusts.</span>`,"empty"));
-    else if(L.kind!=="full")out.push(card("Tides and swell","featured locations","--s2",`<span class="cx">Tides and swell are shown for the featured coastal locations in the list.</span>`,"empty"));
-    $("boat").innerHTML=out.join("");
-    // Hour-by-hour wind for the day (every 2 hours, 6am to 6pm)
-    $("hours").innerHTML=day.filter(h=>tzHour(h.time)%2===0).map(h=>{const x=tzHour(h.time);
-      return `<div class="${windClass(h.wind)}"><span class="t">${x===12?"12pm":x>12?(x-12)+"pm":x+"am"}</span>${wx(h.icon,h.night)}<b>${f0(h.wind)}</b><span class="dir">${arrow(h.dir)}${esc(h.dir||"")}</span><span class="t">gust ${f0(h.gust)}</span></div>`;}).join("");
+    const later="Arrives with this location's next update, within a few hours.";
+    // One report: wind cards and the 2-hourly strip from the Bureau's hourly forecast, plus Windy, swell and tides
+    function report({title,kind,spot,hourly,windy,mw,note}){
+      const hrs=(hourly||[]).filter(h=>localDate(h.time)===k&&isNum(h.wind));
+      const day=hrs.filter(h=>{const x=tzHour(h.time);return x>=6&&x<=18;});
+      const wMax=maxBy(day,h=>h.wind),gMax=maxBy(day,h=>h.gust);
+      const strongest=isNum(wMax?.wind)?wMax.wind:(isNum(windy?.wind_max)?windy.wind_max:null);
+      const rate=!isNum(strongest)?null:strongest<15?["calm","Calm"]:strongest<=25?["choppy","Choppy"]:["rough","Rough"];
+      const at=kind==="lake"?" · on the lake":spot?" · at "+spot:"";
+      const out=[];
+      out.push(card("On the water","rough guide","--accent",rate?`<span class="rate ${rate[0]}">${rate[1]}</span><span class="cr">Strongest daytime wind ${kmkn(strongest)}</span>`:`<span class="cx">No wind forecast for this day yet.</span>`,rate?"":"empty"));
+      out.push(wMax?card("Wind and gusts","Bureau hourly forecast"+at,"--bom",`<span class="ct">${f0(wMax.wind)} <span>km/h ${arrow(wMax.dir)} ${esc(wMax.dir||"")}</span></span>
+        <span class="cr">Max ${kmkn(wMax.wind)}${gMax&&isNum(gMax.gust)?" · gusts "+f0(gMax.gust)+" km/h":""}</span><span class="cd">6am to 6pm</span>`)
+        :card("Wind and gusts","Bureau hourly forecast"+at,"--bom",`<span class="cx">The Bureau's hourly forecast covers about the next 3 days.</span>`,"empty"));
+      if(L.kind==="full")out.push(windy&&isNum(windy.wind_max)?card("Windy","windy.com"+at,"--s6",`<span class="ct">${f0(windy.wind_max)} <span>km/h ${arrow(windy.wind_dir)} ${esc(windy.wind_dir||"")}</span></span><span class="cr">Gusts to ${f0(windy.gust_max)} km/h</span><span class="cd">Strongest of the day</span>`)
+        :card("Windy","windy.com"+at,"--s6",`<span class="cx">${kind&&!mw?later:"No wind figures for this day."}</span>`,"empty"));
+      if(kind==="ocean"){
+        const sw=mw&&mw.swell&&mw.swell[k];
+        out.push(sw?card("Swell","WillyWeather · open ocean · "+(mw.swell_place||spot),"--s2",`<span class="ct">${sw.max_m} <span>m ${esc(sw.dir||"")}</span></span><span class="cr">${sw.period_s?"Period "+sw.period_s+" s · ":""}highest of the day</span>`)
+          :card("Swell","WillyWeather · open ocean","--s2",`<span class="cx">${mw?"No swell forecast for this day.":later}</span>`,"empty"));
+      }
+      if(kind&&kind!=="lake"){
+        const td=mw&&mw.tides&&mw.tides[k];
+        out.push(td&&td.length?card("Tides","WillyWeather · tide times at "+(mw.tides_place||spot),"--s2",`<ul class="tides">${td.map(t=>`<li class="${t.type==="high"?"high":"low"}">${ui(t.type==="high"?"up":"down")}<span><b>${t.type==="high"?"High":"Low"}</b> ${esc(String(t.time||"").replace(/\s+/g,""))}</span><span>${isNum(t.height_m)?t.height_m+" m":""}</span></li>`).join("")}</ul>`)
+          :card("Tides","WillyWeather · tide times at "+spot,"--s2",`<span class="cx">${mw?"No tide times for this day.":later}</span>`,"empty"));
+      }
+      if(note)out.push(note);
+      const strip=day.filter(h=>tzHour(h.time)%2===0).map(h=>{const x=tzHour(h.time);
+        return `<div class="${windClass(h.wind)}"><span class="t">${x===12?"12pm":x>12?(x-12)+"pm":x+"am"}</span>${wx(h.icon,h.night)}<b>${f0(h.wind)}</b><span class="dir">${arrow(h.dir)}${esc(h.dir||"")}</span><span class="t">gust ${f0(h.gust)}</span></div>`;}).join("");
+      return `<div class="water"><div class="whd"><h3>${ui(kind==="ocean"?"wave":"boat")}${esc(title)}</h3>${kind?`<span class="kind">${KIND[kind]||kind}</span>`:""}</div>
+        ${kind==="lake"?`<p class="note">Wind and gusts for open water on the lake. No tides or swell.</p>`:spot?`<p class="note">Wind, gusts and tides for the water at ${esc(spot)}${kind==="ocean"?"; swell is the open-ocean forecast":""}.</p>`:""}
+        <div class="panel">${out.join("")}</div>${strip?`<div class="hours">${strip}</div>`:""}</div>`;
+    }
+    const waters=L.waters||[];
+    const scraped=M&&Array.isArray(M.waters)?M.waters:[];  // older files (before per-water reports) have none
+    if(waters.length){
+      $("boat").innerHTML=waters.map((w,i)=>{const mw=scraped.find(x=>x.name===w.name)||null;
+        return report({title:w.name,kind:w.kind,spot:w.spot,hourly:D.bom&&D.bom.waters&&D.bom.waters[i],windy:mw&&mw.windy&&mw.windy[k],mw});}).join("");
+    }else{
+      $("boat").innerHTML=report({title:"Around "+L.name,hourly:D.bom&&D.bom.hourly,windy:siteDay("windy",k),
+        note:card("Tides and swell",L.kind==="full"?"not a boating location":"featured locations","--s2",`<span class="cx">${L.kind==="full"?"This place has no nearby water in the list, so the wind here is for the town.":"Reports for each river, bay, lake and stretch of open ocean are shown for the featured boating locations in the list."}</span>`,"empty")});
+    }
   }
 
   function renderPanel(k,sel){
@@ -785,7 +813,7 @@ footer{font-size:.8rem;color:var(--muted);display:flex;flex-direction:column;gap
     if(state.data)render();
     else{$("now").dataset.sky="";$("now").innerHTML=`<div class="nowtop">${wx("partly_cloudy")}<div><div class="temp num">–</div><div class="feels">Loading…</div></div></div>`;
       $("obs").textContent="A real reading from the nearest Bureau of Meteorology station.";
-      ["days","panel","summary","tbody","chart","legend","boat","hours"].forEach(x=>$(x).innerHTML="");$("warns").hidden=true;renderSites();}
+      ["days","panel","summary","tbody","chart","legend","boat"].forEach(x=>$(x).innerHTML="");$("warns").hidden=true;renderSites();}
     load();
   }
   const full=l=>({...l,kind:"full"});

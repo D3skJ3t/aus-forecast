@@ -374,25 +374,27 @@ def ww_page(kind, path):
     return html, clean(unescape(m.group(1))) if m else None
 
 
-def scrape_marine(loc):
-    if loc.get("water") != "coast":
-        return None  # lakes and inland places: wind comes from the Bureau and Windy, no tides or swell
-    tz = ZoneInfo(loc["tz"])
-    path = loc["willyweather"]
+def ww_tides(path):
+    """High and low tides per day from a WillyWeather tides page, and the spot's name if WillyWeather
+    sent us to a nearby one."""
+    html, place = ww_page("tides", path)
     tides = {}
-    tide_html, tide_place = ww_page("tides", path)
-    soup = BeautifulSoup(tide_html, "html.parser")
-    for li in soup.select("section.forecast li.day"):
+    for li in BeautifulSoup(html, "html.parser").select("section.forecast li.day"):
         t = li.find("time")
         if not t:
             continue
         tides[t["datetime"]] = [{"type": "high" if "point-high" in (p.get("class") or []) else "low",
                                  "time": clean(p.find("h3").get_text()), "height_m": num(clean(p.find("span").get_text()).replace(" m", ""))}
                                 for p in li.select("li.point-high, li.point-low") if p.find("h3") and p.find("span")]
-    swell = {}
-    html, swell_place = ww_page("swell", path)
+    return tides, place
+
+
+def ww_swell(path, tz):
+    """Each day's biggest swell (height, direction, period) from a WillyWeather swell page."""
+    html, place = ww_page("swell", path)
     heights, periods = ww_graph(html, "swell-height"), ww_graph(html, "swell-period")
     period_at = {p["x"]: p.get("y") for p in periods}
+    swell = {}
     for p in heights:
         if p.get("y") is None:
             continue
@@ -400,14 +402,47 @@ def scrape_marine(loc):
         cur = swell.get(d)
         if cur is None or p["y"] > cur["max_m"]:
             swell[d] = {"max_m": p["y"], "dir": p.get("directionText"), "period_s": num(round(period_at.get(p["x"]) or 0)) or None}
-    if not tides and not swell:
-        raise ValueError("no tide or swell forecast on WillyWeather for this place")
-    out = {"source": "willyweather", "url": f"https://tides.willyweather.com.au/{path}.html", "tides": tides, "swell": swell}
-    if tide_place and tides:
-        out["tides_place"] = tide_place  # e.g. Coolangatta Beach for Coolangatta
-    if swell_place and swell:
-        out["swell_place"] = swell_place
-    return out
+    return swell, place
+
+
+def scrape_marine(loc):
+    """Boating figures for each body of water at the location (its "waters" in locations.json, e.g. the
+    Maroochy River and the open ocean at Maroochydore): tide times at that water's WillyWeather spot, swell
+    for open ocean only, and Windy's wind at the spot. Places with no waters (Oxley, Maleny) are skipped."""
+    waters = loc.get("waters")
+    if not waters:
+        return None
+    tz = ZoneInfo(loc["tz"])
+    out, problems = [], []
+    for w in waters:
+        r = {"name": w["name"], "kind": w["kind"], "spot": w["spot"]}
+        if w["kind"] != "lake":
+            try:
+                r["tides"], place = ww_tides(w["ww"])
+                if place:
+                    r["tides_place"] = place
+            except Exception as e:
+                problems.append(f"{w['name']} tides: {masked(e)}")
+        if w["kind"] == "ocean":
+            try:
+                r["swell"], place = ww_swell(w["ww"], tz)
+                if place:
+                    r["swell_place"] = place  # e.g. a nearby reef or point where the spot has no swell forecast
+            except Exception as e:
+                problems.append(f"{w['name']} swell: {masked(e)}")
+        try:
+            days = scrape_windy({**loc, "lat": w["lat"], "lon": w["lon"]})["days"]
+            r["windy"] = {d["date"]: {k: d[k] for k in ("wind_max", "gust_max", "wind_dir")}
+                          for d in days if d.get("wind_max") is not None}
+        except Exception as e:
+            problems.append(f"{w['name']} Windy: {masked(e)}")
+        out.append(r)
+    if not any(x.get("tides") or x.get("swell") or x.get("windy") for x in out):
+        raise ValueError("no marine figures: " + "; ".join(problems))
+    res = {"source": "willyweather, windy", "waters": out}
+    if problems:
+        res["problems"] = problems
+    return res
 
 
 SCRAPERS = [scrape_bom, scrape_willyweather, scrape_elders, scrape_weatherzone, scrape_wunderground,

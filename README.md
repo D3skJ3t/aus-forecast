@@ -12,9 +12,12 @@ A weather app for boating and jet skiing in Queensland, with any place in Austra
 - **Any other place:** search a suburb, town or postcode to see the Bureau of Meteorology forecast and
   the nearest weather station's latest reading. Tap "Save place" to keep it in "My places" on that
   device.
-- **Boating conditions** for the chosen day: a calm / choppy / rough guide based on the strongest
-  daytime wind, hourly wind and gusts, any Bureau warnings for the area, and, for featured coastal
-  spots, tides and swell.
+- **Boating conditions** for the chosen day, with a separate report for each body of water at a
+  featured location (for example, Maroochydore has the Maroochy River and the open ocean). Each
+  report has a calm / choppy / rough guide from the strongest daytime wind, the Bureau's hourly wind
+  and gusts and Windy's wind for a point on that water, and tide times at a WillyWeather spot on that
+  water. Open-ocean reports add swell; lakes have wind only. Any Bureau warnings for the area show
+  above the reports. The waters and their spots are listed under `waters` in `locations.json`.
 
 ## How it works
 
