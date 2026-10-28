@@ -1,6 +1,6 @@
 {
  "id": "oxley",
- "generated": "2026-10-28T11:41:59Z",
+ "generated": "2026-10-28T13:52:34Z",
  "sources": [
   {
    "source": "bom",
@@ -98,7 +98,7 @@
      "text": null
     }
    ],
-   "fetched": "2026-10-28T11:41:34Z"
+   "fetched": "2026-10-28T13:52:05Z"
   },
   {
    "source": "willyweather",
@@ -113,17 +113,17 @@
      "rain_max": 10,
      "rain_text": "5–10 mm",
      "chance": 50,
-     "text": "Shower or two"
+     "text": "Partly cloudy"
     },
     {
      "date": "2026-10-29",
      "tmax": 29,
-     "tmin": 15,
+     "tmin": 14,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
      "chance": 15,
-     "text": "Mostly sunny"
+     "text": "Partly cloudy"
     },
     {
      "date": "2026-10-30",
@@ -138,16 +138,16 @@
     {
      "date": "2026-10-31",
      "tmax": 27,
-     "tmin": 16,
+     "tmin": 15,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
      "chance": 30,
-     "text": "Possible shower"
+     "text": "Partly cloudy"
     },
     {
      "date": "2026-11-01",
-     "tmax": 29,
+     "tmax": 31,
      "tmin": 17,
      "rain_min": 1,
      "rain_max": 5,
@@ -158,12 +158,12 @@
     {
      "date": "2026-11-02",
      "tmax": 30,
-     "tmin": 17,
+     "tmin": 18,
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1–5 mm",
      "chance": 45,
-     "text": "Shower or two"
+     "text": "Possible shower"
     },
     {
      "date": "2026-11-03",
@@ -176,7 +176,7 @@
      "text": "Shower or two"
     }
    ],
-   "fetched": "2026-10-28T11:41:36Z"
+   "fetched": "2026-10-28T13:52:08Z"
   },
   {
    "source": "elders",
@@ -210,7 +210,7 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 2,
+     "chance": 6,
      "text": "Fair"
     },
     {
@@ -220,7 +220,7 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 7,
+     "chance": 9,
      "text": "Mostly cloudy"
     },
     {
@@ -254,7 +254,7 @@
      "text": "Mostly cloudy"
     }
    ],
-   "fetched": "2026-10-28T11:41:39Z"
+   "fetched": "2026-10-28T13:52:11Z"
   },
   {
    "source": "weatherzone",
@@ -333,7 +333,7 @@
     }
    ],
    "point": "Archerfield",
-   "fetched": "2026-10-28T11:41:52Z"
+   "fetched": "2026-10-28T13:52:25Z"
   },
   {
    "source": "wunderground",
@@ -343,7 +343,7 @@
     {
      "date": "2026-10-28",
      "tmax": 28.9,
-     "tmin": 13.9,
+     "tmin": 13.3,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -368,7 +368,7 @@
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Cloudy"
+     "text": "Mostly Cloudy"
     },
     {
      "date": "2026-10-31",
@@ -382,18 +382,18 @@
     },
     {
      "date": "2026-11-01",
-     "tmax": 28.3,
-     "tmin": 17.2,
-     "rain_min": 1.5,
-     "rain_max": 1.5,
-     "rain_text": "1.5 mm",
+     "tmax": 28.9,
+     "tmin": 17.8,
+     "rain_min": 2.3,
+     "rain_max": 2.3,
+     "rain_text": "2.3 mm",
      "chance": null,
      "text": "PM Thunderstorms"
     },
     {
      "date": "2026-11-02",
      "tmax": 28.9,
-     "tmin": 17.8,
+     "tmin": 18.3,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -403,22 +403,22 @@
     {
      "date": "2026-11-03",
      "tmax": 28.3,
-     "tmin": 20,
-     "rain_min": 5.3,
-     "rain_max": 5.3,
-     "rain_text": "5.3 mm",
+     "tmin": 19.4,
+     "rain_min": 4.3,
+     "rain_max": 4.3,
+     "rain_text": "4.3 mm",
      "chance": null,
      "text": "PM Showers"
     },
     {
      "date": "2026-11-04",
-     "tmax": 31.1,
+     "tmax": 30.6,
      "tmin": 19.4,
      "rain_min": 1,
      "rain_max": 1,
      "rain_text": "1 mm",
      "chance": null,
-     "text": "PM Thunderstorms"
+     "text": "Isolated Thunderstorms"
     },
     {
      "date": "2026-11-05",
@@ -441,7 +441,7 @@
      "text": "Partly Cloudy"
     }
    ],
-   "fetched": "2026-10-28T11:41:52Z"
+   "fetched": "2026-10-28T13:52:26Z"
   },
   {
    "source": "windy",
@@ -451,27 +451,27 @@
     {
      "date": "2026-10-28",
      "tmax": 26.9,
-     "tmin": 18.7,
+     "tmin": 18.1,
      "rain_min": 0.2,
      "rain_max": 0.2,
      "rain_text": "0.2 mm",
      "chance": null,
      "text": null,
-     "wind_max": 18,
+     "wind_max": 19,
      "gust_max": 32,
      "wind_dir": "SW"
     },
     {
      "date": "2026-10-29",
-     "tmax": 27.7,
-     "tmin": 15.6,
+     "tmax": 27.8,
+     "tmin": 15,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
-     "wind_max": 20,
-     "gust_max": 33,
+     "wind_max": 19,
+     "gust_max": 34,
      "wind_dir": "E"
     },
     {
@@ -484,13 +484,13 @@
      "chance": null,
      "text": null,
      "wind_max": 19,
-     "gust_max": 29,
+     "gust_max": 30,
      "wind_dir": "ENE"
     },
     {
      "date": "2026-10-31",
-     "tmax": 26,
-     "tmin": 17.1,
+     "tmax": 25.4,
+     "tmin": 17,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -502,8 +502,8 @@
     },
     {
      "date": "2026-11-01",
-     "tmax": 29.4,
-     "tmin": 18.7,
+     "tmax": 29.5,
+     "tmin": 18.8,
      "rain_min": 4.5,
      "rain_max": 4.5,
      "rain_text": "4.5 mm",
@@ -515,7 +515,7 @@
     },
     {
      "date": "2026-11-02",
-     "tmax": 27.5,
+     "tmax": 27.3,
      "tmin": 19.6,
      "rain_min": 0.4,
      "rain_max": 0.4,
@@ -523,27 +523,27 @@
      "chance": null,
      "text": null,
      "wind_max": 11,
-     "gust_max": 23,
-     "wind_dir": "SW"
+     "gust_max": 24,
+     "wind_dir": "W"
     }
    ],
    "point": "mblue model",
-   "fetched": "2026-10-28T11:41:59Z"
+   "fetched": "2026-10-28T13:52:34Z"
   }
  ],
  "observations": {
   "source": "bom_obs",
   "station": "Archerfield",
   "distance_km": 3.2,
-  "time": "2026-10-28T21:30:00+10:00",
-  "temp": 18,
-  "feels_like": 17.8,
-  "humidity": 75,
-  "wind_dir": "WNW",
-  "wind_kmh": 7,
+  "time": "2026-10-28T23:40:00+10:00",
+  "temp": 17,
+  "feels_like": 16.8,
+  "humidity": 78,
+  "wind_dir": "SW",
+  "wind_kmh": 6,
   "gust_kmh": 9,
   "rain_since_9am": 0.2,
-  "fetched": "2026-10-28T11:41:34Z"
+  "fetched": "2026-10-28T13:52:05Z"
  },
  "errors": {}
 }
