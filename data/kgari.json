@@ -1,22 +1,12 @@
 {
  "id": "kgari",
- "generated": "2026-10-29T08:39:56Z",
+ "generated": "2026-10-29T15:39:16Z",
  "sources": [
   {
    "source": "bom",
    "name": "BOM official",
    "url": "https://www.bom.gov.au/",
    "days": [
-    {
-     "date": "2026-10-29",
-     "tmax": 28,
-     "tmin": null,
-     "rain_min": 0,
-     "rain_max": null,
-     "rain_text": "0 mm",
-     "chance": 10,
-     "text": null
-    },
     {
      "date": "2026-10-30",
      "tmax": 27,
@@ -34,7 +24,7 @@
      "rain_min": 0,
      "rain_max": null,
      "rain_text": "0 mm",
-     "chance": 10,
+     "chance": 20,
      "text": null
     },
     {
@@ -50,11 +40,11 @@
     {
      "date": "2026-11-02",
      "tmax": 29,
-     "tmin": 19,
+     "tmin": 20,
      "rain_min": 0,
-     "rain_max": null,
-     "rain_text": "0 mm",
-     "chance": 20,
+     "rain_max": 1,
+     "rain_text": "0-1 mm",
+     "chance": 30,
      "text": null
     },
     {
@@ -69,22 +59,22 @@
     },
     {
      "date": "2026-11-04",
-     "tmax": 29,
-     "tmin": 19,
+     "tmax": 30,
+     "tmin": 20,
      "rain_min": 0,
-     "rain_max": 2,
-     "rain_text": "0-2 mm",
-     "chance": 40,
+     "rain_max": 4,
+     "rain_text": "0-4 mm",
+     "chance": 50,
      "text": null
     },
     {
      "date": "2026-11-05",
-     "tmax": 30,
+     "tmax": 31,
      "tmin": 20,
      "rain_min": 0,
-     "rain_max": 3,
-     "rain_text": "0-3 mm",
-     "chance": 50,
+     "rain_max": 1,
+     "rain_text": "0-1 mm",
+     "chance": 40,
      "text": null
     },
     {
@@ -98,23 +88,13 @@
      "text": null
     }
    ],
-   "fetched": "2026-10-29T08:38:58Z"
+   "fetched": "2026-10-29T15:38:52Z"
   },
   {
    "source": "willyweather",
    "name": "WillyWeather",
    "url": "https://www.willyweather.com.au/qld/wide-bay/fraser-island.html",
    "days": [
-    {
-     "date": "2026-10-29",
-     "tmax": 28,
-     "tmin": 18,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1 mm",
-     "chance": 10,
-     "text": "Partly cloudy"
-    },
     {
      "date": "2026-10-30",
      "tmax": 27,
@@ -128,11 +108,11 @@
     {
      "date": "2026-10-31",
      "tmax": 27,
-     "tmin": 18,
+     "tmin": 17,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
-     "chance": 10,
+     "chance": 20,
      "text": "Partly cloudy"
     },
     {
@@ -148,7 +128,7 @@
     {
      "date": "2026-11-02",
      "tmax": 29,
-     "tmin": 19,
+     "tmin": 20,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
@@ -158,7 +138,7 @@
     {
      "date": "2026-11-03",
      "tmax": 29,
-     "tmin": 19,
+     "tmin": 20,
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1–5 mm",
@@ -167,32 +147,32 @@
     },
     {
      "date": "2026-11-04",
-     "tmax": 29,
-     "tmin": 19,
+     "tmax": 30,
+     "tmin": 20,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1–5 mm",
+     "chance": 55,
+     "text": "Shower"
+    },
+    {
+     "date": "2026-11-05",
+     "tmax": 31,
+     "tmin": 20,
      "rain_min": 0,
-     "rain_max": 2,
-     "rain_text": "< 2 mm",
-     "chance": 40,
+     "rain_max": 1,
+     "rain_text": "< 1 mm",
+     "chance": 35,
      "text": "Shower"
     }
    ],
-   "fetched": "2026-10-29T08:39:01Z"
+   "fetched": "2026-10-29T15:38:54Z"
   },
   {
    "source": "elders",
    "name": "Elders Weather",
    "url": "https://eldersweather.com.au/forecast/qld/eurong",
    "days": [
-    {
-     "date": "2026-10-29",
-     "tmax": 24,
-     "tmin": 19,
-     "rain_min": 0,
-     "rain_max": 5,
-     "rain_text": "0 - 5 mm",
-     "chance": 6,
-     "text": "Partly cloudy"
-    },
     {
      "date": "2026-10-30",
      "tmax": 23,
@@ -205,12 +185,12 @@
     },
     {
      "date": "2026-10-31",
-     "tmax": 24,
+     "tmax": 23,
      "tmin": 20,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 3,
+     "chance": 1,
      "text": "Mostly cloudy"
     },
     {
@@ -220,7 +200,7 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 5,
+     "chance": 4,
      "text": "Clear skies"
     },
     {
@@ -230,7 +210,7 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 12,
+     "chance": 10,
      "text": "Fair"
     },
     {
@@ -240,22 +220,32 @@
      "rain_min": 5,
      "rain_max": 10,
      "rain_text": "5 - 10 mm",
-     "chance": 30,
+     "chance": 41,
      "text": "Mostly cloudy"
     },
     {
      "date": "2026-11-04",
-     "tmax": 26,
+     "tmax": 27,
      "tmin": 22,
-     "rain_min": 5,
-     "rain_max": 10,
-     "rain_text": "5 - 10 mm",
-     "chance": 27,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 26,
      "text": "Partly cloudy"
+    },
+    {
+     "date": "2026-11-05",
+     "tmax": 27,
+     "tmin": 22,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 14,
+     "text": "Fair"
     }
    ],
    "point": "Eurong",
-   "fetched": "2026-10-29T08:39:04Z"
+   "fetched": "2026-10-29T15:38:57Z"
   },
   {
    "source": "weatherzone",
@@ -263,19 +253,9 @@
    "url": "https://www.weatherzone.com/au/qld/wide-bay-and-burnett/fraser-island",
    "days": [
     {
-     "date": "2026-10-29",
-     "tmax": 27.1,
-     "tmin": 17.9,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1mm",
-     "chance": 5,
-     "text": "Sunny"
-    },
-    {
      "date": "2026-10-30",
-     "tmax": 26.2,
-     "tmin": 18.4,
+     "tmax": 26.3,
+     "tmin": 19.5,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
@@ -284,8 +264,18 @@
     },
     {
      "date": "2026-10-31",
-     "tmax": 26.3,
-     "tmin": 19.3,
+     "tmax": 26.2,
+     "tmin": 19.4,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1mm",
+     "chance": 10,
+     "text": "Mostly sunny"
+    },
+    {
+     "date": "2026-11-01",
+     "tmax": 27.1,
+     "tmin": 20.2,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
@@ -293,9 +283,9 @@
      "text": "Mostly sunny"
     },
     {
-     "date": "2026-11-01",
-     "tmax": 26.9,
-     "tmin": 20.7,
+     "date": "2026-11-02",
+     "tmax": 28.2,
+     "tmin": 21.9,
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1-5mm",
@@ -303,38 +293,38 @@
      "text": "Mostly sunny"
     },
     {
-     "date": "2026-11-02",
-     "tmax": 28.3,
-     "tmin": 21.6,
-     "rain_min": 1,
-     "rain_max": 5,
-     "rain_text": "1-5mm",
-     "chance": 50,
-     "text": "Possible shower"
-    },
-    {
      "date": "2026-11-03",
-     "tmax": 27.7,
-     "tmin": 21.4,
-     "rain_min": 5,
-     "rain_max": 10,
-     "rain_text": "5-10mm",
-     "chance": 70,
-     "text": "Possible shower"
-    },
-    {
-     "date": "2026-11-04",
-     "tmax": 28.3,
+     "tmax": 27.8,
      "tmin": 22.3,
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1-5mm",
      "chance": 70,
+     "text": "Mostly sunny"
+    },
+    {
+     "date": "2026-11-04",
+     "tmax": 28.6,
+     "tmin": 22.2,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5mm",
+     "chance": 70,
      "text": "Possible thunderstorm"
+    },
+    {
+     "date": "2026-11-05",
+     "tmax": 29.3,
+     "tmin": 22,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1mm",
+     "chance": 70,
+     "text": "Mostly sunny"
     }
    ],
    "point": "Hervey Bay",
-   "fetched": "2026-10-29T01:53:31Z"
+   "fetched": "2026-10-29T15:39:09Z"
   },
   {
    "source": "wunderground",
@@ -342,19 +332,9 @@
    "url": "https://www.wunderground.com/forecast/au/eurong/-25.511,153.122",
    "days": [
     {
-     "date": "2026-10-29",
-     "tmax": 26.1,
-     "tmin": 20,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": "Partly Cloudy"
-    },
-    {
      "date": "2026-10-30",
      "tmax": 23.9,
-     "tmin": 20,
+     "tmin": 19.4,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -363,8 +343,8 @@
     },
     {
      "date": "2026-10-31",
-     "tmax": 24.4,
-     "tmin": 20,
+     "tmax": 23.9,
+     "tmin": 19.4,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -383,7 +363,7 @@
     },
     {
      "date": "2026-11-02",
-     "tmax": 26.7,
+     "tmax": 27.2,
      "tmin": 21.7,
      "rain_min": 0,
      "rain_max": 0,
@@ -393,11 +373,11 @@
     },
     {
      "date": "2026-11-03",
-     "tmax": 26.7,
-     "tmin": 21.7,
-     "rain_min": 9.7,
-     "rain_max": 9.7,
-     "rain_text": "9.7 mm",
+     "tmax": 26.1,
+     "tmin": 22.2,
+     "rain_min": 10.2,
+     "rain_max": 10.2,
+     "rain_text": "10.2 mm",
      "chance": null,
      "text": "PM Showers"
     },
@@ -423,7 +403,7 @@
     },
     {
      "date": "2026-11-06",
-     "tmax": 26.1,
+     "tmax": 25.6,
      "tmin": 21.7,
      "rain_min": 0,
      "rain_max": 0,
@@ -439,11 +419,21 @@
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Mostly Sunny"
+     "text": "Partly Cloudy"
+    },
+    {
+     "date": "2026-11-08",
+     "tmax": 25.6,
+     "tmin": 20.6,
+     "rain_min": 1.8,
+     "rain_max": 1.8,
+     "rain_text": "1.8 mm",
+     "chance": null,
+     "text": "PM Showers"
     }
    ],
    "point": "Eurong",
-   "fetched": "2026-10-29T08:39:49Z"
+   "fetched": "2026-10-29T15:39:09Z"
   },
   {
    "source": "windy",
@@ -451,61 +441,48 @@
    "url": "https://www.windy.com/-25.511/153.122",
    "days": [
     {
-     "date": "2026-10-29",
-     "tmax": 25.5,
-     "tmin": 18.5,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 22,
-     "gust_max": 31,
-     "wind_dir": "SE"
-    },
-    {
      "date": "2026-10-30",
-     "tmax": 24.3,
+     "tmax": 24.6,
      "tmin": 18.9,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
-     "wind_max": 18,
+     "wind_max": 17,
      "gust_max": 26,
      "wind_dir": "ESE"
     },
     {
      "date": "2026-10-31",
-     "tmax": 24.6,
+     "tmax": 23.9,
      "tmin": 18.8,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
-     "wind_max": 8,
-     "gust_max": 13,
+     "wind_max": 10,
+     "gust_max": 14,
      "wind_dir": "NE"
     },
     {
      "date": "2026-11-01",
-     "tmax": 26,
-     "tmin": 18.8,
+     "tmax": 26.2,
+     "tmin": 19.1,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
      "wind_max": 17,
-     "gust_max": 29,
+     "gust_max": 30,
      "wind_dir": "N"
     },
     {
      "date": "2026-11-02",
-     "tmax": 27.5,
-     "tmin": 20.8,
+     "tmax": 27.6,
+     "tmin": 20.9,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -514,38 +491,25 @@
      "wind_max": 17,
      "gust_max": 27,
      "wind_dir": "NNW"
-    },
-    {
-     "date": "2026-11-03",
-     "tmax": 26.8,
-     "tmin": 22.1,
-     "rain_min": 0.5,
-     "rain_max": 0.5,
-     "rain_text": "0.5 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 24,
-     "gust_max": 34,
-     "wind_dir": "NNW"
     }
    ],
    "point": "mblue model",
-   "fetched": "2026-10-29T08:39:56Z"
+   "fetched": "2026-10-29T15:39:16Z"
   }
  ],
  "observations": {
   "source": "bom_obs",
   "station": "Hervey Bay",
   "distance_km": 27.6,
-  "time": "2026-10-29T18:30:00+10:00",
-  "temp": 21.9,
-  "feels_like": 20.2,
-  "humidity": 68,
-  "wind_dir": "E",
-  "wind_kmh": 19,
-  "gust_kmh": 32,
+  "time": "2026-10-30T01:30:00+10:00",
+  "temp": 18.7,
+  "feels_like": 19.1,
+  "humidity": 81,
+  "wind_dir": "SSE",
+  "wind_kmh": 7,
+  "gust_kmh": 9,
   "rain_since_9am": 0,
-  "fetched": "2026-10-29T08:38:41Z"
+  "fetched": "2026-10-29T15:38:36Z"
  },
  "marine": {
   "source": "willyweather, windy",
@@ -555,28 +519,6 @@
     "kind": "ocean",
     "spot": "Eurong",
     "tides": {
-     "2026-10-29": [
-      {
-       "type": "low",
-       "time": "2:55 am",
-       "height_m": 0.3
-      },
-      {
-       "type": "high",
-       "time": "9:57 am",
-       "height_m": 2.14
-      },
-      {
-       "type": "low",
-       "time": "4:32 pm",
-       "height_m": 0.57
-      },
-      {
-       "type": "high",
-       "time": "10:07 pm",
-       "height_m": 1.3
-      }
-     ],
      "2026-10-30": [
       {
        "type": "low",
@@ -703,18 +645,35 @@
        "time": "10:58 pm",
        "height_m": 0.49
       }
+     ],
+     "2026-11-05": [
+      {
+       "type": "high",
+       "time": "5:21 am",
+       "height_m": 1.56
+      },
+      {
+       "type": "low",
+       "time": "11:00 am",
+       "height_m": 0.66
+      },
+      {
+       "type": "high",
+       "time": "5:08 pm",
+       "height_m": 1.68
+      },
+      {
+       "type": "low",
+       "time": "11:32 pm",
+       "height_m": 0.42
+      }
      ]
     },
     "swell": {
-     "2026-10-29": {
-      "max_m": 1,
-      "dir": "ESE",
-      "period_s": 8
-     },
      "2026-10-30": {
       "max_m": 1.3,
       "dir": "SE",
-      "period_s": 6
+      "period_s": 5
      },
      "2026-10-31": {
       "max_m": 1.3,
@@ -729,53 +688,48 @@
      "2026-11-02": {
       "max_m": 1,
       "dir": "E",
-      "period_s": 6
+      "period_s": 7
      },
      "2026-11-03": {
       "max_m": 0.9,
       "dir": "E",
-      "period_s": 6
+      "period_s": 7
      },
      "2026-11-04": {
-      "max_m": 1.3,
-      "dir": "N",
-      "period_s": 6
+      "max_m": 1.2,
+      "dir": "NNE",
+      "period_s": 5
      },
      "2026-11-05": {
-      "max_m": 1.2,
+      "max_m": 1.3,
       "dir": "N",
-      "period_s": 6
+      "period_s": 5
+     },
+     "2026-11-06": {
+      "max_m": 1.2,
+      "dir": "NNE",
+      "period_s": 5
      }
     },
     "windy": {
-     "2026-10-29": {
-      "wind_max": 22,
-      "gust_max": 31,
-      "wind_dir": "SE"
-     },
      "2026-10-30": {
-      "wind_max": 18,
+      "wind_max": 17,
       "gust_max": 26,
       "wind_dir": "ESE"
      },
      "2026-10-31": {
-      "wind_max": 8,
-      "gust_max": 13,
+      "wind_max": 10,
+      "gust_max": 14,
       "wind_dir": "NE"
      },
      "2026-11-01": {
       "wind_max": 17,
-      "gust_max": 29,
+      "gust_max": 30,
       "wind_dir": "N"
      },
      "2026-11-02": {
       "wind_max": 17,
       "gust_max": 27,
-      "wind_dir": "NNW"
-     },
-     "2026-11-03": {
-      "wind_max": 24,
-      "gust_max": 34,
       "wind_dir": "NNW"
      }
     }
@@ -785,28 +739,6 @@
     "kind": "passage",
     "spot": "Kingfisher Bay",
     "tides": {
-     "2026-10-29": [
-      {
-       "type": "low",
-       "time": "4:27 am",
-       "height_m": 0.67
-      },
-      {
-       "type": "high",
-       "time": "10:54 am",
-       "height_m": 4.04
-      },
-      {
-       "type": "low",
-       "time": "5:35 pm",
-       "height_m": 1.07
-      },
-      {
-       "type": "high",
-       "time": "10:56 pm",
-       "height_m": 3.14
-      }
-     ],
      "2026-10-30": [
       {
        "type": "low",
@@ -933,26 +865,38 @@
        "time": "11:58 pm",
        "height_m": 0.95
       }
+     ],
+     "2026-11-05": [
+      {
+       "type": "high",
+       "time": "6:06 am",
+       "height_m": 3.47
+      },
+      {
+       "type": "low",
+       "time": "12:14 pm",
+       "height_m": 1.06
+      },
+      {
+       "type": "high",
+       "time": "6:06 pm",
+       "height_m": 3.75
+      }
      ]
     },
     "windy": {
-     "2026-10-29": {
-      "wind_max": 22,
-      "gust_max": 31,
-      "wind_dir": "SE"
-     },
      "2026-10-30": {
-      "wind_max": 19,
+      "wind_max": 18,
       "gust_max": 28,
       "wind_dir": "ESE"
      },
      "2026-10-31": {
       "wind_max": 10,
-      "gust_max": 16,
-      "wind_dir": "ENE"
+      "gust_max": 19,
+      "wind_dir": "NE"
      },
      "2026-11-01": {
-      "wind_max": 16,
+      "wind_max": 17,
       "gust_max": 28,
       "wind_dir": "N"
      },
@@ -960,18 +904,11 @@
       "wind_max": 18,
       "gust_max": 29,
       "wind_dir": "N"
-     },
-     "2026-11-03": {
-      "wind_max": 24,
-      "gust_max": 34,
-      "wind_dir": "NNW"
      }
     }
    }
   ],
-  "fetched": "2026-10-29T08:38:58Z"
+  "fetched": "2026-10-29T15:38:52Z"
  },
- "errors": {
-  "weatherzone": "TimeoutError: Page.goto: Timeout 45000ms exceeded.\nCall log:\nnavigating to \"https://www.weatherzone.com/au/qld/wide-bay-and-burnett/fraser-island\", waiting until \"domcontentloaded\"\n"
- }
+ "errors": {}
 }

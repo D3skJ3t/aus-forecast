@@ -1,6 +1,6 @@
 {
  "id": "bribie-island-north",
- "generated": "2026-10-29T08:24:25Z",
+ "generated": "2026-10-29T15:31:18Z",
  "sources": [
   {
    "source": "bom",
@@ -8,23 +8,13 @@
    "url": "https://www.bom.gov.au/",
    "days": [
     {
-     "date": "2026-10-29",
-     "tmax": 26,
-     "tmin": null,
-     "rain_min": 0,
-     "rain_max": null,
-     "rain_text": "0 mm",
-     "chance": 10,
-     "text": "Partly cloudy."
-    },
-    {
      "date": "2026-10-30",
      "tmax": 25,
      "tmin": 17,
      "rain_min": 0,
      "rain_max": null,
      "rain_text": "0 mm",
-     "chance": 20,
+     "chance": 10,
      "text": "Partly cloudy."
     },
     {
@@ -34,7 +24,7 @@
      "rain_min": 0,
      "rain_max": null,
      "rain_text": "0 mm",
-     "chance": 10,
+     "chance": 5,
      "text": "Partly cloudy."
     },
     {
@@ -42,35 +32,35 @@
      "tmax": 29,
      "tmin": 17,
      "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "0-1 mm",
-     "chance": 30,
-     "text": "Partly cloudy."
-    },
-    {
-     "date": "2026-11-02",
-     "tmax": 29,
-     "tmin": 19,
-     "rain_min": 0,
      "rain_max": 4,
      "rain_text": "0-4 mm",
      "chance": 50,
      "text": "Shower or two."
     },
     {
+     "date": "2026-11-02",
+     "tmax": 29,
+     "tmin": 18,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "0-1 mm",
+     "chance": 30,
+     "text": "Partly cloudy."
+    },
+    {
      "date": "2026-11-03",
      "tmax": 28,
      "tmin": 20,
      "rain_min": 4,
-     "rain_max": 15,
-     "rain_text": "4-15 mm",
-     "chance": 80,
+     "rain_max": 10,
+     "rain_text": "4-10 mm",
+     "chance": 70,
      "text": "Showers. Possible storm."
     },
     {
      "date": "2026-11-04",
-     "tmax": 31,
-     "tmin": 19,
+     "tmax": 32,
+     "tmin": 20,
      "rain_min": 0,
      "rain_max": 6,
      "rain_text": "0-6 mm",
@@ -79,13 +69,13 @@
     },
     {
      "date": "2026-11-05",
-     "tmax": 32,
-     "tmin": 21,
+     "tmax": 33,
+     "tmin": 19,
      "rain_min": 0,
-     "rain_max": 3,
-     "rain_text": "0-3 mm",
-     "chance": 40,
-     "text": "Possible shower."
+     "rain_max": 1,
+     "rain_text": "0-1 mm",
+     "chance": 30,
+     "text": "Partly cloudy."
     },
     {
      "date": "2026-11-06",
@@ -98,7 +88,7 @@
      "text": null
     }
    ],
-   "fetched": "2026-10-29T08:23:20Z"
+   "fetched": "2026-10-29T15:30:53Z"
   },
   {
    "source": "willyweather",
@@ -106,23 +96,13 @@
    "url": "https://www.willyweather.com.au/qld/sunshine-coast/bribie-island.html",
    "days": [
     {
-     "date": "2026-10-29",
-     "tmax": 25,
-     "tmin": 16,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1 mm",
-     "chance": 10,
-     "text": "Partly cloudy"
-    },
-    {
      "date": "2026-10-30",
      "tmax": 25,
      "tmin": 17,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
-     "chance": 20,
+     "chance": 15,
      "text": "Partly cloudy"
     },
     {
@@ -132,33 +112,33 @@
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
-     "chance": 10,
+     "chance": 5,
      "text": "Partly cloudy"
     },
     {
      "date": "2026-11-01",
-     "tmax": 28,
-     "tmin": 17,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1 mm",
-     "chance": 35,
-     "text": "Partly cloudy"
+     "tmax": 29,
+     "tmin": 18,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1–5 mm",
+     "chance": 55,
+     "text": "Shower or two"
     },
     {
      "date": "2026-11-02",
      "tmax": 29,
      "tmin": 19,
-     "rain_min": 1,
-     "rain_max": 5,
-     "rain_text": "1–5 mm",
-     "chance": 45,
-     "text": "Shower or two"
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1 mm",
+     "chance": 25,
+     "text": "Partly cloudy"
     },
     {
      "date": "2026-11-03",
-     "tmax": 27,
-     "tmin": 20,
+     "tmax": 28,
+     "tmin": 21,
      "rain_min": 5,
      "rain_max": 15,
      "rain_text": "5–15 mm",
@@ -167,16 +147,26 @@
     },
     {
      "date": "2026-11-04",
-     "tmax": 31,
-     "tmin": 20,
+     "tmax": 32,
+     "tmin": 21,
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1–5 mm",
      "chance": 55,
      "text": "Shower or two"
+    },
+    {
+     "date": "2026-11-05",
+     "tmax": 32,
+     "tmin": 20,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1 mm",
+     "chance": 25,
+     "text": "Partly cloudy"
     }
    ],
-   "fetched": "2026-10-29T08:23:23Z"
+   "fetched": "2026-10-29T15:30:55Z"
   },
   {
    "source": "elders",
@@ -184,23 +174,13 @@
    "url": "https://eldersweather.com.au/forecast/qld/bribie-island-north",
    "days": [
     {
-     "date": "2026-10-29",
-     "tmax": 25,
-     "tmin": 16,
-     "rain_min": 0,
-     "rain_max": 5,
-     "rain_text": "0 - 5 mm",
-     "chance": 0,
-     "text": "Mostly cloudy"
-    },
-    {
      "date": "2026-10-30",
      "tmax": 24,
      "tmin": 18,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 3,
+     "chance": 2,
      "text": "Mostly cloudy"
     },
     {
@@ -210,7 +190,7 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 1,
+     "chance": 0,
      "text": "Mostly cloudy"
     },
     {
@@ -220,41 +200,51 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 16,
+     "chance": 18,
      "text": "Clear skies"
     },
     {
      "date": "2026-11-02",
-     "tmax": 26,
+     "tmax": 27,
      "tmin": 19,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 11,
+     "chance": 14,
      "text": "Fair"
     },
     {
      "date": "2026-11-03",
-     "tmax": 25,
+     "tmax": 26,
      "tmin": 20,
      "rain_min": 10,
      "rain_max": 15,
      "rain_text": "10 - 15 mm",
-     "chance": 41,
+     "chance": 50,
      "text": "Cloudy"
     },
     {
      "date": "2026-11-04",
      "tmax": 28,
-     "tmin": 21,
-     "rain_min": 20,
-     "rain_max": 25,
-     "rain_text": "20 - 25 mm",
-     "chance": 38,
+     "tmin": 20,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 37,
      "text": "Thunderstorms"
+    },
+    {
+     "date": "2026-11-05",
+     "tmax": 28,
+     "tmin": 20,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 17,
+     "text": "Clear skies"
     }
    ],
-   "fetched": "2026-10-29T08:23:24Z"
+   "fetched": "2026-10-29T15:30:59Z"
   },
   {
    "source": "weatherzone",
@@ -262,23 +252,13 @@
    "url": "https://www.weatherzone.com/au/qld/southeast-coast/bribie-island-north",
    "days": [
     {
-     "date": "2026-10-29",
-     "tmax": 25,
-     "tmin": 16,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1mm",
-     "chance": 10,
-     "text": "Sunny"
-    },
-    {
      "date": "2026-10-30",
      "tmax": 24,
      "tmin": 17,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
-     "chance": 30,
+     "chance": 60,
      "text": "Mostly cloudy"
     },
     {
@@ -289,51 +269,61 @@
      "rain_max": 1,
      "rain_text": "< 1mm",
      "chance": 40,
-     "text": "Mostly sunny"
+     "text": "Clearing shower"
     },
     {
      "date": "2026-11-01",
      "tmax": 28,
-     "tmin": 17,
+     "tmin": 18,
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1-5mm",
-     "chance": 70,
+     "chance": 90,
      "text": "Possible thunderstorm"
     },
     {
      "date": "2026-11-02",
      "tmax": 29,
      "tmin": 19,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1mm",
-     "chance": 30,
-     "text": "Mostly sunny"
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5mm",
+     "chance": 60,
+     "text": "Clearing shower"
     },
     {
      "date": "2026-11-03",
      "tmax": 27,
      "tmin": 20,
-     "rain_min": 1,
-     "rain_max": 5,
-     "rain_text": "1-5mm",
-     "chance": 50,
-     "text": "Mostly sunny"
+     "rain_min": 20,
+     "rain_max": 40,
+     "rain_text": "20-40mm",
+     "chance": 80,
+     "text": "Possible thunderstorm"
     },
     {
      "date": "2026-11-04",
      "tmax": 31,
      "tmin": 20,
-     "rain_min": 10,
-     "rain_max": 20,
-     "rain_text": "10-20mm",
-     "chance": 90,
-     "text": "Possible thunderstorm"
+     "rain_min": 5,
+     "rain_max": 10,
+     "rain_text": "5-10mm",
+     "chance": 50,
+     "text": "Possible shower"
+    },
+    {
+     "date": "2026-11-05",
+     "tmax": 32,
+     "tmin": 20,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1mm",
+     "chance": 40,
+     "text": "Late shower"
     }
    ],
    "point": "Caloundra",
-   "fetched": "2026-10-29T01:44:22Z"
+   "fetched": "2026-10-29T15:31:11Z"
   },
   {
    "source": "wunderground",
@@ -341,19 +331,9 @@
    "url": "https://www.wunderground.com/forecast/au/bribie-island-north/-26.92,153.11",
    "days": [
     {
-     "date": "2026-10-29",
-     "tmax": 25.6,
-     "tmin": 17.2,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": "Partly Cloudy"
-    },
-    {
      "date": "2026-10-30",
      "tmax": 24.4,
-     "tmin": 17.2,
+     "tmin": 17.8,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -374,16 +354,16 @@
      "date": "2026-11-01",
      "tmax": 26.7,
      "tmin": 18.9,
-     "rain_min": 1.5,
-     "rain_max": 1.5,
-     "rain_text": "1.5 mm",
+     "rain_min": 2,
+     "rain_max": 2,
+     "rain_text": "2 mm",
      "chance": null,
      "text": "Partly Cloudy"
     },
     {
      "date": "2026-11-02",
      "tmax": 27.8,
-     "tmin": 20,
+     "tmin": 20.6,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -392,17 +372,17 @@
     },
     {
      "date": "2026-11-03",
-     "tmax": 26.7,
+     "tmax": 26.1,
      "tmin": 20,
-     "rain_min": 15.2,
-     "rain_max": 15.2,
-     "rain_text": "15.2 mm",
+     "rain_min": 11.4,
+     "rain_max": 11.4,
+     "rain_text": "11.4 mm",
      "chance": null,
-     "text": "Thunderstorms"
+     "text": "Thundershowers"
     },
     {
      "date": "2026-11-04",
-     "tmax": 29.4,
+     "tmax": 30,
      "tmin": 20,
      "rain_min": 0,
      "rain_max": 0,
@@ -412,8 +392,8 @@
     },
     {
      "date": "2026-11-05",
-     "tmax": 28.9,
-     "tmin": 19.4,
+     "tmax": 29.4,
+     "tmin": 20,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -422,7 +402,7 @@
     },
     {
      "date": "2026-11-06",
-     "tmax": 25.6,
+     "tmax": 26.1,
      "tmin": 20,
      "rain_min": 0,
      "rain_max": 0,
@@ -439,10 +419,20 @@
      "rain_text": "0 mm",
      "chance": null,
      "text": "Partly Cloudy"
+    },
+    {
+     "date": "2026-11-08",
+     "tmax": 25.6,
+     "tmin": 18.3,
+     "rain_min": 1.8,
+     "rain_max": 1.8,
+     "rain_text": "1.8 mm",
+     "chance": null,
+     "text": "Showers"
     }
    ],
    "point": "Pelican Waters",
-   "fetched": "2026-10-29T08:24:18Z"
+   "fetched": "2026-10-29T15:31:12Z"
   },
   {
    "source": "windy",
@@ -450,35 +440,22 @@
    "url": "https://www.windy.com/-26.92/153.11",
    "days": [
     {
-     "date": "2026-10-29",
-     "tmax": 25.4,
-     "tmin": 16.2,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 15,
-     "gust_max": 30,
-     "wind_dir": "E"
-    },
-    {
      "date": "2026-10-30",
-     "tmax": 24.2,
-     "tmin": 17.1,
+     "tmax": 24.4,
+     "tmin": 17.3,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
      "wind_max": 15,
-     "gust_max": 24,
+     "gust_max": 25,
      "wind_dir": "E"
     },
     {
      "date": "2026-10-31",
-     "tmax": 24,
-     "tmin": 16.2,
+     "tmax": 24.6,
+     "tmin": 16.3,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -490,61 +467,48 @@
     },
     {
      "date": "2026-11-01",
-     "tmax": 27.9,
-     "tmin": 16.7,
+     "tmax": 27.5,
+     "tmin": 17,
      "rain_min": 1.3,
      "rain_max": 1.3,
      "rain_text": "1.3 mm",
      "chance": null,
      "text": null,
-     "wind_max": 19,
+     "wind_max": 17,
      "gust_max": 29,
      "wind_dir": "NNE"
     },
     {
      "date": "2026-11-02",
-     "tmax": 29.4,
-     "tmin": 18.3,
+     "tmax": 28.9,
+     "tmin": 18.6,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
      "wind_max": 15,
-     "gust_max": 28,
+     "gust_max": 27,
      "wind_dir": "NNW"
-    },
-    {
-     "date": "2026-11-03",
-     "tmax": 27.8,
-     "tmin": 20,
-     "rain_min": 2.4,
-     "rain_max": 2.4,
-     "rain_text": "2.4 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 18,
-     "gust_max": 31,
-     "wind_dir": "N"
     }
    ],
    "point": "mblue model",
-   "fetched": "2026-10-29T08:24:25Z"
+   "fetched": "2026-10-29T15:31:18Z"
   }
  ],
  "observations": {
   "source": "bom_obs",
   "station": "Beerburrum",
   "distance_km": 18.1,
-  "time": "2026-10-29T18:10:00+10:00",
-  "temp": 20.6,
-  "feels_like": 22.5,
-  "humidity": 79,
-  "wind_dir": "NE",
-  "wind_kmh": 2,
-  "gust_kmh": 6,
+  "time": "2026-10-30T01:20:00+10:00",
+  "temp": 17.9,
+  "feels_like": 20,
+  "humidity": 90,
+  "wind_dir": "CALM",
+  "wind_kmh": 0,
+  "gust_kmh": 0,
   "rain_since_9am": 0,
-  "fetched": "2026-10-29T08:23:01Z"
+  "fetched": "2026-10-29T15:30:36Z"
  },
  "marine": {
   "source": "willyweather, windy",
@@ -554,28 +518,6 @@
     "kind": "passage",
     "spot": "Mission Point",
     "tides": {
-     "2026-10-29": [
-      {
-       "type": "high",
-       "time": "12:23 am",
-       "height_m": 1.41
-      },
-      {
-       "type": "low",
-       "time": "6:31 am",
-       "height_m": 0.24
-      },
-      {
-       "type": "high",
-       "time": "1:00 pm",
-       "height_m": 2.03
-      },
-      {
-       "type": "low",
-       "time": "7:55 pm",
-       "height_m": 0.44
-      }
-     ],
      "2026-10-30": [
       {
        "type": "high",
@@ -702,18 +644,35 @@
        "time": "7:08 pm",
        "height_m": 1.65
       }
+     ],
+     "2026-11-05": [
+      {
+       "type": "low",
+       "time": "2:03 am",
+       "height_m": 0.4
+      },
+      {
+       "type": "high",
+       "time": "8:03 am",
+       "height_m": 1.57
+      },
+      {
+       "type": "low",
+       "time": "2:18 pm",
+       "height_m": 0.5
+      },
+      {
+       "type": "high",
+       "time": "8:08 pm",
+       "height_m": 1.64
+      }
      ]
     },
     "windy": {
-     "2026-10-29": {
-      "wind_max": 15,
-      "gust_max": 29,
-      "wind_dir": "E"
-     },
      "2026-10-30": {
       "wind_max": 14,
-      "gust_max": 24,
-      "wind_dir": "E"
+      "gust_max": 25,
+      "wind_dir": "ENE"
      },
      "2026-10-31": {
       "wind_max": 10,
@@ -721,18 +680,13 @@
       "wind_dir": "NNE"
      },
      "2026-11-01": {
-      "wind_max": 15,
+      "wind_max": 16,
       "gust_max": 27,
       "wind_dir": "NNE"
      },
      "2026-11-02": {
       "wind_max": 13,
       "gust_max": 26,
-      "wind_dir": "NNW"
-     },
-     "2026-11-03": {
-      "wind_max": 16,
-      "gust_max": 30,
       "wind_dir": "N"
      }
     }
@@ -742,28 +696,6 @@
     "kind": "ocean",
     "spot": "Ocean Beach",
     "tides": {
-     "2026-10-29": [
-      {
-       "type": "low",
-       "time": "3:37 am",
-       "height_m": 0.03
-      },
-      {
-       "type": "high",
-       "time": "10:36 am",
-       "height_m": 1.89
-      },
-      {
-       "type": "low",
-       "time": "4:57 pm",
-       "height_m": 0.25
-      },
-      {
-       "type": "high",
-       "time": "10:41 pm",
-       "height_m": 1.16
-      }
-     ],
      "2026-10-30": [
       {
        "type": "low",
@@ -890,27 +822,44 @@
        "time": "11:19 pm",
        "height_m": 0.27
       }
+     ],
+     "2026-11-05": [
+      {
+       "type": "high",
+       "time": "5:32 am",
+       "height_m": 1.48
+      },
+      {
+       "type": "low",
+       "time": "11:22 am",
+       "height_m": 0.39
+      },
+      {
+       "type": "high",
+       "time": "5:36 pm",
+       "height_m": 1.65
+      },
+      {
+       "type": "low",
+       "time": "11:58 pm",
+       "height_m": 0.21
+      }
      ]
     },
     "swell": {
-     "2026-10-29": {
-      "max_m": 1.1,
+     "2026-10-30": {
+      "max_m": 1,
       "dir": "ESE",
       "period_s": 8
      },
-     "2026-10-30": {
-      "max_m": 1.1,
-      "dir": "E",
-      "period_s": 8
-     },
      "2026-10-31": {
-      "max_m": 0.9,
+      "max_m": 1,
       "dir": "SSE",
       "period_s": 10
      },
      "2026-11-01": {
       "max_m": 1,
-      "dir": "N",
+      "dir": "NNE",
       "period_s": 4
      },
      "2026-11-02": {
@@ -919,8 +868,8 @@
       "period_s": 5
      },
      "2026-11-03": {
-      "max_m": 1.1,
-      "dir": "ESE",
+      "max_m": 1,
+      "dir": "E",
       "period_s": 6
      },
      "2026-11-04": {
@@ -929,20 +878,20 @@
       "period_s": 6
      },
      "2026-11-05": {
-      "max_m": 1.3,
+      "max_m": 1.5,
+      "dir": "NNE",
+      "period_s": 6
+     },
+     "2026-11-06": {
+      "max_m": 1.6,
       "dir": "NNE",
       "period_s": 6
      }
     },
     "windy": {
-     "2026-10-29": {
-      "wind_max": 15,
-      "gust_max": 30,
-      "wind_dir": "E"
-     },
      "2026-10-30": {
       "wind_max": 15,
-      "gust_max": 24,
+      "gust_max": 25,
       "wind_dir": "E"
      },
      "2026-10-31": {
@@ -951,26 +900,19 @@
       "wind_dir": "NNE"
      },
      "2026-11-01": {
-      "wind_max": 19,
+      "wind_max": 17,
       "gust_max": 29,
       "wind_dir": "NNE"
      },
      "2026-11-02": {
       "wind_max": 15,
-      "gust_max": 28,
+      "gust_max": 27,
       "wind_dir": "NNW"
-     },
-     "2026-11-03": {
-      "wind_max": 18,
-      "gust_max": 31,
-      "wind_dir": "N"
      }
     }
    }
   ],
-  "fetched": "2026-10-29T08:23:20Z"
+  "fetched": "2026-10-29T15:30:52Z"
  },
- "errors": {
-  "weatherzone": "ValueError: expected background response never arrived"
- }
+ "errors": {}
 }

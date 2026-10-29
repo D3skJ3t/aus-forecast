@@ -1,22 +1,12 @@
 {
  "id": "cairns",
- "generated": "2026-10-29T08:47:48Z",
+ "generated": "2026-10-29T15:44:18Z",
  "sources": [
   {
    "source": "bom",
    "name": "BOM official",
    "url": "https://www.bom.gov.au/",
    "days": [
-    {
-     "date": "2026-10-29",
-     "tmax": 31,
-     "tmin": null,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "0-1 mm",
-     "chance": 30,
-     "text": "Partly cloudy."
-    },
     {
      "date": "2026-10-30",
      "tmax": 31,
@@ -32,19 +22,19 @@
      "tmax": 31,
      "tmin": 24,
      "rain_min": 0,
-     "rain_max": 3,
-     "rain_text": "0-3 mm",
-     "chance": 50,
+     "rain_max": 2,
+     "rain_text": "0-2 mm",
+     "chance": 40,
      "text": "Shower or two."
     },
     {
      "date": "2026-11-01",
      "tmax": 31,
      "tmin": 23,
-     "rain_min": 1,
-     "rain_max": 7,
-     "rain_text": "1-7 mm",
-     "chance": 70,
+     "rain_min": 0,
+     "rain_max": 2,
+     "rain_text": "0-2 mm",
+     "chance": 50,
      "text": "Shower or two."
     },
     {
@@ -54,7 +44,7 @@
      "rain_min": 0,
      "rain_max": 2,
      "rain_text": "0-2 mm",
-     "chance": 50,
+     "chance": 40,
      "text": "Shower or two."
     },
     {
@@ -98,7 +88,7 @@
      "text": null
     }
    ],
-   "fetched": "2026-10-29T08:47:25Z"
+   "fetched": "2026-10-29T15:43:56Z"
   },
   {
    "source": "willyweather",
@@ -106,19 +96,9 @@
    "url": "https://www.willyweather.com.au/qld/far-north/cairns.html",
    "days": [
     {
-     "date": "2026-10-29",
-     "tmax": 31,
-     "tmin": 23,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1 mm",
-     "chance": 25,
-     "text": "Partly cloudy"
-    },
-    {
      "date": "2026-10-30",
-     "tmax": 31,
-     "tmin": 24,
+     "tmax": 32,
+     "tmin": 23,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
@@ -129,20 +109,20 @@
      "date": "2026-10-31",
      "tmax": 31,
      "tmin": 24,
-     "rain_min": 1,
-     "rain_max": 5,
-     "rain_text": "1–5 mm",
-     "chance": 50,
+     "rain_min": 0,
+     "rain_max": 2,
+     "rain_text": "< 2 mm",
+     "chance": 45,
      "text": "Shower or two"
     },
     {
      "date": "2026-11-01",
      "tmax": 31,
      "tmin": 23,
-     "rain_min": 1,
-     "rain_max": 5,
-     "rain_text": "1–5 mm",
-     "chance": 70,
+     "rain_min": 0,
+     "rain_max": 2,
+     "rain_text": "< 2 mm",
+     "chance": 45,
      "text": "Shower or two"
     },
     {
@@ -162,7 +142,7 @@
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
-     "chance": 25,
+     "chance": 30,
      "text": "Partly cloudy"
     },
     {
@@ -174,25 +154,25 @@
      "rain_text": "< 1 mm",
      "chance": 20,
      "text": "Partly cloudy"
+    },
+    {
+     "date": "2026-11-05",
+     "tmax": 32,
+     "tmin": 23,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1 mm",
+     "chance": 15,
+     "text": "Mostly sunny"
     }
    ],
-   "fetched": "2026-10-29T08:47:27Z"
+   "fetched": "2026-10-29T15:43:58Z"
   },
   {
    "source": "elders",
    "name": "Elders Weather",
    "url": "https://eldersweather.com.au/forecast/qld/cairns",
    "days": [
-    {
-     "date": "2026-10-29",
-     "tmax": 31,
-     "tmin": 22,
-     "rain_min": 0,
-     "rain_max": 5,
-     "rain_text": "0 - 5 mm",
-     "chance": 6,
-     "text": "Partly cloudy"
-    },
     {
      "date": "2026-10-30",
      "tmax": 30,
@@ -201,7 +181,7 @@
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
      "chance": 26,
-     "text": "Mostly cloudy"
+     "text": "Partly cloudy"
     },
     {
      "date": "2026-10-31",
@@ -211,17 +191,17 @@
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
      "chance": 23,
-     "text": "Partly cloudy"
+     "text": "Mostly cloudy"
     },
     {
      "date": "2026-11-01",
-     "tmax": 29,
+     "tmax": 30,
      "tmin": 23,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 28,
-     "text": "Mostly cloudy"
+     "chance": 25,
+     "text": "Rain showers"
     },
     {
      "date": "2026-11-02",
@@ -230,8 +210,8 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 19,
-     "text": "Rain showers"
+     "chance": 17,
+     "text": "Mostly cloudy"
     },
     {
      "date": "2026-11-03",
@@ -240,7 +220,7 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 11,
+     "chance": 12,
      "text": "Partly cloudy"
     },
     {
@@ -250,11 +230,21 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
+     "chance": 11,
+     "text": "Mostly cloudy"
+    },
+    {
+     "date": "2026-11-05",
+     "tmax": 30,
+     "tmin": 23,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
      "chance": 4,
-     "text": "Partly cloudy"
+     "text": "Fair"
     }
    ],
-   "fetched": "2026-10-29T08:47:29Z"
+   "fetched": "2026-10-29T15:43:59Z"
   },
   {
    "source": "weatherzone",
@@ -262,24 +252,14 @@
    "url": "https://www.weatherzone.com/au/qld/north-coast-and-tableland/cairns",
    "days": [
     {
-     "date": "2026-10-29",
-     "tmax": 31,
+     "date": "2026-10-30",
+     "tmax": 32,
      "tmin": 23,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
-     "chance": 40,
+     "chance": 60,
      "text": "Mostly sunny"
-    },
-    {
-     "date": "2026-10-30",
-     "tmax": 31,
-     "tmin": 24,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1mm",
-     "chance": 30,
-     "text": "Clearing shower"
     },
     {
      "date": "2026-10-31",
@@ -288,8 +268,8 @@
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
-     "chance": 20,
-     "text": "Mostly sunny"
+     "chance": 40,
+     "text": "Possible shower"
     },
     {
      "date": "2026-11-01",
@@ -299,20 +279,10 @@
      "rain_max": 1,
      "rain_text": "< 1mm",
      "chance": 50,
-     "text": "Mostly sunny"
+     "text": "Clearing shower"
     },
     {
      "date": "2026-11-02",
-     "tmax": 31,
-     "tmin": 24,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1mm",
-     "chance": 30,
-     "text": "Mostly sunny"
-    },
-    {
-     "date": "2026-11-03",
      "tmax": 31,
      "tmin": 24,
      "rain_min": 0,
@@ -322,17 +292,37 @@
      "text": "Mostly sunny"
     },
     {
+     "date": "2026-11-03",
+     "tmax": 31,
+     "tmin": 24,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1mm",
+     "chance": 40,
+     "text": "Late shower"
+    },
+    {
      "date": "2026-11-04",
      "tmax": 32,
      "tmin": 23,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
-     "chance": 30,
+     "chance": 20,
+     "text": "Mostly sunny"
+    },
+    {
+     "date": "2026-11-05",
+     "tmax": 32,
+     "tmin": 23,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1mm",
+     "chance": 5,
      "text": "Mostly sunny"
     }
    ],
-   "fetched": "2026-10-29T08:47:41Z"
+   "fetched": "2026-10-29T15:44:11Z"
   },
   {
    "source": "wunderground",
@@ -340,8 +330,8 @@
    "url": "https://www.wunderground.com/forecast/au/cairns/-16.919,145.779",
    "days": [
     {
-     "date": "2026-10-29",
-     "tmax": 32.8,
+     "date": "2026-10-30",
+     "tmax": 30.6,
      "tmin": 23.3,
      "rain_min": 0,
      "rain_max": 0,
@@ -350,18 +340,8 @@
      "text": "Partly Cloudy"
     },
     {
-     "date": "2026-10-30",
-     "tmax": 30.6,
-     "tmin": 23.9,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": "Partly Cloudy"
-    },
-    {
      "date": "2026-10-31",
-     "tmax": 30,
+     "tmax": 30.6,
      "tmin": 22.8,
      "rain_min": 0,
      "rain_max": 0,
@@ -371,7 +351,7 @@
     },
     {
      "date": "2026-11-01",
-     "tmax": 30,
+     "tmax": 30.6,
      "tmin": 23.3,
      "rain_min": 0,
      "rain_max": 0,
@@ -387,7 +367,7 @@
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Partly Cloudy"
+     "text": "Mostly Sunny"
     },
     {
      "date": "2026-11-03",
@@ -407,7 +387,7 @@
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Partly Cloudy"
+     "text": "Mostly Sunny"
     },
     {
      "date": "2026-11-05",
@@ -438,9 +418,19 @@
      "rain_text": "0 mm",
      "chance": null,
      "text": "Partly Cloudy"
+    },
+    {
+     "date": "2026-11-08",
+     "tmax": 31.1,
+     "tmin": 23.9,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Partly Cloudy"
     }
    ],
-   "fetched": "2026-10-29T08:47:42Z"
+   "fetched": "2026-10-29T15:44:12Z"
   },
   {
    "source": "windy",
@@ -448,48 +438,35 @@
    "url": "https://www.windy.com/-16.919/145.779",
    "days": [
     {
-     "date": "2026-10-29",
-     "tmax": 30.8,
-     "tmin": 21.8,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 17,
-     "gust_max": 31,
-     "wind_dir": "E"
-    },
-    {
      "date": "2026-10-30",
-     "tmax": 29,
-     "tmin": 23.7,
+     "tmax": 29.7,
+     "tmin": 22.7,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
      "wind_max": 19,
-     "gust_max": 34,
+     "gust_max": 35,
      "wind_dir": "E"
     },
     {
      "date": "2026-10-31",
-     "tmax": 28.9,
-     "tmin": 23.9,
+     "tmax": 29.2,
+     "tmin": 24.2,
      "rain_min": 1.8,
      "rain_max": 1.8,
      "rain_text": "1.8 mm",
      "chance": null,
      "text": null,
      "wind_max": 18,
-     "gust_max": 30,
-     "wind_dir": "E"
+     "gust_max": 32,
+     "wind_dir": "ENE"
     },
     {
      "date": "2026-11-01",
-     "tmax": 29.8,
-     "tmin": 23.7,
+     "tmax": 30.3,
+     "tmin": 23.9,
      "rain_min": 0.7,
      "rain_max": 0.7,
      "rain_text": "0.7 mm",
@@ -501,48 +478,35 @@
     },
     {
      "date": "2026-11-02",
-     "tmax": 30.6,
+     "tmax": 30.8,
      "tmin": 24,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
-     "wind_max": 16,
-     "gust_max": 32,
-     "wind_dir": "ENE"
-    },
-    {
-     "date": "2026-11-03",
-     "tmax": 29.5,
-     "tmin": 23,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 11,
-     "gust_max": 20,
-     "wind_dir": "NNE"
+     "wind_max": 15,
+     "gust_max": 30,
+     "wind_dir": "NE"
     }
    ],
    "point": "mblue model",
-   "fetched": "2026-10-29T08:47:48Z"
+   "fetched": "2026-10-29T15:44:18Z"
   }
  ],
  "observations": {
   "source": "bom_obs",
   "station": "Cairns Racecourse",
   "distance_km": 3.8,
-  "time": "2026-10-29T18:40:00+10:00",
-  "temp": 26.3,
-  "feels_like": 30.7,
-  "humidity": 81,
-  "wind_dir": "SE",
-  "wind_kmh": 4,
+  "time": "2026-10-30T01:30:00+10:00",
+  "temp": 22.9,
+  "feels_like": 26.7,
+  "humidity": 97,
+  "wind_dir": "SSW",
+  "wind_kmh": 6,
   "gust_kmh": 7,
   "rain_since_9am": 0,
-  "fetched": "2026-10-29T08:47:07Z"
+  "fetched": "2026-10-29T15:43:39Z"
  },
  "marine": {
   "source": "willyweather, windy",
@@ -552,28 +516,6 @@
     "kind": "inlet",
     "spot": "Cairns Boat Ramp (Fearnley Street)",
     "tides": {
-     "2026-10-29": [
-      {
-       "type": "low",
-       "time": "4:21 am",
-       "height_m": 0.59
-      },
-      {
-       "type": "high",
-       "time": "11:27 am",
-       "height_m": 2.72
-      },
-      {
-       "type": "low",
-       "time": "5:29 pm",
-       "height_m": 1.45
-      },
-      {
-       "type": "high",
-       "time": "10:34 pm",
-       "height_m": 1.83
-      }
-     ],
      "2026-10-30": [
       {
        "type": "low",
@@ -695,23 +637,40 @@
        "time": "6:20 pm",
        "height_m": 2.86
       }
+     ],
+     "2026-11-05": [
+      {
+       "type": "low",
+       "time": "12:31 am",
+       "height_m": 0.66
+      },
+      {
+       "type": "high",
+       "time": "6:54 am",
+       "height_m": 2.49
+      },
+      {
+       "type": "low",
+       "time": "12:35 pm",
+       "height_m": 0.9
+      },
+      {
+       "type": "high",
+       "time": "6:57 pm",
+       "height_m": 2.79
+      }
      ]
     },
     "windy": {
-     "2026-10-29": {
-      "wind_max": 17,
-      "gust_max": 31,
-      "wind_dir": "E"
-     },
      "2026-10-30": {
       "wind_max": 19,
-      "gust_max": 34,
+      "gust_max": 35,
       "wind_dir": "E"
      },
      "2026-10-31": {
       "wind_max": 18,
-      "gust_max": 30,
-      "wind_dir": "E"
+      "gust_max": 32,
+      "wind_dir": "ENE"
      },
      "2026-11-01": {
       "wind_max": 18,
@@ -719,14 +678,9 @@
       "wind_dir": "E"
      },
      "2026-11-02": {
-      "wind_max": 16,
-      "gust_max": 32,
-      "wind_dir": "ENE"
-     },
-     "2026-11-03": {
-      "wind_max": 11,
-      "gust_max": 20,
-      "wind_dir": "NNE"
+      "wind_max": 15,
+      "gust_max": 30,
+      "wind_dir": "NE"
      }
     }
    },
@@ -735,28 +689,6 @@
     "kind": "ocean",
     "spot": "Cairns Harbour",
     "tides": {
-     "2026-10-29": [
-      {
-       "type": "low",
-       "time": "4:19 am",
-       "height_m": 0.59
-      },
-      {
-       "type": "high",
-       "time": "11:23 am",
-       "height_m": 2.72
-      },
-      {
-       "type": "low",
-       "time": "5:27 pm",
-       "height_m": 1.45
-      },
-      {
-       "type": "high",
-       "time": "10:30 pm",
-       "height_m": 1.83
-      }
-     ],
      "2026-10-30": [
       {
        "type": "low",
@@ -878,16 +810,33 @@
        "time": "6:16 pm",
        "height_m": 2.86
       }
+     ],
+     "2026-11-05": [
+      {
+       "type": "low",
+       "time": "12:29 am",
+       "height_m": 0.66
+      },
+      {
+       "type": "high",
+       "time": "6:50 am",
+       "height_m": 2.49
+      },
+      {
+       "type": "low",
+       "time": "12:33 pm",
+       "height_m": 0.9
+      },
+      {
+       "type": "high",
+       "time": "6:53 pm",
+       "height_m": 2.79
+      }
      ]
     },
     "swell": {
-     "2026-10-29": {
-      "max_m": 0.7,
-      "dir": "E",
-      "period_s": 7
-     },
      "2026-10-30": {
-      "max_m": 0.8,
+      "max_m": 0.7,
       "dir": "ENE",
       "period_s": 6
      },
@@ -920,24 +869,24 @@
       "max_m": 0.5,
       "dir": "E",
       "period_s": 7
+     },
+     "2026-11-06": {
+      "max_m": 0.4,
+      "dir": "E",
+      "period_s": 7
      }
     },
     "swell_place": "Gribble Point",
     "windy": {
-     "2026-10-29": {
-      "wind_max": 17,
-      "gust_max": 31,
-      "wind_dir": "E"
-     },
      "2026-10-30": {
       "wind_max": 19,
-      "gust_max": 34,
+      "gust_max": 35,
       "wind_dir": "E"
      },
      "2026-10-31": {
       "wind_max": 18,
-      "gust_max": 30,
-      "wind_dir": "E"
+      "gust_max": 32,
+      "wind_dir": "ENE"
      },
      "2026-11-01": {
       "wind_max": 18,
@@ -945,19 +894,14 @@
       "wind_dir": "E"
      },
      "2026-11-02": {
-      "wind_max": 16,
-      "gust_max": 32,
-      "wind_dir": "ENE"
-     },
-     "2026-11-03": {
-      "wind_max": 11,
-      "gust_max": 20,
-      "wind_dir": "NNE"
+      "wind_max": 15,
+      "gust_max": 30,
+      "wind_dir": "NE"
      }
     }
    }
   ],
-  "fetched": "2026-10-29T08:47:25Z"
+  "fetched": "2026-10-29T15:43:56Z"
  },
  "errors": {}
 }
