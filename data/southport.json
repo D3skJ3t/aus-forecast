@@ -1,22 +1,12 @@
 {
  "id": "southport",
- "generated": "2026-10-30T13:35:19Z",
+ "generated": "2026-10-30T18:57:16Z",
  "sources": [
   {
    "source": "bom",
    "name": "BOM official",
    "url": "https://www.bom.gov.au/",
    "days": [
-    {
-     "date": "2026-10-30",
-     "tmax": 26,
-     "tmin": null,
-     "rain_min": 0,
-     "rain_max": null,
-     "rain_text": "0 mm",
-     "chance": 10,
-     "text": "Partly cloudy."
-    },
     {
      "date": "2026-10-31",
      "tmax": 26,
@@ -31,9 +21,9 @@
      "date": "2026-11-01",
      "tmax": 28,
      "tmin": 19,
-     "rain_min": 1,
+     "rain_min": 2,
      "rain_max": 6,
-     "rain_text": "1-6 mm",
+     "rain_text": "2-6 mm",
      "chance": 70,
      "text": "Showers. Storm developing."
     },
@@ -51,9 +41,9 @@
      "date": "2026-11-03",
      "tmax": 28,
      "tmin": 19,
-     "rain_min": 3,
+     "rain_min": 2,
      "rain_max": 10,
-     "rain_text": "3-10 mm",
+     "rain_text": "2-10 mm",
      "chance": 70,
      "text": "Shower or two. Possible storm."
     },
@@ -62,8 +52,8 @@
      "tmax": 33,
      "tmin": 20,
      "rain_min": 0,
-     "rain_max": 2,
-     "rain_text": "0-2 mm",
+     "rain_max": 3,
+     "rain_text": "0-3 mm",
      "chance": 40,
      "text": "Possible shower."
     },
@@ -98,23 +88,13 @@
      "text": null
     }
    ],
-   "fetched": "2026-10-30T13:34:53Z"
+   "fetched": "2026-10-30T18:56:51Z"
   },
   {
    "source": "willyweather",
    "name": "WillyWeather",
    "url": "https://www.willyweather.com.au/qld/gold-coast/southport.html",
    "days": [
-    {
-     "date": "2026-10-30",
-     "tmax": 25,
-     "tmin": 16,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1 mm",
-     "chance": 10,
-     "text": "Partly cloudy"
-    },
     {
      "date": "2026-10-31",
      "tmax": 26,
@@ -147,7 +127,7 @@
     },
     {
      "date": "2026-11-03",
-     "tmax": 27,
+     "tmax": 28,
      "tmin": 18,
      "rain_min": 5,
      "rain_max": 10,
@@ -174,9 +154,19 @@
      "rain_text": "< 1 mm",
      "chance": 20,
      "text": "Partly cloudy"
+    },
+    {
+     "date": "2026-11-06",
+     "tmax": 27,
+     "tmin": 17,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1 mm",
+     "chance": 20,
+     "text": "Mostly sunny"
     }
    ],
-   "fetched": "2026-10-30T13:34:55Z"
+   "fetched": "2026-10-30T18:56:54Z"
   },
   {
    "source": "elders",
@@ -184,24 +174,14 @@
    "url": "https://eldersweather.com.au/forecast/qld/southport",
    "days": [
     {
-     "date": "2026-10-30",
-     "tmax": 25,
-     "tmin": 15,
-     "rain_min": 0,
-     "rain_max": 5,
-     "rain_text": "0 - 5 mm",
-     "chance": 0,
-     "text": "Fair"
-    },
-    {
      "date": "2026-10-31",
      "tmax": 24,
-     "tmin": 18,
+     "tmin": 17,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 2,
-     "text": "Cloudy"
+     "chance": 1,
+     "text": "Mostly cloudy"
     },
     {
      "date": "2026-11-01",
@@ -210,7 +190,7 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 21,
+     "chance": 23,
      "text": "Clear skies"
     },
     {
@@ -220,22 +200,32 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 12,
+     "chance": 11,
      "text": "Fair"
     },
     {
      "date": "2026-11-03",
-     "tmax": 27,
+     "tmax": 26,
      "tmin": 20,
-     "rain_min": 20,
-     "rain_max": 25,
-     "rain_text": "20 - 25 mm",
-     "chance": 36,
-     "text": "Mostly cloudy"
+     "rain_min": 10,
+     "rain_max": 15,
+     "rain_text": "10 - 15 mm",
+     "chance": 26,
+     "text": "Partly cloudy"
     },
     {
      "date": "2026-11-04",
-     "tmax": 29,
+     "tmax": 30,
+     "tmin": 20,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 8,
+     "text": "Clear skies"
+    },
+    {
+     "date": "2026-11-05",
+     "tmax": 30,
      "tmin": 20,
      "rain_min": 0,
      "rain_max": 5,
@@ -244,17 +234,17 @@
      "text": "Clear skies"
     },
     {
-     "date": "2026-11-05",
-     "tmax": 29,
-     "tmin": 20,
+     "date": "2026-11-06",
+     "tmax": 26,
+     "tmin": 19,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 16,
-     "text": "Clear skies"
+     "chance": 9,
+     "text": "Fair"
     }
    ],
-   "fetched": "2026-10-30T13:35:00Z"
+   "fetched": "2026-10-30T18:56:57Z"
   },
   {
    "source": "weatherzone",
@@ -262,23 +252,13 @@
    "url": "https://www.weatherzone.com/au/qld/southeast-coast/southport",
    "days": [
     {
-     "date": "2026-10-30",
-     "tmax": 26,
-     "tmin": 17,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1mm",
-     "chance": 10,
-     "text": "Mostly cloudy"
-    },
-    {
      "date": "2026-10-31",
      "tmax": 26,
      "tmin": 18,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
-     "chance": 40,
+     "chance": 30,
      "text": "Mostly sunny"
     },
     {
@@ -288,8 +268,8 @@
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1-5mm",
-     "chance": 40,
-     "text": "Possible shower"
+     "chance": 50,
+     "text": "Late shower"
     },
     {
      "date": "2026-11-02",
@@ -299,15 +279,15 @@
      "rain_max": 1,
      "rain_text": "< 1mm",
      "chance": 50,
-     "text": "Possible shower"
+     "text": "Mostly sunny"
     },
     {
      "date": "2026-11-03",
      "tmax": 28,
      "tmin": 19,
-     "rain_min": 5,
-     "rain_max": 10,
-     "rain_text": "5-10mm",
+     "rain_min": 10,
+     "rain_max": 20,
+     "rain_text": "10-20mm",
      "chance": 50,
      "text": "Possible thunderstorm"
     },
@@ -315,10 +295,10 @@
      "date": "2026-11-04",
      "tmax": 33,
      "tmin": 20,
-     "rain_min": 1,
-     "rain_max": 5,
-     "rain_text": "1-5mm",
-     "chance": 20,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1mm",
+     "chance": 30,
      "text": "Sunny"
     },
     {
@@ -328,27 +308,27 @@
      "rain_min": 5,
      "rain_max": 10,
      "rain_text": "5-10mm",
-     "chance": 60,
+     "chance": 40,
      "text": "Late shower"
+    },
+    {
+     "date": "2026-11-06",
+     "tmax": 28,
+     "tmin": 19,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1mm",
+     "chance": 20,
+     "text": "Mostly sunny"
     }
    ],
-   "fetched": "2026-10-30T13:35:12Z"
+   "fetched": "2026-10-30T18:57:09Z"
   },
   {
    "source": "wunderground",
    "name": "Weather Underground",
    "url": "https://www.wunderground.com/forecast/au/southport/-27.967,153.413",
    "days": [
-    {
-     "date": "2026-10-30",
-     "tmax": 25,
-     "tmin": 17.8,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": "Partly Cloudy"
-    },
     {
      "date": "2026-10-31",
      "tmax": 23.9,
@@ -367,31 +347,31 @@
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Partly Cloudy"
+     "text": "AM Clouds/PM Sun"
     },
     {
      "date": "2026-11-02",
-     "tmax": 26.1,
-     "tmin": 18.9,
+     "tmax": 26.7,
+     "tmin": 19.4,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Partly Cloudy"
+     "text": "Mostly Sunny"
     },
     {
      "date": "2026-11-03",
      "tmax": 25.6,
-     "tmin": 19.4,
-     "rain_min": 7.4,
-     "rain_max": 7.4,
-     "rain_text": "7.4 mm",
+     "tmin": 20,
+     "rain_min": 9.9,
+     "rain_max": 9.9,
+     "rain_text": "9.9 mm",
      "chance": null,
-     "text": "Scattered Thunderstorms"
+     "text": "Thunderstorms"
     },
     {
      "date": "2026-11-04",
-     "tmax": 29.4,
+     "tmax": 30,
      "tmin": 19.4,
      "rain_min": 0,
      "rain_max": 0,
@@ -438,9 +418,19 @@
      "rain_text": "0 mm",
      "chance": null,
      "text": "Partly Cloudy"
+    },
+    {
+     "date": "2026-11-09",
+     "tmax": 23.3,
+     "tmin": 17.8,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Partly Cloudy"
     }
    ],
-   "fetched": "2026-10-30T13:35:13Z"
+   "fetched": "2026-10-30T18:57:09Z"
   },
   {
    "source": "windy",
@@ -448,47 +438,34 @@
    "url": "https://www.windy.com/-27.967/153.413",
    "days": [
     {
-     "date": "2026-10-30",
-     "tmax": 24.8,
-     "tmin": 15.2,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 18,
-     "gust_max": 27,
-     "wind_dir": "E"
-    },
-    {
      "date": "2026-10-31",
      "tmax": 23,
-     "tmin": 17.6,
+     "tmin": 17.2,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
-     "wind_max": 20,
-     "gust_max": 27,
+     "wind_max": 19,
+     "gust_max": 26,
      "wind_dir": "NNE"
     },
     {
      "date": "2026-11-01",
-     "tmax": 26.4,
-     "tmin": 18.8,
-     "rain_min": 4.8,
-     "rain_max": 4.8,
-     "rain_text": "4.8 mm",
+     "tmax": 26.6,
+     "tmin": 19.2,
+     "rain_min": 2.2,
+     "rain_max": 2.2,
+     "rain_text": "2.2 mm",
      "chance": null,
      "text": null,
      "wind_max": 21,
-     "gust_max": 36,
-     "wind_dir": "N"
+     "gust_max": 32,
+     "wind_dir": "NNW"
     },
     {
      "date": "2026-11-02",
-     "tmax": 27.3,
+     "tmax": 27.4,
      "tmin": 20,
      "rain_min": 0,
      "rain_max": 0,
@@ -496,40 +473,40 @@
      "chance": null,
      "text": null,
      "wind_max": 20,
-     "gust_max": 38,
+     "gust_max": 37,
      "wind_dir": "ESE"
     },
     {
      "date": "2026-11-03",
-     "tmax": 24.8,
-     "tmin": 19.9,
-     "rain_min": 15.4,
-     "rain_max": 15.4,
-     "rain_text": "15.4 mm",
+     "tmax": 25.9,
+     "tmin": 19.7,
+     "rain_min": 8.7,
+     "rain_max": 8.7,
+     "rain_text": "8.7 mm",
      "chance": null,
      "text": null,
-     "wind_max": 20,
-     "gust_max": 40,
+     "wind_max": 21,
+     "gust_max": 36,
      "wind_dir": "N"
     }
    ],
    "point": "mblue model",
-   "fetched": "2026-10-30T13:35:19Z"
+   "fetched": "2026-10-30T18:57:16Z"
   }
  ],
  "observations": {
   "source": "bom_obs",
   "station": "Gold Coast Seaway",
   "distance_km": 3.8,
-  "time": "2026-10-30T23:30:00+10:00",
-  "temp": 19.5,
-  "feels_like": 18.6,
-  "humidity": 69,
-  "wind_dir": "NE",
-  "wind_kmh": 11,
-  "gust_kmh": 15,
+  "time": "2026-10-31T04:50:00+10:00",
+  "temp": 17.7,
+  "feels_like": 17.9,
+  "humidity": 82,
+  "wind_dir": "SW",
+  "wind_kmh": 7,
+  "gust_kmh": 9,
   "rain_since_9am": 0,
-  "fetched": "2026-10-30T13:34:36Z"
+  "fetched": "2026-10-30T18:56:34Z"
  },
  "marine": {
   "source": "willyweather, windy",
@@ -539,28 +516,6 @@
     "kind": "bay",
     "spot": "Southport Pier",
     "tides": {
-     "2026-10-30": [
-      {
-       "type": "low",
-       "time": "4:20 am",
-       "height_m": 0.21
-      },
-      {
-       "type": "high",
-       "time": "11:14 am",
-       "height_m": 1.73
-      },
-      {
-       "type": "low",
-       "time": "6:12 pm",
-       "height_m": 0.3
-      },
-      {
-       "type": "high",
-       "time": "11:39 pm",
-       "height_m": 1
-      }
-     ],
      "2026-10-31": [
       {
        "type": "low",
@@ -687,32 +642,44 @@
        "time": "11:58 pm",
        "height_m": 0.18
       }
+     ],
+     "2026-11-06": [
+      {
+       "type": "high",
+       "time": "6:17 am",
+       "height_m": 1.44
+      },
+      {
+       "type": "low",
+       "time": "12:20 pm",
+       "height_m": 0.34
+      },
+      {
+       "type": "high",
+       "time": "6:15 pm",
+       "height_m": 1.39
+      }
      ]
     },
     "windy": {
-     "2026-10-30": {
-      "wind_max": 18,
-      "gust_max": 27,
-      "wind_dir": "E"
-     },
      "2026-10-31": {
-      "wind_max": 20,
-      "gust_max": 27,
+      "wind_max": 19,
+      "gust_max": 26,
       "wind_dir": "NNE"
      },
      "2026-11-01": {
       "wind_max": 21,
-      "gust_max": 36,
-      "wind_dir": "N"
+      "gust_max": 32,
+      "wind_dir": "NNW"
      },
      "2026-11-02": {
       "wind_max": 20,
-      "gust_max": 38,
+      "gust_max": 37,
       "wind_dir": "ESE"
      },
      "2026-11-03": {
-      "wind_max": 20,
-      "gust_max": 40,
+      "wind_max": 21,
+      "gust_max": 36,
       "wind_dir": "N"
      }
     }
@@ -722,28 +689,6 @@
     "kind": "ocean",
     "spot": "Main Beach",
     "tides": {
-     "2026-10-30": [
-      {
-       "type": "low",
-       "time": "3:57 am",
-       "height_m": 0.12
-      },
-      {
-       "type": "high",
-       "time": "10:48 am",
-       "height_m": 1.7
-      },
-      {
-       "type": "low",
-       "time": "5:39 pm",
-       "height_m": 0.19
-      },
-      {
-       "type": "high",
-       "time": "11:16 pm",
-       "height_m": 0.94
-      }
-     ],
      "2026-10-31": [
       {
        "type": "low",
@@ -870,80 +815,92 @@
        "time": "11:33 pm",
        "height_m": 0.08
       }
+     ],
+     "2026-11-06": [
+      {
+       "type": "high",
+       "time": "5:53 am",
+       "height_m": 1.39
+      },
+      {
+       "type": "low",
+       "time": "11:56 am",
+       "height_m": 0.24
+      },
+      {
+       "type": "high",
+       "time": "5:51 pm",
+       "height_m": 1.33
+      }
      ]
     },
     "swell": {
-     "2026-10-30": {
-      "max_m": 0.7,
-      "dir": "ESE",
-      "period_s": 8
-     },
      "2026-10-31": {
-      "max_m": 0.7,
-      "dir": "SE",
-      "period_s": 10
+      "max_m": 0.6,
+      "dir": "ESE",
+      "period_s": 15
      },
      "2026-11-01": {
-      "max_m": 0.9,
-      "dir": "NNE",
-      "period_s": 4
+      "max_m": 0.8,
+      "dir": "ENE",
+      "period_s": 5
      },
      "2026-11-02": {
       "max_m": 1,
-      "dir": "NNE",
+      "dir": "NE",
       "period_s": 4
      },
      "2026-11-03": {
       "max_m": 0.9,
-      "dir": "ENE",
+      "dir": "ESE",
       "period_s": 6
      },
      "2026-11-04": {
-      "max_m": 1.3,
+      "max_m": 1.4,
       "dir": "NE",
       "period_s": 6
      },
      "2026-11-05": {
-      "max_m": 0.8,
+      "max_m": 0.7,
+      "dir": "E",
+      "period_s": 7
+     },
+     "2026-11-06": {
+      "max_m": 0.9,
       "dir": "E",
       "period_s": 8
      },
-     "2026-11-06": {
-      "max_m": 1.1,
+     "2026-11-07": {
+      "max_m": 0.8,
       "dir": "E",
-      "period_s": 8
+      "period_s": 9
      }
     },
     "windy": {
-     "2026-10-30": {
-      "wind_max": 18,
-      "gust_max": 27,
-      "wind_dir": "E"
-     },
      "2026-10-31": {
-      "wind_max": 20,
-      "gust_max": 27,
+      "wind_max": 19,
+      "gust_max": 26,
       "wind_dir": "NNE"
      },
      "2026-11-01": {
       "wind_max": 21,
-      "gust_max": 36,
-      "wind_dir": "N"
+      "gust_max": 32,
+      "wind_dir": "NNW"
      },
      "2026-11-02": {
       "wind_max": 20,
-      "gust_max": 38,
+      "gust_max": 37,
       "wind_dir": "ESE"
      },
      "2026-11-03": {
-      "wind_max": 20,
-      "gust_max": 40,
+      "wind_max": 21,
+      "gust_max": 36,
       "wind_dir": "N"
      }
     }
    }
   ],
-  "fetched": "2026-10-30T13:34:53Z"
+  "fetched": "2026-10-30T18:56:51Z"
  },
  "errors": {}
 }

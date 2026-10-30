@@ -1,22 +1,12 @@
 {
  "id": "rainbow-beach",
- "generated": "2026-10-30T13:38:03Z",
+ "generated": "2026-10-30T19:00:15Z",
  "sources": [
   {
    "source": "bom",
    "name": "BOM official",
    "url": "https://www.bom.gov.au/",
    "days": [
-    {
-     "date": "2026-10-30",
-     "tmax": 25,
-     "tmin": null,
-     "rain_min": 0,
-     "rain_max": null,
-     "rain_text": "0 mm",
-     "chance": 10,
-     "text": null
-    },
     {
      "date": "2026-10-31",
      "tmax": 25,
@@ -39,21 +29,21 @@
     },
     {
      "date": "2026-11-02",
-     "tmax": 30,
+     "tmax": 31,
      "tmin": 19,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "0-1 mm",
-     "chance": 40,
+     "chance": 30,
      "text": null
     },
     {
      "date": "2026-11-03",
      "tmax": 29,
      "tmin": 20,
-     "rain_min": 3,
-     "rain_max": 10,
-     "rain_text": "3-10 mm",
+     "rain_min": 2,
+     "rain_max": 9,
+     "rain_text": "2-9 mm",
      "chance": 70,
      "text": null
     },
@@ -98,23 +88,13 @@
      "text": null
     }
    ],
-   "fetched": "2026-10-30T13:37:34Z"
+   "fetched": "2026-10-30T18:59:46Z"
   },
   {
    "source": "willyweather",
    "name": "WillyWeather",
    "url": "https://www.willyweather.com.au/qld/sunshine-coast/rainbow-beach.html",
    "days": [
-    {
-     "date": "2026-10-30",
-     "tmax": 25,
-     "tmin": 18,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1 mm",
-     "chance": 15,
-     "text": "Partly cloudy"
-    },
     {
      "date": "2026-10-31",
      "tmax": 25,
@@ -137,13 +117,13 @@
     },
     {
      "date": "2026-11-02",
-     "tmax": 30,
+     "tmax": 31,
      "tmin": 19,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
      "chance": 35,
-     "text": "Shower"
+     "text": "Partly cloudy"
     },
     {
      "date": "2026-11-03",
@@ -174,9 +154,19 @@
      "rain_text": "< 1 mm",
      "chance": 30,
      "text": "Partly cloudy"
+    },
+    {
+     "date": "2026-11-06",
+     "tmax": 29,
+     "tmin": 19,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1 mm",
+     "chance": 30,
+     "text": "Partly cloudy"
     }
    ],
-   "fetched": "2026-10-30T13:37:36Z"
+   "fetched": "2026-10-30T18:59:55Z"
   },
   {
    "source": "elders",
@@ -184,33 +174,23 @@
    "url": "https://eldersweather.com.au/forecast/qld/rainbow-beach",
    "days": [
     {
-     "date": "2026-10-30",
-     "tmax": 24,
-     "tmin": 19,
-     "rain_min": 0,
-     "rain_max": 5,
-     "rain_text": "0 - 5 mm",
-     "chance": 0,
-     "text": "Mostly cloudy"
-    },
-    {
      "date": "2026-10-31",
      "tmax": 24,
      "tmin": 19,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 14,
+     "chance": 21,
      "text": "Cloudy"
     },
     {
      "date": "2026-11-01",
-     "tmax": 27,
+     "tmax": 26,
      "tmin": 19,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 10,
+     "chance": 11,
      "text": "Clear skies"
     },
     {
@@ -220,8 +200,8 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 14,
-     "text": "Clear skies"
+     "chance": 13,
+     "text": "Fair"
     },
     {
      "date": "2026-11-03",
@@ -230,18 +210,18 @@
      "rain_min": 5,
      "rain_max": 10,
      "rain_text": "5 - 10 mm",
-     "chance": 30,
-     "text": "Mostly cloudy"
+     "chance": 28,
+     "text": "Partly cloudy"
     },
     {
      "date": "2026-11-04",
      "tmax": 29,
      "tmin": 21,
-     "rain_min": 0,
-     "rain_max": 5,
-     "rain_text": "0 - 5 mm",
-     "chance": 29,
-     "text": "Partly cloudy"
+     "rain_min": 5,
+     "rain_max": 10,
+     "rain_text": "5 - 10 mm",
+     "chance": 26,
+     "text": "Thunderstorms"
     },
     {
      "date": "2026-11-05",
@@ -250,11 +230,21 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 22,
+     "chance": 16,
+     "text": "Fair"
+    },
+    {
+     "date": "2026-11-06",
+     "tmax": 27,
+     "tmin": 20,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 8,
      "text": "Fair"
     }
    ],
-   "fetched": "2026-10-30T13:37:44Z"
+   "fetched": "2026-10-30T18:59:56Z"
   },
   {
    "source": "weatherzone",
@@ -262,29 +252,19 @@
    "url": "https://www.weatherzone.com/au/qld/wide-bay-and-burnett/rainbow-beach",
    "days": [
     {
-     "date": "2026-10-30",
-     "tmax": 23.2,
-     "tmin": 19.6,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1mm",
-     "chance": 40,
-     "text": "Cloudy"
-    },
-    {
      "date": "2026-10-31",
-     "tmax": 23.1,
+     "tmax": 23,
      "tmin": 19,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
-     "chance": 50,
+     "chance": 20,
      "text": "Clearing shower"
     },
     {
      "date": "2026-11-01",
-     "tmax": 25.5,
-     "tmin": 18.2,
+     "tmax": 25.6,
+     "tmin": 18.1,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
@@ -293,11 +273,11 @@
     },
     {
      "date": "2026-11-02",
-     "tmax": 27.9,
+     "tmax": 28.2,
      "tmin": 19.9,
-     "rain_min": 1,
-     "rain_max": 5,
-     "rain_text": "1-5mm",
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1mm",
      "chance": 50,
      "text": "Possible thunderstorm"
     },
@@ -308,31 +288,41 @@
      "rain_min": 5,
      "rain_max": 10,
      "rain_text": "5-10mm",
-     "chance": 60,
+     "chance": 50,
      "text": "Possible thunderstorm"
     },
     {
      "date": "2026-11-04",
-     "tmax": 29.2,
-     "tmin": 20.9,
+     "tmax": 29.1,
+     "tmin": 20.8,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
      "chance": 40,
-     "text": "Possible shower"
+     "text": "Clearing shower"
     },
     {
      "date": "2026-11-05",
-     "tmax": 28.4,
-     "tmin": 21.7,
+     "tmax": 28.7,
+     "tmin": 21.5,
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1-5mm",
-     "chance": 70,
+     "chance": 80,
      "text": "Possible thunderstorm"
+    },
+    {
+     "date": "2026-11-06",
+     "tmax": 25.3,
+     "tmin": 20.2,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5mm",
+     "chance": 60,
+     "text": "Thunderstorms"
     }
    ],
-   "fetched": "2026-10-30T13:37:56Z"
+   "fetched": "2026-10-30T19:00:08Z"
   },
   {
    "source": "wunderground",
@@ -340,28 +330,18 @@
    "url": "https://www.wunderground.com/forecast/au/rainbow-beach/-25.904,153.092",
    "days": [
     {
-     "date": "2026-10-30",
-     "tmax": 25,
-     "tmin": 18.9,
-     "rain_min": 0.3,
-     "rain_max": 0.3,
-     "rain_text": "0.3 mm",
-     "chance": null,
-     "text": "Showers Late"
-    },
-    {
      "date": "2026-10-31",
-     "tmax": 23.9,
+     "tmax": 23.3,
      "tmin": 18.9,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
+     "rain_min": 1.5,
+     "rain_max": 1.5,
+     "rain_text": "1.5 mm",
      "chance": null,
-     "text": "AM Clouds/PM Sun"
+     "text": "AM Rain"
     },
     {
      "date": "2026-11-01",
-     "tmax": 26.7,
+     "tmax": 26.1,
      "tmin": 20,
      "rain_min": 0,
      "rain_max": 0,
@@ -372,7 +352,7 @@
     {
      "date": "2026-11-02",
      "tmax": 28.9,
-     "tmin": 20.6,
+     "tmin": 21.1,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -381,18 +361,18 @@
     },
     {
      "date": "2026-11-03",
-     "tmax": 28.3,
+     "tmax": 27.8,
      "tmin": 21.1,
-     "rain_min": 10.4,
-     "rain_max": 10.4,
-     "rain_text": "10.4 mm",
+     "rain_min": 9.9,
+     "rain_max": 9.9,
+     "rain_text": "9.9 mm",
      "chance": null,
-     "text": "Isolated Thunderstorms"
+     "text": "PM Rain"
     },
     {
      "date": "2026-11-04",
      "tmax": 30,
-     "tmin": 21.1,
+     "tmin": 21.7,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -401,7 +381,7 @@
     },
     {
      "date": "2026-11-05",
-     "tmax": 30.6,
+     "tmax": 31.1,
      "tmin": 19.4,
      "rain_min": 0,
      "rain_max": 0,
@@ -421,7 +401,7 @@
     },
     {
      "date": "2026-11-07",
-     "tmax": 27.2,
+     "tmax": 27.8,
      "tmin": 20.6,
      "rain_min": 0,
      "rain_max": 0,
@@ -433,14 +413,24 @@
      "date": "2026-11-08",
      "tmax": 26.7,
      "tmin": 20,
-     "rain_min": 6.1,
-     "rain_max": 6.1,
-     "rain_text": "6.1 mm",
+     "rain_min": 1.8,
+     "rain_max": 1.8,
+     "rain_text": "1.8 mm",
      "chance": null,
-     "text": "PM Showers"
+     "text": "Partly Cloudy"
+    },
+    {
+     "date": "2026-11-09",
+     "tmax": 25,
+     "tmin": 19.4,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Partly Cloudy"
     }
    ],
-   "fetched": "2026-10-30T13:37:57Z"
+   "fetched": "2026-10-30T19:00:09Z"
   },
   {
    "source": "windy",
@@ -448,88 +438,75 @@
    "url": "https://www.windy.com/-25.904/153.092",
    "days": [
     {
-     "date": "2026-10-30",
-     "tmax": 22,
-     "tmin": 18.4,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 26,
-     "gust_max": 35,
-     "wind_dir": "ESE"
-    },
-    {
      "date": "2026-10-31",
-     "tmax": 24.2,
-     "tmin": 18.6,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 21,
-     "gust_max": 28,
-     "wind_dir": "NE"
-    },
-    {
-     "date": "2026-11-01",
-     "tmax": 27,
-     "tmin": 19.8,
-     "rain_min": 2.7,
-     "rain_max": 2.7,
-     "rain_text": "2.7 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 30,
-     "gust_max": 36,
-     "wind_dir": "NNE"
-    },
-    {
-     "date": "2026-11-02",
-     "tmax": 29.1,
-     "tmin": 21,
+     "tmax": 21.9,
+     "tmin": 18.2,
      "rain_min": 0.2,
      "rain_max": 0.2,
      "rain_text": "0.2 mm",
      "chance": null,
      "text": null,
+     "wind_max": 20,
+     "gust_max": 24,
+     "wind_dir": "NE"
+    },
+    {
+     "date": "2026-11-01",
+     "tmax": 26.9,
+     "tmin": 20.4,
+     "rain_min": 1.1,
+     "rain_max": 1.1,
+     "rain_text": "1.1 mm",
+     "chance": null,
+     "text": null,
+     "wind_max": 31,
+     "gust_max": 35,
+     "wind_dir": "NNE"
+    },
+    {
+     "date": "2026-11-02",
+     "tmax": 28.8,
+     "tmin": 21.2,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": null,
      "wind_max": 27,
-     "gust_max": 38,
+     "gust_max": 35,
      "wind_dir": "NW"
     },
     {
      "date": "2026-11-03",
-     "tmax": 28,
-     "tmin": 21.2,
-     "rain_min": 19.8,
-     "rain_max": 19.8,
-     "rain_text": "19.8 mm",
+     "tmax": 27.5,
+     "tmin": 21.1,
+     "rain_min": 18.5,
+     "rain_max": 18.5,
+     "rain_text": "18.5 mm",
      "chance": null,
      "text": null,
-     "wind_max": 36,
-     "gust_max": 49,
+     "wind_max": 34,
+     "gust_max": 47,
      "wind_dir": "N"
     }
    ],
    "point": "mblue model",
-   "fetched": "2026-10-30T13:38:03Z"
+   "fetched": "2026-10-30T19:00:15Z"
   }
  ],
  "observations": {
   "source": "bom_obs",
   "station": "Double Island  Point",
   "distance_km": 10.7,
-  "time": "2026-10-30T23:30:00+10:00",
-  "temp": 20.7,
-  "feels_like": 17.3,
-  "humidity": 64,
-  "wind_dir": "ENE",
-  "wind_kmh": 24,
-  "gust_kmh": 30,
+  "time": "2026-10-31T04:50:00+10:00",
+  "temp": 20.2,
+  "feels_like": 19,
+  "humidity": 77,
+  "wind_dir": "NNE",
+  "wind_kmh": 17,
+  "gust_kmh": 24,
   "rain_since_9am": 0,
-  "fetched": "2026-10-30T13:37:18Z"
+  "fetched": "2026-10-30T18:59:28Z"
  },
  "marine": {
   "source": "willyweather, windy",
@@ -539,28 +516,6 @@
     "kind": "ocean",
     "spot": "Rainbow Beach",
     "tides": {
-     "2026-10-30": [
-      {
-       "type": "low",
-       "time": "4:01 am",
-       "height_m": 0.37
-      },
-      {
-       "type": "high",
-       "time": "10:52 am",
-       "height_m": 2.03
-      },
-      {
-       "type": "low",
-       "time": "5:36 pm",
-       "height_m": 0.62
-      },
-      {
-       "type": "high",
-       "time": "11:02 pm",
-       "height_m": 1.31
-      }
-     ],
      "2026-10-31": [
       {
        "type": "low",
@@ -687,18 +642,30 @@
        "time": "11:34 pm",
        "height_m": 0.4
       }
+     ],
+     "2026-11-06": [
+      {
+       "type": "high",
+       "time": "5:54 am",
+       "height_m": 1.72
+      },
+      {
+       "type": "low",
+       "time": "11:55 am",
+       "height_m": 0.57
+      },
+      {
+       "type": "high",
+       "time": "5:48 pm",
+       "height_m": 1.71
+      }
      ]
     },
     "swell": {
-     "2026-10-30": {
-      "max_m": 1.2,
-      "dir": "SSE",
-      "period_s": 8
-     },
      "2026-10-31": {
       "max_m": 1.2,
       "dir": "SSE",
-      "period_s": 8
+      "period_s": 9
      },
      "2026-11-01": {
       "max_m": 0.9,
@@ -707,18 +674,18 @@
      },
      "2026-11-02": {
       "max_m": 1.1,
-      "dir": "NNE",
+      "dir": "NE",
       "period_s": 4
      },
      "2026-11-03": {
-      "max_m": 1.2,
-      "dir": "NNE",
+      "max_m": 1.1,
+      "dir": "N",
       "period_s": 4
      },
      "2026-11-04": {
-      "max_m": 2,
-      "dir": "N",
-      "period_s": 6
+      "max_m": 1.7,
+      "dir": "NNW",
+      "period_s": 5
      },
      "2026-11-05": {
       "max_m": 1.4,
@@ -726,35 +693,35 @@
       "period_s": 5
      },
      "2026-11-06": {
-      "max_m": 1.6,
-      "dir": "N",
+      "max_m": 1.5,
+      "dir": "NNW",
       "period_s": 5
+     },
+     "2026-11-07": {
+      "max_m": 1.1,
+      "dir": "ESE",
+      "period_s": 9
      }
     },
     "windy": {
-     "2026-10-30": {
-      "wind_max": 26,
-      "gust_max": 35,
-      "wind_dir": "ESE"
-     },
      "2026-10-31": {
-      "wind_max": 21,
-      "gust_max": 28,
+      "wind_max": 20,
+      "gust_max": 24,
       "wind_dir": "NE"
      },
      "2026-11-01": {
-      "wind_max": 30,
-      "gust_max": 36,
+      "wind_max": 31,
+      "gust_max": 35,
       "wind_dir": "NNE"
      },
      "2026-11-02": {
       "wind_max": 27,
-      "gust_max": 38,
+      "gust_max": 35,
       "wind_dir": "NW"
      },
      "2026-11-03": {
-      "wind_max": 36,
-      "gust_max": 49,
+      "wind_max": 34,
+      "gust_max": 47,
       "wind_dir": "N"
      }
     }
@@ -764,23 +731,6 @@
     "kind": "inlet",
     "spot": "Tin Can Bay Marina",
     "tides": {
-     "2026-10-30": [
-      {
-       "type": "low",
-       "time": "4:25 am",
-       "height_m": 0.54
-      },
-      {
-       "type": "high",
-       "time": "12:08 pm",
-       "height_m": 2.45
-      },
-      {
-       "type": "low",
-       "time": "5:37 pm",
-       "height_m": 0.76
-      }
-     ],
      "2026-10-31": [
       {
        "type": "high",
@@ -912,38 +862,50 @@
        "time": "11:58 pm",
        "height_m": 0.52
       }
+     ],
+     "2026-11-06": [
+      {
+       "type": "high",
+       "time": "7:14 am",
+       "height_m": 2.27
+      },
+      {
+       "type": "low",
+       "time": "12:19 pm",
+       "height_m": 0.65
+      },
+      {
+       "type": "high",
+       "time": "7:13 pm",
+       "height_m": 2.27
+      }
      ]
     },
     "windy": {
-     "2026-10-30": {
-      "wind_max": 9,
-      "gust_max": 22,
-      "wind_dir": "ESE"
-     },
      "2026-10-31": {
-      "wind_max": 6,
-      "gust_max": 17,
+      "wind_max": 5,
+      "gust_max": 13,
       "wind_dir": "NE"
      },
      "2026-11-01": {
       "wind_max": 9,
-      "gust_max": 23,
+      "gust_max": 21,
       "wind_dir": "NNE"
      },
      "2026-11-02": {
       "wind_max": 8,
-      "gust_max": 23,
-      "wind_dir": "NNE"
+      "gust_max": 20,
+      "wind_dir": "N"
      },
      "2026-11-03": {
-      "wind_max": 13,
-      "gust_max": 34,
+      "wind_max": 12,
+      "gust_max": 33,
       "wind_dir": "N"
      }
     }
    }
   ],
-  "fetched": "2026-10-30T13:37:34Z"
+  "fetched": "2026-10-30T18:59:45Z"
  },
  "errors": {}
 }

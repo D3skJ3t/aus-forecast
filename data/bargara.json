@@ -1,22 +1,12 @@
 {
  "id": "bargara",
- "generated": "2026-10-30T13:36:01Z",
+ "generated": "2026-10-30T18:58:02Z",
  "sources": [
   {
    "source": "bom",
    "name": "BOM official",
    "url": "https://www.bom.gov.au/",
    "days": [
-    {
-     "date": "2026-10-30",
-     "tmax": 26,
-     "tmin": null,
-     "rain_min": 0,
-     "rain_max": null,
-     "rain_text": "0 mm",
-     "chance": 10,
-     "text": "Cloudy."
-    },
     {
      "date": "2026-10-31",
      "tmax": 25,
@@ -55,7 +45,7 @@
      "rain_max": 4,
      "rain_text": "0-4 mm",
      "chance": 50,
-     "text": "Shower or two."
+     "text": "Showers. Possible late storm."
     },
     {
      "date": "2026-11-04",
@@ -74,8 +64,8 @@
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "0-1 mm",
-     "chance": 30,
-     "text": "Partly cloudy."
+     "chance": 40,
+     "text": "Possible shower."
     },
     {
      "date": "2026-11-06",
@@ -98,23 +88,13 @@
      "text": null
     }
    ],
-   "fetched": "2026-10-30T13:35:36Z"
+   "fetched": "2026-10-30T18:57:35Z"
   },
   {
    "source": "willyweather",
    "name": "WillyWeather",
    "url": "https://www.willyweather.com.au/qld/wide-bay/bargara.html",
    "days": [
-    {
-     "date": "2026-10-30",
-     "tmax": 26,
-     "tmin": 19,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1 mm",
-     "chance": 10,
-     "text": "Cloudy"
-    },
     {
      "date": "2026-10-31",
      "tmax": 25,
@@ -153,12 +133,12 @@
      "rain_max": 5,
      "rain_text": "1–5 mm",
      "chance": 50,
-     "text": "Shower or two"
+     "text": "Showers. Possible late storm"
     },
     {
      "date": "2026-11-04",
      "tmax": 31,
-     "tmin": 21,
+     "tmin": 22,
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1–5 mm",
@@ -173,10 +153,20 @@
      "rain_max": 1,
      "rain_text": "< 1 mm",
      "chance": 35,
+     "text": "Possible shower"
+    },
+    {
+     "date": "2026-11-06",
+     "tmax": 30,
+     "tmin": 20,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1 mm",
+     "chance": 30,
      "text": "Partly cloudy"
     }
    ],
-   "fetched": "2026-10-30T13:35:38Z"
+   "fetched": "2026-10-30T18:57:37Z"
   },
   {
    "source": "elders",
@@ -184,24 +174,14 @@
    "url": "https://eldersweather.com.au/forecast/qld/bargara",
    "days": [
     {
-     "date": "2026-10-30",
-     "tmax": 25,
+     "date": "2026-10-31",
+     "tmax": 24,
      "tmin": 20,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 6,
-     "text": "Partly cloudy"
-    },
-    {
-     "date": "2026-10-31",
-     "tmax": 24,
-     "tmin": 21,
-     "rain_min": 0,
-     "rain_max": 5,
-     "rain_text": "0 - 5 mm",
-     "chance": 34,
-     "text": "Rain showers"
+     "chance": 35,
+     "text": "Cloudy"
     },
     {
      "date": "2026-11-01",
@@ -227,11 +207,11 @@
      "date": "2026-11-03",
      "tmax": 27,
      "tmin": 23,
-     "rain_min": 5,
-     "rain_max": 10,
-     "rain_text": "5 - 10 mm",
-     "chance": 26,
-     "text": "Mostly cloudy"
+     "rain_min": 10,
+     "rain_max": 15,
+     "rain_text": "10 - 15 mm",
+     "chance": 20,
+     "text": "Clear skies"
     },
     {
      "date": "2026-11-04",
@@ -240,7 +220,7 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 12,
+     "chance": 11,
      "text": "Partly cloudy"
     },
     {
@@ -250,11 +230,21 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 19,
+     "chance": 17,
+     "text": "Fair"
+    },
+    {
+     "date": "2026-11-06",
+     "tmax": 27,
+     "tmin": 22,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 9,
      "text": "Fair"
     }
    ],
-   "fetched": "2026-10-30T13:35:43Z"
+   "fetched": "2026-10-30T18:57:40Z"
   },
   {
    "source": "weatherzone",
@@ -262,23 +252,13 @@
    "url": "https://www.weatherzone.com/au/qld/wide-bay-and-burnett/bargara",
    "days": [
     {
-     "date": "2026-10-30",
-     "tmax": 27,
-     "tmin": 18,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1mm",
-     "chance": 50,
-     "text": "Cloudy"
-    },
-    {
      "date": "2026-10-31",
      "tmax": 26,
      "tmin": 19,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
-     "chance": 50,
+     "chance": 60,
      "text": "Possible shower"
     },
     {
@@ -305,10 +285,10 @@
      "date": "2026-11-03",
      "tmax": 30,
      "tmin": 22,
-     "rain_min": 1,
-     "rain_max": 5,
-     "rain_text": "1-5mm",
-     "chance": 60,
+     "rain_min": 5,
+     "rain_max": 10,
+     "rain_text": "5-10mm",
+     "chance": 50,
      "text": "Possible shower"
     },
     {
@@ -318,7 +298,7 @@
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
-     "chance": 30,
+     "chance": 20,
      "text": "Mostly sunny"
     },
     {
@@ -328,12 +308,22 @@
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1-5mm",
-     "chance": 70,
+     "chance": 90,
+     "text": "Possible thunderstorm"
+    },
+    {
+     "date": "2026-11-06",
+     "tmax": 31,
+     "tmin": 20,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5mm",
+     "chance": 80,
      "text": "Possible thunderstorm"
     }
    ],
    "point": "Bundaberg",
-   "fetched": "2026-10-30T13:35:54Z"
+   "fetched": "2026-10-30T18:57:55Z"
   },
   {
    "source": "wunderground",
@@ -341,24 +331,14 @@
    "url": "https://www.wunderground.com/forecast/au/bargara/-24.817,152.462",
    "days": [
     {
-     "date": "2026-10-30",
-     "tmax": 27.2,
-     "tmin": 20,
-     "rain_min": 2,
-     "rain_max": 2,
-     "rain_text": "2 mm",
-     "chance": null,
-     "text": "Showers"
-    },
-    {
      "date": "2026-10-31",
-     "tmax": 24.4,
+     "tmax": 23.9,
      "tmin": 20,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
+     "rain_min": 7.4,
+     "rain_max": 7.4,
+     "rain_text": "7.4 mm",
      "chance": null,
-     "text": "Partly Cloudy"
+     "text": "AM Rain"
     },
     {
      "date": "2026-11-01",
@@ -384,16 +364,16 @@
      "date": "2026-11-03",
      "tmax": 26.7,
      "tmin": 22.8,
-     "rain_min": 12.7,
-     "rain_max": 12.7,
-     "rain_text": "12.7 mm",
+     "rain_min": 13.2,
+     "rain_max": 13.2,
+     "rain_text": "13.2 mm",
      "chance": null,
-     "text": "PM Showers"
+     "text": "PM Showers/Wind"
     },
     {
      "date": "2026-11-04",
      "tmax": 27.8,
-     "tmin": 22.2,
+     "tmin": 22.8,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -402,7 +382,7 @@
     },
     {
      "date": "2026-11-05",
-     "tmax": 28.9,
+     "tmax": 28.3,
      "tmin": 21.1,
      "rain_min": 0,
      "rain_max": 0,
@@ -413,7 +393,7 @@
     {
      "date": "2026-11-06",
      "tmax": 26.7,
-     "tmin": 22.2,
+     "tmin": 21.7,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -428,20 +408,30 @@
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Partly Cloudy"
+     "text": "Mostly Sunny"
     },
     {
      "date": "2026-11-08",
      "tmax": 26.7,
      "tmin": 21.7,
-     "rain_min": 2.5,
-     "rain_max": 2.5,
-     "rain_text": "2.5 mm",
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Partly Cloudy"
+    },
+    {
+     "date": "2026-11-09",
+     "tmax": 25.6,
+     "tmin": 21.1,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
      "chance": null,
      "text": "Partly Cloudy"
     }
    ],
-   "fetched": "2026-10-30T13:35:55Z"
+   "fetched": "2026-10-30T18:57:56Z"
   },
   {
    "source": "windy",
@@ -449,88 +439,75 @@
    "url": "https://www.windy.com/-24.817/152.462",
    "days": [
     {
-     "date": "2026-10-30",
-     "tmax": 24.8,
-     "tmin": 18.8,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 19,
-     "gust_max": 28,
-     "wind_dir": "E"
-    },
-    {
      "date": "2026-10-31",
-     "tmax": 24.2,
+     "tmax": 24.3,
      "tmin": 19.8,
-     "rain_min": 0.3,
-     "rain_max": 0.3,
-     "rain_text": "0.3 mm",
+     "rain_min": 2.3,
+     "rain_max": 2.3,
+     "rain_text": "2.3 mm",
      "chance": null,
      "text": null,
-     "wind_max": 13,
+     "wind_max": 12,
      "gust_max": 19,
      "wind_dir": "E"
     },
     {
      "date": "2026-11-01",
-     "tmax": 28.1,
-     "tmin": 18.7,
-     "rain_min": 0.2,
-     "rain_max": 0.2,
-     "rain_text": "0.2 mm",
+     "tmax": 27.1,
+     "tmin": 19.9,
+     "rain_min": 0.3,
+     "rain_max": 0.3,
+     "rain_text": "0.3 mm",
      "chance": null,
      "text": null,
-     "wind_max": 20,
+     "wind_max": 19,
      "gust_max": 31,
      "wind_dir": "NNE"
     },
     {
      "date": "2026-11-02",
      "tmax": 30.6,
-     "tmin": 20.7,
+     "tmin": 20.6,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
-     "wind_max": 22,
-     "gust_max": 34,
+     "wind_max": 20,
+     "gust_max": 33,
      "wind_dir": "N"
     },
     {
      "date": "2026-11-03",
      "tmax": 28.7,
-     "tmin": 22,
-     "rain_min": 13,
-     "rain_max": 13,
-     "rain_text": "13 mm",
+     "tmin": 21.7,
+     "rain_min": 15.2,
+     "rain_max": 15.2,
+     "rain_text": "15.2 mm",
      "chance": null,
      "text": null,
-     "wind_max": 30,
+     "wind_max": 29,
      "gust_max": 47,
      "wind_dir": "N"
     }
    ],
    "point": "mblue model",
-   "fetched": "2026-10-30T13:36:01Z"
+   "fetched": "2026-10-30T18:58:02Z"
   }
  ],
  "observations": {
   "source": "bom_obs",
   "station": "Bundaberg",
   "distance_km": 17.4,
-  "time": "2026-10-30T23:20:00+10:00",
-  "temp": 19.8,
-  "feels_like": 21.1,
-  "humidity": 87,
-  "wind_dir": "S",
-  "wind_kmh": 7,
-  "gust_kmh": 9,
-  "rain_since_9am": 0,
-  "fetched": "2026-10-30T13:35:20Z"
+  "time": "2026-10-31T04:50:00+10:00",
+  "temp": 18.4,
+  "feels_like": 18.9,
+  "humidity": 94,
+  "wind_dir": "SSW",
+  "wind_kmh": 11,
+  "gust_kmh": 15,
+  "rain_since_9am": 0.8,
+  "fetched": "2026-10-30T18:57:17Z"
  },
  "marine": {
   "source": "willyweather, windy",
@@ -540,28 +517,6 @@
     "kind": "ocean",
     "spot": "Bargara",
     "tides": {
-     "2026-10-30": [
-      {
-       "type": "low",
-       "time": "4:39 am",
-       "height_m": 0.67
-      },
-      {
-       "type": "high",
-       "time": "11:21 am",
-       "height_m": 3.06
-      },
-      {
-       "type": "low",
-       "time": "5:51 pm",
-       "height_m": 0.95
-      },
-      {
-       "type": "high",
-       "time": "11:36 pm",
-       "height_m": 2.19
-      }
-     ],
      "2026-10-31": [
       {
        "type": "low",
@@ -683,17 +638,34 @@
        "time": "5:42 pm",
        "height_m": 2.88
       }
+     ],
+     "2026-11-06": [
+      {
+       "type": "low",
+       "time": "12:12 am",
+       "height_m": 0.65
+      },
+      {
+       "type": "high",
+       "time": "6:27 am",
+       "height_m": 2.84
+      },
+      {
+       "type": "low",
+       "time": "12:33 pm",
+       "height_m": 0.81
+      },
+      {
+       "type": "high",
+       "time": "6:26 pm",
+       "height_m": 2.84
+      }
      ]
     },
     "swell": {
-     "2026-10-30": {
-      "max_m": 1.1,
-      "dir": "E",
-      "period_s": 5
-     },
      "2026-10-31": {
-      "max_m": 1.1,
-      "dir": "E",
+      "max_m": 1,
+      "dir": "ENE",
       "period_s": 5
      },
      "2026-11-01": {
@@ -707,12 +679,12 @@
       "period_s": 6
      },
      "2026-11-03": {
-      "max_m": 1.1,
-      "dir": "NNW",
+      "max_m": 1,
+      "dir": "N",
       "period_s": 4
      },
      "2026-11-04": {
-      "max_m": 1.4,
+      "max_m": 1.3,
       "dir": "NNW",
       "period_s": 5
      },
@@ -722,34 +694,34 @@
       "period_s": 5
      },
      "2026-11-06": {
-      "max_m": 1.4,
+      "max_m": 1.2,
       "dir": "NNW",
       "period_s": 5
+     },
+     "2026-11-07": {
+      "max_m": 0.6,
+      "dir": "E",
+      "period_s": 9
      }
     },
     "windy": {
-     "2026-10-30": {
-      "wind_max": 19,
-      "gust_max": 28,
-      "wind_dir": "E"
-     },
      "2026-10-31": {
-      "wind_max": 13,
+      "wind_max": 12,
       "gust_max": 19,
       "wind_dir": "E"
      },
      "2026-11-01": {
-      "wind_max": 20,
+      "wind_max": 19,
       "gust_max": 31,
       "wind_dir": "NNE"
      },
      "2026-11-02": {
-      "wind_max": 22,
-      "gust_max": 34,
+      "wind_max": 20,
+      "gust_max": 33,
       "wind_dir": "N"
      },
      "2026-11-03": {
-      "wind_max": 30,
+      "wind_max": 29,
       "gust_max": 47,
       "wind_dir": "N"
      }
@@ -760,28 +732,6 @@
     "kind": "river",
     "spot": "Burnett Heads Boat Harbour entrance",
     "tides": {
-     "2026-10-30": [
-      {
-       "type": "low",
-       "time": "4:43 am",
-       "height_m": 0.67
-      },
-      {
-       "type": "high",
-       "time": "11:25 am",
-       "height_m": 3.06
-      },
-      {
-       "type": "low",
-       "time": "5:55 pm",
-       "height_m": 0.95
-      },
-      {
-       "type": "high",
-       "time": "11:40 pm",
-       "height_m": 2.19
-      }
-     ],
      "2026-10-31": [
       {
        "type": "low",
@@ -903,27 +853,44 @@
        "time": "5:46 pm",
        "height_m": 2.88
       }
+     ],
+     "2026-11-06": [
+      {
+       "type": "low",
+       "time": "12:16 am",
+       "height_m": 0.65
+      },
+      {
+       "type": "high",
+       "time": "6:31 am",
+       "height_m": 2.84
+      },
+      {
+       "type": "low",
+       "time": "12:37 pm",
+       "height_m": 0.81
+      },
+      {
+       "type": "high",
+       "time": "6:30 pm",
+       "height_m": 2.84
+      }
      ]
     },
     "windy": {
-     "2026-10-30": {
-      "wind_max": 16,
-      "gust_max": 28,
-      "wind_dir": "ESE"
-     },
      "2026-10-31": {
       "wind_max": 9,
       "gust_max": 16,
-      "wind_dir": "E"
+      "wind_dir": "ENE"
      },
      "2026-11-01": {
-      "wind_max": 18,
+      "wind_max": 17,
       "gust_max": 30,
       "wind_dir": "NNE"
      },
      "2026-11-02": {
-      "wind_max": 20,
-      "gust_max": 31,
+      "wind_max": 18,
+      "gust_max": 30,
       "wind_dir": "N"
      },
      "2026-11-03": {
@@ -934,7 +901,7 @@
     }
    }
   ],
-  "fetched": "2026-10-30T13:35:36Z"
+  "fetched": "2026-10-30T18:57:34Z"
  },
  "errors": {}
 }

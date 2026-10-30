@@ -1,22 +1,12 @@
 {
  "id": "maroochydore",
- "generated": "2026-10-30T13:46:53Z",
+ "generated": "2026-10-30T19:09:53Z",
  "sources": [
   {
    "source": "bom",
    "name": "BOM official",
    "url": "https://www.bom.gov.au/",
    "days": [
-    {
-     "date": "2026-10-30",
-     "tmax": 25,
-     "tmin": null,
-     "rain_min": 0,
-     "rain_max": null,
-     "rain_text": "0 mm",
-     "chance": 10,
-     "text": "Partly cloudy."
-    },
     {
      "date": "2026-10-31",
      "tmax": 25,
@@ -34,7 +24,7 @@
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1-5 mm",
-     "chance": 60,
+     "chance": 70,
      "text": "Shower or two."
     },
     {
@@ -45,7 +35,7 @@
      "rain_max": 1,
      "rain_text": "0-1 mm",
      "chance": 30,
-     "text": "Possible late storm."
+     "text": "Partly cloudy."
     },
     {
      "date": "2026-11-03",
@@ -72,9 +62,9 @@
      "tmax": 32,
      "tmin": 19,
      "rain_min": 0,
-     "rain_max": null,
-     "rain_text": "0 mm",
-     "chance": 20,
+     "rain_max": 1,
+     "rain_text": "0-1 mm",
+     "chance": 30,
      "text": "Partly cloudy."
     },
     {
@@ -98,23 +88,13 @@
      "text": null
     }
    ],
-   "fetched": "2026-10-30T13:46:31Z"
+   "fetched": "2026-10-30T19:09:29Z"
   },
   {
    "source": "willyweather",
    "name": "WillyWeather",
    "url": "https://www.willyweather.com.au/qld/sunshine-coast/maroochydore.html",
    "days": [
-    {
-     "date": "2026-10-30",
-     "tmax": 25,
-     "tmin": 17,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1 mm",
-     "chance": 15,
-     "text": "Partly cloudy"
-    },
     {
      "date": "2026-10-31",
      "tmax": 25,
@@ -143,7 +123,7 @@
      "rain_max": 1,
      "rain_text": "< 1 mm",
      "chance": 30,
-     "text": "Possible late storm"
+     "text": "Partly cloudy"
     },
     {
      "date": "2026-11-03",
@@ -174,9 +154,19 @@
      "rain_text": "< 1 mm",
      "chance": 25,
      "text": "Partly cloudy"
+    },
+    {
+     "date": "2026-11-06",
+     "tmax": 27,
+     "tmin": 19,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1 mm",
+     "chance": 25,
+     "text": "Partly cloudy"
     }
    ],
-   "fetched": "2026-10-30T13:46:33Z"
+   "fetched": "2026-10-30T19:09:33Z"
   },
   {
    "source": "elders",
@@ -184,23 +174,13 @@
    "url": "https://eldersweather.com.au/forecast/qld/maroochydore",
    "days": [
     {
-     "date": "2026-10-30",
-     "tmax": 25,
-     "tmin": 16,
-     "rain_min": 0,
-     "rain_max": 5,
-     "rain_text": "0 - 5 mm",
-     "chance": 0,
-     "text": "Mostly cloudy"
-    },
-    {
      "date": "2026-10-31",
      "tmax": 24,
      "tmin": 18,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 0,
+     "chance": 10,
      "text": "Cloudy"
     },
     {
@@ -210,7 +190,7 @@
      "rain_min": 5,
      "rain_max": 10,
      "rain_text": "5 - 10 mm",
-     "chance": 20,
+     "chance": 22,
      "text": "Clear skies"
     },
     {
@@ -220,18 +200,18 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 7,
+     "chance": 8,
      "text": "Fair"
     },
     {
      "date": "2026-11-03",
-     "tmax": 28,
+     "tmax": 27,
      "tmin": 20,
      "rain_min": 10,
      "rain_max": 15,
      "rain_text": "10 - 15 mm",
-     "chance": 36,
-     "text": "Mostly cloudy"
+     "chance": 33,
+     "text": "Partly cloudy"
     },
     {
      "date": "2026-11-04",
@@ -240,21 +220,31 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 23,
+     "chance": 18,
      "text": "Fair"
     },
     {
      "date": "2026-11-05",
      "tmax": 30,
-     "tmin": 21,
+     "tmin": 20,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 14,
+     "chance": 10,
      "text": "Clear skies"
+    },
+    {
+     "date": "2026-11-06",
+     "tmax": 26,
+     "tmin": 19,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 7,
+     "text": "Fair"
     }
    ],
-   "fetched": "2026-10-30T13:46:34Z"
+   "fetched": "2026-10-30T19:09:33Z"
   },
   {
    "source": "weatherzone",
@@ -262,44 +252,34 @@
    "url": "https://www.weatherzone.com/au/qld/southeast-coast/maroochydore",
    "days": [
     {
-     "date": "2026-10-30",
-     "tmax": 25.1,
-     "tmin": 18.2,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1mm",
-     "chance": 20,
-     "text": "Cloudy"
-    },
-    {
      "date": "2026-10-31",
      "tmax": 25.1,
-     "tmin": 18.1,
+     "tmin": 17.7,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
-     "chance": 20,
-     "text": "Mostly sunny"
+     "chance": 50,
+     "text": "Clearing shower"
     },
     {
      "date": "2026-11-01",
      "tmax": 27.6,
-     "tmin": 17.4,
+     "tmin": 17.3,
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1-5mm",
      "chance": 50,
-     "text": "Possible shower"
+     "text": "Late shower"
     },
     {
      "date": "2026-11-02",
      "tmax": 28.6,
      "tmin": 19.2,
-     "rain_min": 1,
-     "rain_max": 5,
-     "rain_text": "1-5mm",
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1mm",
      "chance": 40,
-     "text": "Possible shower"
+     "text": "Sunny"
     },
     {
      "date": "2026-11-03",
@@ -308,7 +288,7 @@
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1-5mm",
-     "chance": 60,
+     "chance": 70,
      "text": "Possible thunderstorm"
     },
     {
@@ -323,32 +303,32 @@
     },
     {
      "date": "2026-11-05",
-     "tmax": 31.2,
-     "tmin": 20.3,
+     "tmax": 31.5,
+     "tmin": 20.1,
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1-5mm",
-     "chance": 60,
+     "chance": 50,
      "text": "Possible shower"
+    },
+    {
+     "date": "2026-11-06",
+     "tmax": 26.7,
+     "tmin": 19.1,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1mm",
+     "chance": 60,
+     "text": "Possible thunderstorm"
     }
    ],
-   "fetched": "2026-10-30T13:46:46Z"
+   "fetched": "2026-10-30T19:09:45Z"
   },
   {
    "source": "wunderground",
    "name": "Weather Underground",
    "url": "https://www.wunderground.com/forecast/au/maroochydore/-26.656,153.089",
    "days": [
-    {
-     "date": "2026-10-30",
-     "tmax": 26.1,
-     "tmin": 18.3,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": "Mostly Cloudy"
-    },
     {
      "date": "2026-10-31",
      "tmax": 23.9,
@@ -357,22 +337,22 @@
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Cloudy"
+     "text": "Partly Cloudy"
     },
     {
      "date": "2026-11-01",
      "tmax": 27.2,
      "tmin": 18.9,
-     "rain_min": 2,
-     "rain_max": 2,
-     "rain_text": "2 mm",
+     "rain_min": 2.5,
+     "rain_max": 2.5,
+     "rain_text": "2.5 mm",
      "chance": null,
      "text": "PM Showers"
     },
     {
      "date": "2026-11-02",
      "tmax": 28.3,
-     "tmin": 20,
+     "tmin": 20.6,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -383,15 +363,15 @@
      "date": "2026-11-03",
      "tmax": 27.2,
      "tmin": 20,
-     "rain_min": 11.7,
-     "rain_max": 11.7,
-     "rain_text": "11.7 mm",
+     "rain_min": 11.9,
+     "rain_max": 11.9,
+     "rain_text": "11.9 mm",
      "chance": null,
      "text": "Thunderstorms"
     },
     {
      "date": "2026-11-04",
-     "tmax": 31.1,
+     "tmax": 31.7,
      "tmin": 20.6,
      "rain_min": 0,
      "rain_max": 0,
@@ -401,7 +381,7 @@
     },
     {
      "date": "2026-11-05",
-     "tmax": 31.1,
+     "tmax": 32.2,
      "tmin": 18.9,
      "rain_min": 0,
      "rain_max": 0,
@@ -412,7 +392,7 @@
     {
      "date": "2026-11-06",
      "tmax": 26.1,
-     "tmin": 18.9,
+     "tmin": 18.3,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -432,15 +412,25 @@
     {
      "date": "2026-11-08",
      "tmax": 26.1,
-     "tmin": 19.4,
-     "rain_min": 4.8,
-     "rain_max": 4.8,
-     "rain_text": "4.8 mm",
+     "tmin": 18.9,
+     "rain_min": 1.5,
+     "rain_max": 1.5,
+     "rain_text": "1.5 mm",
      "chance": null,
-     "text": "PM Showers"
+     "text": "Partly Cloudy"
+    },
+    {
+     "date": "2026-11-09",
+     "tmax": 23.9,
+     "tmin": 18.3,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Partly Cloudy"
     }
    ],
-   "fetched": "2026-10-30T13:46:46Z"
+   "fetched": "2026-10-30T19:09:46Z"
   },
   {
    "source": "windy",
@@ -448,88 +438,75 @@
    "url": "https://www.windy.com/-26.656/153.089",
    "days": [
     {
-     "date": "2026-10-30",
-     "tmax": 23.3,
-     "tmin": 16.4,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 18,
-     "gust_max": 26,
-     "wind_dir": "E"
-    },
-    {
      "date": "2026-10-31",
-     "tmax": 23.4,
-     "tmin": 16.4,
+     "tmax": 22.8,
+     "tmin": 17.2,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
-     "wind_max": 17,
-     "gust_max": 21,
+     "wind_max": 15,
+     "gust_max": 22,
      "wind_dir": "NNE"
     },
     {
      "date": "2026-11-01",
-     "tmax": 26.7,
-     "tmin": 17.4,
-     "rain_min": 5.4,
-     "rain_max": 5.4,
-     "rain_text": "5.4 mm",
+     "tmax": 26.9,
+     "tmin": 18.4,
+     "rain_min": 2.5,
+     "rain_max": 2.5,
+     "rain_text": "2.5 mm",
      "chance": null,
      "text": null,
      "wind_max": 19,
-     "gust_max": 27,
+     "gust_max": 28,
      "wind_dir": "NNE"
     },
     {
      "date": "2026-11-02",
-     "tmax": 27.8,
-     "tmin": 19.3,
-     "rain_min": 0.2,
-     "rain_max": 0.2,
-     "rain_text": "0.2 mm",
+     "tmax": 27.9,
+     "tmin": 19.9,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
      "chance": null,
      "text": null,
      "wind_max": 19,
-     "gust_max": 35,
-     "wind_dir": "ENE"
+     "gust_max": 31,
+     "wind_dir": "NE"
     },
     {
      "date": "2026-11-03",
-     "tmax": 26.2,
-     "tmin": 19.7,
-     "rain_min": 25.1,
-     "rain_max": 25.1,
-     "rain_text": "25.1 mm",
+     "tmax": 26.7,
+     "tmin": 19.5,
+     "rain_min": 24.2,
+     "rain_max": 24.2,
+     "rain_text": "24.2 mm",
      "chance": null,
      "text": null,
      "wind_max": 22,
-     "gust_max": 40,
-     "wind_dir": "NNE"
+     "gust_max": 39,
+     "wind_dir": "NNW"
     }
    ],
    "point": "mblue model",
-   "fetched": "2026-10-30T13:46:53Z"
+   "fetched": "2026-10-30T19:09:53Z"
   }
  ],
  "observations": {
   "source": "bom_obs",
   "station": "Sunshine Coast Airport",
   "distance_km": 6.3,
-  "time": "2026-10-30T23:40:00+10:00",
-  "temp": 21.1,
-  "feels_like": 20.1,
-  "humidity": 66,
-  "wind_dir": "ENE",
-  "wind_kmh": 13,
-  "gust_kmh": 19,
+  "time": "2026-10-31T05:00:00+10:00",
+  "temp": 17.6,
+  "feels_like": 18.4,
+  "humidity": 89,
+  "wind_dir": "WSW",
+  "wind_kmh": 6,
+  "gust_kmh": 9,
   "rain_since_9am": 0,
-  "fetched": "2026-10-30T13:46:15Z"
+  "fetched": "2026-10-30T19:09:10Z"
  },
  "marine": {
   "source": "willyweather, windy",
@@ -539,23 +516,6 @@
     "kind": "river",
     "spot": "Picnic Point",
     "tides": {
-     "2026-10-30": [
-      {
-       "type": "low",
-       "time": "5:57 am",
-       "height_m": 0.22
-      },
-      {
-       "type": "high",
-       "time": "12:04 pm",
-       "height_m": 1.89
-      },
-      {
-       "type": "low",
-       "time": "7:38 pm",
-       "height_m": 0.49
-      }
-     ],
      "2026-10-31": [
       {
        "type": "high",
@@ -682,28 +642,45 @@
        "time": "6:17 pm",
        "height_m": 1.62
       }
+     ],
+     "2026-11-06": [
+      {
+       "type": "low",
+       "time": "1:36 am",
+       "height_m": 0.27
+      },
+      {
+       "type": "high",
+       "time": "7:03 am",
+       "height_m": 1.6
+      },
+      {
+       "type": "low",
+       "time": "1:54 pm",
+       "height_m": 0.44
+      },
+      {
+       "type": "high",
+       "time": "6:59 pm",
+       "height_m": 1.57
+      }
      ]
     },
     "windy": {
-     "2026-10-30": {
-      "wind_max": 18,
-      "gust_max": 28,
-      "wind_dir": "E"
-     },
      "2026-10-31": {
-      "wind_max": 17,
-      "gust_max": 22,
+      "wind_max": 15,
+      "gust_max": 20,
       "wind_dir": "NNE"
      },
      "2026-11-01": {
       "wind_max": 19,
-      "gust_max": 29,
+      "gust_max": 30,
       "wind_dir": "NNE"
      },
      "2026-11-02": {
-      "wind_max": 19,
-      "gust_max": 36,
-      "wind_dir": "ENE"
+      "wind_max": 20,
+      "gust_max": 31,
+      "wind_dir": "NE"
      },
      "2026-11-03": {
       "wind_max": 22,
@@ -717,28 +694,6 @@
     "kind": "ocean",
     "spot": "Maroochydore Beach",
     "tides": {
-     "2026-10-30": [
-      {
-       "type": "low",
-       "time": "4:05 am",
-       "height_m": 0.22
-      },
-      {
-       "type": "high",
-       "time": "11:02 am",
-       "height_m": 1.89
-      },
-      {
-       "type": "low",
-       "time": "5:46 pm",
-       "height_m": 0.49
-      },
-      {
-       "type": "high",
-       "time": "11:06 pm",
-       "height_m": 1.15
-      }
-     ],
      "2026-10-31": [
       {
        "type": "low",
@@ -865,80 +820,92 @@
        "time": "11:44 pm",
        "height_m": 0.27
       }
+     ],
+     "2026-11-06": [
+      {
+       "type": "high",
+       "time": "6:01 am",
+       "height_m": 1.6
+      },
+      {
+       "type": "low",
+       "time": "12:02 pm",
+       "height_m": 0.44
+      },
+      {
+       "type": "high",
+       "time": "5:57 pm",
+       "height_m": 1.57
+      }
      ]
     },
     "swell": {
-     "2026-10-30": {
-      "max_m": 1.2,
-      "dir": "SSE",
-      "period_s": 8
-     },
      "2026-10-31": {
       "max_m": 1.1,
       "dir": "SSE",
-      "period_s": 10
+      "period_s": 9
      },
      "2026-11-01": {
       "max_m": 0.9,
-      "dir": "ESE",
-      "period_s": 7
+      "dir": "SSE",
+      "period_s": 9
      },
      "2026-11-02": {
-      "max_m": 1.2,
-      "dir": "NNE",
-      "period_s": 4
-     },
-     "2026-11-03": {
-      "max_m": 1.5,
+      "max_m": 1.3,
       "dir": "NNE",
       "period_s": 5
      },
-     "2026-11-04": {
-      "max_m": 2,
-      "dir": "N",
-      "period_s": 6
-     },
-     "2026-11-05": {
+     "2026-11-03": {
       "max_m": 1.4,
       "dir": "NNE",
       "period_s": 5
      },
-     "2026-11-06": {
-      "max_m": 1.8,
+     "2026-11-04": {
+      "max_m": 1.7,
       "dir": "N",
-      "period_s": 6
+      "period_s": 5
+     },
+     "2026-11-05": {
+      "max_m": 1.4,
+      "dir": "N",
+      "period_s": 5
+     },
+     "2026-11-06": {
+      "max_m": 1.5,
+      "dir": "N",
+      "period_s": 5
+     },
+     "2026-11-07": {
+      "max_m": 1.1,
+      "dir": "ESE",
+      "period_s": 9
      }
     },
     "windy": {
-     "2026-10-30": {
-      "wind_max": 18,
-      "gust_max": 26,
-      "wind_dir": "E"
-     },
      "2026-10-31": {
-      "wind_max": 17,
-      "gust_max": 21,
+      "wind_max": 15,
+      "gust_max": 22,
       "wind_dir": "NNE"
      },
      "2026-11-01": {
       "wind_max": 19,
-      "gust_max": 27,
+      "gust_max": 28,
       "wind_dir": "NNE"
      },
      "2026-11-02": {
       "wind_max": 19,
-      "gust_max": 35,
-      "wind_dir": "ENE"
+      "gust_max": 31,
+      "wind_dir": "NE"
      },
      "2026-11-03": {
       "wind_max": 22,
-      "gust_max": 40,
-      "wind_dir": "NNE"
+      "gust_max": 39,
+      "wind_dir": "NNW"
      }
     }
    }
   ],
-  "fetched": "2026-10-30T13:46:31Z"
+  "fetched": "2026-10-30T19:09:28Z"
  },
  "errors": {}
 }
