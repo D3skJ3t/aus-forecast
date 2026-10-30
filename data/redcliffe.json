@@ -1,6 +1,6 @@
 {
  "id": "redcliffe",
- "generated": "2026-10-30T00:21:20Z",
+ "generated": "2026-10-30T06:27:34Z",
  "sources": [
   {
    "source": "bom",
@@ -10,7 +10,7 @@
     {
      "date": "2026-10-30",
      "tmax": 25,
-     "tmin": 18,
+     "tmin": null,
      "rain_min": 0,
      "rain_max": null,
      "rain_text": "0 mm",
@@ -42,20 +42,20 @@
      "tmax": 29,
      "tmin": 19,
      "rain_min": 0,
-     "rain_max": 2,
-     "rain_text": "0-2 mm",
-     "chance": 40,
-     "text": "Possible shower."
+     "rain_max": 1,
+     "rain_text": "0-1 mm",
+     "chance": 30,
+     "text": "Partly cloudy."
     },
     {
      "date": "2026-11-03",
      "tmax": 29,
      "tmin": 20,
-     "rain_min": 6,
-     "rain_max": 15,
-     "rain_text": "6-15 mm",
+     "rain_min": 7,
+     "rain_max": 20,
+     "rain_text": "7-20 mm",
      "chance": 90,
-     "text": "Showers. Possible storm."
+     "text": "Showers. Storm developing."
     },
     {
      "date": "2026-11-04",
@@ -79,8 +79,18 @@
     },
     {
      "date": "2026-11-06",
-     "tmax": null,
+     "tmax": 27,
      "tmin": 19,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "0-1 mm",
+     "chance": 30,
+     "text": "Partly cloudy."
+    },
+    {
+     "date": "2026-11-07",
+     "tmax": null,
+     "tmin": 20,
      "rain_min": null,
      "rain_max": null,
      "rain_text": null,
@@ -88,7 +98,7 @@
      "text": null
     }
    ],
-   "fetched": "2026-10-30T00:20:55Z"
+   "fetched": "2026-10-30T06:27:11Z"
   },
   {
    "source": "willyweather",
@@ -130,10 +140,10 @@
      "tmax": 29,
      "tmin": 19,
      "rain_min": 0,
-     "rain_max": 2,
-     "rain_text": "< 2 mm",
-     "chance": 35,
-     "text": "Possible shower"
+     "rain_max": 1,
+     "rain_text": "< 1 mm",
+     "chance": 30,
+     "text": "Partly cloudy"
     },
     {
      "date": "2026-11-03",
@@ -143,7 +153,7 @@
      "rain_max": 15,
      "rain_text": "5–15 mm",
      "chance": 85,
-     "text": "Showers. Possible storm"
+     "text": "Showers. Storm developing"
     },
     {
      "date": "2026-11-04",
@@ -166,7 +176,7 @@
      "text": "Sunny"
     }
    ],
-   "fetched": "2026-10-30T00:20:57Z"
+   "fetched": "2026-10-30T06:27:13Z"
   },
   {
    "source": "elders",
@@ -175,7 +185,7 @@
    "days": [
     {
      "date": "2026-10-30",
-     "tmax": 23,
+     "tmax": 24,
      "tmin": 20,
      "rain_min": 0,
      "rain_max": 5,
@@ -200,17 +210,17 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 20,
+     "chance": 22,
      "text": "Clear skies"
     },
     {
      "date": "2026-11-02",
      "tmax": 26,
      "tmin": 21,
-     "rain_min": 0,
-     "rain_max": 5,
-     "rain_text": "0 - 5 mm",
-     "chance": 12,
+     "rain_min": 5,
+     "rain_max": 10,
+     "rain_text": "5 - 10 mm",
+     "chance": 13,
      "text": "Fair"
     },
     {
@@ -220,8 +230,8 @@
      "rain_min": 5,
      "rain_max": 10,
      "rain_text": "5 - 10 mm",
-     "chance": 45,
-     "text": "Mostly cloudy"
+     "chance": 37,
+     "text": "Cloudy"
     },
     {
      "date": "2026-11-04",
@@ -230,21 +240,21 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 28,
+     "chance": 17,
      "text": "Fair"
     },
     {
      "date": "2026-11-05",
-     "tmax": 27,
+     "tmax": 28,
      "tmin": 22,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 9,
-     "text": "Clear skies"
+     "chance": 12,
+     "text": "Fair"
     }
    ],
-   "fetched": "2026-10-30T00:21:00Z"
+   "fetched": "2026-10-30T06:27:15Z"
   },
   {
    "source": "weatherzone",
@@ -322,7 +332,7 @@
      "text": "Clearing shower"
     }
    ],
-   "fetched": "2026-10-30T00:21:13Z"
+   "fetched": "2026-10-30T06:27:27Z"
   },
   {
    "source": "wunderground",
@@ -331,13 +341,13 @@
    "days": [
     {
      "date": "2026-10-30",
-     "tmax": 27.2,
-     "tmin": 17.2,
+     "tmax": 25.6,
+     "tmin": 17.8,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Mostly Cloudy"
+     "text": "Cloudy"
     },
     {
      "date": "2026-10-31",
@@ -347,25 +357,25 @@
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "AM Clouds/PM Sun"
+     "text": "Partly Cloudy"
     },
     {
      "date": "2026-11-01",
-     "tmax": 26.7,
-     "tmin": 18.3,
-     "rain_min": 1.8,
-     "rain_max": 1.8,
-     "rain_text": "1.8 mm",
+     "tmax": 26.1,
+     "tmin": 18.9,
+     "rain_min": 2,
+     "rain_max": 2,
+     "rain_text": "2 mm",
      "chance": null,
      "text": "PM Showers"
     },
     {
      "date": "2026-11-02",
-     "tmax": 27.2,
+     "tmax": 27.8,
      "tmin": 20.6,
-     "rain_min": 1,
-     "rain_max": 1,
-     "rain_text": "1 mm",
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
      "chance": null,
      "text": "Mostly Sunny"
     },
@@ -373,16 +383,16 @@
      "date": "2026-11-03",
      "tmax": 26.1,
      "tmin": 20,
-     "rain_min": 9.1,
-     "rain_max": 9.1,
-     "rain_text": "9.1 mm",
+     "rain_min": 7.9,
+     "rain_max": 7.9,
+     "rain_text": "7.9 mm",
      "chance": null,
      "text": "Thunderstorms"
     },
     {
      "date": "2026-11-04",
      "tmax": 30,
-     "tmin": 19.4,
+     "tmin": 20,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -391,17 +401,17 @@
     },
     {
      "date": "2026-11-05",
-     "tmax": 30.6,
-     "tmin": 19.4,
+     "tmax": 31.1,
+     "tmin": 18.9,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Sunny"
+     "text": "Mostly Sunny"
     },
     {
      "date": "2026-11-06",
-     "tmax": 25.6,
+     "tmax": 26.7,
      "tmin": 19.4,
      "rain_min": 0,
      "rain_max": 0,
@@ -413,16 +423,16 @@
      "date": "2026-11-07",
      "tmax": 27.2,
      "tmin": 20,
-     "rain_min": 0.8,
-     "rain_max": 0.8,
-     "rain_text": "0.8 mm",
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
      "chance": null,
      "text": "Partly Cloudy"
     },
     {
      "date": "2026-11-08",
-     "tmax": 25.6,
-     "tmin": 17.8,
+     "tmax": 26.1,
+     "tmin": 18.3,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -430,7 +440,7 @@
      "text": "Partly Cloudy"
     }
    ],
-   "fetched": "2026-10-30T00:21:13Z"
+   "fetched": "2026-10-30T06:27:27Z"
   },
   {
    "source": "windy",
@@ -439,7 +449,7 @@
    "days": [
     {
      "date": "2026-10-30",
-     "tmax": 25.4,
+     "tmax": 26.2,
      "tmin": 17.8,
      "rain_min": 0,
      "rain_max": 0,
@@ -452,74 +462,74 @@
     },
     {
      "date": "2026-10-31",
-     "tmax": 26.6,
-     "tmin": 18.9,
+     "tmax": 26.2,
+     "tmin": 18.7,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
-     "wind_max": 15,
-     "gust_max": 25,
+     "wind_max": 14,
+     "gust_max": 22,
      "wind_dir": "NNE"
     },
     {
      "date": "2026-11-01",
-     "tmax": 29.2,
-     "tmin": 20.5,
-     "rain_min": 4.3,
-     "rain_max": 4.3,
-     "rain_text": "4.3 mm",
+     "tmax": 29.4,
+     "tmin": 19.7,
+     "rain_min": 5.7,
+     "rain_max": 5.7,
+     "rain_text": "5.7 mm",
      "chance": null,
      "text": null,
      "wind_max": 20,
-     "gust_max": 35,
+     "gust_max": 33,
      "wind_dir": "N"
     },
     {
      "date": "2026-11-02",
-     "tmax": 29.6,
-     "tmin": 20.6,
-     "rain_min": 0.6,
-     "rain_max": 0.6,
-     "rain_text": "0.6 mm",
+     "tmax": 29.7,
+     "tmin": 20.7,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
      "chance": null,
      "text": null,
-     "wind_max": 16,
-     "gust_max": 34,
+     "wind_max": 17,
+     "gust_max": 32,
      "wind_dir": "E"
     },
     {
      "date": "2026-11-03",
-     "tmax": 27.9,
-     "tmin": 22.1,
-     "rain_min": 16.1,
-     "rain_max": 16.1,
-     "rain_text": "16.1 mm",
+     "tmax": 27.7,
+     "tmin": 22.3,
+     "rain_min": 21.7,
+     "rain_max": 21.7,
+     "rain_text": "21.7 mm",
      "chance": null,
      "text": null,
-     "wind_max": 18,
-     "gust_max": 35,
-     "wind_dir": "N"
+     "wind_max": 22,
+     "gust_max": 43,
+     "wind_dir": "NNE"
     }
    ],
    "point": "mblue model",
-   "fetched": "2026-10-30T00:21:20Z"
+   "fetched": "2026-10-30T06:27:34Z"
   }
  ],
  "observations": {
   "source": "bom_obs",
   "station": "Brisbane Airport",
   "distance_km": 19.9,
-  "time": "2026-10-30T10:10:00+10:00",
-  "temp": 23.7,
-  "feels_like": 22.7,
+  "time": "2026-10-30T16:20:00+10:00",
+  "temp": 22.1,
+  "feels_like": 19.9,
   "humidity": 57,
-  "wind_dir": "E",
-  "wind_kmh": 13,
-  "gust_kmh": 20,
+  "wind_dir": "NE",
+  "wind_kmh": 17,
+  "gust_kmh": 24,
   "rain_since_9am": 0,
-  "fetched": "2026-10-30T00:20:46Z"
+  "fetched": "2026-10-30T06:27:03Z"
  },
  "marine": {
   "source": "willyweather, windy",
@@ -681,29 +691,29 @@
       "wind_dir": "ENE"
      },
      "2026-10-31": {
-      "wind_max": 15,
-      "gust_max": 25,
+      "wind_max": 14,
+      "gust_max": 22,
       "wind_dir": "NNE"
      },
      "2026-11-01": {
       "wind_max": 20,
-      "gust_max": 35,
+      "gust_max": 33,
       "wind_dir": "N"
      },
      "2026-11-02": {
-      "wind_max": 16,
-      "gust_max": 34,
+      "wind_max": 17,
+      "gust_max": 32,
       "wind_dir": "E"
      },
      "2026-11-03": {
-      "wind_max": 18,
-      "gust_max": 35,
-      "wind_dir": "N"
+      "wind_max": 22,
+      "gust_max": 43,
+      "wind_dir": "NNE"
      }
     }
    }
   ],
-  "fetched": "2026-10-30T00:20:54Z"
+  "fetched": "2026-10-30T06:27:10Z"
  },
  "errors": {}
 }
