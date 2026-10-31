@@ -1,6 +1,6 @@
 {
  "id": "coolangatta",
- "generated": "2026-10-31T08:49:16Z",
+ "generated": "2026-10-31T15:16:50Z",
  "sources": [
   {
    "source": "bom",
@@ -8,29 +8,19 @@
    "url": "https://www.bom.gov.au/",
    "days": [
     {
-     "date": "2026-10-30",
-     "tmax": 25,
-     "tmin": null,
-     "rain_min": 0,
-     "rain_max": null,
-     "rain_text": "0 mm",
-     "chance": 20,
-     "text": "Shower or two."
-    },
-    {
      "date": "2026-10-31",
      "tmax": 27,
      "tmin": 18,
-     "rain_min": 4,
-     "rain_max": 10,
-     "rain_text": "4-10 mm",
-     "chance": 80,
-     "text": "Showers. Storm."
+     "rain_min": 2,
+     "rain_max": 7,
+     "rain_text": "2-7 mm",
+     "chance": 70,
+     "text": "Shower or two. Storm."
     },
     {
      "date": "2026-11-01",
-     "tmax": 28,
-     "tmin": 19,
+     "tmax": 27,
+     "tmin": 18,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "0-1 mm",
@@ -41,15 +31,15 @@
      "date": "2026-11-02",
      "tmax": 27,
      "tmin": 19,
-     "rain_min": 4,
-     "rain_max": 10,
-     "rain_text": "4-10 mm",
+     "rain_min": 5,
+     "rain_max": 15,
+     "rain_text": "5-15 mm",
      "chance": 80,
-     "text": "Showers. Possible storm."
+     "text": "Showers. Storm developing."
     },
     {
      "date": "2026-11-03",
-     "tmax": 31,
+     "tmax": 30,
      "tmin": 19,
      "rain_min": 0,
      "rain_max": 1,
@@ -72,20 +62,20 @@
      "tmax": 26,
      "tmin": 17,
      "rain_min": 0,
-     "rain_max": null,
-     "rain_text": "0 mm",
-     "chance": 10,
+     "rain_max": 1,
+     "rain_text": "0-1 mm",
+     "chance": 30,
      "text": "Partly cloudy."
     },
     {
      "date": "2026-11-06",
-     "tmax": 28,
+     "tmax": 27,
      "tmin": 18,
      "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "0-1 mm",
-     "chance": 40,
-     "text": "Possible shower."
+     "rain_max": 3,
+     "rain_text": "0-3 mm",
+     "chance": 50,
+     "text": "Shower or two."
     },
     {
      "date": "2026-11-07",
@@ -98,23 +88,13 @@
      "text": null
     }
    ],
-   "fetched": "2026-10-31T08:48:53Z"
+   "fetched": "2026-10-31T15:16:28Z"
   },
   {
    "source": "willyweather",
    "name": "WillyWeather",
    "url": "https://www.willyweather.com.au/qld/gold-coast/coolangatta.html",
    "days": [
-    {
-     "date": "2026-10-31",
-     "tmax": 25,
-     "tmin": 17,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1 mm",
-     "chance": 15,
-     "text": "Shower or two"
-    },
     {
      "date": "2026-11-01",
      "tmax": 27,
@@ -123,12 +103,12 @@
      "rain_max": 10,
      "rain_text": "5–10 mm",
      "chance": 75,
-     "text": "Showers. Storm"
+     "text": "Shower or two. Storm"
     },
     {
      "date": "2026-11-02",
-     "tmax": 28,
-     "tmin": 19,
+     "tmax": 27,
+     "tmin": 18,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
@@ -140,14 +120,14 @@
      "tmax": 27,
      "tmin": 19,
      "rain_min": 5,
-     "rain_max": 10,
-     "rain_text": "5–10 mm",
-     "chance": 75,
-     "text": "Showers. Possible storm"
+     "rain_max": 15,
+     "rain_text": "5–15 mm",
+     "chance": 80,
+     "text": "Showers. Storm developing"
     },
     {
      "date": "2026-11-04",
-     "tmax": 31,
+     "tmax": 30,
      "tmin": 19,
      "rain_min": 0,
      "rain_max": 1,
@@ -172,11 +152,21 @@
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
-     "chance": 15,
+     "chance": 20,
      "text": "Partly cloudy"
+    },
+    {
+     "date": "2026-11-07",
+     "tmax": 27,
+     "tmin": 18,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1–5 mm",
+     "chance": 45,
+     "text": "Shower or two"
     }
    ],
-   "fetched": "2026-10-31T08:48:55Z"
+   "fetched": "2026-10-31T15:16:30Z"
   },
   {
    "source": "elders",
@@ -184,38 +174,28 @@
    "url": "https://eldersweather.com.au/forecast/qld/coolangatta",
    "days": [
     {
-     "date": "2026-10-31",
-     "tmax": 24,
-     "tmin": 17,
-     "rain_min": 0,
-     "rain_max": 5,
-     "rain_text": "0 - 5 mm",
-     "chance": 14,
-     "text": "Mostly cloudy"
-    },
-    {
      "date": "2026-11-01",
      "tmax": 25,
      "tmin": 20,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 24,
+     "chance": 25,
      "text": "Fair"
     },
     {
      "date": "2026-11-02",
      "tmax": 26,
      "tmin": 20,
-     "rain_min": 5,
-     "rain_max": 10,
-     "rain_text": "5 - 10 mm",
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
      "chance": 9,
-     "text": "Fair"
+     "text": "Clear skies"
     },
     {
      "date": "2026-11-03",
-     "tmax": 25,
+     "tmax": 26,
      "tmin": 21,
      "rain_min": 10,
      "rain_max": 15,
@@ -226,22 +206,22 @@
     {
      "date": "2026-11-04",
      "tmax": 28,
-     "tmin": 21,
-     "rain_min": 0,
-     "rain_max": 5,
-     "rain_text": "0 - 5 mm",
-     "chance": 7,
-     "text": "Fair"
-    },
-    {
-     "date": "2026-11-05",
-     "tmax": 29,
-     "tmin": 21,
+     "tmin": 20,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
      "chance": 4,
-     "text": "Fair"
+     "text": "Clear skies"
+    },
+    {
+     "date": "2026-11-05",
+     "tmax": 29,
+     "tmin": 20,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 11,
+     "text": "Mostly cloudy"
     },
     {
      "date": "2026-11-06",
@@ -250,11 +230,21 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 4,
+     "chance": 10,
      "text": "Clear skies"
+    },
+    {
+     "date": "2026-11-07",
+     "tmax": 26,
+     "tmin": 20,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 27,
+     "text": "Partly cloudy"
     }
    ],
-   "fetched": "2026-10-31T08:48:58Z"
+   "fetched": "2026-10-31T15:16:31Z"
   },
   {
    "source": "weatherzone",
@@ -262,29 +252,19 @@
    "url": "https://www.weatherzone.com/au/qld/southeast-coast/coolangatta",
    "days": [
     {
-     "date": "2026-10-31",
-     "tmax": 25,
-     "tmin": 17,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1mm",
-     "chance": 40,
-     "text": "Clearing shower"
-    },
-    {
      "date": "2026-11-01",
      "tmax": 27,
      "tmin": 18,
-     "rain_min": 5,
-     "rain_max": 10,
-     "rain_text": "5-10mm",
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5mm",
      "chance": 60,
-     "text": "Possible shower"
+     "text": "Late shower"
     },
     {
      "date": "2026-11-02",
-     "tmax": 28,
-     "tmin": 19,
+     "tmax": 27,
+     "tmin": 18,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
@@ -299,11 +279,11 @@
      "rain_max": 5,
      "rain_text": "1-5mm",
      "chance": 50,
-     "text": "Possible thunderstorm"
+     "text": "Late shower"
     },
     {
      "date": "2026-11-04",
-     "tmax": 31,
+     "tmax": 30,
      "tmin": 19,
      "rain_min": 0,
      "rain_max": 1,
@@ -318,7 +298,7 @@
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
-     "chance": 10,
+     "chance": 20,
      "text": "Sunny"
     },
     {
@@ -330,9 +310,19 @@
      "rain_text": "< 1mm",
      "chance": 30,
      "text": "Mostly sunny"
+    },
+    {
+     "date": "2026-11-07",
+     "tmax": 27,
+     "tmin": 18,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5mm",
+     "chance": 70,
+     "text": "Thunderstorms"
     }
    ],
-   "fetched": "2026-10-31T08:49:09Z"
+   "fetched": "2026-10-31T15:16:42Z"
   },
   {
    "source": "wunderground",
@@ -340,22 +330,12 @@
    "url": "https://www.wunderground.com/forecast/au/coolangatta/-28.167,153.537",
    "days": [
     {
-     "date": "2026-10-31",
-     "tmax": 25.6,
-     "tmin": 18.9,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": "Partly Cloudy"
-    },
-    {
      "date": "2026-11-01",
      "tmax": 25,
      "tmin": 18.9,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
+     "rain_min": 2.5,
+     "rain_max": 2.5,
+     "rain_text": "2.5 mm",
      "chance": null,
      "text": "Partly Cloudy"
     },
@@ -367,22 +347,22 @@
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Mostly Sunny"
+     "text": "Sunny"
     },
     {
      "date": "2026-11-03",
      "tmax": 25.6,
-     "tmin": 20,
-     "rain_min": 8.1,
-     "rain_max": 8.1,
-     "rain_text": "8.1 mm",
+     "tmin": 19.4,
+     "rain_min": 7.6,
+     "rain_max": 7.6,
+     "rain_text": "7.6 mm",
      "chance": null,
      "text": "PM Thunderstorms"
     },
     {
      "date": "2026-11-04",
-     "tmax": 28.3,
-     "tmin": 18.3,
+     "tmax": 28.9,
+     "tmin": 18.9,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -391,7 +371,7 @@
     },
     {
      "date": "2026-11-05",
-     "tmax": 29.4,
+     "tmax": 30,
      "tmin": 18.9,
      "rain_min": 0,
      "rain_max": 0,
@@ -402,7 +382,7 @@
     {
      "date": "2026-11-06",
      "tmax": 24.4,
-     "tmin": 19.4,
+     "tmin": 18.9,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -411,7 +391,7 @@
     },
     {
      "date": "2026-11-07",
-     "tmax": 26.1,
+     "tmax": 25.6,
      "tmin": 19.4,
      "rain_min": 0,
      "rain_max": 0,
@@ -432,7 +412,17 @@
     {
      "date": "2026-11-09",
      "tmax": 22.8,
-     "tmin": 17.8,
+     "tmin": 17.2,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Partly Cloudy"
+    },
+    {
+     "date": "2026-11-10",
+     "tmax": 23.9,
+     "tmin": 18.9,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -440,7 +430,7 @@
      "text": "Partly Cloudy"
     }
    ],
-   "fetched": "2026-10-31T08:49:10Z"
+   "fetched": "2026-10-31T15:16:43Z"
   },
   {
    "source": "windy",
@@ -448,88 +438,75 @@
    "url": "https://www.windy.com/-28.167/153.537",
    "days": [
     {
-     "date": "2026-10-31",
-     "tmax": 25,
-     "tmin": 16,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 21,
-     "gust_max": 28,
-     "wind_dir": "N"
-    },
-    {
      "date": "2026-11-01",
-     "tmax": 24.7,
-     "tmin": 18.4,
+     "tmax": 25.1,
+     "tmin": 19.9,
      "rain_min": 4,
      "rain_max": 4,
      "rain_text": "4 mm",
      "chance": null,
      "text": null,
      "wind_max": 22,
-     "gust_max": 30,
+     "gust_max": 31,
      "wind_dir": "N"
     },
     {
      "date": "2026-11-02",
-     "tmax": 26.8,
-     "tmin": 18.8,
+     "tmax": 26.4,
+     "tmin": 18.6,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
-     "wind_max": 17,
-     "gust_max": 33,
+     "wind_max": 16,
+     "gust_max": 32,
      "wind_dir": "ENE"
     },
     {
      "date": "2026-11-03",
-     "tmax": 25.7,
-     "tmin": 19.6,
+     "tmax": 25.9,
+     "tmin": 19.5,
      "rain_min": 13.4,
      "rain_max": 13.4,
      "rain_text": "13.4 mm",
      "chance": null,
      "text": null,
-     "wind_max": 23,
-     "gust_max": 42,
-     "wind_dir": "NNW"
+     "wind_max": 22,
+     "gust_max": 43,
+     "wind_dir": "N"
     },
     {
      "date": "2026-11-04",
-     "tmax": 30.6,
+     "tmax": 30.3,
      "tmin": 19.7,
      "rain_min": 1.5,
      "rain_max": 1.5,
      "rain_text": "1.5 mm",
      "chance": null,
      "text": null,
-     "wind_max": 21,
-     "gust_max": 32,
+     "wind_max": 19,
+     "gust_max": 31,
      "wind_dir": "NW"
     }
    ],
    "point": "mblue model",
-   "fetched": "2026-10-31T08:49:16Z"
+   "fetched": "2026-10-31T15:16:50Z"
   }
  ],
  "observations": {
   "source": "bom_obs",
   "station": "Coolangatta",
   "distance_km": 0.2,
-  "time": "2026-10-31T18:40:00+10:00",
-  "temp": 21.2,
-  "feels_like": 19.7,
-  "humidity": 80,
+  "time": "2026-11-01T01:10:00+10:00",
+  "temp": 19.9,
+  "feels_like": 19.8,
+  "humidity": 83,
   "wind_dir": "NNW",
-  "wind_kmh": 22,
-  "gust_kmh": 28,
+  "wind_kmh": 13,
+  "gust_kmh": 15,
   "rain_since_9am": 0,
-  "fetched": "2026-10-31T08:48:37Z"
+  "fetched": "2026-10-31T15:16:11Z"
  },
  "marine": {
   "source": "willyweather, windy",
@@ -539,23 +516,6 @@
     "kind": "ocean",
     "spot": "Coolangatta Beach",
     "tides": {
-     "2026-10-31": [
-      {
-       "type": "low",
-       "time": "5:06 am",
-       "height_m": 0.46
-      },
-      {
-       "type": "high",
-       "time": "12:04 pm",
-       "height_m": 1.84
-      },
-      {
-       "type": "low",
-       "time": "7:09 pm",
-       "height_m": 0.44
-      }
-     ],
      "2026-11-01": [
       {
        "type": "high",
@@ -682,38 +642,55 @@
        "time": "6:12 pm",
        "height_m": 1.51
       }
+     ],
+     "2026-11-07": [
+      {
+       "type": "low",
+       "time": "12:22 am",
+       "height_m": 0.21
+      },
+      {
+       "type": "high",
+       "time": "6:48 am",
+       "height_m": 1.71
+      },
+      {
+       "type": "low",
+       "time": "1:01 pm",
+       "height_m": 0.37
+      },
+      {
+       "type": "high",
+       "time": "6:49 pm",
+       "height_m": 1.47
+      }
      ]
     },
     "swell": {
-     "2026-10-31": {
-      "max_m": 0.6,
-      "dir": "ESE",
-      "period_s": 15
-     },
      "2026-11-01": {
-      "max_m": 0.9,
-      "dir": "NE",
+      "max_m": 0.8,
+      "dir": "E",
       "period_s": 5
      },
      "2026-11-02": {
-      "max_m": 1,
+      "max_m": 0.9,
       "dir": "NE",
       "period_s": 5
      },
      "2026-11-03": {
-      "max_m": 0.9,
-      "dir": "NE",
+      "max_m": 0.8,
+      "dir": "ENE",
       "period_s": 6
      },
      "2026-11-04": {
-      "max_m": 1.4,
+      "max_m": 1.5,
       "dir": "NE",
-      "period_s": 5
+      "period_s": 6
      },
      "2026-11-05": {
-      "max_m": 0.9,
+      "max_m": 0.7,
       "dir": "E",
-      "period_s": 7
+      "period_s": 8
      },
      "2026-11-06": {
       "max_m": 1,
@@ -721,35 +698,35 @@
       "period_s": 8
      },
      "2026-11-07": {
-      "max_m": 0.8,
+      "max_m": 0.9,
       "dir": "E",
       "period_s": 8
+     },
+     "2026-11-08": {
+      "max_m": 0.9,
+      "dir": "ESE",
+      "period_s": 10
      }
     },
     "windy": {
-     "2026-10-31": {
-      "wind_max": 21,
-      "gust_max": 28,
-      "wind_dir": "N"
-     },
      "2026-11-01": {
       "wind_max": 22,
-      "gust_max": 30,
+      "gust_max": 31,
       "wind_dir": "N"
      },
      "2026-11-02": {
-      "wind_max": 17,
-      "gust_max": 33,
+      "wind_max": 16,
+      "gust_max": 32,
       "wind_dir": "ENE"
      },
      "2026-11-03": {
-      "wind_max": 23,
-      "gust_max": 42,
-      "wind_dir": "NNW"
+      "wind_max": 22,
+      "gust_max": 43,
+      "wind_dir": "N"
      },
      "2026-11-04": {
-      "wind_max": 21,
-      "gust_max": 32,
+      "wind_max": 19,
+      "gust_max": 31,
       "wind_dir": "NW"
      }
     }
@@ -759,28 +736,6 @@
     "kind": "river",
     "spot": "Jack Evans Boat Harbour entrance",
     "tides": {
-     "2026-10-31": [
-      {
-       "type": "high",
-       "time": "12:32 am",
-       "height_m": 1.02
-      },
-      {
-       "type": "low",
-       "time": "6:15 am",
-       "height_m": 0.34
-      },
-      {
-       "type": "high",
-       "time": "1:26 pm",
-       "height_m": 1.59
-      },
-      {
-       "type": "low",
-       "time": "8:09 pm",
-       "height_m": 0.39
-      }
-     ],
      "2026-11-01": [
       {
        "type": "high",
@@ -907,38 +862,55 @@
        "time": "7:19 pm",
        "height_m": 1.36
       }
+     ],
+     "2026-11-07": [
+      {
+       "type": "low",
+       "time": "1:27 am",
+       "height_m": 0.19
+      },
+      {
+       "type": "high",
+       "time": "8:05 am",
+       "height_m": 1.5
+      },
+      {
+       "type": "low",
+       "time": "2:03 pm",
+       "height_m": 0.34
+      },
+      {
+       "type": "high",
+       "time": "7:58 pm",
+       "height_m": 1.31
+      }
      ]
     },
     "windy": {
-     "2026-10-31": {
-      "wind_max": 21,
-      "gust_max": 28,
-      "wind_dir": "N"
-     },
      "2026-11-01": {
       "wind_max": 22,
-      "gust_max": 30,
+      "gust_max": 31,
       "wind_dir": "N"
      },
      "2026-11-02": {
-      "wind_max": 17,
-      "gust_max": 33,
+      "wind_max": 16,
+      "gust_max": 32,
       "wind_dir": "ENE"
      },
      "2026-11-03": {
-      "wind_max": 23,
-      "gust_max": 42,
-      "wind_dir": "NNW"
+      "wind_max": 22,
+      "gust_max": 43,
+      "wind_dir": "N"
      },
      "2026-11-04": {
-      "wind_max": 21,
-      "gust_max": 32,
+      "wind_max": 19,
+      "gust_max": 31,
       "wind_dir": "NW"
      }
     }
    }
   ],
-  "fetched": "2026-10-31T08:48:53Z"
+  "fetched": "2026-10-31T15:16:27Z"
  },
  "errors": {}
 }

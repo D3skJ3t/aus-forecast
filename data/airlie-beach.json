@@ -1,6 +1,6 @@
 {
  "id": "airlie-beach",
- "generated": "2026-10-31T09:02:08Z",
+ "generated": "2026-10-31T15:29:25Z",
  "sources": [
   {
    "source": "bom",
@@ -8,29 +8,19 @@
    "url": "https://www.bom.gov.au/",
    "days": [
     {
-     "date": "2026-10-31",
-     "tmax": 27,
-     "tmin": null,
-     "rain_min": 15,
-     "rain_max": 30,
-     "rain_text": "15-30 mm",
-     "chance": 90,
-     "text": null
-    },
-    {
      "date": "2026-11-01",
      "tmax": 29,
      "tmin": 21,
      "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "0-1 mm",
-     "chance": 30,
+     "rain_max": null,
+     "rain_text": "0 mm",
+     "chance": 20,
      "text": null
     },
     {
      "date": "2026-11-02",
      "tmax": 30,
-     "tmin": 21,
+     "tmin": 22,
      "rain_min": 0,
      "rain_max": null,
      "rain_text": "0 mm",
@@ -44,13 +34,13 @@
      "rain_min": 0,
      "rain_max": null,
      "rain_text": "0 mm",
-     "chance": 20,
+     "chance": 10,
      "text": null
     },
     {
      "date": "2026-11-04",
      "tmax": 31,
-     "tmin": 22,
+     "tmin": 21,
      "rain_min": 0,
      "rain_max": null,
      "rain_text": "0 mm",
@@ -59,12 +49,12 @@
     },
     {
      "date": "2026-11-05",
-     "tmax": 31,
+     "tmax": 32,
      "tmin": 22,
      "rain_min": 0,
      "rain_max": null,
      "rain_text": "0 mm",
-     "chance": 10,
+     "chance": 20,
      "text": null
     },
     {
@@ -72,9 +62,9 @@
      "tmax": 31,
      "tmin": 22,
      "rain_min": 0,
-     "rain_max": null,
-     "rain_text": "0 mm",
-     "chance": 20,
+     "rain_max": 1,
+     "rain_text": "0-1 mm",
+     "chance": 30,
      "text": null
     },
     {
@@ -90,7 +80,7 @@
     {
      "date": "2026-11-08",
      "tmax": null,
-     "tmin": 23,
+     "tmin": 22,
      "rain_min": null,
      "rain_max": null,
      "rain_text": null,
@@ -98,7 +88,7 @@
      "text": null
     }
    ],
-   "fetched": "2026-10-31T09:01:42Z"
+   "fetched": "2026-10-31T15:28:59Z"
   },
   {
    "source": "willyweather",
@@ -106,24 +96,14 @@
    "url": "https://www.willyweather.com.au/qld/mackay/airlie-beach.html",
    "days": [
     {
-     "date": "2026-10-31",
-     "tmax": 27,
-     "tmin": 21,
-     "rain_min": 15,
-     "rain_max": 30,
-     "rain_text": "15–30 mm",
-     "chance": 85,
-     "text": "Shower or two"
-    },
-    {
      "date": "2026-11-01",
      "tmax": 29,
      "tmin": 21,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
-     "chance": 30,
-     "text": "Possible shower"
+     "chance": 20,
+     "text": "Partly cloudy"
     },
     {
      "date": "2026-11-02",
@@ -157,16 +137,6 @@
     },
     {
      "date": "2026-11-05",
-     "tmax": 31,
-     "tmin": 22,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1 mm",
-     "chance": 15,
-     "text": "Partly cloudy"
-    },
-    {
-     "date": "2026-11-06",
      "tmax": 32,
      "tmin": 22,
      "rain_min": 0,
@@ -174,9 +144,29 @@
      "rain_text": "< 1 mm",
      "chance": 20,
      "text": "Partly cloudy"
+    },
+    {
+     "date": "2026-11-06",
+     "tmax": 31,
+     "tmin": 22,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1 mm",
+     "chance": 25,
+     "text": "Partly cloudy"
+    },
+    {
+     "date": "2026-11-07",
+     "tmax": 31,
+     "tmin": 22,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1 mm",
+     "chance": 30,
+     "text": "Possible shower"
     }
    ],
-   "fetched": "2026-10-31T09:01:44Z"
+   "fetched": "2026-10-31T15:29:01Z"
   },
   {
    "source": "elders",
@@ -184,24 +174,14 @@
    "url": "https://eldersweather.com.au/forecast/qld/airlie-beach",
    "days": [
     {
-     "date": "2026-10-31",
-     "tmax": 26,
-     "tmin": 22,
-     "rain_min": 0,
-     "rain_max": 5,
-     "rain_text": "0 - 5 mm",
-     "chance": 54,
-     "text": "Cloudy"
-    },
-    {
      "date": "2026-11-01",
      "tmax": 28,
      "tmin": 23,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 13,
-     "text": "Rain showers"
+     "chance": 9,
+     "text": "Mostly cloudy"
     },
     {
      "date": "2026-11-02",
@@ -210,7 +190,7 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 10,
+     "chance": 7,
      "text": "Partly cloudy"
     },
     {
@@ -220,7 +200,7 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 4,
+     "chance": 2,
      "text": "Clear skies"
     },
     {
@@ -230,7 +210,7 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 1,
+     "chance": 0,
      "text": "Clear skies"
     },
     {
@@ -240,8 +220,8 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 0,
-     "text": "Partly cloudy"
+     "chance": 4,
+     "text": "Fair"
     },
     {
      "date": "2026-11-06",
@@ -250,11 +230,21 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 0,
+     "chance": 7,
      "text": "Fair"
+    },
+    {
+     "date": "2026-11-07",
+     "tmax": 30,
+     "tmin": 24,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 7,
+     "text": "Partly cloudy"
     }
    ],
-   "fetched": "2026-10-31T09:01:48Z"
+   "fetched": "2026-10-31T15:29:04Z"
   },
   {
    "source": "weatherzone",
@@ -262,49 +252,39 @@
    "url": "https://www.weatherzone.com/au/qld/central-coast/airlie-beach",
    "days": [
     {
-     "date": "2026-10-31",
-     "tmax": 27.4,
-     "tmin": 22.5,
-     "rain_min": 1,
-     "rain_max": 5,
-     "rain_text": "1-5mm",
-     "chance": 90,
-     "text": "Heavy showers"
-    },
-    {
      "date": "2026-11-01",
      "tmax": 28.2,
-     "tmin": 23.4,
+     "tmin": 23.3,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
-     "chance": 20,
+     "chance": 10,
      "text": "Mostly sunny"
     },
     {
      "date": "2026-11-02",
-     "tmax": 28.9,
-     "tmin": 23.6,
+     "tmax": 29,
+     "tmin": 23.5,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
      "chance": 10,
-     "text": "Sunny"
+     "text": "Mostly sunny"
     },
     {
      "date": "2026-11-03",
      "tmax": 29,
-     "tmin": 23.8,
+     "tmin": 23.7,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
-     "chance": 10,
-     "text": "Sunny"
+     "chance": 5,
+     "text": "Mostly sunny"
     },
     {
      "date": "2026-11-04",
      "tmax": 29.1,
-     "tmin": 24.1,
+     "tmin": 24,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
@@ -314,11 +294,11 @@
     {
      "date": "2026-11-05",
      "tmax": 29.4,
-     "tmin": 24.5,
+     "tmin": 24.4,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
-     "chance": 40,
+     "chance": 20,
      "text": "Sunny"
     },
     {
@@ -329,11 +309,21 @@
      "rain_max": 1,
      "rain_text": "< 1mm",
      "chance": 30,
-     "text": "Possible shower"
+     "text": "Mostly sunny"
+    },
+    {
+     "date": "2026-11-07",
+     "tmax": 29.4,
+     "tmin": 24.5,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1mm",
+     "chance": 40,
+     "text": "Mostly sunny"
     }
    ],
    "point": "Hamilton Island",
-   "fetched": "2026-10-31T09:02:01Z"
+   "fetched": "2026-10-31T15:29:18Z"
   },
   {
    "source": "wunderground",
@@ -341,19 +331,9 @@
    "url": "https://www.wunderground.com/forecast/au/airlie-beach/-20.268,148.717",
    "days": [
     {
-     "date": "2026-10-31",
-     "tmax": 26.7,
-     "tmin": 22.2,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": "Clouds Early/Clearing Late"
-    },
-    {
      "date": "2026-11-01",
      "tmax": 28.3,
-     "tmin": 22.8,
+     "tmin": 22.2,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -378,7 +358,7 @@
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Partly Cloudy"
+     "text": "Mostly Sunny"
     },
     {
      "date": "2026-11-04",
@@ -408,12 +388,12 @@
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Mostly Sunny"
+     "text": "Partly Cloudy"
     },
     {
      "date": "2026-11-07",
-     "tmax": 29.4,
-     "tmin": 23.9,
+     "tmax": 28.9,
+     "tmin": 23.3,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -423,7 +403,7 @@
     {
      "date": "2026-11-08",
      "tmax": 29.4,
-     "tmin": 23.9,
+     "tmin": 23.3,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -439,29 +419,26 @@
      "rain_text": "0 mm",
      "chance": null,
      "text": "Partly Cloudy"
+    },
+    {
+     "date": "2026-11-10",
+     "tmax": 28.3,
+     "tmin": 23.9,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Mostly Sunny"
     }
    ],
    "point": "Cannonvale",
-   "fetched": "2026-10-31T09:02:01Z"
+   "fetched": "2026-10-31T15:29:18Z"
   },
   {
    "source": "windy",
    "name": "Windy",
    "url": "https://www.windy.com/-20.268/148.717",
    "days": [
-    {
-     "date": "2026-10-31",
-     "tmax": 24.1,
-     "tmin": 20.8,
-     "rain_min": 11.9,
-     "rain_max": 11.9,
-     "rain_text": "11.9 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 14,
-     "gust_max": 24,
-     "wind_dir": "ESE"
-    },
     {
      "date": "2026-11-01",
      "tmax": 29.4,
@@ -471,8 +448,8 @@
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
-     "wind_max": 13,
-     "gust_max": 30,
+     "wind_max": 14,
+     "gust_max": 29,
      "wind_dir": "NNE"
     },
     {
@@ -484,9 +461,9 @@
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
-     "wind_max": 14,
-     "gust_max": 29,
-     "wind_dir": "N"
+     "wind_max": 13,
+     "gust_max": 28,
+     "wind_dir": "NNE"
     },
     {
      "date": "2026-11-03",
@@ -497,8 +474,8 @@
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
-     "wind_max": 19,
-     "gust_max": 36,
+     "wind_max": 18,
+     "gust_max": 34,
      "wind_dir": "N"
     },
     {
@@ -516,22 +493,22 @@
     }
    ],
    "point": "mblue model",
-   "fetched": "2026-10-31T09:02:08Z"
+   "fetched": "2026-10-31T15:29:25Z"
   }
  ],
  "observations": {
   "source": "bom_obs",
   "station": "Hamilton Island",
   "distance_km": 27.1,
-  "time": "2026-10-31T18:50:00+10:00",
-  "temp": 24.6,
-  "feels_like": 23.6,
-  "humidity": 78,
-  "wind_dir": "E",
-  "wind_kmh": 26,
-  "gust_kmh": 32,
+  "time": "2026-11-01T01:20:00+10:00",
+  "temp": 24,
+  "feels_like": 25.3,
+  "humidity": 83,
+  "wind_dir": "ENE",
+  "wind_kmh": 15,
+  "gust_kmh": 19,
   "rain_since_9am": 0,
-  "fetched": "2026-10-31T09:01:34Z"
+  "fetched": "2026-10-31T15:28:50Z"
  },
  "marine": {
   "source": "willyweather, windy",
@@ -541,28 +518,6 @@
     "kind": "bay",
     "spot": "Port of Airlie Marina",
     "tides": {
-     "2026-10-31": [
-      {
-       "type": "high",
-       "time": "2:15 am",
-       "height_m": 1.97
-      },
-      {
-       "type": "low",
-       "time": "7:53 am",
-       "height_m": 0.88
-      },
-      {
-       "type": "high",
-       "time": "3:00 pm",
-       "height_m": 3.16
-      },
-      {
-       "type": "low",
-       "time": "10:11 pm",
-       "height_m": 0.9
-      }
-     ],
      "2026-11-01": [
       {
        "type": "high",
@@ -689,27 +644,44 @@
        "time": "8:45 pm",
        "height_m": 3.02
       }
+     ],
+     "2026-11-07": [
+      {
+       "type": "low",
+       "time": "2:55 am",
+       "height_m": 0.34
+      },
+      {
+       "type": "high",
+       "time": "9:23 am",
+       "height_m": 3.26
+      },
+      {
+       "type": "low",
+       "time": "3:25 pm",
+       "height_m": 0.79
+      },
+      {
+       "type": "high",
+       "time": "9:21 pm",
+       "height_m": 2.83
+      }
      ]
     },
     "windy": {
-     "2026-10-31": {
-      "wind_max": 14,
-      "gust_max": 24,
-      "wind_dir": "ESE"
-     },
      "2026-11-01": {
-      "wind_max": 13,
-      "gust_max": 30,
+      "wind_max": 14,
+      "gust_max": 29,
       "wind_dir": "NNE"
      },
      "2026-11-02": {
-      "wind_max": 14,
-      "gust_max": 29,
-      "wind_dir": "N"
+      "wind_max": 13,
+      "gust_max": 28,
+      "wind_dir": "NNE"
      },
      "2026-11-03": {
-      "wind_max": 19,
-      "gust_max": 36,
+      "wind_max": 18,
+      "gust_max": 34,
       "wind_dir": "N"
      },
      "2026-11-04": {
@@ -720,7 +692,7 @@
     }
    }
   ],
-  "fetched": "2026-10-31T09:01:41Z"
+  "fetched": "2026-10-31T15:28:58Z"
  },
  "errors": {}
 }

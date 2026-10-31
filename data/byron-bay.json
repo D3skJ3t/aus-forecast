@@ -1,6 +1,6 @@
 {
  "id": "byron-bay",
- "generated": "2026-10-31T09:06:04Z",
+ "generated": "2026-10-31T15:33:28Z",
  "sources": [
   {
    "source": "bom",
@@ -8,29 +8,19 @@
    "url": "https://www.bom.gov.au/",
    "days": [
     {
-     "date": "2026-10-31",
-     "tmax": 23,
-     "tmin": null,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "0-1 mm",
-     "chance": 30,
-     "text": "Clear."
-    },
-    {
      "date": "2026-11-01",
      "tmax": 25,
      "tmin": 18,
-     "rain_min": 4,
-     "rain_max": 10,
-     "rain_text": "4-10 mm",
-     "chance": 80,
-     "text": "Showers. Possible storm."
+     "rain_min": 2,
+     "rain_max": 8,
+     "rain_text": "2-8 mm",
+     "chance": 70,
+     "text": "Shower or two. Possible storm."
     },
     {
      "date": "2026-11-02",
      "tmax": 25,
-     "tmin": 19,
+     "tmin": 18,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "0-1 mm",
@@ -41,20 +31,20 @@
      "date": "2026-11-03",
      "tmax": 26,
      "tmin": 18,
-     "rain_min": 3,
-     "rain_max": 10,
-     "rain_text": "3-10 mm",
+     "rain_min": 6,
+     "rain_max": 15,
+     "rain_text": "6-15 mm",
      "chance": 80,
      "text": "Showers. Possible storm."
     },
     {
      "date": "2026-11-04",
-     "tmax": 29,
+     "tmax": 28,
      "tmin": 19,
      "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "0-1 mm",
-     "chance": 30,
+     "rain_max": null,
+     "rain_text": "0 mm",
+     "chance": 20,
      "text": "Partly cloudy."
     },
     {
@@ -69,12 +59,12 @@
     },
     {
      "date": "2026-11-06",
-     "tmax": 24,
-     "tmin": 18,
+     "tmax": 23,
+     "tmin": 17,
      "rain_min": 0,
      "rain_max": null,
      "rain_text": "0 mm",
-     "chance": 10,
+     "chance": 20,
      "text": "Mostly sunny."
     },
     {
@@ -82,10 +72,10 @@
      "tmax": 26,
      "tmin": 18,
      "rain_min": 0,
-     "rain_max": 2,
-     "rain_text": "0-2 mm",
+     "rain_max": 3,
+     "rain_text": "0-3 mm",
      "chance": 40,
-     "text": "Possible shower."
+     "text": "Possible shower developing."
     },
     {
      "date": "2026-11-08",
@@ -98,23 +88,13 @@
      "text": null
     }
    ],
-   "fetched": "2026-10-31T09:05:39Z"
+   "fetched": "2026-10-31T15:33:07Z"
   },
   {
    "source": "willyweather",
    "name": "WillyWeather",
    "url": "https://www.willyweather.com.au/nsw/far-north-coast/byron-bay.html",
    "days": [
-    {
-     "date": "2026-10-31",
-     "tmax": 23,
-     "tmin": 17,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1 mm",
-     "chance": 25,
-     "text": "Clear"
-    },
     {
      "date": "2026-11-01",
      "tmax": 25,
@@ -123,12 +103,12 @@
      "rain_max": 15,
      "rain_text": "5–15 mm",
      "chance": 85,
-     "text": "Showers. Possible storm"
+     "text": "Shower or two. Possible storm"
     },
     {
      "date": "2026-11-02",
      "tmax": 25,
-     "tmin": 19,
+     "tmin": 18,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
@@ -140,14 +120,14 @@
      "tmax": 26,
      "tmin": 18,
      "rain_min": 5,
-     "rain_max": 10,
-     "rain_text": "5–10 mm",
-     "chance": 75,
+     "rain_max": 15,
+     "rain_text": "5–15 mm",
+     "chance": 85,
      "text": "Showers. Possible storm"
     },
     {
      "date": "2026-11-04",
-     "tmax": 29,
+     "tmax": 28,
      "tmin": 19,
      "rain_min": 0,
      "rain_max": 1,
@@ -162,21 +142,31 @@
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
-     "chance": 20,
+     "chance": 25,
      "text": "Mostly sunny"
     },
     {
      "date": "2026-11-06",
-     "tmax": 24,
-     "tmin": 18,
+     "tmax": 23,
+     "tmin": 17,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
-     "chance": 15,
+     "chance": 20,
      "text": "Mostly sunny"
+    },
+    {
+     "date": "2026-11-07",
+     "tmax": 26,
+     "tmin": 18,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1–5 mm",
+     "chance": 45,
+     "text": "Possible shower developing"
     }
    ],
-   "fetched": "2026-10-31T09:05:41Z"
+   "fetched": "2026-10-31T15:33:09Z"
   },
   {
    "source": "elders",
@@ -184,23 +174,13 @@
    "url": "https://eldersweather.com.au/forecast/nsw/byron-bay",
    "days": [
     {
-     "date": "2026-10-31",
-     "tmax": 23,
-     "tmin": 17,
-     "rain_min": 0,
-     "rain_max": 5,
-     "rain_text": "0 - 5 mm",
-     "chance": 3,
-     "text": "Mostly cloudy"
-    },
-    {
      "date": "2026-11-01",
-     "tmax": 25,
+     "tmax": 24,
      "tmin": 19,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 26,
+     "chance": 27,
      "text": "Partly cloudy"
     },
     {
@@ -220,7 +200,7 @@
      "rain_min": 5,
      "rain_max": 10,
      "rain_text": "5 - 10 mm",
-     "chance": 24,
+     "chance": 26,
      "text": "Mostly cloudy"
     },
     {
@@ -240,21 +220,31 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 3,
-     "text": "Fair"
+     "chance": 10,
+     "text": "Clear skies"
     },
     {
      "date": "2026-11-06",
-     "tmax": 24,
+     "tmax": 23,
      "tmin": 19,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 2,
-     "text": "Clear skies"
+     "chance": 9,
+     "text": "Fair"
+    },
+    {
+     "date": "2026-11-07",
+     "tmax": 26,
+     "tmin": 19,
+     "rain_min": 0,
+     "rain_max": 5,
+     "rain_text": "0 - 5 mm",
+     "chance": 24,
+     "text": "Partly cloudy"
     }
    ],
-   "fetched": "2026-10-31T09:05:44Z"
+   "fetched": "2026-10-31T15:33:09Z"
   },
   {
    "source": "weatherzone",
@@ -262,32 +252,22 @@
    "url": "https://www.weatherzone.com/au/nsw/northern-rivers/byron-bay",
    "days": [
     {
-     "date": "2026-10-31",
-     "tmax": 23,
-     "tmin": 17,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1mm",
-     "chance": 50,
-     "text": "Clearing shower"
-    },
-    {
      "date": "2026-11-01",
      "tmax": 25,
      "tmin": 18,
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1-5mm",
-     "chance": 50,
-     "text": "Possible shower"
+     "chance": 40,
+     "text": "Late thunder"
     },
     {
      "date": "2026-11-02",
      "tmax": 25,
-     "tmin": 19,
-     "rain_min": 1,
-     "rain_max": 5,
-     "rain_text": "1-5mm",
+     "tmin": 18,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1mm",
      "chance": 30,
      "text": "Mostly sunny"
     },
@@ -299,11 +279,11 @@
      "rain_max": 5,
      "rain_text": "1-5mm",
      "chance": 50,
-     "text": "Late thunder"
+     "text": "Late shower"
     },
     {
      "date": "2026-11-04",
-     "tmax": 29,
+     "tmax": 28,
      "tmin": 19,
      "rain_min": 0,
      "rain_max": 1,
@@ -318,21 +298,31 @@
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
-     "chance": 30,
+     "chance": 20,
      "text": "Sunny"
     },
     {
      "date": "2026-11-06",
-     "tmax": 24,
-     "tmin": 18,
+     "tmax": 23,
+     "tmin": 17,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
      "chance": 50,
      "text": "Late shower"
+    },
+    {
+     "date": "2026-11-07",
+     "tmax": 26,
+     "tmin": 18,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5mm",
+     "chance": 70,
+     "text": "Late shower"
     }
    ],
-   "fetched": "2026-10-31T09:05:56Z"
+   "fetched": "2026-10-31T15:33:21Z"
   },
   {
    "source": "wunderground",
@@ -340,24 +330,14 @@
    "url": "https://www.wunderground.com/forecast/au/byron-bay/-28.643,153.612",
    "days": [
     {
-     "date": "2026-10-31",
-     "tmax": 25,
-     "tmin": 18.3,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": "Partly Cloudy"
-    },
-    {
      "date": "2026-11-01",
      "tmax": 25.6,
-     "tmin": 17.8,
-     "rain_min": 6.3,
-     "rain_max": 6.3,
-     "rain_text": "6.3 mm",
+     "tmin": 18.3,
+     "rain_min": 6.1,
+     "rain_max": 6.1,
+     "rain_text": "6.1 mm",
      "chance": null,
-     "text": "PM Thunderstorms"
+     "text": "PM Showers"
     },
     {
      "date": "2026-11-02",
@@ -373,31 +353,31 @@
      "date": "2026-11-03",
      "tmax": 26.1,
      "tmin": 18.9,
-     "rain_min": 7.1,
-     "rain_max": 7.1,
-     "rain_text": "7.1 mm",
+     "rain_min": 6.1,
+     "rain_max": 6.1,
+     "rain_text": "6.1 mm",
      "chance": null,
      "text": "PM Thunderstorms"
     },
     {
      "date": "2026-11-04",
-     "tmax": 27.8,
-     "tmin": 18.3,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": "Mostly Sunny"
-    },
-    {
-     "date": "2026-11-05",
-     "tmax": 28.9,
+     "tmax": 27.2,
      "tmin": 18.3,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": "Sunny"
+    },
+    {
+     "date": "2026-11-05",
+     "tmax": 28.9,
+     "tmin": 17.8,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Mostly Sunny"
     },
     {
      "date": "2026-11-06",
@@ -411,28 +391,38 @@
     },
     {
      "date": "2026-11-07",
-     "tmax": 26.1,
+     "tmax": 26.7,
      "tmin": 18.9,
-     "rain_min": 1.5,
-     "rain_max": 1.5,
-     "rain_text": "1.5 mm",
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Mostly Sunny"
+    },
+    {
+     "date": "2026-11-08",
+     "tmax": 23.3,
+     "tmin": 16.7,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
      "chance": null,
      "text": "Partly Cloudy"
     },
     {
-     "date": "2026-11-08",
-     "tmax": 22.8,
+     "date": "2026-11-09",
+     "tmax": 22.2,
      "tmin": 16.7,
-     "rain_min": 0.8,
-     "rain_max": 0.8,
-     "rain_text": "0.8 mm",
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
      "chance": null,
-     "text": "PM Showers"
+     "text": "Partly Cloudy"
     },
     {
-     "date": "2026-11-09",
-     "tmax": 22.8,
-     "tmin": 17.2,
+     "date": "2026-11-10",
+     "tmax": 23.3,
+     "tmin": 17.8,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -440,7 +430,7 @@
      "text": "Partly Cloudy"
     }
    ],
-   "fetched": "2026-10-31T09:05:57Z"
+   "fetched": "2026-10-31T15:33:22Z"
   },
   {
    "source": "windy",
@@ -448,61 +438,48 @@
    "url": "https://www.windy.com/-28.643/153.612",
    "days": [
     {
-     "date": "2026-10-31",
-     "tmax": 22.5,
-     "tmin": 17.2,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 29,
-     "gust_max": 37,
-     "wind_dir": "N"
-    },
-    {
      "date": "2026-11-01",
      "tmax": 25,
-     "tmin": 18.9,
+     "tmin": 19.3,
      "rain_min": 4.6,
      "rain_max": 4.6,
      "rain_text": "4.6 mm",
      "chance": null,
      "text": null,
-     "wind_max": 28,
-     "gust_max": 37,
-     "wind_dir": "NNW"
+     "wind_max": 26,
+     "gust_max": 36,
+     "wind_dir": "N"
     },
     {
      "date": "2026-11-02",
      "tmax": 24.6,
-     "tmin": 19,
+     "tmin": 18.9,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
-     "wind_max": 24,
-     "gust_max": 36,
-     "wind_dir": "ESE"
+     "wind_max": 21,
+     "gust_max": 32,
+     "wind_dir": "SE"
     },
     {
      "date": "2026-11-03",
      "tmax": 24.5,
-     "tmin": 19.5,
+     "tmin": 19.8,
      "rain_min": 12.3,
      "rain_max": 12.3,
      "rain_text": "12.3 mm",
      "chance": null,
      "text": null,
      "wind_max": 29,
-     "gust_max": 50,
-     "wind_dir": "N"
+     "gust_max": 52,
+     "wind_dir": "NNE"
     },
     {
      "date": "2026-11-04",
-     "tmax": 28.8,
-     "tmin": 19.5,
+     "tmax": 28.7,
+     "tmin": 19.7,
      "rain_min": 0.7,
      "rain_max": 0.7,
      "rain_text": "0.7 mm",
@@ -514,22 +491,22 @@
     }
    ],
    "point": "mblue model",
-   "fetched": "2026-10-31T09:06:04Z"
+   "fetched": "2026-10-31T15:33:28Z"
   }
  ],
  "observations": {
   "source": "bom_obs",
   "station": "Cape Byron",
   "distance_km": 0.3,
-  "time": "2026-10-31T20:00:00+11:00",
-  "temp": 20.4,
-  "feels_like": 18.9,
+  "time": "2026-11-01T02:20:00+11:00",
+  "temp": 19.9,
+  "feels_like": 17,
   "humidity": 84,
   "wind_dir": "NNW",
-  "wind_kmh": 22,
-  "gust_kmh": 37,
+  "wind_kmh": 28,
+  "gust_kmh": 39,
   "rain_since_9am": 0,
-  "fetched": "2026-10-31T09:05:30Z"
+  "fetched": "2026-10-31T15:32:58Z"
  },
  "marine": {
   "source": "willyweather, windy",
@@ -539,28 +516,6 @@
     "kind": "ocean",
     "spot": "Main Beach (Byron Bay)",
     "tides": {
-     "2026-10-31": [
-      {
-       "type": "high",
-       "time": "12:31 am",
-       "height_m": 1.02
-      },
-      {
-       "type": "low",
-       "time": "6:03 am",
-       "height_m": 0.32
-      },
-      {
-       "type": "high",
-       "time": "1:17 pm",
-       "height_m": 1.67
-      },
-      {
-       "type": "low",
-       "time": "8:11 pm",
-       "height_m": 0.38
-      }
-     ],
      "2026-11-01": [
       {
        "type": "high",
@@ -687,70 +642,87 @@
        "time": "7:13 pm",
        "height_m": 1.4
       }
+     ],
+     "2026-11-07": [
+      {
+       "type": "low",
+       "time": "1:18 am",
+       "height_m": 0.2
+      },
+      {
+       "type": "high",
+       "time": "7:56 am",
+       "height_m": 1.55
+      },
+      {
+       "type": "low",
+       "time": "1:57 pm",
+       "height_m": 0.36
+      },
+      {
+       "type": "high",
+       "time": "7:53 pm",
+       "height_m": 1.34
+      }
      ]
     },
     "swell": {
-     "2026-10-31": {
-      "max_m": 1.4,
-      "dir": "S",
-      "period_s": 15
-     },
      "2026-11-01": {
+      "max_m": 1.3,
+      "dir": "N",
+      "period_s": 4
+     },
+     "2026-11-02": {
       "max_m": 1.4,
       "dir": "N",
       "period_s": 5
      },
-     "2026-11-02": {
-      "max_m": 1.6,
-      "dir": "NNE",
-      "period_s": 5
-     },
      "2026-11-03": {
-      "max_m": 1.2,
-      "dir": "NNE",
+      "max_m": 1.4,
+      "dir": "N",
       "period_s": 5
      },
      "2026-11-04": {
-      "max_m": 2.2,
+      "max_m": 2.1,
       "dir": "NNE",
-      "period_s": 7
+      "period_s": 6
      },
      "2026-11-05": {
       "max_m": 1.3,
-      "dir": "N",
-      "period_s": 5
-     },
-     "2026-11-06": {
-      "max_m": 1.8,
       "dir": "SSE",
       "period_s": 7
      },
+     "2026-11-06": {
+      "max_m": 2,
+      "dir": "SSE",
+      "period_s": 6
+     },
      "2026-11-07": {
-      "max_m": 1.8,
+      "max_m": 2.1,
       "dir": "S",
-      "period_s": 10
+      "period_s": 11
+     },
+     "2026-11-08": {
+      "max_m": 1.7,
+      "dir": "SSE",
+      "period_s": 9
      }
     },
     "windy": {
-     "2026-10-31": {
-      "wind_max": 29,
-      "gust_max": 37,
+     "2026-11-01": {
+      "wind_max": 26,
+      "gust_max": 36,
       "wind_dir": "N"
      },
-     "2026-11-01": {
-      "wind_max": 28,
-      "gust_max": 37,
-      "wind_dir": "NNW"
-     },
      "2026-11-02": {
-      "wind_max": 24,
-      "gust_max": 36,
-      "wind_dir": "ESE"
+      "wind_max": 21,
+      "gust_max": 32,
+      "wind_dir": "SE"
      },
      "2026-11-03": {
       "wind_max": 29,
-      "gust_max": 50,
-      "wind_dir": "N"
+      "gust_max": 52,
+      "wind_dir": "NNE"
      },
      "2026-11-04": {
       "wind_max": 23,
@@ -760,7 +732,7 @@
     }
    }
   ],
-  "fetched": "2026-10-31T09:05:38Z"
+  "fetched": "2026-10-31T15:33:06Z"
  },
  "errors": {}
 }

@@ -1,6 +1,6 @@
 {
  "id": "redcliffe",
- "generated": "2026-10-31T08:55:58Z",
+ "generated": "2026-10-31T15:22:51Z",
  "sources": [
   {
    "source": "bom",
@@ -8,84 +8,74 @@
    "url": "https://www.bom.gov.au/",
    "days": [
     {
-     "date": "2026-10-31",
-     "tmax": 26,
-     "tmin": null,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "0-1 mm",
-     "chance": 20,
-     "text": "Possible shower."
-    },
-    {
      "date": "2026-11-01",
-     "tmax": 29,
+     "tmax": 28,
      "tmin": 17,
      "rain_min": 2,
      "rain_max": 8,
      "rain_text": "2-8 mm",
-     "chance": 70,
-     "text": "Shower or two. Storm."
+     "chance": 80,
+     "text": "Showers. Storm."
     },
     {
      "date": "2026-11-02",
-     "tmax": 30,
+     "tmax": 29,
      "tmin": 19,
      "rain_min": 0,
-     "rain_max": null,
-     "rain_text": "0 mm",
-     "chance": 20,
+     "rain_max": 1,
+     "rain_text": "0-1 mm",
+     "chance": 30,
      "text": "Partly cloudy."
     },
     {
      "date": "2026-11-03",
-     "tmax": 29,
+     "tmax": 30,
      "tmin": 20,
-     "rain_min": 7,
-     "rain_max": 15,
-     "rain_text": "7-15 mm",
-     "chance": 80,
+     "rain_min": 9,
+     "rain_max": 20,
+     "rain_text": "9-20 mm",
+     "chance": 90,
      "text": "Showers. Storm developing."
     },
     {
      "date": "2026-11-04",
-     "tmax": 33,
-     "tmin": 20,
+     "tmax": 32,
+     "tmin": 19,
      "rain_min": 0,
-     "rain_max": 2,
-     "rain_text": "0-2 mm",
+     "rain_max": 1,
+     "rain_text": "0-1 mm",
      "chance": 40,
      "text": "Possible shower."
     },
     {
      "date": "2026-11-05",
-     "tmax": 34,
-     "tmin": 19,
+     "tmax": 33,
+     "tmin": 18,
      "rain_min": 0,
      "rain_max": null,
      "rain_text": "0 mm",
      "chance": 20,
-     "text": "Partly cloudy."
+     "text": "Mostly sunny."
     },
     {
      "date": "2026-11-06",
-     "tmax": 28,
-     "tmin": 18,
+     "tmax": 27,
+     "tmin": 19,
      "rain_min": 0,
-     "rain_max": null,
-     "rain_text": "0 mm",
-     "chance": 10,
-     "text": "Mostly sunny."
+     "rain_max": 1,
+     "rain_text": "0-1 mm",
+     "chance": 30,
+     "text": "Partly cloudy."
     },
     {
      "date": "2026-11-07",
      "tmax": 29,
-     "tmin": 18,
+     "tmin": 19,
      "rain_min": 0,
-     "rain_max": 2,
-     "rain_text": "0-2 mm",
-     "chance": 40,
-     "text": "Possible shower."
+     "rain_max": 5,
+     "rain_text": "0-5 mm",
+     "chance": 50,
+     "text": "Shower or two."
     },
     {
      "date": "2026-11-08",
@@ -98,7 +88,7 @@
      "text": null
     }
    ],
-   "fetched": "2026-10-31T08:55:30Z"
+   "fetched": "2026-10-31T15:22:26Z"
   },
   {
    "source": "willyweather",
@@ -106,49 +96,39 @@
    "url": "https://www.willyweather.com.au/qld/sunshine-coast/redcliffe.html",
    "days": [
     {
-     "date": "2026-10-31",
-     "tmax": 26,
-     "tmin": 18,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1 mm",
-     "chance": 15,
-     "text": "Possible shower"
-    },
-    {
      "date": "2026-11-01",
-     "tmax": 29,
+     "tmax": 28,
      "tmin": 17,
      "rain_min": 1,
      "rain_max": 10,
      "rain_text": "1–10 mm",
      "chance": 75,
-     "text": "Shower or two. Storm"
+     "text": "Showers. Storm"
     },
     {
      "date": "2026-11-02",
-     "tmax": 30,
+     "tmax": 29,
      "tmin": 19,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
-     "chance": 20,
+     "chance": 25,
      "text": "Partly cloudy"
     },
     {
      "date": "2026-11-03",
-     "tmax": 29,
+     "tmax": 30,
      "tmin": 20,
-     "rain_min": 5,
-     "rain_max": 15,
-     "rain_text": "5–15 mm",
-     "chance": 85,
+     "rain_min": 10,
+     "rain_max": 20,
+     "rain_text": "10–20 mm",
+     "chance": 90,
      "text": "Showers. Storm developing"
     },
     {
      "date": "2026-11-04",
-     "tmax": 33,
-     "tmin": 20,
+     "tmax": 32,
+     "tmin": 19,
      "rain_min": 0,
      "rain_max": 2,
      "rain_text": "< 2 mm",
@@ -157,26 +137,36 @@
     },
     {
      "date": "2026-11-05",
-     "tmax": 34,
-     "tmin": 19,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1 mm",
-     "chance": 20,
-     "text": "Partly cloudy"
-    },
-    {
-     "date": "2026-11-06",
-     "tmax": 28,
+     "tmax": 33,
      "tmin": 18,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
      "chance": 15,
      "text": "Mostly sunny"
+    },
+    {
+     "date": "2026-11-06",
+     "tmax": 27,
+     "tmin": 19,
+     "rain_min": 0,
+     "rain_max": 1,
+     "rain_text": "< 1 mm",
+     "chance": 25,
+     "text": "Partly cloudy"
+    },
+    {
+     "date": "2026-11-07",
+     "tmax": 29,
+     "tmin": 19,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1–5 mm",
+     "chance": 45,
+     "text": "Shower or two"
     }
    ],
-   "fetched": "2026-10-31T08:55:32Z"
+   "fetched": "2026-10-31T15:22:28Z"
   },
   {
    "source": "elders",
@@ -184,23 +174,13 @@
    "url": "https://eldersweather.com.au/forecast/qld/redcliffe",
    "days": [
     {
-     "date": "2026-10-31",
-     "tmax": 23,
-     "tmin": 21,
-     "rain_min": 0,
-     "rain_max": 5,
-     "rain_text": "0 - 5 mm",
-     "chance": 36,
-     "text": "Mostly cloudy"
-    },
-    {
      "date": "2026-11-01",
      "tmax": 25,
      "tmin": 19,
      "rain_min": 5,
      "rain_max": 10,
      "rain_text": "5 - 10 mm",
-     "chance": 26,
+     "chance": 27,
      "text": "Clear skies"
     },
     {
@@ -210,18 +190,18 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 7,
-     "text": "Fair"
+     "chance": 9,
+     "text": "Thunderstorms"
     },
     {
      "date": "2026-11-03",
      "tmax": 26,
      "tmin": 22,
-     "rain_min": 5,
-     "rain_max": 10,
-     "rain_text": "5 - 10 mm",
-     "chance": 25,
-     "text": "Mostly cloudy"
+     "rain_min": 10,
+     "rain_max": 15,
+     "rain_text": "10 - 15 mm",
+     "chance": 26,
+     "text": "Partly cloudy"
     },
     {
      "date": "2026-11-04",
@@ -230,18 +210,18 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 22,
-     "text": "Thunderstorms"
+     "chance": 11,
+     "text": "Fair"
     },
     {
      "date": "2026-11-05",
      "tmax": 29,
-     "tmin": 22,
+     "tmin": 21,
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 6,
-     "text": "Mostly cloudy"
+     "chance": 9,
+     "text": "Clear skies"
     },
     {
      "date": "2026-11-06",
@@ -250,11 +230,21 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 7,
+     "chance": 15,
      "text": "Clear skies"
+    },
+    {
+     "date": "2026-11-07",
+     "tmax": 26,
+     "tmin": 21,
+     "rain_min": 5,
+     "rain_max": 10,
+     "rain_text": "5 - 10 mm",
+     "chance": 32,
+     "text": "Partly cloudy"
     }
    ],
-   "fetched": "2026-10-31T08:55:34Z"
+   "fetched": "2026-10-31T15:22:31Z"
   },
   {
    "source": "weatherzone",
@@ -262,24 +252,14 @@
    "url": "https://www.weatherzone.com/au/qld/brisbane/redcliffe",
    "days": [
     {
-     "date": "2026-10-31",
-     "tmax": 26,
-     "tmin": 18,
-     "rain_min": 0,
-     "rain_max": 1,
-     "rain_text": "< 1mm",
-     "chance": 40,
-     "text": "Clearing shower"
-    },
-    {
      "date": "2026-11-01",
      "tmax": 27,
-     "tmin": 18,
+     "tmin": 17,
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1-5mm",
      "chance": 50,
-     "text": "Possible shower"
+     "text": "Late shower"
     },
     {
      "date": "2026-11-02",
@@ -288,18 +268,18 @@
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
-     "chance": 30,
+     "chance": 20,
      "text": "Sunny"
     },
     {
      "date": "2026-11-03",
-     "tmax": 28,
+     "tmax": 29,
      "tmin": 19,
-     "rain_min": 1,
-     "rain_max": 5,
-     "rain_text": "1-5mm",
-     "chance": 60,
-     "text": "Possible thunderstorm"
+     "rain_min": 5,
+     "rain_max": 10,
+     "rain_text": "5-10mm",
+     "chance": 40,
+     "text": "Late thunder"
     },
     {
      "date": "2026-11-04",
@@ -318,21 +298,31 @@
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
-     "chance": 30,
+     "chance": 20,
      "text": "Sunny"
     },
     {
      "date": "2026-11-06",
      "tmax": 27,
-     "tmin": 18,
+     "tmin": 19,
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1mm",
-     "chance": 40,
+     "chance": 10,
      "text": "Mostly sunny"
+    },
+    {
+     "date": "2026-11-07",
+     "tmax": 28,
+     "tmin": 19,
+     "rain_min": 1,
+     "rain_max": 5,
+     "rain_text": "1-5mm",
+     "chance": 70,
+     "text": "Possible thunderstorm"
     }
    ],
-   "fetched": "2026-10-31T08:55:51Z"
+   "fetched": "2026-10-31T15:22:44Z"
   },
   {
    "source": "wunderground",
@@ -340,59 +330,49 @@
    "url": "https://www.wunderground.com/forecast/au/redcliffe/-27.23,153.11",
    "days": [
     {
-     "date": "2026-10-31",
-     "tmax": 25,
-     "tmin": 17.8,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": "Partly Cloudy"
-    },
-    {
      "date": "2026-11-01",
-     "tmax": 26.7,
+     "tmax": 26.1,
      "tmin": 19.4,
-     "rain_min": 8.6,
-     "rain_max": 8.6,
-     "rain_text": "8.6 mm",
+     "rain_min": 3.3,
+     "rain_max": 3.3,
+     "rain_text": "3.3 mm",
      "chance": null,
-     "text": "PM Showers"
+     "text": "Few Showers"
     },
     {
      "date": "2026-11-02",
-     "tmax": 27.8,
+     "tmax": 27.2,
      "tmin": 20.6,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Sunny"
+     "text": "Mostly Sunny"
     },
     {
      "date": "2026-11-03",
-     "tmax": 27.8,
-     "tmin": 19.4,
-     "rain_min": 14.2,
-     "rain_max": 14.2,
-     "rain_text": "14.2 mm",
+     "tmax": 27.2,
+     "tmin": 20,
+     "rain_min": 16.5,
+     "rain_max": 16.5,
+     "rain_text": "16.5 mm",
      "chance": null,
      "text": "PM Thunderstorms"
     },
     {
      "date": "2026-11-04",
-     "tmax": 30,
+     "tmax": 29.4,
      "tmin": 18.3,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Sunny"
+     "text": "Mostly Sunny"
     },
     {
      "date": "2026-11-05",
-     "tmax": 32.2,
-     "tmin": 18.9,
+     "tmax": 31.1,
+     "tmin": 19.4,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -401,7 +381,7 @@
     },
     {
      "date": "2026-11-06",
-     "tmax": 26.7,
+     "tmax": 25,
      "tmin": 19.4,
      "rain_min": 0,
      "rain_max": 0,
@@ -411,18 +391,18 @@
     },
     {
      "date": "2026-11-07",
-     "tmax": 27.8,
+     "tmax": 26.7,
      "tmin": 19.4,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
+     "rain_min": 3.6,
+     "rain_max": 3.6,
+     "rain_text": "3.6 mm",
      "chance": null,
-     "text": "Partly Cloudy"
+     "text": "PM Showers"
     },
     {
      "date": "2026-11-08",
-     "tmax": 26.1,
-     "tmin": 18.3,
+     "tmax": 25.6,
+     "tmin": 17.8,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -431,8 +411,18 @@
     },
     {
      "date": "2026-11-09",
-     "tmax": 24.4,
+     "tmax": 23.3,
      "tmin": 18.3,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": "Partly Cloudy"
+    },
+    {
+     "date": "2026-11-10",
+     "tmax": 25,
+     "tmin": 18.9,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -440,7 +430,7 @@
      "text": "Partly Cloudy"
     }
    ],
-   "fetched": "2026-10-31T08:55:51Z"
+   "fetched": "2026-10-31T15:22:45Z"
   },
   {
    "source": "windy",
@@ -448,61 +438,48 @@
    "url": "https://www.windy.com/-27.23/153.11",
    "days": [
     {
-     "date": "2026-10-31",
-     "tmax": 23.8,
-     "tmin": 18.8,
-     "rain_min": 0,
-     "rain_max": 0,
-     "rain_text": "0 mm",
-     "chance": null,
-     "text": null,
-     "wind_max": 17,
-     "gust_max": 24,
-     "wind_dir": "NNE"
-    },
-    {
      "date": "2026-11-01",
-     "tmax": 28.9,
-     "tmin": 19.2,
+     "tmax": 29.4,
+     "tmin": 18.4,
      "rain_min": 4.6,
      "rain_max": 4.6,
      "rain_text": "4.6 mm",
      "chance": null,
      "text": null,
-     "wind_max": 16,
-     "gust_max": 28,
-     "wind_dir": "N"
+     "wind_max": 15,
+     "gust_max": 30,
+     "wind_dir": "NNE"
     },
     {
      "date": "2026-11-02",
      "tmax": 29.9,
-     "tmin": 21,
+     "tmin": 20.9,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
      "wind_max": 14,
-     "gust_max": 31,
-     "wind_dir": "ENE"
+     "gust_max": 29,
+     "wind_dir": "NE"
     },
     {
      "date": "2026-11-03",
-     "tmax": 30.2,
-     "tmin": 21.9,
+     "tmax": 30.1,
+     "tmin": 22.2,
      "rain_min": 13.8,
      "rain_max": 13.8,
      "rain_text": "13.8 mm",
      "chance": null,
      "text": null,
-     "wind_max": 22,
-     "gust_max": 43,
-     "wind_dir": "NNW"
+     "wind_max": 20,
+     "gust_max": 40,
+     "wind_dir": "N"
     },
     {
      "date": "2026-11-04",
-     "tmax": 34.1,
-     "tmin": 21.7,
+     "tmax": 33.9,
+     "tmin": 21.9,
      "rain_min": 3,
      "rain_max": 3,
      "rain_text": "3 mm",
@@ -514,22 +491,22 @@
     }
    ],
    "point": "mblue model",
-   "fetched": "2026-10-31T08:55:58Z"
+   "fetched": "2026-10-31T15:22:51Z"
   }
  ],
  "observations": {
   "source": "bom_obs",
   "station": "Brisbane Airport",
   "distance_km": 19.9,
-  "time": "2026-10-31T18:50:00+10:00",
-  "temp": 21.8,
-  "feels_like": 20.3,
-  "humidity": 73,
-  "wind_dir": "N",
-  "wind_kmh": 20,
-  "gust_kmh": 26,
+  "time": "2026-11-01T01:10:00+10:00",
+  "temp": 18.8,
+  "feels_like": 18.3,
+  "humidity": 84,
+  "wind_dir": "NNW",
+  "wind_kmh": 13,
+  "gust_kmh": 17,
   "rain_since_9am": 0,
-  "fetched": "2026-10-31T08:55:22Z"
+  "fetched": "2026-10-31T15:22:16Z"
  },
  "marine": {
   "source": "willyweather, windy",
@@ -539,28 +516,6 @@
     "kind": "bay",
     "spot": "Redcliffe Jetty",
     "tides": {
-     "2026-10-31": [
-      {
-       "type": "high",
-       "time": "12:41 am",
-       "height_m": 1.54
-      },
-      {
-       "type": "low",
-       "time": "6:33 am",
-       "height_m": 0.48
-      },
-      {
-       "type": "high",
-       "time": "1:26 pm",
-       "height_m": 2.26
-      },
-      {
-       "type": "low",
-       "time": "8:30 pm",
-       "height_m": 0.66
-      }
-     ],
      "2026-11-01": [
       {
        "type": "high",
@@ -687,28 +642,45 @@
        "time": "7:24 pm",
        "height_m": 2.01
       }
+     ],
+     "2026-11-07": [
+      {
+       "type": "low",
+       "time": "1:55 am",
+       "height_m": 0.33
+      },
+      {
+       "type": "high",
+       "time": "8:07 am",
+       "height_m": 2.16
+      },
+      {
+       "type": "low",
+       "time": "2:24 pm",
+       "height_m": 0.53
+      },
+      {
+       "type": "high",
+       "time": "8:05 pm",
+       "height_m": 1.95
+      }
      ]
     },
     "windy": {
-     "2026-10-31": {
-      "wind_max": 17,
-      "gust_max": 24,
-      "wind_dir": "NNE"
-     },
      "2026-11-01": {
-      "wind_max": 16,
-      "gust_max": 28,
-      "wind_dir": "N"
+      "wind_max": 15,
+      "gust_max": 30,
+      "wind_dir": "NNE"
      },
      "2026-11-02": {
       "wind_max": 14,
-      "gust_max": 31,
-      "wind_dir": "ENE"
+      "gust_max": 29,
+      "wind_dir": "NE"
      },
      "2026-11-03": {
-      "wind_max": 22,
-      "gust_max": 43,
-      "wind_dir": "NNW"
+      "wind_max": 20,
+      "gust_max": 40,
+      "wind_dir": "N"
      },
      "2026-11-04": {
       "wind_max": 16,
@@ -718,7 +690,7 @@
     }
    }
   ],
-  "fetched": "2026-10-31T08:55:30Z"
+  "fetched": "2026-10-31T15:22:25Z"
  },
  "errors": {}
 }
