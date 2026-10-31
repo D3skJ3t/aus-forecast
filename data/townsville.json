@@ -1,6 +1,6 @@
 {
  "id": "townsville",
- "generated": "2026-10-30T23:12:04Z",
+ "generated": "2026-10-31T02:32:41Z",
  "sources": [
   {
    "source": "bom",
@@ -88,7 +88,7 @@
      "text": null
     }
    ],
-   "fetched": "2026-10-30T23:11:44Z"
+   "fetched": "2026-10-31T02:32:17Z"
   },
   {
    "source": "willyweather",
@@ -107,12 +107,12 @@
     },
     {
      "date": "2026-11-01",
-     "tmax": 32,
+     "tmax": 31,
      "tmin": 24,
      "rain_min": 1,
      "rain_max": 5,
      "rain_text": "1–5 mm",
-     "chance": 50,
+     "chance": 60,
      "text": "Shower or two"
     },
     {
@@ -122,8 +122,8 @@
      "rain_min": 0,
      "rain_max": 2,
      "rain_text": "< 2 mm",
-     "chance": 40,
-     "text": "Possible shower"
+     "chance": 45,
+     "text": "Morning shower or two"
     },
     {
      "date": "2026-11-03",
@@ -143,7 +143,7 @@
      "rain_max": 1,
      "rain_text": "< 1 mm",
      "chance": 20,
-     "text": "Mostly sunny"
+     "text": "Partly cloudy"
     },
     {
      "date": "2026-11-05",
@@ -152,7 +152,7 @@
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
-     "chance": 25,
+     "chance": 20,
      "text": "Partly cloudy"
     },
     {
@@ -162,11 +162,11 @@
      "rain_min": 0,
      "rain_max": 1,
      "rain_text": "< 1 mm",
-     "chance": 30,
+     "chance": 20,
      "text": "Partly cloudy"
     }
    ],
-   "fetched": "2026-10-30T23:11:46Z"
+   "fetched": "2026-10-31T02:32:20Z"
   },
   {
    "source": "elders",
@@ -175,12 +175,12 @@
    "days": [
     {
      "date": "2026-10-31",
-     "tmax": 29,
+     "tmax": 28,
      "tmin": 25,
      "rain_min": 5,
      "rain_max": 10,
      "rain_text": "5 - 10 mm",
-     "chance": 54,
+     "chance": 58,
      "text": "Mostly cloudy"
     },
     {
@@ -190,7 +190,7 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 23,
+     "chance": 24,
      "text": "Partly cloudy"
     },
     {
@@ -210,7 +210,7 @@
      "rain_min": 0,
      "rain_max": 5,
      "rain_text": "0 - 5 mm",
-     "chance": 4,
+     "chance": 3,
      "text": "Partly cloudy"
     },
     {
@@ -244,7 +244,7 @@
      "text": "Partly cloudy"
     }
    ],
-   "fetched": "2026-10-30T23:11:47Z"
+   "fetched": "2026-10-31T02:32:23Z"
   },
   {
    "source": "weatherzone",
@@ -322,7 +322,7 @@
      "text": "Mostly sunny"
     }
    ],
-   "fetched": "2026-10-30T23:11:57Z"
+   "fetched": "2026-10-31T02:32:34Z"
   },
   {
    "source": "wunderground",
@@ -331,13 +331,13 @@
    "days": [
     {
      "date": "2026-10-31",
-     "tmax": 28.9,
-     "tmin": 23.9,
+     "tmax": 27.8,
+     "tmin": 24.4,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Partly Cloudy"
+     "text": "Showers"
     },
     {
      "date": "2026-11-01",
@@ -352,7 +352,7 @@
     {
      "date": "2026-11-02",
      "tmax": 30,
-     "tmin": 24.4,
+     "tmin": 25,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -362,17 +362,17 @@
     {
      "date": "2026-11-03",
      "tmax": 30,
-     "tmin": 24.4,
+     "tmin": 25,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Partly Cloudy"
+     "text": "Sunny"
     },
     {
      "date": "2026-11-04",
      "tmax": 30,
-     "tmin": 24.4,
+     "tmin": 25,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -417,21 +417,21 @@
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
-     "text": "Mostly Sunny"
+     "text": "Partly Cloudy"
     },
     {
      "date": "2026-11-09",
      "tmax": 30.6,
      "tmin": 24.4,
-     "rain_min": 0.5,
-     "rain_max": 0.5,
-     "rain_text": "0.5 mm",
+     "rain_min": 0.8,
+     "rain_max": 0.8,
+     "rain_text": "0.8 mm",
      "chance": null,
      "text": "Partly Cloudy"
     }
    ],
    "point": "North Ward",
-   "fetched": "2026-10-30T23:11:57Z"
+   "fetched": "2026-10-31T02:32:34Z"
   },
   {
    "source": "windy",
@@ -440,7 +440,7 @@
    "days": [
     {
      "date": "2026-10-31",
-     "tmax": 26,
+     "tmax": 25.7,
      "tmin": 24.4,
      "rain_min": 3.4,
      "rain_max": 3.4,
@@ -448,12 +448,12 @@
      "chance": null,
      "text": null,
      "wind_max": 20,
-     "gust_max": 30,
-     "wind_dir": "NE"
+     "gust_max": 29,
+     "wind_dir": "ENE"
     },
     {
      "date": "2026-11-01",
-     "tmax": 28.4,
+     "tmax": 28.3,
      "tmin": 24.2,
      "rain_min": 0.3,
      "rain_max": 0.3,
@@ -467,20 +467,20 @@
     {
      "date": "2026-11-02",
      "tmax": 29.3,
-     "tmin": 24.9,
+     "tmin": 24.8,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
      "chance": null,
      "text": null,
      "wind_max": 23,
-     "gust_max": 40,
+     "gust_max": 41,
      "wind_dir": "N"
     },
     {
      "date": "2026-11-03",
-     "tmax": 29.6,
-     "tmin": 24,
+     "tmax": 29.5,
+     "tmin": 23.9,
      "rain_min": 0,
      "rain_max": 0,
      "rain_text": "0 mm",
@@ -489,25 +489,38 @@
      "wind_max": 25,
      "gust_max": 42,
      "wind_dir": "N"
+    },
+    {
+     "date": "2026-11-04",
+     "tmax": 29.7,
+     "tmin": 24.4,
+     "rain_min": 0,
+     "rain_max": 0,
+     "rain_text": "0 mm",
+     "chance": null,
+     "text": null,
+     "wind_max": 27,
+     "gust_max": 43,
+     "wind_dir": "N"
     }
    ],
    "point": "mblue model",
-   "fetched": "2026-10-30T23:12:04Z"
+   "fetched": "2026-10-31T02:32:41Z"
   }
  ],
  "observations": {
   "source": "bom_obs",
   "station": "Townsville",
   "distance_km": 5.4,
-  "time": "2026-10-31T09:00:00+10:00",
-  "temp": 27.4,
-  "feels_like": 31.5,
-  "humidity": 84,
-  "wind_dir": "E",
+  "time": "2026-10-31T12:20:00+10:00",
+  "temp": 26.4,
+  "feels_like": 29.8,
+  "humidity": 83,
+  "wind_dir": "NE",
   "wind_kmh": 11,
-  "gust_kmh": 17,
-  "rain_since_9am": 0,
-  "fetched": "2026-10-30T23:11:26Z"
+  "gust_kmh": 13,
+  "rain_since_9am": 2.6,
+  "fetched": "2026-10-31T02:31:57Z"
  },
  "marine": {
   "source": "willyweather, windy",
@@ -670,8 +683,8 @@
     "windy": {
      "2026-10-31": {
       "wind_max": 20,
-      "gust_max": 30,
-      "wind_dir": "NE"
+      "gust_max": 29,
+      "wind_dir": "ENE"
      },
      "2026-11-01": {
       "wind_max": 22,
@@ -680,12 +693,17 @@
      },
      "2026-11-02": {
       "wind_max": 23,
-      "gust_max": 40,
+      "gust_max": 41,
       "wind_dir": "N"
      },
      "2026-11-03": {
       "wind_max": 25,
       "gust_max": 42,
+      "wind_dir": "N"
+     },
+     "2026-11-04": {
+      "wind_max": 27,
+      "gust_max": 43,
       "wind_dir": "N"
      }
     }
@@ -878,13 +896,13 @@
      },
      "2026-11-06": {
       "max_m": 0.6,
-      "dir": "N",
-      "period_s": 3
+      "dir": "NNE",
+      "period_s": 4
      },
      "2026-11-07": {
-      "max_m": 0.5,
-      "dir": "ENE",
-      "period_s": 6
+      "max_m": 0.6,
+      "dir": "NNE",
+      "period_s": 4
      }
     },
     "swell_place": "Townsville Fairway Beacon",
@@ -892,7 +910,7 @@
      "2026-10-31": {
       "wind_max": 20,
       "gust_max": 29,
-      "wind_dir": "NE"
+      "wind_dir": "ENE"
      },
      "2026-11-01": {
       "wind_max": 22,
@@ -908,11 +926,16 @@
       "wind_max": 25,
       "gust_max": 41,
       "wind_dir": "NNE"
+     },
+     "2026-11-04": {
+      "wind_max": 27,
+      "gust_max": 42,
+      "wind_dir": "N"
      }
     }
    }
   ],
-  "fetched": "2026-10-30T23:11:43Z"
+  "fetched": "2026-10-31T02:32:16Z"
  },
  "errors": {}
 }
